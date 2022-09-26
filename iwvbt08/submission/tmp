@@ -1,0 +1,93 @@
+// => replace this function at the end of AdminLists.php
+
+// List all the registrations 
+function AdmListRegistrations (&$tpl, $db, &$TEXTS, &$CODES) 
+{ 
+  $tpl->set_file ("ListRegistrations", TPLDIR . "TxtListRegistrations.tpl"); 
+  $tpl->set_block("ListRegistrations", "GROUPS_LINKS", "LINKS"); 
+  $tpl->set_block("ListRegistrations", "REGISTRATION_DETAIL",  
+		  "REGISTRATIONS"); 
+  $tpl->set_var("REGISTRATIONS",""); 
+  $tpl->set_var("LINKS", ""); 
+ 
+  $tpl->set_var("TITLE", $TEXTS->get("TTL_LIST_REGISTRATIONS"));  
+ 
+  // Initialize the current interval 
+  if (!isSet($_REQUEST['iMin'])) 
+    { 
+      $iMinCur = 1; $iMaxCur = SIZE_REGISTRATIONS_GROUP; 
+    } 
+  else 
+    { 
+      $iMinCur = $_REQUEST['iMin'];  $iMaxCur = $_REQUEST['iMax']; 
+    } 
+ 
+  /* Removal of a registration */ 
+  if (isSet($_REQUEST['remove'])) { 
+    $id_person = $_REQUEST['id_person']; 
+    $db->execRequete ("DELETE FROM Person WHERE id='$id_person'"); 
+  } 
+ 
+  /* Payment */ 
+  if (isSet($_REQUEST['confirm_payment'])) { 
+    $id_person = $_REQUEST['id_person']; 
+    $db->execRequete ("UPDATE Person SET payment_received='Y' " 
+		      . " WHERE id='$id_person'"); 
+  } 
+ 
+  $config = GetConfig($db); 
+  $nbPersons = 0; 
+ 
+  $query = "SELECT * FROM Person ORDER BY last_name"; 
+  $result = $db->execRequete ($query); 
+  $i = 0; 
+  while ($person = $db->objetSuivant($result)) 
+    { 
+      $nbPersons++; 
+      InstantiatePersonVars ($person, $tpl, $db); 
+
+      // Get the choices 
+      $q_choices = 
+	"SELECT * FROM PersonChoice p, RegQuestion r, RegChoice c "
+	. " WHERE p.id_person='$person->id' AND p.id_question=r.id "
+	. " AND c.id_choice=p.id_choice ";
+      $r_choices = $db->execRequete ($q_choices);
+      $list_choices = "";
+      while ($choice = $db->objetSuivant($r_choices)) {
+	$list_choices .= "<li>$choice->question: $choice->choice</li>";
+      }
+      $tpl->set_var("PERSON_CHOICES", "<ol>$list_choices</ol>");
+
+      // Choose the CSS class 
+      if ($i++ %2 == 0) 
+	$tpl->set_var("CSS_CLASS", "even"); 
+      else 
+	$tpl->set_var("CSS_CLASS", "odd"); 
+ 
+      if ($nbPersons >= $iMinCur and $nbPersons <= $iMaxCur)  
+	$tpl->parse("REGISTRATIONS", "REGISTRATION_DETAIL", true); 
+    } 
+  $tpl->set_var("REGISTRATION_COUNT", $nbPersons); 
+   
+  // Create the groups 
+  $nb_groups = $nbPersons / SIZE_REGISTRATIONS_GROUP ; 
+  if ($nb_groups * SIZE_REGISTRATIONS_GROUP < $nbPersons) 
+    $nb_groups++; 
+ 
+  for ($i=1; $i <= $nb_groups; $i++) 
+    { 
+      $iMin = (($i-1) *  SIZE_REGISTRATIONS_GROUP) + 1; 
+      if ($iMin >= $iMinCur and $iMin <= $iMaxCur) 
+	$link = "<font color=red>$i</font>"; 
+      else 
+	$link =$i; 
+      $tpl->set_var("LINK", $link); 
+       
+      $tpl->set_var("IMIN_VALUE", $iMin); 
+      $tpl->set_var("IMAX_VALUE", $iMin + SIZE_REGISTRATIONS_GROUP -1); 
+      $tpl->parse("LINKS", "GROUPS_LINKS", true); 
+    } 
+ 
+  /* Instanciate PAPERS in TxtListOfPapers. Put the result in BODY */ 
+  $tpl->parse("BODY", "ListRegistrations"); 
+} 

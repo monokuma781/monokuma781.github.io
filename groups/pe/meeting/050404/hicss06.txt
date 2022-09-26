@@ -1,0 +1,123 @@
+---------------------------------------------------------------------
+                            Minitrack on  
+          WIRELESS SENSOR NETWORKS AND APPLICATIONS
+        http://www.cs.odu.edu/~olariu/s-minitrack.html
+           
+                         to be held within
+          The Software Technology Track of the
+  39th HAWAII INTERNATIONAL CONFERENCE ON SYSTEM SCIENCES (HICSS-39)
+
+                        January 4-7, 2006
+                  Hyatt Regency, Kauai (Hawaii)
+---------------------------------------------------------------------
+
+
+CALL FOR PAPER
+
+Developments in computing and sensing hardware and in wireless communications have 
+made it technologically feasible and economically viable to develop low-power sensor 
+nodes that integrate general-purpose computing with multi-purpose sensing and 
+wireless communications capabilities. Aggregating sensor nodes into sophisticated 
+sensing, computational and communication infrastructures to form wireless sensor 
+networks will have a significant impact on a wide array of applications ranging 
+from military, to scientific, to industrial, to health-care, to domestic, 
+establishing ubiquitous computing that will pervade society redefining the way 
+in which we live and work. 
+
+This minitrack focuses on fundamental challenges arising in the design of wireless 
+sensor networks and their applications. Our goal is to offer a forum for high caliber 
+research and experimentation in this booming area. We will provide the participants 
+with an up-to-date survey on wireless sensor networks and applications. 
+Topics of interest include, but are not limited to:
+
+* Sensor-based systems and applications
+* Visualization of sensor data 
+* Middleware and software tools
+* Data gathering, aggregation and dissemination
+* Embedded network-oriented operating systems
+* Networking architectures and protocols
+* Hardware aspects of sensor design
+* Self-organization and governance
+* Location and mobility management
+* Topology control and time synchronization
+* Power Management and energy-efficient design
+* Cross-layer architectures
+* Intelligent sensors
+* Security and dependability issues
+* Scalability of wireless sensor networks
+* Interfacing with other wireless/mobile systems
+* Work models for wireless sensor networks
+* Modeling and performance evaluation
+* Implementation experience and measurements
+* Demos and prototypes
+
+
+PAPER SUBMISSION
+
+1. Manuscript submission is a two-steps process. By April 15, 2005, the authors are 
+   expected to submit a 300-word abstract to the minitrack co-chairs for guidance and 
+   indication of appropriate content. By June 15, 2005 the authors submit the full 
+   manuscript. All the submissions will undergo a rigorous peer review.
+
+2. For the submission of the full manuscript the authors must follow the instructions 
+   available on the HICSS-39 web site (http://www.hicss.hawaii.edu/HICSS39/apahome39.htm).
+
+3. The manuscript should be no longer than 25 double-spaced pages, including figures, 
+   tables, etc. (the final paper will be 10 pages, double-column, single-spaced.)
+
+4. The manuscripts are submitted with the understanding that the material therein is 
+   original, and neither previously published  nor currently submitted for consideration 
+   elsewhere.
+
+5. Each manuscript must have a title page to include title of the paper, full name of 
+   all authors, and complete addresses including affiliation(s), telephone number(s) 
+   and e-mail address(es).
+
+6. At least one author of each accepted paper must register to attend the conference 
+   (by September 15, 2005).
+
+
+IMPORTANT DATES
+
+Preliminary abstract submission  April 15, 2005
+Submission of full manuscript  June 15, 2005
+Acceptance/Reject notifications  August 15, 2005
+Submission of final version  September 15, 2005
+
+
+
+MINITRACK CO-CHAIRS
+
+
+Giuseppe Anastasi
+Dept. of Information Engineering
+University of Pisa
+Via Diotisalvi 2, 56126 Pisa,  Italy
+E-mail: g.anastasi@iet.unipi.it
+
+Edoardo Biagioni
+Dept. of Information
+and Computer Science
+University of Hawaii
+Honolulu, HI 96822
+E-mail: esb@hawaii.edu
+
+Stephan Olariu
+Dept. of Computer Science
+Old Dominion University
+Norfolk, VA 23529-0162
+E-mail: olariu@cs.odu.edu
+
+
+
+
+************************************************************
+Franca Delmastro
+Pervasive Computing & Networking Lab. (PerLab)
+
+IIT- National Research Council
+via G. Moruzzi,1
+56124 Pisa, Italy
+phone: +39 050 3152407 (direct)
+********************************************************
+

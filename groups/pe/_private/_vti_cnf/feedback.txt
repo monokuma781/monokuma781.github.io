@@ -1,0 +1,10 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TR|10 Mar 2004 08:55:08 -0000
+vti_nosourcecontrol:SR|True
+vti_author:SR|WALKER\\admin
+vti_modifiedby:SR|WALKER\\admin
+vti_nexttolasttimemodified:TR|10 Mar 2004 08:55:08 -0000
+vti_timecreated:TR|29 Mar 2004 10:09:02 -0000
+vti_cachedparsepending:BX|true
+vti_extenderversion:SR|6.0.2.5516
+vti_syncwith_localhost\\d\:\\web\\pe/d\:/web/pe:TR|10 Mar 2004 08:55:08 -0000

@@ -1,0 +1,133 @@
+			   1st Symposium on
+       Architectures for Networking and Communications Systems
+			      ANCS 2005
+		       http://www.ancsconf.org
+
+
+			 October 26-28, 2005
+		      Princeton, New Jersey, USA
+
+			    Sponsored by:
+    ACM Special Interest Group on Computer Architecture (SIGARCH)
+	ACM Special Interest Group on Communications (SIGCOMM)
+    IEEE Computer Society Tech. Committee on Computer Architecture
+IEEE Communications Society Tech. Committee on Computer Communications
+
+----------------------------------------------------------------------
+
+ANCS is new research conference that focuses on the design of the
+hardware and software components used to create modern communication
+networks. The combination of increasing network line speeds and
+expanding functional requirements pose continuing and growing
+challenges for system designers. New technology elements, including
+network processors, content addressable memories, configurable logic
+and special-purpose components offer new opportunities for meeting
+these challenges, but also raise a variety of new issues. ANCS focuses
+on architectures for networking and communication in the broad sense,
+including novel architectures, architectural support for advanced
+communication, algorithms and protocols for advanced architectures,
+software and applications for next-generation networking
+architectures, and methodology and benchmarking for evaluating
+advanced communication architectures.
+
+Areas of interest include, but are not limited to:
+* Network/communications processors
+* Intelligent co-processors 
+* Router architectures
+* Switch fabrics/interconnection networks
+* Link scheduling, processor/thread scheduling, switch scheduling
+* Network adaptors
+* Application-specific networks (e.g. SAN)
+* Programmable /extensible networks
+* Secure communication
+* Traffic management
+* Packet classification
+* Content inspection and filtering
+* Energy-efficient designs 
+
+We particularly encourage submissions containing highly original
+ideas. Submissions will be judged on originality, significance,
+interest, clarity, and correctness.
+
+The PAPER DEADLINE for submissions is May 9, 2005 at 11:59PM PST
+(US). NO FURTHER EXTENSIONS WILL BE GRANTED. ANCS will use
+double-blind reviewing, so submitted papers should not include the
+authors' names. All papers must be submitted electronically, in PDF
+format for letter-size paper. Submissions must be viewable by Adobe
+Acrobat Reader (version 5.0 or higher) and should not exceed 7,000
+words or 10 pages of conference paper format using 10 pt
+fonts. Submissions exceeding the required limit will not be reviewed
+by the program committee. Detailed submission instructions will be
+available by April 1, 2005 at: http://www.ancsconf.org.
+
+Like other conferences, ANCS requires that papers not be submitted
+simultaneously to any other conferences or publications, that
+submissions not be previously published, and that accepted papers not
+be subsequently published elsewhere.
+
+All submissions will be acknowledged by July 30, 2002. If your
+submission is not acknowledged by this date, please contact the
+program chairs promptly at ancsPCchairs@arl.wustl.edu.
+
+Important Dates
+
+Submission deadline: May 9, 2005
+Author notification: July 30, 2005
+Final camera-ready copy: September 6, 2005
+
+Tutorials
+
+A series of tutorials will be held immediately preceding the
+symposium. Tutorial proposals will be accepted until June 30, 2005. If
+you wish to give a tutorial (1/2 or 1 day), email a proposal to the
+Tutorials Chair (Erik Johnson, Erik.Johnson@intel.com). For tutorials,
+the proposal must include title, brief description of topics to be
+covered, and bio of the speakers.
+
+----------------------------------------------------------------------
+
+General Chair:  Alan Berenbaum, Consultant
+
+Steering Committee:
+
+Alan Berenbaum, Consultant
+Patrick Crowley, Washington Univ. at St. Louis
+Mark Franklin, Washington Univ. at St. Louis
+Haldun Hadimioglu, Polytechnic Univ.
+Nick McKeown, Stanford Univ.
+Peter Z. Onufryk, IDT 
+K. K. Ramakrishnan, AT&T Labs 
+
+Program Co-Chairs:
+
+Kai Li, Princeton University
+Jonathan Turner, Washington University at St. Louis
+
+Program Committee:
+
+Andrew Campbell, Columbia Univ.
+Patrick Crowley, Washington Univ. at St. Louis
+Cezary Dubnicki, NEC
+Hans Eberle, Sun Microsystems
+Dirk Grunwald, Univ. Of Colorado
+Roch Querin, Univ. of Pennsylvania
+T.V. Lakshman, Bell Labs
+Dan Lenoski, Cisco Systems
+Bill Mangione-Smith, UCLA
+Kenneth McKenzie, Georgia Tech.
+Nick McKeown, Stanford Univ.
+Peter Onufryk, IDT
+Li-Shuian Peh, Princeton Univ.
+Mohammad Peyravian, IBM
+Henning Schulzrinne, Columbia Univ.
+Steve Scott, Cray
+Dimitrious Stiliadis, Bell Labs
+Ion Stoica, UC Berkeley
+Chuck Thacker, Microsoft
+Harrick Vin, UT Austin
+Tilman Wolf, UM Amherst
+Raj Yavatkar, Intel
+Hui Zhang, CMU
+
+
+ 

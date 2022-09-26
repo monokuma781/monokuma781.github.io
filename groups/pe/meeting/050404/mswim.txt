@@ -1,0 +1,169 @@
+
+               8th MSWiM 2005
+       Sponsored by ACM and IEEE (Pending approval)
+
+   The Eigth International Symposium on Modeling, Analysis and
+   Simulation of Wireless and Mobile Systems
+
+     October 10-13, 2005
+       Montreal, Canada
+
+      http://www.cs.unibo.it/mswim2005/
+
+
+MSWiM is intended to provide an international forum for the
+discussion and presentation of original ideas, recent
+results and achievements by researchers, students, and
+systems developers on issues and challenges related to
+mobile and wireless systems.
+Authors are encouraged to submit both theoretical and
+practical results of significance on all aspects of
+modeling, analysis and simulation of mobile computing and
+wireless networks.
+
+Topics of interest include, but are not limited to:
+   * Performance evaluation and modeling of mobile and
+     wireless networks
+   * Simulation and analysis of wireless protocols and mobile
+     computing systems
+   * Integrated simulation and measurement based evaluation
+     of mobile and wireless systems
+   * Survivability and reliability evaluation and modeling
+   * QoS provisioning in wireless and mobile networks
+   * Traffic measurements and models for audio, video,
+     multimedia, and WWW services
+   * New simulation tools for wireless systems
+   * Database management systems and wireless data dissemination
+   * Modeling and simulation of inter-vehicular networks
+   * Wireless PANs and LANs
+   * Ad hoc and sensor networks
+
+PAPER SUBMISSION AND PUBLICATION
+High-quality original papers are solicited. Papers must be
+unpublished and must not be submitted for publication
+elsewhere. All papers will be reviewed by the Technical Program
+Committee members and other experts active in the field to
+ensure high quality and relevance to the conference. Paper
+length should not exceed 20 pages. Only Postscript and PDF
+formats are accepted.
+Instructions for paper submission will be posted at:
+http://www.cs.unibo.it/mswim2005/
+Accepted papers will appear in the symposium proceedings.
+
+IMPORTANT DATES
+Full papers due: June 3rd, 2005
+Notification: July 24th, 2005
+Camera Ready due: August 22nd, 2005
+
+Organizing Committee
+
+General Co-chairs
+Azzedine Boukerche
+University of Ottawa, Canada
+Email: boukerch@site.uottawa.ca
+
+Victor Leung
+University of British Columbia, Canada
+E-mail: vleung@ece.ubc.ca
+
+
+Program Co-Chairs
+Carla-Fabiana Chiasserini
+Politecnico di Torino, Italy
+Email: chiasserini@polito.it
+
+Vikram Srinivasan
+National University of Singapore
+Email:elevs@nus.edu.sg
+
+
+Workshop Chair
+Mohamed Ould-Khaoua,
+University of Glasgow, UK
+E-mail: mohamed@dcs.gla.ac.uk
+
+Poster Chair
+Sotiris Nikoletseas,
+University of Patras, Greece
+E-mail: nikole@cti.gr
+
+Finance Chair
+Carl Tropper
+McGill University, Canada
+E-mail: carl@cs.mcgill.ca
+
+Publicity Co-Chairs
+Luciano Bononi
+Universita' di Bologna, Italy
+Email: bononi@cs.unibo.it
+
+Helen Karatza
+Aristotle University of Thessaloniki, Greece
+Email: karatza@csd.auth.gr
+
+Mirela Sechi Moretti Annoni Notare
+Barddal University, Florianopolis, Brazil
+Email: mirela@barddal.br
+
+Local Arrangement Chair
+Azzedine Boukerche
+University of Ottawa, Canada
+Email: boukerch@site.uottawa.ca
+
+Webmaster and System Chair
+Luciano Bononi
+Universita' di Bologna, Italy
+Email: bononi@cs.unibo.it
+
+Program Committee
+Simonetta Balsamo, Universita' Ca' Foscari, Italy
+Christian Bettstetter, DoCoMo Euro-Labs, Germany
+Luciano Bononi, Universita' di Bologna, Italy
+Lorenzo Casaccia, Qualcomm, San Diego, USA
+Claudio Casetti, Politecnico di Torino, Italy
+Mainak Chatterjee, University of Central Florida, USA
+Kameswari Chebrolu, Indian Institute of Technology, Kanpur, India
+Marco Conti, IIT - CNR, Italy
+Teresa A. Dahlberg, University of North Carolina at Charlotte, USA
+Sajal K. Das, University of Texas at Arlington, USA
+Juan Carlos De Martin, IEIIT-CNR, Italy
+Lorenzo Donatiello, Universita' di Bologna, Italy
+Alois Ferscha, Johannes Kepler University of Linz, Austria
+Samrat Ganguly, NEC Laboratories, USA
+Ralph Gholmieh, Qualcomm, San Diego, USA
+Vincenzo Grassi, Universita' di Roma Tor Vergata, Italy
+Hossam Hassanein, Queen's University, Canada
+Sumi Helal, University of Florida, USA
+Helen Karatza, Aristotle University of Thessaloniki, Greece
+Tham Chen Khong, National University of Singapore, Singapore
+Minkyong Kim, Dartmouth College, USA
+Iordanis Koutsopoulos, University of Thessaly, Greece
+Renato Lo Cigno, University of Trento, Italy
+Francesco Lo Presti, Universita' dell'Aquila, Italy
+Michela Meo, Politecnico di Torino, Italy
+Sotiris Nikoletseas, Patras University, Greece
+Mehul Motani, National University of Singapore, Singapore
+Pavan Nugehalli, Indian Institute of Science, Bangalore, India
+Mohamed Ould-Khaoua, University of Glasgow, UK
+Bhaskar Raman, Indian Institute of Technology, Kanpur, India
+Mirela Sechi Moretti Annoni Notare, Barddal University, Brazil
+Dirk Staehle, University of Wurzburg, Germany
+Mineo Takai, University of California at Los Angeles, USA
+David Tipper, University of Pittsburgh, USA
+Phuoc Tran-Gia, University of Wurzburg, Germany
+Daniela Tuninetti, University of Illinois at Chicago, USA
+Vincent Wong, University of British Columbia, Canada
+Albert Y. Zomaya, University of Sydney, AU
+
+Steering Committee Chair
+Azzedine Boukerche, University of Ottawa, Canada
+
+Advisory Board Committee
+Azzedine Boukerche, University of Ottawa, Canada
+Sajal K. Das, University of Texas at Arlington, USA
+Lorenzo Donatiello, Universita' di Bologna, Italy
+Jason Yi-Bing Lin, National Chiao-Tung University, Taiwan
+William C.Y. Lee, AirTouch Inc.
+
+
+ 

@@ -1,0 +1,101 @@
+
+dy,td,th {
+	font-size: 12px;
+	color: #000000;
+}
+body{
+	background-image:url(../download/back.gif);
+	background-attachment:fixed;
+}
+body.left {
+	background-image:url();
+	background-color: #D0F0C0;
+}
+body.mid{
+	background-image:url();
+	background-color: #e8e8e8;
+}
+.NavLine {
+	border-bottom: 3px #95D550 solid;
+}
+.NavTab {
+	background-color: #d0f0c0;
+	height:24px;
+}
+.TabHead1 {
+	padding-left:4px;
+	border-top: 2px #8BCF3C solid;
+	background-color:#F6F9EE;
+	color:#62763B;
+	font-weight: bold;
+	height:25px;
+}
+.TabBody1{
+}
+.TabBody2{
+	background-color:#F0F0F0;
+}
+.TabHead2 {
+	padding-left:4px;
+	border-top: 2px #8BCF3C solid;
+	background-color:#F6F9EE;
+	color:#62763B;
+	font-weight: bold;
+	height:25px;
+}
+.TabHead3 {
+	padding-left:4px;
+	border-top: 2px #8BCF3C solid;
+	background-color:#F6F9EE;
+	color:#62763B;
+	font-weight: bold;
+	height:25px;
+}
+.TabBest {
+}
+.BestTop {
+	background-color:#78CD3C;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#97DC6A', EndColorStr='#E2F9D0');
+	height:25px;
+	color:#333366;
+	font-weight: bold;
+}
+a.nav {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #4C553A;
+	text-decoration:none;
+}
+a.nav:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #4C553A;
+	text-decoration:underline;
+}
+a.home {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #333366;
+	text-decoration: none;
+}
+a.home:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #CC1111;
+	text-decoration: none;
+}
+a{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #0000CC;
+	text-decoration: none;
+}
+a:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: none;
+}
+.FontStyle1 {color: #0A4A8F}
+.FontStyle2 {color: #993300}
+.FontStyle3 {color: #008800}

@@ -1,0 +1,243 @@
+   The MyReview system for web-based conference management
+ 
+   Copyright (C) 2003-2006 Philippe Rigaux
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation;
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+ 
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+VERSIONS HISTORY
+----------------
+
+The system was first used for the ACM GIS conf. in may 2003. It
+has been developped, tested and enhanced during the
+second semester of 2003, with several beta versions. The first
+stable version has been delivered on Feb. 1, 2004
+
+Version 1.0  -- 1 Feb. 2004
+  Include all the functionalities described in the doc.   
+
+Version 1.1, March 27, 2004
+
+The SQL interface did not work (missing template) --
+There were some problems with Mozilla when displaying the manual
+ assignment form --  The directory storing the files can now be changed
+            and is hidden to reviewers (new script Download.php)
+
+Version 1.2.0, June, 15, 2004
+
+   PC members and papers can now be removed. This removes all their 
+                  associated reviews
+         as well.
+   Bug fixed in the manual assignment function: when a specific
+         topic was selected, either for papers of for reviewers,
+      the commit function removed all the previous assignment,
+       including those that were not displayed because they
+       did not match the topic. 
+   The topic selection page gives some feedback 
+         whenever a selection is submitted.
+   The directory storing uploaded papers can be 
+          set up in the configuration form.
+   It is now possible to propose several types (formats)
+        for uploaded papers. The default is still to accept
+        PDF files.
+   The implementation of pop-up windows
+          is more powerful (relies on templates as well).
+         Pop-up are now used intensively to show paper's info.
+   Extension of criteria for the current selection
+           (missing papers, conflicts, etc)
+
+Version 1.2.1, June, 17, 2004
+
+Minor changes in the code.
+
+Version 1.2.2, June, 23, 2004
+
+    Emails length is extended to 60 characters.
+
+    At least one paper format is proposed
+
+Version 1.3.0
+   
+   Automatic installation script
+   Scrollbars in Javascrit-generated windows
+   A free mail can be sent to all authors
+
+Version 1.3.1
+   Bug when displaying the messages in Review.php
+
+Version 1.3.2
+  Suppress the HTML code from abstracts in emails
+
+Version 1.4
+  All NOTICE messages when the error mode is set to E_ALL are removed
+  The current selection is used for the list of submitted papers
+  The review form is customizable.
+  The format of emails is checked, for authors and PC members
+  Only uploaded papers are shown to reviewers
+  Before notification, check that papers have a status and that
+     no review is missing
+  The status of papers is now customizable (enables short papers
+       of poster acceptance) 
+  Assignments can be deleted if the review i not filled. The 'isValid'
+    field has been removed.
+  
+1.4.1
+  Removal of some remaining notice messages.
+
+1.5.0
+  Support for camera-ready production
+  Templates editing
+  Graphics
+  PDF output for reviews and list of papers.
+  Deadlines for: submission, reviews, camera-ready
+  Login recall for authors and reviewers
+  
+  BUG: fatal error during batch sending of notification mails 
+
+1.5.1
+  Password recall for reviewers and authors
+  Setup.php checks that tmpPDF is writable
+
+1.5.2
+  Size of email addresses in the configuration form
+  Problem with SQL.tpl editing
+  Links have been added everywhere for logout and 
+    back to the admin page.
+  Fix the problem with the schema of the DB
+  Several tests in the configuration form
+  Problem with {FORM_LOGIN_AUTHOR} entity in SubmitPaper.php
+
+     
+1.5.3
+  Additional test in InstallFunction, due to problems in a Windows
+     environment
+
+1.5.4
+  Change in Schema.sql (FOREIGN KEY syntax), for MySQL sites
+   that use the InnoDB storage manager
+
+1.5.5
+  The constant UPLOAD_WITH_ABSTRACT allows (if set to TRUE)
+  to upload the paper file with the first abstract submission
+
+1.5.6
+   Bug fix: the "Free mail to each authors" sent the notification. Now   
+   it send the text which is entered in the form.
+   A mail is sent to the reviewer when a review is submitted
+   Paper files are removed when a paper is deleted
+
+1.5.7
+   A test is added to check that the uploaded file extension
+     matches the paper format
+  A topic cannot be left null or empty in the submission form (test)
+
+1.6 
+  Improved support for translations:
+	short texts are stored in an XML file (ShortTexts.xml)
+  The list of authors is now managed
+  More explicit messages in case of upload failure (for
+       PHP 4.2 at least)
+  Support for blind reviews
+  Improvement of the PHP automatic assignment algorithm
+  C version of automatic assignment algorithm
+  Support for large datasets (browsing facilities)  
+
+1.6.1
+   Improved support for conflicts and preferences management.
+   Improvement of the Return-path option for mails.
+
+1.7.0
+  Roles for PC members (admin, chair, reviewer)
+
+1.7.1
+  Bug in the automatic install. script
+  Add the affiliation in the authors' list
+
+1.7.2
+  The session is automatically extended at each access
+  Removal of the warning during the automatic install.
+
+1.7.3
+  Password recalls did not work with some mail senders 
+    because of some missing options.
+
+1.7.4
+  A small mistake in the function that counts the number 
+    of reviewers
+
+1.8
+  Show the papers in the "Status" list even without reviewer
+  Bug fixed: pb in "Compute preferences and conflicts" when
+       a quote appears in the affiliation of an author
+  New: two ballot modes, one based on topic; one general (all papers)
+  New: discussion modes: none, restricted, general
+  New: fields for external reviewers in the review form
+  New: test the existence of the SQL user
+  New: conference sessions, assignment of papers to session,
+            and conference program
+
+1.8.1
+  Production of Latex documents (proceedings, etc.)
+
+1.8.2
+  Multi-topics for the submission form
+  Questions for the submission and review forms
+
+
+1.8.3
+  Bug with the multi-topic function: a same paper
+    may appear several times in the assignment form.
+
+
+1.9.0
+  Support of registrations
+
+1.9.1
+  Small bug fixes. The selected topics of a PC member are shown
+    in the list
+
+1.9.2
+  Bug fix: duplication of the review questions in the 
+        output (not in the DB)
+
+1.9.3
+  Add the optional 'megaupload' function
+   (http://www.raditha.com/megaupload/), which shows the progression
+        of uploads for very large files (thanks to Adrian Ilie, 
+    adyilie@cs.unc.edu)
+  Allow to hide/show the selection form
+  Improve the representation of the dates
+  Explanations can be associated with criterias (for reviewers)
+  A mail can be sent to all the authors of accepted papers
+
+1.9.4
+  Bug fix: in MailConfirmAbstract.tpl, replace 'CONF_SUBMISSION_DEADLINE'
+    by 'SHOW_SUBMISSION_DEADLINE'
+
+1.9.5
+  Additional info. in the registration list
+
+1.9.6
+  Security problem (possible SQL injection in some scripts).
+
+1.9.7
+      Bug fix: in MailAccept.tpl, replace 'CONF_CAMERA_READY_DEADLINE'
+    by 'SHOW_CR_DEADLINE'
+
+ 1.9.8
+    Bug: in the password recall mail, the {CONF_ACRONYM} was
+      not instantiated
+    Bug: the list of authors did not display correctly the 
+       submitted paper (thanks to Petri Salmela for resolving both bugs)  
+
+1.9.9
+  Bug: the password recall function did not work

@@ -1,0 +1,71 @@
+<!--Copyright 2002  Karna Saleh  All Rights Reserved.-->
+
+<!---------------------------------------------------START EDITING BELOW THIS LINE --------------------------->
+
+
+&text=<FONT face="ariali" SIZE="20" COLOR="#000000"><B>主要经历</B></FONT>
+<FONT SIZE="13" COLOR="#000000"><li>1999.9-2003.7</li>江苏无锡江南大学信息工程学院，获学士学位。
+	<li>2003.9-至今</li>中科院计算所计算机软件与理论专业，硕士研究生。
+</font>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Copyright 2002  Karna Saleh  All Rights Reserved.-->

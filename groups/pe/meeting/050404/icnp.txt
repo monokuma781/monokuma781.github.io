@@ -1,0 +1,150 @@
+ICNP 2005
+13th IEEE International Conference on Network Protocols
+http://csr.bu.edu/icnp2005
+Boston, Massachusetts
+November 6-9, 2005
+
+E-mail: icnp2005-org AT cs.bu.edu
+
+ICNP is a highly selective single-track conference covering all aspects
+of network protocols including design, analysis, specification,
+verification, implementation, and performance. On its thirteenth
+anniversary, ICNP 2005 will return to Boston, the Intellectual Hub of
+the Universe, where it will be held in the historic Backbay area. 
+
+Papers describing significant research contributions to the field of
+network protocols are solicited for submission. Papers must be neither
+previously published nor under review by another conference or journal.
+Topics of interest include, but are not limited to: 
+
+Protocol testing and analysis	       
+Protocol design and implementation
+Network measurement and monitoring
+Security and resiliency
+Peer-to-peer/Overlay protocols
+Routing protocols
+Wireless and mobile networks
+Ad hoc and sensor networks
+QoS and signaling
+Flow and congestion control
+Multimedia
+Distributed gaming
+
+ICNP 2005 will feature:
+* Best paper award
+* Best papers forwarded to IEEE/ACM Transactions on Networking
+* Keynote speech by Larry Peterson, 
+  Professor and Chair of Computer Science at Princeton University
+* Pre-conference workshops and tutorials
+* Student poster session for ongoing work
+* Travel grant program for students and minorities 
+
+Details will be posted on the conference web site as 
+they become available. 
+ 
+IMPORTANT DATES:
+================
+Paper submission: May 6, 2005
+Tutorial proposal deadline: June 3, 2005
+Notification of acceptance: July 15, 2005 
+Camera ready version: August 5, 2005
+
+STEERING COMMITTEE:
+===================
+Mostafa Ammar, Georgia Tech, USA *
+Ken Calvert, U. of Kentucky, USA *
+Mohamed Gouda, U. of Texas, USA
+Teruo Higashino, Osaka U., Japan *
+Simon Lam, U. of Texas, USA
+David Lee, Ohio State U., USA *
+Mike T. Liu, Ohio State U., USA
+Raymond Miller, U. of Maryland, USA *
+Krishan Sabnani, Bell Labs, USA
+
+* Executive Committee Member
+
+
+ORGANIZING COMMITTEE:
+=====================
+
+GENERAL CHAIRS:
+Azer Bestavros, Boston University, USA 
+Jim Kurose, University of Massachusetts at Amherst, USA
+
+PROGRAM CHAIRS:
+Mohamed Gouda, University of Texas at Austin, USA
+Ibrahim Matta, Boston University, USA
+
+PANEL & TUTORIAL CHAIRS:
+Debanjan Saha, IBM research, USA
+Nina Taft, Intel Research, USA
+
+PUBLICITY CHAIR:
+Milind Buddhikot, Bell Labs, USA
+
+STUDENT POSTER CHAIR:
+Michalis Faloutsos, U. of California at Riverside, USA
+
+TECHNICAL PROGRAM COMMITTEE: 
+Sudhir Aggarwal, Florida State U.
+Kevin Almeroth, UC Santa Barbara 
+Paul Amer, U. of Delaware
+Mostafa Ammar, Georgia Tech
+Anish Arora, Ohio State U.
+Ehab Al-Shaer, DePaul U.
+Chadi Barakat, INRIA, France
+Bobby Bhattacharjee, U. Maryland
+Supratik Bhattacharyya, Sprint Labs
+Milind Buddhikot, Bell Labs
+John Byers, Boston U.
+Andrew Campbell, Columbia U.
+Ana Cavalli, INT, France
+Jorge Cobb, U. Texas at Dallas
+Mootaz Elnozahy, IBM Austin Research Lab
+Magda El Zarki, UC Irvine
+Sonia Fahmy, Purdue university
+Michalis Faloutsos, UC Riverside
+Tim Griffin, Intel Research Cambridge
+Liang Guo, Motorola Labs
+Khaled Harfoush, NCSU 
+Teruo Higashino, Osaka University
+Jennifer Hou, UIUC
+Shudong Jin, Case Western Reserve U.
+Sandeep Kulkarni, Michigan State U.
+Ahmed Helmy, USC/ISI
+Chin-Tser Huang, U. South Carolina
+Kevin Jeffay, U. North Carolina at Chapel Hill
+TV Lakshman, Lucent,  Bell Labs
+Simon Lam, U. Texas at Austin
+David Lee, Ohio State U.
+Wang-Chien Lee, Penn State University
+Nick Maxemchuk, Columbia U.
+Klara Nahrstedt, UIUC
+Prashant Pradhan, IBM
+Kihong Park, Purdue U.
+Sambit Sahu, IBM
+Medy Yahya Sanadidi, UCLA
+Udaya Shankar, U. Maryland 
+Michael Smirnov, FOKUS, Germany
+Ioannis Stavrakakis, U. Athens, Greece
+Peter Steenkiste, CMU
+Terry Todd, McMaster University, Canada
+Don Towsley, Umass Amherst
+Joe Touch, USC/ISI
+Hasan Ural, U. of Ottawa, CA
+Geoffrey Xie, Naval Post Graduate School
+Richard Yang, Yale U.
+David Yau, Purdue U.
+Zhi-Li Zhang, U. Minnesota
+Lixia Zhang, UCLA
+Ty Znati, NSF and U. Pittsburg 
+_______________________________________________________________
+
+
+===
+Ibrahim Matta, Associate Professor
+Computer Science Department
+Boston University, Boston, MA 02215, USA
+Tel: (617) 358-1062, Fax: (617) 353-6457
+matta@cs.bu.edu
+http://www.cs.bu.edu/~matta

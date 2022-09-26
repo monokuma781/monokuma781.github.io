@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2006-04-05T11:58:55.198262Z"
+   url="svn+ssh://rigaux@scm.gforge.inria.fr/svn/myreview/trash"
+   last-author="rigaux"
+   kind="dir"
+   uuid="4b11e6c2-9710-0410-b016-de940d598f8c"
+   revision="1"/>
+<entry
+   committed-rev="1"
+   name="FormConfig.php"
+   text-time="2006-04-08T12:17:27.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="7ef40d301a2b29b23f79f56160b90831"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:27.000000Z"/>
+</wc-entries>

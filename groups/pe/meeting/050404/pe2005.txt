@@ -1,0 +1,161 @@
+                   PERFORMANCE 2005
+
+The 24th IFIP WG 7.3 International Symposium on Computer 
+Performance Modeling, Measurement and Evaluation
+
+                   October 3-7, 2005
+                 Juan-les-Pins, France
+       http://www-sop.inria.fr/maestro/performance2005/
+
+Sponsored by IFIP WG 7.3, the Computer Performance Foundation 
+and INRIA
+
+
+The PERFORMANCE 2005 conference solicits papers on the 
+development and application of state-of-the-art analytic, 
+simulation, and measurement-based performance evaluation 
+techniques. Topics of interest include, but are not 
+limited to:
+
+* Performance-oriented design and evaluation of:
+  communication networks, mobile and wireless systems,
+  Internet servers and E-commerce systems, Web services,
+  Web architectures, peer-to-peer systems, grid computing,
+  computer architectures, database systems, operating
+  systems, software systems, distributed systems, 
+  multimedia systems, file and I/O systems, memory
+  systems, real-time systems, and fault-tolerant systems.
+
+* Techniques and algorithms: analytic modeling, performance
+  optimization, queueing analysis, stochastic scheduling,
+  model verification and validation, power analysis, hybrid
+  models, experimental design, system or network measurement
+  and monitoring, workload characterization, simulation, 
+  and statistical analysis.
+
+** SUBMISSION GUIDELINES **
+
+PAPERS: Papers should not exceed 22 double-spaced pages 
+including figures, tables and references. PERFORMANCE 2005 
+does not use a double-blind review process, authors should 
+put their last names and affiliations on their papers. A 
+limited number of submitted papers will be accepted for a 
+poster session. Submissions must be made electronically as 
+Postscript or Adobe PDF files through the Conference Web site 
+(http://www-sop.inria.fr/maestro/performance2005/).
+In case of problems, please send papers by email to 
+papers.perf2005@sophia.inria.fr. Papers will be selected 
+on the basis of their originality, technical standards, 
+relevance and clarity. 
+
+Full papers will be published in a special issue of the Journal 
+Performance Evaluation (Elsevier) available at the conference.
+
+TUTORIAL SESSIONS: Tutorial proposals, not exceeding 3 pages, 
+have to include title, abstract, duration (1H30 or 3H), 
+intended audience, assumed background of attendees, name, 
+affiliation and a biographical sketch of the instructors. 
+Proposals should be sent to the tutorials co-chairs
+(tutorials.perf2005@sophia.inria.fr).
+
+HOT/CONTROVERSIAL TOPIC SESSIONS: Proposals are solicited for 
+a hot topic session, in which a group of speakers will present 
+and discuss their recent results in an area. Send proposals to 
+proposals.perf2005(at)sophia.inria.fr, identifying the organizer
+of the session, the session title, three to five speakers, the 
+titles of their talks, and a short abstract of each talk.
+
+** IMPORTANT DATES **
+
+FEBRUARY 22, 2005, 11PM EST  Title, abstract and author 
+                             affiliation due.
+MARCH 1, 2005, 11PM EST      Submission of papers, hot topic 
+                             proposals and tutorial proposals. 
+JUNE 1, 2005                 Notification of acceptance.
+JULY 1, 2005                 Camera ready copy due.
+
+
+** INFORMATION AND INQUIRIES **
+    http://www-sop.inria.fr/maestro/performance2005/
+    info.perf2005@sophia.inria.fr
+
+
+** ORGANIZING COMMITTEE **
+
+GENERAL CHAIR: 
+       Philippe Nain, INRIA, France 
+
+PROGRAM COMMITTEE CO-CHAIRS: 
+       Cheng-Shang Chang, National Tsing Hua U., Taiwan 
+       Daniel A. Menasce, George Mason U., USA
+
+TUTORIALS CO-CHAIRS: 
+       Eitan Altman, INRIA, France
+       Zhen Liu, IBM T. J.Watson Reseach Center, USA
+
+LOCAL ARRANGEMENTS CO-CHAIRS: 
+       Konstantin Avrachenkov, INRIA, France
+       Ephie Deriche, INRIA, France
+       
+FINANCE CHAIR: Dany Sergeant, INRIA, France
+
+PUBLICITY CHAIR: Sara Alouf, INRIA, France
+
+PROCEEDINGS CHAIR: 
+       Rudesindo N¨²?ez Queija, CWI, The Netherlands
+
+** PROGRAM COMMITTEE **
+
+Almeida, Virgilio               UFMG, Brazil
+Baccelli, Francois              ENS, France
+Bonald, Thomas                  France Telecom, France
+Borst, Sem                      CWI, the Netherlands
+Calzarossa, Mariacarla          U. Pavia, Italy
+de Souza e Silva, Edmundo       UFRJ, Brazil
+Duffield, Nick                  AT&T Research, USA
+Eager, Derek                    U. Saskatchewan, Canada
+Gelenbe, Erol                   Imperial College, UK 
+Golubchik, Leana                USC, USA
+Harchol-Balter, Mor             Carnegie Mellon U., USA
+Haring, Guenter                 U. Wien, Austria
+Harrison, Pete                  Imperial College, UK
+Haverkort, Boudewijn            U. Twente, the Netherlands
+Herzog, Ulrich                  Friedrich Alexander U., Germany
+Hou, Jennifer                   U. Illinois Urbana Champaign, USA
+Hsu, Yarsun                     National Tsing Hua U., Taiwan
+Iazeolla, Giuseppe              U. Roma "Tor Vergata", Italy
+Jean-Marie, Alain               U. Montpellier & INRIA, France
+Kumar, Anurag                   IISc, India
+Kurose, Jim                     U. Massachusetts, USA
+Le Boudec, Jean-Yves            EPFL, Switzerland
+Lee, Duan-Shin                  National Tsing Hua U., Taiwan
+Liebeherr, Jorg                 U. Virginia, USA
+Lindemann, Christoph            U. Dortmund, Germany
+Lui, John                       Chinese U. of Hong Kong, China
+Marsan, Marco A.                Politecnico di Torino, Italy
+Mazumdar, Ravi                  U. Waterloo, Canada
+Merchant, Arif                  HP Labs, USA
+Misra, Vishal                   Columbia U., USA
+Mitra, Debasis                  Bell Laboratories, USA
+Muntz, Richard R.               UCLA, USA
+Nicol, David                    U. Illinois Urbana-Champaign, USA
+Perros, Harry                   North Carolina State U., USA
+Sanders, William                U. Illinois Urbana-Champaign, USA
+Serazzi, Giuseppe               Politecnico di Milano, Italy
+Setia, Sanjeev                  George Mason University, USA
+Smirni, Evgenia                 College of William and Mary, USA
+Squillante, Mark                IBM Research, USA
+Stewart, William                North Carolina State U., USA
+Thomasian, Alexander            NJIT, USA
+Trivedi, Kishor                 Duke U., USA
+Tucci, Salvatore                U. Roma "Tor Vergata", Italy
+Vernon, Mary                    U. Wisconsin-Madison, USA
+Verscheure, Olivier             IBM Research, USA
+Williamson, Carey               U. Calgary, Canada
+Woodside, C. Murray             Carleton U., Canada
+Xia, Cathy                      IBM Research, USA
+Yao, David                      Columbia U., USA
+Zhang, Zhi-Li                   U. Minnesota, USA
+
+
+ 

@@ -1,0 +1,234 @@
+<?php
+/**********************************************
+   The MyReview system for web-based conference management
+ 
+   Copyright (C) 2003-2006 Philippe Rigaux
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation;
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+ 
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+************************************************/
+ 
+ 
+// Load the libraries
+
+require_once ("Util.php");
+require_once ("template.inc");
+require_once ("Formulaire.class.php");
+
+// Instanciate a template object
+$tpl = new Template (".");
+// Connect to the database
+$db = new BD (NAME, PASS, BASE, SERVER);
+// Set the standard conf. infos
+SetStandardInfo ($db, $tpl);
+
+// Load the required files and assign them to variables
+$tpl->set_file ( array ("Page" => TPLDIR . "Page.tpl",
+                "TxtErrorLoginAuthor" => TPLDIR . "TxtErrorLoginAuthor.tpl",
+                "TxtSubmitPaper" => TPLDIR . "TxtSubmitPaper.tpl",
+                "TxtPostPaper" => TPLDIR . "TxtPostPaper.tpl",
+                "TxtPostCameraReady" => TPLDIR . "TxtPostCameraReady.tpl",
+		 "TxtPostError" => TPLDIR . "TxtPostError.tpl",
+		 "MailConfirmUpload" => TPLDIR . "MailConfirmUpload.tpl",
+		 "MailConfirmCameraReady" => TPLDIR . "MailConfirmCameraReady.tpl",
+                "TxtLoginAuthor" => TPLDIR . "TxtLoginAuthor.tpl"));
+
+// Assignment of the template variables
+$tpl->set_var("TITLE", "Paper submission");
+
+//Get the config array
+$config = GetConfig($db);
+
+if ($config['isSubmissionOpen'] == 'Y' or $config['isCameraReadyOpen']=='Y')
+{
+  //adyilie: inserted
+  if (isSet($_REQUEST['sid']))//adyilie- sid is passed back by the cgi
+    {
+      $sid=$_GET['sid'];
+      $_POST=getPostData("/tmp/", $sid);
+      $upfile=array();
+      $upfile['tmp_name']=$_POST["file_tmp_name"][0];
+      $upfile['name']=$_POST["file_name"][0];
+      $upfile['size']=$_POST["file_size"][0];
+      $_FILES['file']=$upfile;
+    }		//adyilie: end inserted stuff
+  else
+    {//no upload was specified
+      $upfile=array();
+      $upfile['tmp_name']="none";
+      $upfile['name']="none";
+      $upfile['size']=0;
+      $_FILES['file']=$upfile;
+    }
+
+  // After submission, insert
+  if (isSet($_POST['title']))
+    {
+      $messages = InsertPaper ($_POST, $_FILES['file'], true, 
+			       $_POST['mode'], $TEXTS, $db);
+
+      // Check whether errors have been met
+      if (is_array($messages))
+	{
+	  // Error reporting
+	  $tpl->set_block("TxtPostError", "ERRORS_LIST", "ERRORS");
+	  $tpl->set_var("ERRORS", "");
+	  foreach ($messages as $message)
+	    {
+	      $tpl->set_var("ERROR_MESSAGE", $message);
+	      $tpl->parse("ERRORS", "ERRORS_LIST", true); 
+	    }
+	  $tpl->parse("INFO", "TxtPostError");
+	  $tpl->set_var("FormAbstract", 
+			FormAbstract ($_POST, MAJ, "SubmitPaper.php", 
+				      $db, $TEXTS, true));
+	}
+      else
+	{
+	  // Paper succesfully uploaded
+	  $id = $messages;
+	  $fileSize = $_FILES['file']['size'];
+	  $tpl->set_var("PAPER_FILE_SIZE", $fileSize);
+	  if($config['isCameraReadyOpen']=='Y') 
+    	    $tpl->parse("INFO", "TxtPostCameraReady");
+          else
+    	    $tpl->parse("INFO", "TxtPostPaper");
+	  
+	  // Show the form with submitted values
+	  $paper = GetPaper ($id, $db);     
+	  $paper['confirmEmail'] = $paper['emailContact'];
+	  $tpl->set_var("FormAbstract", 
+			FormAbstract ($paper, MAJ, "SubmitPaper.php", $db, 
+				      $TEXTS, true)); 
+	  
+	  // Get the paper in the DB, and instanciate paper variables
+	  $paper = GetPaper ($id, $db, "object");     
+	  InstanciatePaperVars ($paper, $tpl, $db);
+	  $tpl->set_var ("CONF_ACRONYM", $config['confAcronym']);
+	  $tpl->set_var ("CONF_URL", $config['confURL']);
+	  
+	  // Send a mail to the contact author
+	  $tpl->set_var("PAPER_ABSTRACT",$paper->abstract);
+	  if($config['isCameraReadyOpen']=='Y') {
+  	    $tpl->parse ("MAIL_BODY", "MailConfirmCameraReady");
+            $mailSubject= "Camera-ready upload of paper ";
+	  }
+          else
+	    {
+  	     $tpl->parse ("MAIL_BODY", "MailConfirmUpload");
+	     $mailSubject= "Upload of paper ";
+           }
+	  $tpl->set_var("PAPER_ABSTRACT", nl2br($paper->abstract));
+
+	  // Send a copy to the conf. mail (depends on config.)
+	  if ($config['mailOnAbstract'] == 'Y')
+	      $confMail = $config['confMail'];
+	  else
+	      $confMail = "";
+
+	  SendMail ($paper->emailContact, $mailSubject . $paper->id ,
+		    $tpl->get_var("MAIL_BODY"), 
+		    $config['chairMail'], $config['chairMail'], $confMail);
+	}
+      $tpl->parse("BODY", "INFO");
+      $tpl->parse("BODY", "FormAbstract", true);
+      
+    }
+  else if (isSet($_POST['login']))
+      if (isSet($_POST['sendpwd'])) 
+	{
+	  $paper = GetPaper ($_POST['login'], $db);
+	  if (!$paper) {
+	    $tpl->set_var("FORM_LOGIN_AUTHOR", FormLoginAuthor ());
+	    $tpl->parse("BODY", "TxtErrorLoginAuthor");
+	  }
+	  else 
+	    {
+	      $password = PWDPaper($paper['id'],$config['passwordGenerator']);
+	      $email = $paper['emailContact'];
+	      $authors = GetAuthors($paper['id'], $db, false, "string", 
+				    $paper['authors']);
+	      $mailTpl = new Template (".");
+	      $mailTpl->set_file (array("MailSendPwd" => TPLDIR 
+					. "MailSendPwd.tpl"));
+	      $mailTpl->set_var("NAME_USER", $authors);
+	      $mailTpl->set_var("EMAIL_USER", $paper['id']);
+	      $mailTpl->set_var("PASSWORD_USER", $password);
+	      $body = $mailTpl->parse ("MAIL_BODY", "MailSendPwd");	    
+	      SendMail ($email, $config['confAcronym'] . " " . 
+			$TEXTS->get("PWD_RECALL"), 
+			$mailTpl->get_var("MAIL_BODY"),
+			$config['chairMail'], $config['chairMail'], 
+			$config['chairMail']);
+	      $tpl->set_var ("BODY", $TEXTS->get("TXT_SEND_PWD"));
+	      $tpl->set_var("FORM_LOGIN_AUTHOR", FormLoginAuthor ());	  	 	  
+	      $tpl->parse("BODY", "FORM_LOGIN_AUTHOR", true);
+	    }
+	}
+      else {
+	$paper = GetPaper ($_POST['login'], $db);
+	$paper['confirmEmail'] = $paper['emailContact'];
+	if (isSet($paper['id'])) 
+	  $password = PWDPaper($paper['id'],$config['passwordGenerator']);
+	else $password="";
+	if (!isSet($paper['id']) or $_POST['password'] != $password)
+	  {	
+	    $tpl->set_var("FORM_LOGIN_AUTHOR", FormLoginAuthor ());
+	    $tpl->parse("BODY", "TxtErrorLoginAuthor");
+	  }
+	else
+	  {
+		$tmp_sid = md5(uniqid(rand(), true)); //adyilie: SID used by cgi for the temp directory
+
+	    if($config['isCameraReadyOpen']=='Y') {
+	      $qIsCRRequired="select cameraReadyRequired from PaperStatus s, ".
+		"Paper p where p.status=s.id and p.id='".$paper['id']."'";
+	      $rIsCRRequired=$db->execRequete($qIsCRRequired);
+	      $isCR=$db->objetSuivant($rIsCRRequired);
+	      if ($isCR->cameraReadyRequired=='Y') {
+		$tpl->set_var("FormAbstract", 
+			      FormAbstract ($paper, MAJ, 
+					    "SubmitPaper.php", $db,
+					    $TEXTS, true, $tmp_sid));
+		$tpl->parse("BODY", "TxtSubmitPaper");
+		$tpl->parse("BODY", "FormAbstract", true);
+	      }
+	      else {
+		$tpl->set_var("FormLoginAuthor", FormLoginAuthor ());
+		$tpl->set_var("BODY", $TEXTS->get("TXT_CANNOT_UPLOAD"));
+		$tpl->parse("BODY", "FormLoginAuthor", true);
+	      }
+	    }
+	    else {
+	      $tpl->set_var("FormAbstract", 
+			    FormAbstract ($paper, MAJ, "SubmitPaper.php", 
+					  $db, $TEXTS, true, $tmp_sid));
+	      $tpl->parse("BODY", "TxtSubmitPaper");
+	      $tpl->parse("BODY", "FormAbstract", true);
+	    }
+	  }
+      }
+  else 
+    {
+      $tpl->set_var("FORM_LOGIN_AUTHOR", FormLoginAuthor());
+      $tpl->parse("BODY", "TxtLoginAuthor");
+    }
+}
+else
+{
+  // Submission is closed
+  $tpl->set_var("BODY", $TEXTS->get("TXT_SUBMISSION_CLOSED")); 
+}
+
+// In any case, print the page
+$tpl->pparse("RESULT", "Page");
+?>

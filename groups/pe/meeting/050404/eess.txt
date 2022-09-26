@@ -1,0 +1,48 @@
+CALL FOR PAPERS
+
+WORKSHOP ON END-TO-END, SENSE-AND-RESPOND SYSTEMS, APPLICATIONS, AND SERVICES
+in conjunction with the MobiSys05 Conference
+
+June 5, 2005, Seattle, WA, USA
+
+http://www.usenix.org/events/mobisys05/eesr05/cfp
+=============================================================================
+
+Topics of Interest:
+
+- Architectures and technologies for next-generation/emerging end-to-end 
+  S&R middleware, applications and services
+- Dealing with heterogeneity of sensor, control, and actuator technologies
+- Effective naming and device/service discovery in end-to-end S&R systems
+- Event models, propagation and representation for S&R systems
+- Incorporating S&R systems into existing/legacy infrastructures
+- Interoperability of end-to-end systems (sensors data ? applications ? 
+  actuators)
+- Lifecycle management tools for development, debugging and deploying of 
+  S&R application and services
+- Light-weight agent middleware, and event-correlation services for S&R systems
+- Programming models/abstractions and information schemas for S&R systems
+- Real-life S&R applications and services: experience and assessment
+- Sensor data services and sensor data providers: brokering, 
+  advertisement, and access
+
+
+Important dates:
+
+Paper submissions due:          February 22, 2005
+Notification of acceptance:     April 8, 2005
+Camera-ready final paper due:   May 6, 2005
+
+
+For more information, please see the attached detailed CfP or visit the 
+Workshop's Web-site.
+
+Sincerely,
+
+The Workshop Co-Chairs
+
+Ron Ambrosio
+Chatschik Bisdikian
+
+
+ 

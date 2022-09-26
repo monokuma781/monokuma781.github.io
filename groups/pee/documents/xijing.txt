@@ -1,0 +1,30 @@
+Web服务器的性能评测及优化
+ 
+
+计算机系统性能评测与分析一直是计算机科学的一个重要分支。随着Internet 的迅猛发展，人们对Web 服务器的访问日益频繁，从而对Web 服务器的性能也提出越来越高的要求。
+
+
+本文首先阐述了服务器和服务器性能的概念，然后从Web 服务器性能的几个关键问题入手，从应用负载、服务器软件和服务器硬件三个层面上详细讨论了如何解决这些关键问题。最后从服务器软件内部的优化、服务器软件配置、应用性能的优化、如何配置硬件服务器和将单机Web服务器的性能优化扩展至多机等方面，在曙光2000 和曙光3000 超级服务器上实现了我们前面提出的解决方法，并取得了令人满意的效果。对于单机Web 服务器，我们的优化使得SPECweb99 同时连接数从最初的0 提高到997，并把单机Web 服务器的性能优化成功扩展至机群。应用我们提出的方法不仅很大程度上提高了Web 服务器的性能，而且节省了大量的测试时间。
+
+
+关键词：
+SPECweb99，同时连接数, 动态请求
+
+
+Performance Evaluation and Optimization of
+Web Servers
+Jing Xi (Computer Architecture)
+Directed by Prof. Zhiwei Xu
+
+
+The performance evaluation and analysis is one of the most important branches of computer sciences. With the great development of Internet, people make more and more access to Web servers. Its inevitable result is to make higher requirement of the performance of Web servers.
+
+
+This paper first gives the definitions of server and the performance of server. Then it talks about the key issues of Web server performance and how to solve these key issues from the views of workload, server software and server hardware. At last, we applied our method to Dawning-2000 and Dawning-3000 from many aspects such as optimization of server software, server software configuration, application performance optimization, how to configure hardware server and how to extend the performance optimization of a single Web server to cluster. And we have gotten satisfying result. For single Web server, our optimization improves SPECweb99 simultaneous connection from the initial 0 to 997. 
+
+And we extend the single Web server performance optimization to cluster successfully. Using our method not only improves the performance most but also saves much testing time.
+
+
+Keywords: SPECweb99 Simultaneous Connection Dynamic request
+
+ 

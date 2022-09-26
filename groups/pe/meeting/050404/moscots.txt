@@ -1,0 +1,125 @@
+  13th Annual Meeting of the IEEE / ACM* International Symposium on Modeling,
+  Analysis, and Simulation of Computer and Telecommunication Systems (MASCOTS)
+                 
+                          Tutorials September 26 2005
+
+                        Conference September 27-29 2005
+
+                          Workshops September 30 2005
+
+(*pending approval of ACM and IEEE sponsorship)
+
+Overview:
+-------------
+MASCOTS will hold its 13th annual international meeting in the exciting city 
+of Atlanta, Georgia, USA at the newly constructed Georgia Tech Hotel and Conference 
+Center on the Georgia Tech campus in midtown Atlanta. We encourage researchers 
+world-wide to submit both theoretical and practical results of significance 
+which have not previously been published. The conference proceedings for 
+MASCOTS 2005 will be published by the IEEE Computer Society. 
+ The symposium scope includes, but is not limited to:
+ 
+* Computer Architecture
+* Modeling and Simulation Techniques
+* Parallel and Distributed Systems
+* Real-Time and Multimedia Systems
+* Internetworking Protocol and Performance
+* Wireless and Mobile Networking and Computing
+* Broadband & Telecommunication Networks and Software
+* Network Traffic Studies
+* Web-Based Systems
+* Application areas such as Databases, Biotech, Wearables
+* Analysis Techniques and Formal Methods
+* Benchmarking and Measurement Techniques
+* Capacity Planning
+* Performance Analysis and Validation Techniques
+* Workload Characterization and Generation
+* Discrete Event Simulation Methodology and Tools
+* Middleware Performance
+* Parallel / Distributed Simulation
+
+We encourage researchers world-wide to submit both theoretical and practical results 
+of significance which have not previously been published.  Format requirements 
+will be forthcoming on the conference web site (http://www.mascots-conference.org).
+
+Tutorials, Workshops, Tools Session, and Posters:
+------------------------------------------------------
+We invite proposals for workshops, tutorials, tools presentations, and posters. 
+Tutorials will take place on September 26, 2005; workshops will take place 
+on September 30, 2005.
+
+Important Dates:
+-------------------
+6 May 2005 - Paper Submissions Due
+20 June 2005 - Notification of Acceptance
+11 July 2005 - Final Papers Due
+25 April 2005 - Workshop and Tutorial Proposals Due
+16 May 2005 - Posters & Tools Abstracts Due
+
+Conference Chair:
+---------------------
+George Riley, Georgia Institute of Technology, USA
+(riley@ece.gatech.edu)
+
+Program Chairs:
+--------------------
+Richard Fujimoto, Georgia Institute of Technology, USA
+Helen Karatza, Aristotle Univ. of Thessaloniki, Greece
+
+Program Committee:
+----------------------
+Herbert Bos, Vrije Universiteit Amsterdam, Netherlands
+Tzung-Shi Chen, National University of Tainan, Taiwan
+Yinong Chen, Arizona State University, USA
+Michael Devetsikiotis, North Carolina State University, USA
+Lorenzo Donatiello, University of Bologna, Italy
+Tony Field, Imperial College, United Kingdom
+David Finkel, Worcester Polytechnic Institute, USA
+Jean-Michel Fourneau, Univ. de Versailles Saint-Quentin, France
+Akira Fukuda, Kyushu University, Japan 
+Kyle Gallivan, Florida State University, USA
+Erol Gelenbe, Imperial College, United Kingdom
+John Gurd, University of Manchester, United Kingdom
+Jane Hillston, University of Edinburgh, Scotland
+William Jalby, University de Versailles, France
+Alain Jean-Marie, INRIA, France
+Carlos Juiz, Universitat de les Illes Balears, Spain
+Joe Kazuki, Nara Women's University, Japan
+George Kesidis, Penn State University, USA
+Madjid Merabti, John Moores University, United Kingdom
+Ethan Miller, University of California at Santa Cruz, USA
+Isi Mitrani, University of Newcastle-upon-Tyne, United Kingdom
+Hironori Nakajo, Tokyo Univ. of Agriculture & Technology, Japan 
+David Nicol, University of Illinois at Urbana-Champaign, USA
+Alex Nicolau, University of California at Irvine, USA
+Mohammad Obaidat, Monmouth University, USA
+Kalyan Perumalla, Georgia Institute of Technology, USA
+Ramon Puigjaner, Universitat de les Illes Balears, Spain
+Henk Schepers, Philips Research, Netherlands
+Thomas Schwarz, Santa Clara University, USA
+Rob Simmonds, University of Calgary, Canada
+Robert Simon, George Mason University, USA
+Nigel Thomas, Univ. of Newcastle-upon-Tyne, United Kingdom
+Carey Williamson, University of Calgary, Canada
+Soraya Zertal, University of Versailles, France
+
+Steering Committee:
+-----------------------
+Dharma Agrawal, University of Cincinnati, USA
+Kallol Bagchi, University of Texas at El Paso, USA
+Thomas Braunl, University of Western Australia, Australia
+Giovanni Chiola, Universitat di Genova, Italy
+Doug DeGroot, University of Leiden, Netherlands
+Patrick Dowd, University of Maryland, USA
+Jozo Dujmovic, San Francisco State University, USA
+David Finkel, Worcester Polytechnic Institute, USA
+Richard Fujimoto, Georgia Institute of Technology, USA
+Erol Gelenbe, Imperial College, United Kingdom
+Darrell Long, University of California at Santa Cruz, USA
+Marco Marsan, Politecnico di Torino, Italy
+Herb Schwetman, Mesquite Inc., USA
+Kishor Trivedi, Duke University, USA
+Jean Walrand, University of California at Berkeley, USA
+
+
+ 

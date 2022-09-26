@@ -1,0 +1,182 @@
+<!-- use ncic.css from url=http://www.ncic.ac.cn -->
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Language" content="zh-cn">
+<!-- #BeginEditable "doctitle" -->
+<TITLE>主模板</TITLE>
+<!-- #EndEditable -->
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<LINK href="images/ncic.css" type=text/css rel=stylesheet>
+</HEAD>
+<BODY text=#000000 bgColor=#ffffff leftMargin=0 topMargin=0>
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+	  <td>
+		<table border="0" width="100%" cellspacing="0" cellpadding="2">
+		  <tr>
+			<td rowspan="2"><img border="0" src="images/topbar.gif" width="624" height="108"></td>
+			<td><a href="http://www.ncic.ac.cn">
+			    <img border="0" src="images/ncic.gif" width="118" height="78" align="right"></a></td>
+		  </tr>
+		  <tr>
+			<td><p align="right"><b>
+			<a href="../pee"><font color="#3366CC">English</a></font></a></b>
+			    <img border="0" src="images/blank.gif" width="5" height="5"></td>
+		  </tr>
+		</table>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+		<!-- #BeginEditable "local" -->
+		<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+		  <tr>
+			<td width="10"><img border="0" src="images/service_bar_head.gif" width="10" height="22"></td>
+			<td class="padding01" width="100%" background="images/service_bar_bg01.gif"><font color="#FF6600">首页</font></td>
+			<td width="10"><img height="22" src="images/service_bar_end.gif" width="10"></td>
+		  </tr>
+		</table>
+			<!-- #EndEditable -->
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="150" align="center" valign="top">
+              <table border="0" width="141">
+				<tr>
+			      <td height="7"></td>
+		        </tr>
+		        <tr>
+			      <td background="images/topnav1m.gif"><b><a href="index.htm">
+					<font color="#0080FF">首页</font></a></b></td>
+		        </tr>
+		        <tr>
+			    <td background="images/topnav1m.gif"><b><a href="projects.htm"><font color="#0080FF">在研项目</font></a></b></td>
+		        </tr>
+		        <tr>
+			    <td background="images/topnav1m.gif"><b><a href="history.htm"><font color="#0080FF">历史成果</font></a></b></td>
+		        </tr>
+		        <tr>
+			      <td height="144">
+			      <ul>
+				  <li><a href="history.htm#完成项目"><font color="#2C77F3">完成项目</font></a></li>
+				  <li><a href="history.htm#开放源码"><font color="#2C77F3">开放源码</font></a></li>
+				  <li><a href="history.htm#文章、专利"><font color="#2C77F3">文章、专利、软件登记</font></a></li>
+				  <li><a href="history.htm#研究生培养"><font color="#2C77F3">研究生培养</font></a></li>
+				  <li><a href="history.htm#产业辐射"><font color="#2C77F3">产业辐射</font></a></li>
+			      </ul>
+			      </td>
+		        </tr>
+		        <tr>
+			      <td background="images/topnav1m.gif"><b><a href="library.htm"><font color="#0080FF">资料库</font></a></b></td>
+		        </tr>
+		        <tr>
+			      <td background="images/topnav1m.gif"><b><a href="tfield.htm"><font color="#0080FF">评测园地</font></a></b></td>
+		        </tr>
+		        <tr>
+			      <td width="150">
+			      <ul>
+				  <li><a href="tfield.htm#近期会议"><font color="#2C77F3">近期会议</font></a></li>
+				  <li><a href="tfield.htm#同行和组织"><font color="#2C77F3">同行和组织</font></a></li>
+				  <li><a href="tfield.htm#专题、公司"><font color="#2C77F3">专题、公司</font></a></li>
+				  <li><a href="tfield.htm#经典文章"><font color="#2C77F3">经典文章</font></a></li>
+				  <li><a href="tfield.htm#网上资源库"><font color="#2C77F3">网上资源库</font></a></li>
+				  <li><a href="tfield.htm#媒体评测实验室"><font color="#2C77F3">媒体评测实验室</font></a></li>
+			      </ul>
+			      </td>
+		        </tr>
+		        <tr>
+			      <td background="images/topnav1m.gif"><b><a href="team.htm"><font color="#0080FF">集体风貌</font></a></b></td>
+		        </tr>
+		        <tr>
+			      <td>
+			      <ul>
+				  <li><a href="team.htm#组员风采"><font color="#2C77F3">组员风采</font></a></li>
+				  <li><a href="team.htm#活动集锦"><font color="#2C77F3">活动集锦</font></a></li>
+				  <li><a href="team.htm#谈天说地"><font color="#2C77F3">谈天说地</font></a></li>
+			      </ul>
+			      </td>
+		        </tr>
+		        <tr>
+			      <td height="15"></td>
+		        </tr>
+		      </table>
+			</td>
+			<td width="8" align="center" valign="top">　</td>
+			<td align="center" valign="top">
+                <!-- #BeginEditable "main" -->
+              <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><TBODY><TR><TD height=20></TD></TR></TBODY></TABLE>
+              <TABLE cellSpacing=0 cellPadding=0 width=482 border=0>
+                <TBODY>
+                  <TR>
+                    <TD width=11><IMG height=6 src="images/service_cor01.gif" width=11></TD>
+                    <TD background=images/service_tbg.gif><IMG height=6 src="images/service_tbg.gif" width=7></TD>
+                    <TD width=10><IMG height=6 src="images/service_cor02.gif" width=10></TD>
+                  </TR></TBODY></TABLE>
+              <TABLE cellSpacing=0 cellPadding=0 width=480 border=0>
+                <TBODY>
+                  <TR>
+                    <TD width=1 bgColor=#3D73A6><IMG height=1 src="images/spacer.gif" width=1></TD>
+                    <TD>
+                      <TABLE cellSpacing=0 cellPadding=8 width=480 border=0>
+                        <TBODY>
+                          <TR>
+                            <TD>
+                            <br>&nbsp;&nbsp;&nbsp; 国家智能计算机研究开发中心性能评测组成立于2004年7月，前身是
+					成立于2001年8月的国家智能计算机研究开发中心商业计算组的性能评测小组。性能评测组致力于服务器性能评测方面的研究、开发与技术支持。支持国家智能计算机研究开发中心的大型研发项目，并承担符合<a href="http://www.ict.ac.cn/2-2-4.htm"><font color="#000080"><u>中国科学院计算技术研究所战略方针</u></font></a>的相关领域的项目。
+					<p><b><font color="#FF0000">内容推荐：</font></b><p>
+					<a href="library.htm"><font color="#000080">资料库</font></a><font color="#000080">……<br>
+					“</font><a href="documents/AsurveyOFpe.ppt"><font color="#000080">计算机性能评测概述</font></a><font color="#000080">”<br>
+&nbsp;&nbsp;&nbsp;
+					</font>
+					学术报告，目的是对计算机性能评测的整体概况进行描述。包括计算机性能评测的学科位置、重要性、对性能概念的理解、三种评测方法的比较、评测的粒度等。<br>
+					“<a href="documents/lyPorien.ppt"><font color="#000080">大规模系统的面向过程的性能评测方法研究</font></a>”<br>
+&nbsp;&nbsp;&nbsp; 学术报告，关于性能评测方法的探讨，希望能和大家交流。</p>
+					<p>
+					<a href="team.htm#谈天说地"><font color="#000080">谈天说地</font></a><font color="#000080">……</font><br>
+					“超级计算2004会议总结”，这是jlm同志今年参加SC2004会议的见闻心得。</p>
+					<p>
+					<a href="tfield.htm#近期会议"><font color="#000080">近期会议……</font></a><br>
+						<a href="meeting/Rough5.htm"><font color="#000080">第五届中国Rough集与软计算学术研讨会(CRSSC2005)</font></a><b><font color="#993333">
+						</font></b>
+						2005年8月1－5日，鞍山<br>
+					<font color="#000080"><a href="meeting/SpringSim'05.htm">
+					<font color="#000080">2005 </font></a> </font><a href="meeting/SpringSim'05.htm"><font color="#000080">Spring Simulation Multiconference SpringSim'05)</font></a>&nbsp; 
+					April 2 - 8, 2005; Hilton Mission Valley Hotel; San Diego, 
+					CA <br>
+					<a href="tfield.htm#近期会议"><font color="#000080">更多会议</font></a></p>
+					<p>
+					<font color="#000080"><a href="tfield.htm#经典文章">
+					<font color="#000080">经典文章</font></a><br>
+					</font>新添三篇文章，介绍了并行计算加速比的Amdahl’s Law 
+					阿姆达尔定律，Gustafson定理，Sun-Ni定理。</p>
+					<p>
+					<a href="tfield.htm#网上资源库"><font color="#000080">网上资源库</font></a><br>
+					最新推荐<a href="http://scholar.google.com/"><font color="#000080">google学术搜索</font></a>。</p>
+                               </TD></TR></TBODY></TABLE></TD>
+                    <TD width=1 bgColor=#3D73A6><IMG height=1 src="images/spacer.gif" width=1></TD></TR></TBODY></TABLE>
+             <TABLE cellSpacing=0 cellPadding=0 width=482 border=0>
+               <TBODY>
+                 <TR>
+                   <TD width=11><IMG height=6 src="images/service_cor03.gif" width=12></TD>
+                   <TD background=images/service_bbg.gif><IMG height=6 src="images/service_bbg.gif" width=7></TD>
+                   <TD width=10><IMG height=6 src="images/service_cor04.gif" width=10></TD></TR></TBODY></TABLE>
+		     <table height="25" cellSpacing="0" cellPadding="0" width="100%" border="0">
+			   <td align="center" height="45"></td>
+			 </table>
+      <!-- #EndEditable -->
+      	   </td></tr></table></td></tr>
+  <tr>
+  <TD bgColor=#0000A0 height=1><IMG height=1 src="images/dot00.gif" width=1></TD>
+  </tr>
+  <tr>
+	<td align="center">本网站版权归国家智能计算机研究开发中心所有<FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>&nbsp;&nbsp;&nbsp; 
+			Copyright for NCIC All Rights Reserved</FONT> 
+    <br>
+	本站引用了其他网站的部分会议信息，在网页的源码中均有注释。如果您认为本站侵犯了您的版权，请及时与我们联系。<BR>Email: <a href="mailto:webmaster_pe@ncic.ac.cn"><font color="#333333">webmaster_pe@ncic.ac.cn</font></a><font color="#333333">
+	</font>&nbsp;&nbsp; 更新时间：<!--webbot bot="Timestamp" S-Type="REGENERATED" S-Format="%Y年%m月%d日 %H:%M" startspan -->2005年03月11日 14:05<!--webbot bot="Timestamp" i-checksum="7794" endspan --></td>
+  </tr>
+</table>
+</BODY></HTML>

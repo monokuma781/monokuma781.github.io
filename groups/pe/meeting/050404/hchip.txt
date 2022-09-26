@@ -1,0 +1,123 @@
+On behalf of the HOT Chips 17 Program and Organizing Committees, 
+we would like to invite you to participate in this year's conference. 
+Please see the Call For Papers below for instructions on submissions. 
+A PDF version of the call for papers is available for download at
+     http://www.hotchips.org/hc17/cfp05.pdf.
+
+Since it started in 1989, HOT Chips has been known as one of the 
+semiconductor industry's leading conference on high-performance 
+microprocessors and related integrated circuits. The conference is 
+held once a year in August on the Stanford University campus in the 
+center  of the world's capital of electronics activity, Silicon Valley. 
+The conference emphasis this year, as in previous years, is on real 
+products and realizable technology.
+
+More details on the conference can be found on the HOT Chips website at
+http://www.hotchips.org.
+
+-----------
+
+                         CALL FOR PAPERS
+
+     HOT Chips 17 - A Symposium on High Performance Chips
+
+                       AUGUST 14-16, 2005
+                 STANFORD UNIVERSITY, PALO ALTO, CA
+
+
+AUTHOR'S SCHEDULE
+
+     Deadline for submissions:          March 25, 2005
+     Notification of acceptance:        April 30, 2005
+     Deadline for final version:        July 20, 2005
+
+
+AREAS OF INTEREST:
+
+        Microprocessors
+        Systems-on-chip
+        Embedded processors
+        Digital signal processors
+        Chipset Chips
+        Application-specific processors
+        Network/security processors
+        Graphics/Multimedia/Game processors
+        Communication/networking chips
+        Wireless LAN/Wireless WAN chips
+        Novel chips: quantum computing, micro-array
+        Low-power chips/Dynamic Power Management
+        Reconfigurable chips/processors
+        Chips built from FPGAs
+        Reliability and design for test
+        Compiler technology
+        Operating system/chip interaction
+        Advanced semiconductor process technology
+        Advanced packaging technology
+        Performance evaluation
+
+
+AUTHOR INFORMATION AND FORMAT
+
+Presentations at HOT Chips are in the form of 30-minute talks.
+Presentation slides will be published in the HOT Chips Proceedings.
+Participants are not required to submit written papers, but a select 
+group will be invited to submit a paper for inclusion in a special issue 
+of IEEE Micro.
+
+Submissions must consist of a title, extended abstract (two pages max.),
+and the presenter's contact information (name, affiliation, job title, 
+address, phone(s), fax, and email). Please indicate whether you have 
+submitted, intend to submit, or have already presented or published a 
+similar or overlapping  submission to another conference or journal. 
+Also indicate if you would like the submission tobe held confidential; 
+we do our best to maintain confidentiality if requested.
+
+Submissions should be in plain ASCII text, pasted into the message; 
+do not submit .doc files, .txt files, MIME'd email, any attachments or 
+other formats.  Submissions containing figures may be submitted in pdf, 
+but plain ASCII text is  strongly preferred.
+
+Submissions are evaluated by the Program Committee on the basis of 
+performance of the device(s), degree of innovation, use of advanced 
+technology, potential market significance, and anticipated interest 
+to the audience. Research and software contributions will be evaluated 
+with similar criteria.
+
+Please mail your submissions in plain ASCII text (in the message, 
+not as an attachment!) by March 25, 2005 to:
+    hotchipssubmit@atlas.cs.berkeley.edu 
+Authors will be notified as to acceptance by April 30, 2005.
+Send questions relating to the program to the program chairs at:   
+    hotpcchairs@atlas.cs.berkeley.edu         and questions relating 
+to conference operation or organization to the general chair, 
+Pradeep Dubey, at:    hotchair@atlas.cs.berkeley.edu . 
+
+Program Committee Co-Chairs
+Prof. Alan Jay Smith,  Univ. of California, Berkeley
+John Sell, Microsoft
+
+Sponsored by the Technical Committee on Microprocessors 
+and Microcomputers of the IEEE Computer Society
+
+
+Program Committee:
+
+Alan Smith  - UC Berkeley 
+John Sell - Microsoft
+Forest Baskett - New Enterprise Associates
+Keith Diefendorf - Apple 
+Pradeep Dubey - Intel
+Christos Kozyrakis - Stanford 
+Teresa Meng - Stanford  
+Chuck Moore - AMD     
+John Nickolls - NVidia 
+Rakesh Patel - Altera
+Tom Peterson - MIPS     
+Howard Sachs - Telairity
+Mitsuo Saito - Toshiba 
+Kimming So - Broadcom 
+Marc Tremblay - SUN  
+John Wawryznek - UC Berkeley
+
+
+ 

@@ -1,0 +1,101 @@
+ Second International Workshop on
+           Hot Topics in Peer-to-Peer Systems (HOT-P2P 2005)
+		http://www.hot-p2p.org
+
+                San Diego, CA, USA, July 21st, 2005
+		Co-located with MobiQuitous 2005
+                   http://www.mobiquitous.org
+
+
+Scope and Interests
+--------------------
+
+Peer-to-Peer (P2P) systems are decentralized, self-organizing
+distributed systems that cooperate to exchange data. These systems
+have emerged as the dominant consumer of residential Internet
+subscribers' bandwidth, and are being increasingly used in many
+different application domains. In the last few years, research on P2P
+systems has been quite intensive, and has produced remarkable results in
+scalability, robustness, location, distributed storage, and system
+measurements. Consequently, P2P systems continue to evolve,
+differentiating today's state-of-the-art from earlier instantiations
+such as Napster, KaZaA, Gnutella, and Morpheus.
+
+
+This workshop aims to bring together researchers and practitioners, from
+both industry and academia, in the fields of systems, networking, and
+theory, and to represent an occasion to share latest research results
+and ideas on P2P systems, thereby promoting research activities in this
+area. In addition to regular research papers to be selected on standard
+peer review, the program of the workshop will include invited talks,
+position papers, and panel discussions.
+
+Topics include, but are not limited to:
+
+	* P2P systems and infrastructures
+	* Applications of P2P systems
+	* Performance evaluation of P2P systems
+	* Workload characterization for P2P systems
+	* Trust and Security issues in P2P systems
+	* Network support for P2P systems
+	* Protocols for resource managements/discovery/scheduling and their
+evaluation
+	* Fault tolerance in P2P systems
+	* DHT and other scalable lookup algorithms
+	* P2P and autonomic computing
+	* P2P systems and Grids
+
+
+Paper Submission:
+---------------------------------
+
+HOT-P2P 2005 invites author to submit papers on original and unpublished
+work in either PostScript or PDF format, by following the instructions
+that published in the submission page
+http://www.hot-p2p.org/submission.html.
+Submission should include the title of the paper, the  names and
+affiliations of the authors, a 150-word abstract and  at most  eight
+keywords. Submission should  follow the IEEE  format (single spaced, two
+columns, 10pt, Times font) and not exceed 10 pages, including figures.
+
+Proceedings Publication:
+------------------------
+
+
+The proceedings of the Hot-P2P '05 will be published by the IEEE.
+
+
+Important Dates
+----------------
+
+	* Paper Submission: 		March 31st, 2005
+	* Notification of Acceptance: 	April 26th, 2005
+	* Camera-ready version due:  	May 9th, 2005
+	* Workshop date:		July 21st, 2005
+
+
+Program Chairs
+-------------
+
+Cosimo Anglano, Universita' del Piemonte Orientale "A. Avogadro" (Italy)
+Luigi Mancini, Universita' di Roma "La Sapienza" (Italy)
+
+Program Committee (In Progress)
+-------------------
+
+* Giovanni Chiola, Universita' di Genova (Italy)
+* Walfredo Cirne, Universidade Federal de Campina Grande (Brasil)
+* Michele Colajanni, Universita' di Modena e Reggio Emilia (Italy)
+* Antonio Corradi, Universita' di Bologna (Italy)
+* Paul Ezhilchelvan, University of Newcastle (UK)
+* Luisa Gargano, Universita' di Salerno (Italy)
+* Giulio Iannello, Universita' Campus Biomedico, Roma (Italy)
+* Mario Lauria, Ohio State University (USA)
+* Laurent Lefevre, INRIA (France)
+* Giancarlo Ruffo, Universita' di Torino (Italy)
+* Sanjeev Setia, George Mason University (USA)
+* Gene Tsudik, University of California, Irvine (USA)
+* Rich Wolsky, University of California, Santa Barbara (USA)
+
+
+ 

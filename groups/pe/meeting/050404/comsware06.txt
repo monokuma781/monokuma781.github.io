@@ -1,0 +1,132 @@
+		    CALL FOR PAPERS
+                            ***************
+		The First International Conference on
+	    Communication Systems Software and Middleware
+
+			http://www.comsware.org
+			-----------------------
+
+                          January 8 - 12, 2006
+                 Taj Palace Hotel, New Delhi, India
+
+         Technical Co-Sponsor: IEEE Communications Society
+         Technical Co-Sponsor: IEEE Computer Society (Pending)
+         In Co-operation with: ACM SIGMOBILE
+         Sponsored by:         CreateNet (Italy), ICST (USA),
+                               IBM, Microsoft Research, NOKIA
+
+The convergence of the communications, information technologies and the 
+Internet has ushered in a revolution in the way people communicate with 
+each other. The key enabler for this convergence has been the 
+advancement of software technology in various communication sectors, as 
+evident by the high levels of activity in the industry, academia, and 
+standards bodies, coupled with the increasing dependence of this 
+convergence to sustain and improve growth rates in many countries around 
+the world.
+
+This new international conference will provide a forum to exchange 
+ideas, techniques, and applications, discuss best practices and 
+challenging issues, raise awareness and share experiences among 
+researchers, practitioners, standard developers and policy makers in the 
+field of software techniques in communications. The conference will
+bring leading researchers and practitioners in areas ranging from 
+communications software and software engineering aspects of 
+communications software, to middleware and networking protocols. The 
+objective of the conference is to provide a high degree of 
+collaboration, participation and discussions of the various topics among
+multi-national participants from the industrial, governmental and 
+academic sectors.
+
+COMSWARE will include a regular paper track and an industry track. The 
+paper track will include a highly selective technical program. The 
+conference solicits original, previously unpublished research work, 
+experimental efforts, and practical experiences for the technical 
+program. COMSWARE will also feature panel discussions from experts
+in academia and industry, workshops and tutorials featuring the 
+state-of-the-art in various communications software and related areas. 
+There will be demos and exhibits that will expose the delegates to 
+exciting products and software solutions from industry and academia. 
+Accepted papers will be published by IEEE Computer Society. The top 
+papers accepted to the conference will be published in a reputed journal.
+
+Areas of interest include, but are not limited to:
+
+， Communications Software
+， Reconfigurable Software Stacks
+， Software Engineering Aspects of Communications Software
+， Context-Based and Implicit Computing
+， Telecommunications Services and QoS
+， Software for Billing and Pricing
+， User Interfaces and Interaction Models
+， Multi-Agent Systems
+， Client-Server Applications
+， Mobile and Intermittently Connected Applications
+， Mobile Data Management
+， Middleware Services and Agent Technologies
+， Middleware for Wireless Sensor Networks
+， Middleware for P2P Systems
+， Middleware for Future Communication Networks
+， Information Infrastructure and Security
+， Security and Privacy Issues of Pervasive Computing Systems
+， Network Operations and Management
+， Policy and Workflow-based Network Operations
+， Reliability Support Software
+， Resource Management in Pervasive Computing Platforms
+， Management Software for Optical Networks
+， Network Monitoring Software
+， Internet and IP based Services
+， Dynamic Service Composition and Deployment
+， Service Discovery Mechanisms
+， Wireless/Mobile Service Management and Delivery
+， Mobile / Wireless Computing Systems and Services
+， Performance Evaluation Techniques
+， Location Determination
+， Positioning and Tracking Technologies in Intelligent Environments
+， Smart Devices and Smart Spaces
+， Enterprise Networking
+， Personal Area Networks
+， Integration of Wired and Wireless Networks
+， Next Generation Networks and Services
+
+
+Deadlines
+*********
+Paper Submission: May 2, 2005
+Notification of Acceptance: September 5, 2005
+Camera-ready due: September 26, 2005
+
+Conference Organizing Committee
+*******************************
+General Chairs:		Victor Bahl, Microsoft Research, USA
+			Bijendra Nath Jain, IIT, Delhi, India
+			Henning Schulzrinne, Columbia University, USA
+			Alfred Spector, IBM Research, USA
+
+Steering Committee:	Imrich Chlamtac, University of Trento, Italy
+			Rajeev Shorey, IBM Research, India
+			Prasant Mohapatra, University of California, Davis, USA
+
+Program Chairs:		Sanjoy Paul, Lucent Technologies, USA
+			G. Venkatesh, SASKEN Technologies, India
+			Jim Woodcock, University of York, UK
+
+Tutorial Chair:		Archan Misra, IBM Research, USA
+
+Workshop Chairs:	Ashwin Gumaste, Fujitsu Research, USA
+			Gaurav Sharma, University of Rochester, USA
+
+Demos/Exhibit Chair:    Huzur Saran, IIT, Delhi, India
+Demos/Exhibit Co-Chair: Jaijit Bhattacharya, Oracle, India
+
+Publicity Chair:        Thyaga Nandagopal, Lucent Technologies, USA
+Publicity Co-Chairs:    Sunghyun Choi, Seoul National University, Korea
+                         Marco Conti, IIT, Pisa, Italy
+                         Ben Lancini, LinLan, Brisbane, Australia
+                         Prashant Pradhan, IBM Research, USA
+                         Hemant Chaskar, Airtight Networks, India
+
+Local Arrangement
+Co-Chairs:              Sudipta Maitra, IBM, Delhi
+                         Laurent Mignet, IBM Research, Delhi
+
+Finance Chair:          Karen Decker, USA

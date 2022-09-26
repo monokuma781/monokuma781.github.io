@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<TEXTS name="main">
+   <!-- Titles  -->
+   <TEXTS name="titles">
+     <TTL_HOME_PAGE>Paper submission system -- MyReview</TTL_HOME_PAGE>
+     <TTL_ABSTRACT_SUBMISSION>Abstract submission</TTL_ABSTRACT_SUBMISSION>
+     <TTL_REVIEWER_PAGE>Review interface</TTL_REVIEWER_PAGE>
+     <TTL_FORUM_PAGE>Forum interface</TTL_FORUM_PAGE>
+     <TTL_CONFIGURE>Configure the system</TTL_CONFIGURE>
+     <TTL_SUBMITTED_PAPERS>List of submitted papers</TTL_SUBMITTED_PAPERS>
+     <TTL_ALL_AUTHORS>List of authors</TTL_ALL_AUTHORS>
+     <TTL_ACCEPTED_PAPERS>List of accepted papers</TTL_ACCEPTED_PAPERS>
+     <TTL_LIST_REGISTRATIONS>List of registrations</TTL_LIST_REGISTRATIONS>
+     <TTL_PAPERS_TO_RATE>Paper rating</TTL_PAPERS_TO_RATE>
+     <TTL_PAPERS_TO_REVIEW>Your papers</TTL_PAPERS_TO_REVIEW>
+     <TTL_RESEARCH_TOPICS>Selection of research topics</TTL_RESEARCH_TOPICS>
+     <TTL_SUMMARY_ASSIGNMENT>Summary of papers assignment</TTL_SUMMARY_ASSIGNMENT>
+     <TTL_PROGRAM_COMMITTEE>Members of the Program Committee</TTL_PROGRAM_COMMITTEE>
+     <TTL_ASSIGN_CR_PAPERS>Assign the papers to sessions</TTL_ASSIGN_CR_PAPERS>
+     <TTL_REGISTRATION>Registration</TTL_REGISTRATION>
+</TEXTS>
+
+  <!-- Forms fields labels   -->
+  <TEXTS name="forms">
+     <FRM_SUBMIT>Submit</FRM_SUBMIT>
+     <FRM_GO>Go</FRM_GO>
+
+     <!-- Paper submission -->
+     <FRM_SUBMISSION_TITLE>Paper submission form</FRM_SUBMISSION_TITLE>
+     <FRM_PAPER_TITLE>Title</FRM_PAPER_TITLE>
+     <FRM_PAPER_AUTHORS>Authors</FRM_PAPER_AUTHORS>
+     <FRM_OTHER_AUTHORS>Other authors </FRM_OTHER_AUTHORS>
+     <FRM_PAPER_EMAIL_CONTACT>Email of contact author</FRM_PAPER_EMAIL_CONTACT>
+     <FRM_PAPER_CONFIRM>Confirm email</FRM_PAPER_CONFIRM>
+     <FRM_PAPER_ABSTRACT>Abstract</FRM_PAPER_ABSTRACT>
+     <FRM_PAPER_UPLOAD>Upload</FRM_PAPER_UPLOAD>
+     <FRM_PAPER_FORMAT>Paper format</FRM_PAPER_FORMAT>
+     <FRM_PAPER_TOPIC>Main topic</FRM_PAPER_TOPIC>
+     <FRM_PAPER_TOPICS>Secondary topics</FRM_PAPER_TOPICS>
+
+     <FRM_AUTHORS>List of authors</FRM_AUTHORS>
+     <FRM_FIRST_NAME>First name</FRM_FIRST_NAME>
+     <FRM_LAST_NAME>Last name</FRM_LAST_NAME>
+     <FRM_AFFILIATION>Affiliation</FRM_AFFILIATION>
+
+     <!-- Review -->
+     <FRM_REVIEW_TITLE>Review submission form</FRM_REVIEW_TITLE>
+     <FRM_REVIEW_EXPERTISE>Reviewer's expertise</FRM_REVIEW_EXPERTISE>
+     <FRM_REVIEW_SUMMARY>Summary of contribution (shown to the authors)</FRM_REVIEW_SUMMARY>
+     <FRM_REVIEW_COMMENTS>Detailed comments (shown to the authors)</FRM_REVIEW_COMMENTS>
+     <FRM_REVIEW_FNAME_EXT>External reviewer (first name)</FRM_REVIEW_FNAME_EXT>
+     <FRM_REVIEW_LNAME_EXT>External reviewer (last name)</FRM_REVIEW_LNAME_EXT>
+     <FRM_REVIEW_PCCOMMENTS>Comments for Program Committee (not shown to the authors)</FRM_REVIEW_PCCOMMENTS>
+
+     <!-- Messages (forum) -->
+     <FRM_MESSAGE>Message</FRM_MESSAGE>
+     <FRM_ANSWER>Answer</FRM_ANSWER>
+     <FRM_ANSWER_TO>Answer to</FRM_ANSWER_TO>
+     <FRM_SENT_BY>Sent by</FRM_SENT_BY>
+
+      <!-- Questions -->
+     <FRM_PQ_TITLE>Questions for the submission form</FRM_PQ_TITLE> 
+     <FRM_RQ_TITLE>Questions for the review form</FRM_RQ_TITLE> 
+     <FRM_REGQ_TITLE>Registration choices</FRM_REGQ_TITLE> 
+     <FRM_RQ_QUESTION>Question</FRM_RQ_QUESTION> 
+     <FRM_RQ_CHOICE_NAME>List of choices</FRM_RQ_CHOICE_NAME> 
+  
+     <!-- Registration form -->
+     <FRM_PAYMENT_FORMTITLE>Payment modes</FRM_PAYMENT_FORMTITLE> 
+
+     <FRM_REG_FORMTITLE>Registration form</FRM_REG_FORMTITLE> 
+     <FRM_REG_TITLE>Title</FRM_REG_TITLE> 
+     <FRM_REG_POSITION>Position</FRM_REG_POSITION> 
+     <FRM_AFFILIATION>Affiliation</FRM_AFFILIATION> 
+     <FRM_REG_EMAIL>Email</FRM_REG_EMAIL> 
+     <FRM_PHONE>Phone</FRM_PHONE> 
+     <FRM_FAX>Fax</FRM_FAX> 
+     <FRM_ADDRESS>Address</FRM_ADDRESS> 
+     <FRM_CITY>City</FRM_CITY> 
+     <FRM_COUNTRY>Country</FRM_COUNTRY> 
+     <FRM_ZIP_CODE>Zip code</FRM_ZIP_CODE> 
+     <FRM_REQUIREMENTS>Requirements</FRM_REQUIREMENTS> 
+     <FRM_PAYMENT_MODE>Payment mode</FRM_PAYMENT_MODE> 
+   </TEXTS>
+   <!-- End of forms fields labels   -->
+
+  <!-- Short, misc. texts  -->
+   <TEXTS name="misc">
+     <TXT_YES>Yes</TXT_YES>
+     <TXT_NO>No</TXT_NO>
+     <TXT_NOT_ASSIGNED>Not yet assigned</TXT_NOT_ASSIGNED>
+     <TXT_ABSTRACT_SUBMISSION_CLOSED>Abstract submission is closed
+          </TXT_ABSTRACT_SUBMISSION_CLOSED>
+     <TXT_SUBMISSION_CLOSED>Submission is closed</TXT_SUBMISSION_CLOSED>
+     <TXT_DOWNLOAD>Download</TXT_DOWNLOAD>
+     <TXT_NOT_DOWNLOADED>File not yet uploaded</TXT_NOT_DOWNLOADED>
+     <TXT_SELECT_TOPICS>Select your preferred topics in the list below</TXT_SELECT_TOPICS>
+     <TXT_TOPICS_SELECTED>Your selection has been stored. Add or remove
+            some topics using the form below</TXT_TOPICS_SELECTED>
+    <TXT_REVIEWERS>Reviewers</TXT_REVIEWERS>
+    <TXT_NO_MORE_RATES>No papers to rate.  Thanks</TXT_NO_MORE_RATES>
+    <TXT_CR_NOT_OPEN>Camera-ready phase is not open yet</TXT_CR_NOT_OPEN>
+    <TXT_CR_NOT_REQUIRED>Not required for this status</TXT_CR_NOT_REQUIRED>
+    <TXT_CR_UPLOADED>Uploaded</TXT_CR_UPLOADED>
+    <TXT_CR_NOT_UPLOADED>Not yet uploaded</TXT_CR_NOT_UPLOADED>
+     <TXT_SEND_PWD>The password has been sent to the contact author</TXT_SEND_PWD>
+     <PWD_RECALL>Password recall</PWD_RECALL>
+     <TXT_SUBMIT_REVIEW>Submit my review for this paper</TXT_SUBMIT_REVIEW>
+     <TXT_UPDATE_REVIEW>Update my review</TXT_UPDATE_REVIEW>
+     <TXT_CONFIRM_REG>Your payment has been confirmed by PayPal. Thanks
+       </TXT_CONFIRM_REG>
+     <TXT_CANCEL_REG>Your payment has been cancelled.</TXT_CANCEL_REG>
+   </TEXTS>
+
+  <!-- Warning and error messages   -->
+  <TEXTS name="errors">
+    <TXT_ADMIN_ONLY>This page is for administrators only</TXT_ADMIN_ONLY>
+    <MISSING_TITLE>Please provide a title</MISSING_TITLE>
+    <MISSING_FIRST_NAME>Please provide your first name</MISSING_FIRST_NAME>
+    <MISSING_LAST_NAME>Please provide your last name</MISSING_LAST_NAME>
+    <MISSING_AFFILIATION>Please provide your affiliation</MISSING_AFFILIATION>
+
+    <MISSING_PHONE>Please provide your phone number</MISSING_PHONE>
+    <MISSING_FAX>Please provide your fax number</MISSING_FAX>
+    <MISSING_ADDRESS>Please provide your full address</MISSING_ADDRESS>
+
+    <MISSING_AUTHORS>Please give at least one author</MISSING_AUTHORS>
+    <MISSING_ABSTRACT>Please provide an abstract</MISSING_ABSTRACT>
+    <MISSING_TOPIC>Please choose a topic</MISSING_TOPIC>
+    <MISSING_EMAIL>Please give an email</MISSING_EMAIL>
+    <EMAIL_ERROR>The mail addresses must be identical. Please check</EMAIL_ERROR>
+    <MISSING_FILE>Please upload a file</MISSING_FILE>
+    <FILE_TOO_LARGE>Maximum file size exceeded</FILE_TOO_LARGE>
+    <PARTIAL_UPLOAD>Partial upload. Please retry.</PARTIAL_UPLOAD>
+    <MISSING_FORMAT>Please specify the file format</MISSING_FORMAT>
+    <INVALID_FORMAT>The file extension does not match the format</INVALID_FORMAT>
+    <INVALID_EMAIL>Invalid mail format. Mails must be of the form X@Y.Z</INVALID_EMAIL>
+    <TXT_CANNOT_UPLOAD>No camera-ready file is required for this paper</TXT_CANNOT_UPLOAD>
+    <TXT_INVALID_SQL_USER>Unable to connect to the database server using the
+  SQLUser account. You need to create a MySQL user with restricted rights to
+    use this functionality. Please refer to the documentation.
+   </TXT_INVALID_SQL_USER>
+  </TEXTS>
+
+  <TEXTS name="mail_subjects">
+    <SUBJ_ABSTRACT_SUBMISSION>Abstract submission to </SUBJ_ABSTRACT_SUBMISSION>
+    <SUBJ_ACTION_REQUIRED>Action required for paper </SUBJ_ACTION_REQUIRED>
+    <SUBJ_REVIEWERS_INSTRUCTIONS>Review instructions</SUBJ_REVIEWERS_INSTRUCTIONS>
+    <SUBJ_PAPER_RATING>Paper rating</SUBJ_PAPER_RATING>
+    <SUBJ_PAPER_UPLOAD>Upload of paper </SUBJ_PAPER_UPLOAD>
+    <SUBJ_CR_PAPER_UPLOAD>Upload of camera-ready version </SUBJ_CR_PAPER_UPLOAD>
+    <SUBJ_UPDATE_PAPER>Update confirmation </SUBJ_UPDATE_PAPER>
+    <SUBJ_PARTICIPATE_FORUM>Global discussion of papers and reviews</SUBJ_PARTICIPATE_FORUM>
+    <SUBJ_SELECT_TOPICS>Topics selection</SUBJ_SELECT_TOPICS>
+    <SUBJ_STATUS_PAPER>Status of paper</SUBJ_STATUS_PAPER>
+    <SUBJ_ACK_REVIEW>Your review on paper</SUBJ_ACK_REVIEW>
+    <SUBJ_CONFIRM_REG>Your registration</SUBJ_CONFIRM_REG>
+  </TEXTS>
+</TEXTS>

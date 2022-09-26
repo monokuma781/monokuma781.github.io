@@ -1,0 +1,162 @@
+MobiQuitous 2005
+CALL FOR PAPERS
+The Second Annual International Conference on Mobile and Ubiquitous
+Systems: Networking and Services
+
+http://www.mobiquitous.org
+
+July 17-21, 2005, San Diego, California
+
+PAPER SUBMISSION DEADLINE: February 2, 2005
+
+Sponsored by:
+
+CreateNet (www.create-net.it) and ICST
+
+Technically Co-Sponsored by IEEE Computer Society (Pending)
+Technically Co-Sponsored by IEEE Communications Society (Pending)
+In Cooperation with ACM SIGMOBILE (Pending)
+Technically Co-Sponsored by AAAI (Pending)
+
+Proceedings to be published by IEEE Computer Society Press and to be made
+available on IEEE Explore
+
+****************************************
+
+The combination of mobile and ubiquitous computing is emerging as a
+promising new paradigm with the goal to provide computing and
+communication services all the time, everywhere, transparently and
+invisibly to the user, using devices embedded in the surrounding physical
+environment. In this context, the communication devices, the objects with
+which they interact, or both may be mobile. The implementation of such a
+paradigm requires advances in wireless network technologies and devices,
+development of infrastructures supporting cognitive environments, and
+discovery and identification of ubiquitous computing applications and
+services.
+
+The second Annual International Conference on Mobile and Ubiquitous
+Systems: networking and services (Mobiquitous-05) will cover all these
+aspects, representing a forum where practitioners and researchers coming
+from the many areas involved in ubiquitous solutions design and deployment
+will be able to interact exchanging the cross-layer experiences needed to
+build the overall ubiquitous systems. Areas addressed by the conference
+include: applications, service-oriented computing, middleware, networking,
+agents, knowledge management and databases.
+
+PAPERS: Technical papers describing original, previously unpublished
+research, not currently under review by another conference or journal, are
+solicited. The conference is interested in contributions addressing all
+the areas associated with mobile and ubiquitous architectures,
+infrastructure and services. Technical works clearly identifying how the
+specific contributions fit to an overall working solution are particularly
+of interest. Topics include, but are not limited to, the following:
+
+* Ubiquitous architectures and systems
+* Wearable computing and personal area network
+* Wireless technologies for mobile and ubiquitous (Bluetooth, ZigBee,
+802.15.x, WiFi)
+* Incentive-based deployment of ad hoc networks
+* Reconfigurability and personalization of wireless network
+* Service discovery mechanisms, knowledge discovery, matching and
+composition mechanisms
+* Wireless/mobile service management and delivery
+* Security, privacy and social issues of mobile and ubiquitous systems
+* Peer-to-peer knowledge management
+* Emerging industrial/business scenarios
+* Multimodal interfaces (speech, video kinetic, tactile)
+* Smart spaces
+* Ad hoc and sensor networking
+* Localization and tracking
+* Context and location aware application
+* Multimedia encoding and transcoding
+* Middleware services
+* Agent technologies in ubiquitous, wearable, andmobile systems
+* Hardware and software platforms for ubiquitous systems, and testbeds
+* User interfaces
+* Toolkits, development environments, and languages for ubiquitous
+computing
+* Ontologies for mobile and ubiquitous computing
+
+SUBMISSION INSTRUCTIONS:  All paper submissions will be handled
+electronically (see the conference web page for details). Authors should
+prepare a Portable Document Format (PDF) or postscript version of their
+full paper.  Papers must not exceed 8 pages double column (US Letter size,
+8.5 x 11 inches) including text, figures and references. The font size
+must be at least 10 points. The deadline for registering the title and the
+abstract of the paper with our electronic submission system is February 2,
+2005. The deadline for submitting the actual paper is February 9, 2005.
+All deadlines are 11:59PM PST.
+
+PUBLICATION: All submitted papers will be rigorously reviewed by technical
+program committee members. Accepted papers will be published in the
+conference proceedings.  Papers of particular merit will be proposed for
+publication in a ACM/Kluwer MONET special issue.
+
+WORKSHOPS: Proposals for one-day workshops to be held in conjunction with
+the conference are solicited.  A maximum of 2 pages should be submitted
+which include the workshop name, its scope and a list of topic of
+interests.  Proposals should be submitted to both the Workshop co-Chairs
+by December 17 2004.
+
+DEMOS: Proposals for research and industrial demos are solicited.  A
+maximum of 2 pages should be submitted which include a description of the
+demo and needed resources from the conference organizers. Proposals should
+be submitted to Dr. Ramiro Liscano (Demo Chair) rliscano@ieee.org by May
+29th, 2005.
+
+IMPORTANT DATES:
+Paper registration deadline:  February 2, 2005
+Full paper submission deadline:      February 9, 2005
+Notification of acceptance:  April 29, 2005
+Camera-ready version due:  May 15, 2005
+
+ORGANIZING COMMITTEE
+
+General Chair:
+Ramesh Rao (Univ. of California, San Diego)
+
+General Co-Vice-Chairs:
+Chiara Petrioli (Universit di Roma La Sapienza)
+Krishna Sivalingam (University of Maryland, Baltimore County)
+
+Technical Program Co-Chairs:
+
+Networking:
+Suresh Singh (Portland State University)
+Philippe Bonnet (University of Copenhagen)
+
+Services/Knowledge Management:
+Anupam Joshi (University of Maryland, Baltimore County)
+Ryusuke Masuoka (Fujitsu Labs of America)
+
+Publicity Co-Chairs:
+Andreas Savvides (Yale University) and
+Mohamed Younis (University of Maryland, Baltimore County)
+
+Panels Chairs: TBA
+
+Workshop Chairs:
+Stefano Basagni (Northeastern University)
+Prithwish Basu  (BBN Technologies)
+
+Demos Chair:
+Ramiro Liscano (University of Ottawa)
+
+Publications Chair:
+Antonis Kalis (Athens Information Technology)
+
+Local Arrangements Chair: Kang Wang, Qualcomm Inc.
+
+Finance Chair:
+Karen Decker (ICST Texas,USA)
+
+Accommodations Chair:
+Kathy Kunz (ICST California,USA)
+
+Registration Chair: Vishal Anand, SUNY College at Brockport
+
+Steering Committee: Imrich Chlamtac (CreateNet, Inc.), Chair
+Michele Zorzi (Universita di Padova)
+
+
+ 

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name= "Myreview" >
+<table name= "paper" >
+	 <attribute>
+		 <name>id</name> 
+		 <type>int</type>
+	 </attribute>
+	 <attribute>
+		 <name>title</name>
+		 <type>varchar(20)</type>
+	 </attribute>
+	<primarykey name="PKPaper">
+		<key>id</key> 
+	</primarykey >
+</table>
+<table name="pcmember" >
+	 <attribute> 
+		 <name>email</name> 
+		   <type>int</type>
+	 </attribute>
+	 <attribute> 
+		 <name>firstName</name>
+		  <type>varchar(20)</type>
+	 </attribute>
+	 <attribute> 
+		 <name>lastName</name> 
+		   <type>varchar(20)</type>
+	</attribute>
+	<attribute> 
+		 <name>affiliation</name> 
+		   <type>varchar(20)</type>
+	</attribute>
+	<primarykey name="PKPcmember">
+		<key>email</key> 
+	</primarykey >
+</table>
+<table name="author" >
+	 <attribute> 
+		 <name>id_paper</name> 
+		   <type>int</type>
+	 </attribute>
+	<attribute> 
+		 <name>position</name> 
+		   <type>int</type>
+	 </attribute>
+	<attribute> 
+		 <name>last_name</name> 
+		   <type>varchar(20)</type>
+	</attribute>
+	 <attribute> 
+		 <name>first_name</name>
+		  <type>varchar(20)</type>
+	 </attribute>
+	 <attribute> 
+		 <name>affiliation</name> 
+		   <type>varchar(20)</type>
+	</attribute>
+	<primarykey name="PKauthor">
+		<key>id_paper</key> 
+	</primarykey >
+	<foreignkey name="FKAuthor">
+		
+		 <association>
+			<fkey>id_paper</fkey> 
+			 <reference  table="paper" >
+				<fattribute>id</fattribute> 
+			 </reference>
+		</association> 
+	</foreignkey>
+
+</table>
+
+
+<table name="review" >
+	 <attribute>
+		 <name>idPaper</name> 
+		  <type>int</type>
+	 </attribute>
+	 <attribute> 
+		 <name>email</name> 
+		 <type>varchar(20)</type>
+	 </attribute>
+	 <attribute> 
+	     <name>comments</name> 
+		 <type>varchar(20)</type> 
+	 </attribute>
+	 <attribute> 
+		 <name>summary</name>
+		 <type>varchar(20)</type>
+	 </attribute>
+	<attribute> 
+		 <name>submission_date</name>
+		 <type>varchar(20)</type>
+	 </attribute>
+	 <primarykey name="PKReview">
+		<key>idPaper</key>
+		<key>email</key> 
+	 </primarykey >
+	 <foreignkey name="FKReview">
+		
+		 <association>
+			<fkey>idPaper</fkey> 
+			 <reference  table="paper" >
+				<fattribute>id</fattribute> 
+			 </reference>
+		</association> 
+
+		<association>
+		 <fkey>email</fkey> 
+			<reference table="pcmember">
+				 <fattribute>email</fattribute> 
+			</reference>
+		</association>
+	</foreignkey>
+
+	
+</table>
+
+</database>		

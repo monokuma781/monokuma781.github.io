@@ -1,0 +1,156 @@
+
+The 11th International Symposium Pacific Rim Dependable Computing
+Changsha, Hunan, China.  Dec. 12 - 14, 2005
+http://sc.hnu.cn/newweb/communion/prdc2005/index.htm
+http://www.comp.polyu.edu.hk/PRDC05
+
+PRDC 2005 is the eleventh in this series of symposia started in 1989
+that are devoted to dependable and fault tolerant computing. PRDC is
+now recognized as the main regular event of the Pacific area that is
+covering the many dimensions of dependability and fault tolerance,
+encompassing fundamental theoretical approaches, practical
+experimental projects, and commercial components and systems. As
+applications of computing systems have permeated in every aspects of
+daily life, the dependability of computing system has become
+increasingly critical.  This symposium provides a forum for
+countries around the Pacific Rim and other areas of the world to
+exchange ideas for improving the dependability of computing systems
+
+The symposium will be organized by the Hunan University in the
+historical City of Changsha, the capital city of Hunan Province in
+south central China.  The origin of the Hunan University was the
+Yuelu Academy founded in Song Dynasty, which was an important center
+for the Neo-Confucianism study and has profound influence on the
+Chinese philosophy for the last 1000 years.  In addition, the Hunan
+province has numerous sightseeing spots, including the Yueyang Tower
+built in Song Dynasty, Mawangdui archeological site from Han
+Dynasty, Mao Zedong's birthplace Shaoshen, and China's first
+national forest park Zhang Jia Jie.  The conference will be held at
+Grand Sun City Hotel, a five-star hotel in Changsha city.
+
+Topics of interest include (but not limited to):
+
+- Software and hardware reliability, testing, verification and
+  validation
+- Dependability measurement, modeling and evaluation
+- Safety-critical systems and software
+- Architecture and system design for dependability
+- Fault tolerant algorithms and protocols
+- Tools for design and evaluation of dependable systems
+- Reliability in Internet and Web systems and applications
+- Dependability issues in computer networks and communications
+- Dependability issues in distributed and parallel systems
+- Dependability issues in real-time systems, database and
+  transaction processing systems
+
+Manuscripts should be submitted in the following categories: Regular
+Papers and Practical Experience Reports. Regular Papers should
+describe original research (not submitted or published elsewhere)
+and be not more than 20 double-spaced pages including figures and
+tables using 11-point type. Practical Experience Reports (of 5-12
+pages) should describe an experience or a case study, such as the
+design and deployment of a system or actual failure and recovery
+field data. The title page should include a 150-word abstract, five
+keywords, authors' names and address and include a line specifying
+whether the submission is a Regular Paper or a Practical Experience
+Report. The full mailing address, phone, fax and email address of
+the corresponding author should be specified. All submissions must
+be made electronically. Additional submission opportunities are also
+possible at a later deadline under the form of Fast Abstracts.
+Please visit our web site for full submission instructions and
+updated information on the symposium.
+
+Important Dates:
+Submission Deadline:	     May 15, 2005
+Notification of Acceptance:  July 31, 2005
+Camera-ready copies:         September 15, 2005
+
+Sponsored by
+IEEE Computer Society Technical Committee on Dependable Computing
+In cooperation with
+IFIP WG10.4 on Dependable Computing and Fault Tolerance
+National Natural Science Foundation of China
+CCF Technical Committee on Fault-Tolerant Computing
+Hunan University
+Hong Kong Polytechnic University
+Chinese Univ. of Hong Kong
+IEEE (Beijing Section) Computer Society Chapter
+
+ORGANIZING COMMITTEE
+
+Honorary Chairs
+Yinghua Min, Chinese Academy of Science, China
+Shiwen Gu, President, Hunan University, China
+
+General Co-Chairs
+Sy-Yen Kuo, National Taiwan University, Taiwan
+Michael Lyu, Chinese Univ. of Hong Kong, H.K.
+
+Program Co-Chairs
+Jiannong Cao, Hong Kong Polytechnic Univ., H.K.
+Dafang Zhang, Hunan University, China
+
+Publicity Co-Chairs
+Savio Chau, Jet Propulsion Laboratory, USA
+Jinmin Yang, Hunan University, China
+
+International Liaison Co-Chairs
+Michel Raynal, IRISA, France
+Min Xie, NUS, Singapore
+
+Publications Co-Chairs
+Ann Tai, IA Tech Inc., USA
+Allan K.Y. Wong, H.K. Polytechnic University, H. K.
+
+Local Arrangements Chair
+Hua Liu, Hunan University, China
+
+Finance and Registration Co-Chairs
+Jishun Kuang, Hunan University, China
+Li Miao, Hunan University, China
+
+Fast Abstrtacts Chair
+Bin Xiao, Hong Kong Polytechnic University, H. K.
+
+Steering Committee Chair
+Sy-Yen Kuo, National Taiwan University, Taiwan
+
+Program Committee
+Jean Arlat, LAAS, France
+Doug Blough, Georgia Institute of Technology, USA
+G. Ciardo, Univ. of California at Riverside, USA
+Wei Chen, Microsoft Research Asia, China
+Yuanshun Dai, Purdue Univ. School of Sci., IUPUI, USA
+Paul Ehzilchelvan, University of New Castle, UK
+Antonio Fernandez, Universidad Rey Juan Carlos, Spain
+Christof Fetzer, Technical Univ. Of Dresden, Germany
+Ravishankar K. Iyer, UIUC, USA
+Mohamed Kaaniche, LAAS-CNRS, France
+Tohru Kikuno, Osaka University, Japan
+Israel Koren, Univ. of Mass., USA
+Chin-Laung Lei, National Taiwan University, Taiwan
+Inhwan Lee, Hanyang University, Korea
+Xiaowei Li, Chinese Academy of Science
+Zhongcheng Li, Chinese Academy of Science
+Chung Lin, Tsinghua University, China
+Shyue-Kung Lu, Fu Jen Catholic University, Taiwan
+Jogesh K. Muppala, H.K. Univ. of Sci and Tech. H.K.
+Takashi Nanya, University of Tokyo, Japan
+Luis Rodrigues, University of Lisbon, Portugal
+Robert Redinbo, Univ. of California at Davis, USA
+Bill Sanders, Univ. of Illinois, Urbana-Champaign, USA
+Arun K Somani, Iowa State University, USA
+Kuo-Feng Ssu, National Cheng Kung University, Taiwan
+Dong Tang, Sun Microsystems, USA
+Jichiang Tsai, National Chung Hsing University, Taiwan
+Kishor S. Trivedi, Duke University, USA
+Kuochen Wang, National Chiao Tung Univ., Taiwan
+Sheng-De Wang, National Taiwan University, Taiwan
+Dong Xiang, Tsinghua University, China
+Shiyi Xu, Shanghai University, China
+Haruo Yokota, Tokyo Inst. Of Tech., Japan
+Hsu-Chun Yen, National Taiwan University, Taiwan
+Meng-Lai Yin, California State Polytech. Univ., USA
+Hee Yong Youn, Sungkyunkwan Univ., Korea
+Huanguo Zhang, Wuhan University, China
+

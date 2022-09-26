@@ -1,0 +1,101 @@
+The Second International Workshop on Ad Hoc Networks and
+Interoperability Issues (MANETII'05), 27-30 June 2005,
+Las Vegas, Nevada, USA
+
+Held in conjunction with the International Conference on
+Wireless Networks (ICWN'05).
+
+Workshop Website: http://www.cis.uoguelph.ca/~denko/workshframe.html
+
+--------------------------------------------------------------------
+
+SCOPE
+-----
+
+A mobile ad hoc network is a multihop wireless network that can be formed
+without the need for any pre-existing infrastructure. Unlike other
+wireless networking technologies, which rely mainly on existing communication
+infrastructure and favor urban areas, ad hoc networks can be deployed to
+remote geographical locations with minimum setup and administration costs.
+Moreover, the integration of ad hoc networks with the Internet and
+wireless infrastructure networks increases the network capacity, coverage
+area and application domain. Although ad hoc networks provide many
+opportunities and new applications areas by realizing ubiquitous communication,
+they introduce new and fundamental challenges on the design of communication
+and networking protocols. This is due to the lack of central
+administration, limited network resources and dynamic network topology.
+
+The aim of this workshop is to bring together practitioners and researchers
+from both academia and industry in order to have a forum for discussion
+and technical presentations on the latest research and future research
+opportunities.
+
+We are seeking original research papers describing algorithmic solutions,
+experimental results and application scenarios for mobile ad hoc networks
+and integrated ad hoc and infrastructure networks.
+
+Topics of interest include, but are not limited to:
+
+	Distributed algorithms
+	Quality of Services (QoS)
+	Security issues
+	Denial of Services (DoS)
+	Cross layer protocol design
+	Mobility management
+	Data management
+	Ad hoc sensor networks
+	Simulation and implementation test-beds
+	MAC protocols
+	Fault tolerance and load balancing
+	Interoperability of ad hoc and wired/wireless networks
+	Performance evaluation
+	Service and resource discovery
+	Middleware for ad hoc networks
+	Mobility models
+	Resource management
+	Heterogeneous wireless networks
+	Hybrid routing in ad hoc networks
+
+
+SUBMISSION PROCEDURE
+--------------------
+Authors are requested to submit draft papers not exceeding 5 pages
+(single-spaced font size of 10 or 11) in PDF format to Dr. Mieso Denko
+(denko@cis.uoguelph.ca).The length of the cameral-ready papers will be
+limited to 7 IEEE style pages.If you have any questions regarding the
+Workshop or submission process, please contact the Workshop Chair at
+the address given below.
+
+
+IMPORTANT DATES
+---------------
+
+Paper Submission Deadline: 5 March 2005
+Notification of Acceptance:24 March 2005
+Camera Ready Submission: 20 April 2005
+
+
+PUBLICATION
+-----------
+
+All accepted papers would be published in the proceedings of the
+International Conference on Wireless Networks (ICWN'05). After the conference,
+selected papers will be considered for journal publication. In 2004, a
+number of authors from the MANETII-04 workshop submitted extended versions
+of their paper to a Special Issue on "Wireless Networks and Pervasive Computing"
+for the Journal of Pervasive Computing and Communications (JPCC)
+(http://www.troubador.co.uk/.
+
+
+WORKSHOP CHAIR
+--------------
+
+Dr. Mieso Denko
+Department of Computing and Information Science
+University of Guelph, Guelph, Ontario, Canada N1G 2W1
+Phone: (416) 798-1331 Ext. 6088
+Fax: (416) 798-1991
+Email: denko@cis.uoguelph.ca
+
+
+ 

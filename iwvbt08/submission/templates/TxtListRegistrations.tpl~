@@ -1,0 +1,57 @@
+<!-- Template for the list of submitted papers -->
+
+<!-- JavaScript function to display paper infos  -->
+<script language="JavaScript1.2" src="ShowWindow.js"></script>
+
+<p>
+<hr>
+<p>
+<b>Groups of registrations</b>:
+<!-- BEGIN GROUPS_LINKS -->
+<a href="Admin.php?action=29&iMin={IMIN_VALUE}&iMax={IMAX_VALUE}">{LINK}</a>
+<!-- END GROUPS_LINKS -->
+<p>
+<hr>
+
+<h3>Registrations (sorted by name)</h3>
+
+Registrations count: {REGISTRATION_COUNT}<BR>
+
+<table border=3 cellspacing=2 cellpadding=2>
+<tr class='header'>
+  <th>Name</th>
+  <th>Requirements</th>
+  <th>Payment mode</th>
+  <th>Paid?</th>
+  <th>Actions</th>
+</tr>
+
+<!-- BEGIN REGISTRATION_DETAIL -->
+<tr class='{CSS_CLASS}'>
+<a name='{PERSON_ID}'></a>
+<td>
+<a href="mailto:{PERSON_EMAIL}">
+{PERSON_FIRST_NAME} {PERSON_LAST_NAME}</a>
+</td>
+<td>{PERSON_REQUIREMENTS}</td>
+<td>{PERSON_PAYMENT_MODE}</td>
+<td>{PERSON_PAYMENT_RECEIVED}</td>
+ <td nowrap> 
+  <a href='#{PERSON_ID}' 
+ onClick="ConfirmAction('Remove registration of {PERSON_FIRST_NAME} {PERSON_LAST_NAME}?', 
+           'Admin.php?action=29&remove=1&id_person={PERSON_ID}')">
+      Remove
+    </a>
+   |
+  <a href='#{PERSON_ID}' 
+ onClick="ConfirmAction('Do you confirm the payment for the registration of {PERSON_FIRST_NAME} {PERSON_LAST_NAME}?', 
+           'Admin.php?action=29&confirm_payment=1&id_person={PERSON_ID}')">
+      Confirm payment
+ </a>
+</tr>
+
+<!-- END REGISTRATION_DETAIL -->
+
+</table>
+
+<a href='Admin.php'>Back to the admin menu</a>

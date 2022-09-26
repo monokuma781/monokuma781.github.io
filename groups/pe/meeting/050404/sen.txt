@@ -1,0 +1,130 @@
+SenMetrics 2005
+
+Third International Workshop on Measurement, Modeling, 
+and Performance Analysis of Wireless Sensor Networks 
+
+San Diego, CA, USA
+July 21, 2005
+
+(in conjunction with MobiQuitous 2005)
+
+http://www.senmetrics.org/
+E-mail: senmetrics@ece.osu.edu
+
+
+The SenMetrics workshop solicits papers on the development 
+and application of analytic, simulation, prototype testbed, 
+and measurement-based performance evaluation techniques to 
+the area of wireless sensor networks. Of particular interest 
+is work that furthers the state-of-the-art in performance 
+evaluation methods, or those that creatively apply 
+previously developed methods to understand or to gain 
+important insights into key design trade-offs in wireless 
+sensor networks. 
+
+Topics of interest include, but are not limited to:
+ 
+Performance-oriented design and evaluation studies of:
+- wireless sensor networks
+- sensor node hardware and software architectures
+- data collection
+- addressing 
+- security, reliability, and robustness
+- operating systems
+- energy aware network protocols
+- applications
+- localization
+- fundamental limits and tradeoffs
+- topology management
+- deployment
+- distributed actuation and control
+- system development and testbed experience
+- benchmarks
+
+Performance methodology techniques and algorithms for: 
+- system, protocol, and algorithm modeling
+- analytic evaluation
+- system measurement and monitoring
+- model verification and validation
+- workload characterization
+- simulation
+- statistical analysis
+- stochastic modeling 
+- experimental design
+- reliability analysis
+- performance optimization
+
+
+IMPORTANT DATES:
+
+Paper Submission Deadline: April 15, 2005
+Notification of Acceptance: June 1, 2005
+Camera Ready Paper Due: June 15, 2005
+Workshop Date: July 21, 2005
+
+
+PAPERS:
+
+Authors are invited to submit for review, papers that 
+neither have been previously published nor are under review 
+by another conference or journal. Priority will be given to 
+original contributions describing recent and innovative 
+research results or developments in the scope of the workshop. 
+
+Papers must be written in English, using font no smaller than 
+10 points and not to exceed 10 pages. Only PDF and PostScript 
+formats will be accepted, and all submissions will be handled 
+electronically. Further details on submission procedures will 
+be soon available at  http://www.senmetrics.org/
+
+
+GENERAL CHAIR:
+
+Raghupathy Sivakumar, Georgia Institute of Technology
+
+PROGRAM CHAIRS:
+
+Eylem Ekici, Ohio State University
+Ibrahim Matta, Boston University
+
+PUBLICITY CHAIR:
+
+Seung-Jong Park, Louisiana State University
+
+
+TECHNICAL PROGRAM COMMITTEE:
+
+Alhussein Abouzeid (RPI)
+Ozgur B. Akan (Middle East Technical U, Turkey)
+Andrew Campbell (Columbia University) 
+Sonia Fahmy (Purdue University) 
+Paul Havinga (University of Twente, The Netherlands)
+Ahmed Helmy (USC)
+Holger Karl (University of Paderborn, Germany)
+Bhaskar Khrisnamachari (USC) 
+Marwan Krunz (University of Arizona)
+Kang-Won Lee (IBM Research)
+Mingyan Liu (University of Michigan)
+Stephan Olariu (Old Dominion University)
+Sergio Palazzo (University of Catania, Italy)
+Seung-Jong Park (Louisiana State University)
+Ness Shroff (Purdue University) 
+David Starobinski (Boston University) 
+Ioannis Stavrakakis (University of Athens, Greece) 
+Xin Wang (University at Buffalo)
+Wenye Wang (North Carolina State University) 
+Lixia Zhang (UCLA)
+Taieb Znati (University of Pittsburgh)
+
+_______________________________________________________
+
+===
+Ibrahim Matta, Associate Professor
+Computer Science Department
+Boston University, Boston, MA 02215, USA
+Tel: (617) 358-1062, Fax: (617) 353-6457
+matta@cs.bu.edu
+http://www.cs.bu.edu/~matta
+
+
+ 

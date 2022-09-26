@@ -1,0 +1,14 @@
+
+ 
+ @firstblock{
+  Blablabla
+       @myblock[predi]{essai 
+           
+              @otherblock{er}{dedans er}
+             true}{essai false}
+
+
+Oh oh oh
+}{}
+
+@fioio{}{}

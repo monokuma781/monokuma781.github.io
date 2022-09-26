@@ -1,0 +1,1400 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>基于SMP结点的机群通信系统关键技术的研究</TITLE>
+
+</HEAD>
+
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<DIR>
+
+
+
+
+
+<A NAME="Abstract"></A>
+
+<CENTER><H3>
+
+基于SMP结点的机群通信系统关键技术的研究</P>
+
+</H3></CENTER>
+
+<H4>
+
+<P ALIGN="CENTER">马捷(计算机系统结构)</P>
+
+<P ALIGN="CENTER">导师：李国杰</P>
+
+</H4>
+
+<P ALIGN="JUSTIFY">
+
+
+
+在现代超级计算机和超级服务器体系结构的研究中，机群系统逐渐成为一种主流的结构。而基于SMP结点
+
+的机群系统以其较高的性能价格比和较好的容错能力成为当前研究的一个热点。作为一个机群系统，其通
+
+信协议的性能是影响系统整体性能的一个关键因素。基于SMP结点的机群系统由于其结构的变化，其通信
+
+协议也与早期的基于单处理器的机群系统不同。因此，研究基于SMP结点的机群通信系统方面的问题在设
+
+计和实现一个高性能的机群系统中占有重要的地位。</P>
+
+<P ALIGN="JUSTIFY">
+
+本文首先全面分析了机群体系结构以及机群通信系统的发展现状，并介绍了一些相关的研究。然后，从机
+
+群系统互连性能的角度上将机群通信协议抽象为一种层次结构，并基于这种层次结构给出了用于基于SMP结
+
+点的机群系统的多重通信协议模型以及组成多重通信协议的基于共享内存的通信协议和半用户级通信协议。
+
+</P>
+
+<P ALIGN="JUSTIFY">
+
+随后，本文重点讨论了组成多重通信协议的两个协议层。文章首先讨论了基于共享内存的通信协议的不同实
+
+现方式以及提高通信性能的一些关键问题。然后讨论了采用半用户级通信协议对通信系统的安全性和可靠性
+
+的影响、对系统的可移植性的支持以及对异构网络环境的支持。文章还进一步采用进程代数的方法对多重通
+
+信协议进行形式化描述及验证。</P>
+
+<P ALIGN="JUSTIFY">
+
+性能是评价一个通信协议的指标之一。本文给出了在曙光3000上实现的一个多重通信协议BCL-3的评价与性
+
+能分析。通过分析多重通信协议的点到点通信性能、LogGP模型参数以及一组集合操作的性能来综合评价通
+
+信系统的性能。实验表明BCL-3系统具有良好的性能与可扩展性。</P>
+
+<P ALIGN="JUSTIFY">
+
+最后，本文分析了限制通信系统性能的一些因素，并给出了多网卡通信协议的模型和一个双网卡通信协议
+
+的实例。通过设计多网卡系统来进一步提高通信系统的性能。</P>
+
+
+
+<B>关键词</B>  基于SMP结点的机群 机群通信系统 用户级通信 可扩展流量控制</P>
+
+
+
+<H3>
+
+<P ALIGN="CENTER">Research on Key Issues of Communication System <BR>
+
+on Cluster of SMP's</P>
+
+</H3>
+
+<H4>
+
+<P ALIGN="CENTER">Ma Jie (Computer Architecture)</P>
+
+<P ALIGN="CENTER">Directed by Professor Li Guojie</P>
+
+</H4>
+
+<P ALIGN="JUSTIFY">
+
+Cluster is a widely used architecture in modern super-computer and super-server. Since cluster 
+
+of SMP's (CLUMPS) has high ratio of performance and cost and high fault tolerance ability, it 
+
+becomes a hot point in current research fields. Communication system is a key factor that affects 
+
+the actual performance of CLUMPS. Since the architecture of CLUMPS is different to uni-processor 
+
+cluster, the communication system is different, too. The research on communication system of 
+
+CLUMPS plays an important role in the research and development of CLUMPS.</P>
+
+
+
+<P ALIGN="JUSTIFY">
+
+After analyzing all aspects of cluster architecture and cluster communication system, this paper 
+
+introduced a system hierarchy model by analyzing connection performance. A multi-protocol 
+
+mechanism, which consists of a shared memory based protocol and a semi-user-level protocol, 
+
+is discussed under this model.</P>
+
+
+
+<P ALIGN="JUSTIFY">Then this paper concentrates on the key issues of the two protocols of the 
+
+multi-protocol system. Some key issues are discussed to improve the performance of shared memory 
+
+based protocol. The security, reliability, portability and heterogeneous network environment 
+
+support of the semi-user-level protocol are also discussed. Process Algebra is introduced to 
+
+describe and verify the protocol.</P>
+
+
+
+<P ALIGN="JUSTIFY">Performance is a key factor to evaluate a communication protocol. This paper 
+
+presents the evaluation model and performance analysis of BCL-3, which is the Basic 
+
+Communication Library of DAWNING-3000. Point to point communication performance, LogGP 
+
+communication parameters and collective communication performance are used to evaluate the 
+
+whole system. The tests showed good performance and scalability of the protocol.</P>
+
+
+
+<P ALIGN="JUSTIFY">Finally, this paper discussed the factors that affect the communication 
+
+performance. A multi-card protocol model and a double-card protocol prototype are introduced 
+
+to improve the performance.</P>
+
+
+
+<B>Keywords:</B> CLUMPS, Cluster Communication System, User-level Communication, 
+
+Scalable Flow Control</P>
+
+
+
+<H3>
+
+<P ALIGN="CENTER"><A NAME="Reference"></A>参考文献</A></P>
+
+</H3>
+
+<OL>
+
+<LI>
+
+Kai Hwang. 
+
+Advanced Computer Architecture: Parallelism, Scalability, Programmability. 
+
+McGraw-Hill, 1994.
+
+</LI>
+
+
+
+<LI>
+
+Kai Hwang, Zhiwei Xu. 
+
+Scaleable Parallel Computing: Technology, Architecture, Programming. 
+
+WCB/McGraw-Hill, 1998.
+
+</LI>
+
+
+
+<LI>
+
+郑纬民，汤志忠. 
+
+计算机系统结构，第二版. 
+
+清华大学出版社，1998.
+
+</LI>
+
+
+
+<LI>
+
+M.Sato.
+
+<A HREF="References/COMPaS-i3econ99.pdf">COMPaS: a PC-based SMP cluster</A>. 
+
+<I>IEEE Concurrency</I>, 7(1):82-86, 1999.
+
+</LI>
+
+
+
+<LI>
+
+T. E. Anderson, D. E. Culler, D. A. Patterson, and the NOW Team. 
+
+<A HREF="References/m1054.pdf">A Case for NOW (Networks of Workstations)</A>. 
+
+<I>IEEE Micro</I>, 15(1):54-64, February 1995.
+
+</LI>
+
+
+
+<LI>
+
+B. S. Ang, D. Chiou, D. L. Rosenband, M. Ehrlich, L. Rudolph, and Arvind. 
+
+StarT-Voyager: A Flexible Platform for Exploring Scalable SMP Issues. 
+
+In <I>Proceedings of SC98: High Performance Networking and Computing</I>, Orlando, Florida, November 1998.
+
+</LI>
+
+
+
+<LI>
+
+S. L. Lumetta. 
+
+<A HREF="References/lumetta.pdf">Design and Evaluation of Multi-Protocol Communication on a Cluster of SMP's</A>. 
+
+Ph.D. Thesis, University of California, Berkeley, Berkeley, CA, 1998.
+
+</LI>
+
+
+
+<LI>
+
+J. Gray. 
+
+Super-Servers: Commodity Computer Clusters Pose a Software Challenge. 
+
+In <I>G. Lausen</I>, editor, BTW95, pp. 30-47. Springer-Verlag, 1995.
+
+</LI>
+
+
+
+<LI>
+
+Gordon Bell. 
+
+Scalable, Parallel Computers: Alternatives, Issues, and Challenges. 
+
+<I>International Journal of Parallel Programming</I>, Vol. 22, No.1, 1994.
+
+</LI>
+
+
+
+<LI>
+
+Matthias A. Blumrich, Kai Li, Richard Alpert, Cezary Dubnicki and Edward W. Felten. 
+
+Virtual Memory Mapped Network Interface for the SHRIMP Multicomputer. 
+
+In <I>Proc. of the 21st International Symposium on Computer Architecture</I>, April 1994.
+
+</LI>
+
+
+
+<LI>
+
+Matthias A.Blumrich, Cezary Dubnicki, Edward W. Felten, Kai Li and Malena R. Mesarina. 
+
+<A HREF="References/m1021.pdf">Virtual-Memory-Mapped Network Interfaces</A>. 
+
+<I>IEEE Micro</I>, 15(1):21-28, February 1995.
+
+</LI>
+
+
+
+<LI>
+
+Cezary Dubnicki, Angelos Bilas, Yuqun Chen, Stefanos Damianakis, and Kai Li. 
+
+VMMC-2: Efficient Support for Reliable, Connection-Oriented Communication. 
+
+Computer Science Department, Princeton University, 1997.
+
+</LI>
+
+
+
+<LI>
+
+Cezary Dubnicki, Angelos Bilas, Kai Li, and James Philbin. 
+
+Design and Implementation of Virtual Memory-Mapped Communication on Myrinet. 
+
+<I>IEEE micro</I>, 1997.
+
+</LI>
+
+
+
+<LI>
+
+von Eiken, A. Basu, V. Buch, and W. Vogels. 
+
+U-Net: A User-level Network Interface for Parallel and Distributed Computing. 
+
+In <I>Proc. of the 15th ACM Symposium on Operating Systems Principles</I>, 1995.
+
+</LI>
+
+
+
+<LI>
+
+Matt Welsh, Anindya Basu, and von Eichen. 
+
+Low-Latency Communicaiton over Fast Ethernet. 
+
+<A HREF="http://www.cs.cornell.edu/Info/Projects/U-Net">http://www.cs.cornell.edu/Info/Projects/U-Net</A>, 1997.
+
+</LI>
+
+
+
+<LI>
+
+Matt Welsh, Anindya Basu, and von Eichen. 
+
+Incorporating Memory Management into User-Level Network Interfaces. 
+
+<A HREF="http://www2.cs.cornell.edu/U-Net">http://www2.cs.cornell.edu/U-Net</A>, 1997.
+
+</LI>
+
+
+
+<LI>
+
+T. von Eicken, D.E. Culler, S.C. Goldstein, and K.E. Schauser. 
+
+Active Messages: a Mechanism for Integrated Communication and Computation. 
+
+In <I>Proc. of The 19th Annual International Symposium on Computer Architecture</I>, pp. 256-266, May 1992. 
+
+</LI>
+
+
+
+<LI>
+
+Ellen Spertus and William J. Dally. 
+
+Evaluating the Locality Benefits of Active Messages. 
+
+In <I>Proc. of the 5th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming</I>, July 1995.
+
+</LI>
+
+
+
+<LI>
+
+AM-II specification. Active Messages Release 2.0. 
+
+<A HREF="http://now.cs.berkeley.edu/AM/lamrelease.html">http://now.cs.berkeley.edu/AM/lamrelease.html</A>.
+
+</LI>
+
+
+
+<LI>
+
+Xiao Limin and Zhu Mingfa. 
+
+Active Message on the Dawning-1000. 
+
+In <I>Proc. of International Sysposium on Parallel Architecture, Algorithms and Networks</I>, June 1996.
+
+</LI>
+
+
+
+<LI>
+
+N.J. Boden, D. Cohen, R.E. Felderman, A.E. Kulawik, C.L. Seitz, J.N. Seizovic, and W. Su. 
+
+<A HREF="References/m1029.pdf">Myrinet: A Gigabit-per-second Local Area Network</A>. 
+
+<I>IEEE Micro</I>, 15(1):29-36, February 1995. 
+
+</LI>
+
+
+
+<LI>
+
+Myrinet network products. 
+
+Vendor homepage: <A HREF="http://www.myri.com/">http://www.myri.com/</A>.
+
+</LI>
+
+
+
+<LI>
+
+C. Dubnicki, A. Bilas, C. Yuqun, S. N. Damianakis, and L. Kai. 
+
+<A HREF="References/m1029.pdf">Shrimp Project Update: Myrinet Communication</A>. 
+
+<I>IEEE Micro</I>, 18(1):50--52, Jan.--Feb. 1998.
+
+</LI>
+
+
+
+<LI>
+
+Chun, B. N., A. M. Mainwaring, and D. E. Culler. 
+
+<A HREF="References/ucb_IEEE98.ps">Virtual Network Transport Protocols for Myrinet</A>. 
+
+<I>IEEE Micro</I>, 18(1):53-63, January 1998.
+
+</LI>
+
+
+
+<LI>
+
+R. Bhoedjang, T. Ruhl, and H. Bal. 
+
+<A HREF="References/Myri_IEEE98.ps">Design issues for user-level network interface protocols on Myrinet</A>. 
+
+<I>IEEE Computer</I>, 31(11):53-60, November 1998.
+
+</LI>
+
+
+
+<LI>
+
+贺劲. 
+
+<A HREF="References/hejin.pdf">基于Myrinet的高速通讯协议综述</A>. 
+
+第六届计算机科学与技术研究生学术讨论会论文集(下)，pp. 220-225，2000.07.
+
+</LI>
+
+
+
+<LI>
+
+Myricom. 
+
+The gm api. 
+
+<A HREF="http://www.myri.com/GM/doc/gm_toc.html">http://www.myri.com/GM/doc/gm_toc.html</A>, February 2001.
+
+</LI>
+
+
+
+<LI>
+
+Myrinet. 
+
+Inc. The GM Message Passing System. 
+
+<A HREF="http://www.myri.com">http://www.myri.com</A>, February 2001.
+
+</LI>
+
+
+
+<LI>
+
+Prylli, L., and Tourancheau, B. 
+
+<A HREF="References/bip98-pcnow.ps">BIP: A New Protocol designed for High-Performance Networking on Myrinet</A>. 
+
+In <I>Proc. of PC-NOW IPPSSPDP98</I>, March 1998. 
+
+</LI>
+
+
+
+<LI>
+
+France Laboratory for High Performance Computing (LHPC) at Ecole Normale Superieure de Lyon (ENS-Lyon), Lyon. 
+
+BIP Messages. 
+
+<A HREF="http://lhpca.univ-lyon1.fr/bip.html">http://lhpca.univ-lyon1.fr/bip.html</A>, 2000. 
+
+</LI>
+
+
+
+<LI>
+
+Basic Interface for Parallelism. 
+
+<A HREF="http://lhpca.univ-lyon1.fr/bip.html">http://lhpca.univ-lyon1.fr/bip.html</A>, 2000.
+
+</LI>
+
+
+
+<LI>
+
+Loic Prylli. 
+
+BIP User Reference Manual. 
+
+<A HREF="http://www-bip.univlyon1.fr/software/bip-manual.ps">http://www-bip.univlyon1.fr/software/bip-manual.ps</A>, April 1997.
+
+</LI>
+
+
+
+<LI>
+
+MPICH-BIP/SMP. 
+
+<A HREF="http://lhpca.univ-lyon1.fr/mpibip.html">http://lhpca.univ-lyon1.fr/mpibip.html</A>.
+
+</LI>
+
+
+
+<LI>
+
+孙凝晖，徐志伟. 
+
+曙光2000超级计算机系统软件的设计. 
+
+计算机学报，Vol. 23 No.1, pp. 9-20，2000.
+
+</LI>
+
+
+
+<LI>
+
+Intel Compaq and Microsoft. 
+
+<A HREF="References/VIA_spec10.pdf">Virtual interface architecture specification version 1.0</A>. 
+
+Technical report, <A HREF="http://www.viarch.org">http://www.viarch.org</A>, December 1997.
+
+</LI>
+
+
+
+<LI>
+
+Technology Brief: Virtual Interface Architecture for SANs. 
+
+Compaq Computer Corporation, 1997.
+
+</LI>
+
+
+
+<LI>
+
+S. Pakin, M. Lauria and A. Chien. 
+
+High Performance Messaging on Workstations: Illinons Fast Messages (FM) for Myrinet. 
+
+In <I>Proc. of SC'95</I>, San Diego, California, 1995.
+
+</LI>
+
+
+
+<LI>
+
+S.Paking, Karamcheti and A.Chien. 
+
+Fast Message(FM): Efficient, Portable Communication for Workstation Clusters and Massively-Parallel Processors. 
+
+<I>IEEE Concurrency</I>, 1997.
+
+</LI>
+
+
+
+<LI>
+
+Steven H. Rodrigues, Thomas E. Anderson and David E. Culler. 
+
+High-Performance Local Area Communication with Fast Sockets. 
+
+Technical reports, University of California at Berkeley, June 1996.
+
+</LI>
+
+
+
+<LI>
+
+S. S. Lumetta, A. M. Mainwaring, and D. E. Culler. 
+
+<A HREF="References/AM_SC97.ps">Multi-Protocol Active Messages on a Cluster of SMP's</A>. 
+
+In <I>Proceedings of Supercomputing'97</I>, San Jose, CA, November 1997.
+
+</LI>
+
+
+
+<LI>
+
+Steven S. Lumetta and David E. Culler. 
+
+<A HREF="References/AM_IPPS98.ps">Managing concurrent access for shared memory active messages</A>. 
+
+In <I>Proc. of International Parallel Processing Symposium</I>, April 1998.
+
+</LI>
+
+
+
+<LI>
+
+Patrick Geoffray, Loc Prylli et Bernard Tourancheau. 
+
+<A HREF="References/BIP_SC99.pdf">BIP-SMP: High Performance Message Passing over a Cluster of Commodity SMP's</A>. 
+
+In <I>Proc. of SC'99</I>, November 1999.
+
+</LI>
+
+
+
+<LI>
+
+Ma Jie. 
+
+<A HREF="SCP.ps">A Simplified Communication Protocol on Dawning 2000</A>. 
+
+In <I>Proc. of HPC-Asia2000</I>, 2000.
+
+</LI>
+
+
+
+<LI>
+
+Ma Jie, He Jin, Meng Dan, Li Guojie. 
+
+<A HREF="BCL-3.pdf">BCL-3: A High Performance Basic Communication Protocol for Commodity Superserver DAWNING-3000</A>. 
+
+<I>Journal of Computer Science and Technology</I> (Accepted).
+
+</LI>
+
+
+
+<LI>
+
+孟丹，马捷，贺劲. 
+
+<A HREF="/work/BCL/BCL-3.pdf">BCL-3总体设计</A>. 
+
+曙光3000技术报告，2000.
+
+</LI>
+
+
+
+<LI>
+
+马捷，贺劲. 
+
+BCL-3详细设计(<A HREF="/work/BCL/BCL-3MCP.pdf">1</A>, <A HREF="/work/BCL/BCL-3BCL.pdf">2</A>). 
+
+曙光3000技术报告，2000.
+
+</LI>
+
+
+
+<LI>
+
+肖利民. 
+
+<A HREF="References/xlm.pdf">机群高效通信系统研究</A>. 
+
+中国科学院计算技术研究所博士学位论文，1998.
+
+</LI>
+
+
+
+<LI>
+
+毛永捷. 
+
+<A HREF="References/myj.pdf">用户级通信在软件分布式共享存储系统中的应用</A>. 
+
+中国科学院计算技术研究所博士学位论文，2000.
+
+</LI>
+
+
+
+<LI>
+
+M.Snir, P.Hochschild, D.D.Frye and K.J.Gildea. 
+
+The Communication Software and Parallel Environment of the IBM SP-2. 
+
+<I>IBM Systems Journal</I>, VOL 34, No. 2, 1995.
+
+</LI>
+
+
+
+<LI>
+
+ZhiWei Xu and Kai Hwuang. 
+
+Modeling Communication Overhead: MPI and MPL Performance on the IBM SP2. 
+
+<I>IEEE Parallel and Distributed Technology</I>, 1996.
+
+</LI>
+
+
+
+<LI>
+
+T. von Eicken, V. Avula, A. Basu, and V. Buch. 
+
+Low-latency Communication over ATM Networks Using Active Messages. 
+
+<I>IEEE Micro</I>, 15(1):46-53, February 1995.
+
+</LI>
+
+
+
+<LI>
+
+R. W. Wisniewski, L. I. Kontothanassis, and M. L. Scott. 
+
+High Performance Synchronization Algorithms for Multiprogrammed Multiprocessors. 
+
+In <I>Proceedings of the 5th Symposium on Principles and Practice of Parallel Programming</I>, pp. 199-206, Santa Barbara, California, July 1995.
+
+</LI>
+
+
+
+<LI>
+
+A. Singhal, D. Broniarczyk, F. Cerauskis, J. Price, L. Yuan, C. Cheng, D. Doblar, S. Fosth, N. Agarwal, K. Harvey, E. Hagersten, and B. Liencres. 
+
+Gigaplane: A High Performance Bus for Large SMPs. 
+
+In <I>Proceedings of Hot Interconnects IV</I>, pp. 41-52, August 1996.
+
+</LI>
+
+
+
+<LI>
+
+J. D. Valois. 
+
+Implementing Lock-Free Queues. 
+
+In <I>Proceedings of 7th International Conference on Parallel and Distributed Computing Systems</I>, pp. 64-9, October 1994.
+
+</LI>
+
+
+
+<LI>
+
+T. E. Anderson. 
+
+The Performance of a Spin Lock Alternative for Shared-Memory Multiprocessors. 
+
+<I>IEEE Transactions on Parallel and Distributed Systems</I>, 1(1):6-16, January 1990.
+
+</LI>
+
+
+
+<LI>
+
+M. Michael and M. Scott. 
+
+<A HREF="References/lock_IPPS97.ps">Relative performance of preemption-safe locking and nonblocking synchronization on multiprogrammed shared memory multiprocessors</A>. 
+
+In <I>Proceedings of the 11th International Parallel Processing Symposium</I>, April 1997.
+
+</LI>
+
+
+
+<LI>
+
+M. Michael and M. Scott. 
+
+<A HREF="References/lock_JPDC98.ps">Non-blocking Algorithms and Preemption-safe Locking on Multiprogrammed Shared Memory Multiprocessors</A>. 
+
+<I>Journal of Parallel and Distributed Computing</I>, 54(2), pp. 162--182, Feb. 1998.
+
+</LI>
+
+
+
+<LI>
+
+C. P. Kruskal, L. Rudolph, and M. Snir. 
+
+Efficient Synchronization on Multiprocessors with Shared Memory. 
+
+In <I>Proceedings of the 5th Symposium on Principles of Distributed Computing</I>, pp. 218-28, Calgary, Alberta, Canada, August 1986.
+
+</LI>
+
+
+
+<LI>
+
+M. M. Michael and M. L. Scott. 
+
+Simple, Fast, and Practical Non-Blocking and Blocking Concurrent Queue Algorithms. 
+
+In <I>Proceedings of the 15th Symposium on Principles of Distributed Computing</I>, pp. 267-75, Philadelphia, Pennsylvania, May 1996.
+
+</LI>
+
+
+
+<LI>
+
+S. K. Reinhardt, J. R. Larus, and D. A. Wood. 
+
+Tempest and Typhoon: User-Level Shared Memory. 
+
+In <I>Proceedings of the 21st International Symposium on Computer Architecture</I>, pp. 325-36, Chicago, Illinois, April 1994.
+
+</LI>
+
+
+
+<LI>
+
+B.H. Lim, P. Heidelberger, P. Pattnaik, and M. Snir. 
+
+Message Proxies for Efficient, Protected Communication on SMP Clusters. 
+
+In <I>Proceedings of the 3rd International Symposium on High-Performance Computer Architecture</I>, pp. 116-27, San Antonio, Texas, February 1997.
+
+</LI>
+
+
+
+<LI>
+
+N. S. Arora, R. D. Blumofe, and C. G. Plaxton. 
+
+<A HREF="References/thread_SPAA98.ps">Thread Scheduling for Multiprogrammed Multiprocessors</A>. 
+
+In <I>Proceedings of the 10th Symposium on Parallel Algorithms and Architectures</I>, pp. 119-29, Puerto Vallarta, Mexico, June 1998.
+
+</LI>
+
+
+
+<LI>
+
+G. T. Byrd. 
+
+<A HREF="References/CSL-TR-93-596.pdf">Models of Communication Latency in Shared Memory Multiprocessors</A>. 
+
+Tech. Report CSL-TR-93-596, Stanford University, Dec. 1993.
+
+</LI>
+
+<LI>
+
+D. R. Cheriton and R. A. Kutter. 
+
+Optimized Memory-Based Messaging: Leveraging the Memory System for High-Performance Communication. 
+
+<I>Computing Systems</I>, 9(3):179-215, 1996.
+
+</LI>
+
+
+
+<LI>
+
+I. Foster, J. Geisler, C. Kesselman, and S. Tuecke. 
+
+Managing Multiple Communication Methods in High-Performance Networked Computing Systems. 
+
+In <I>Journal of Parallel and Distributed Computing</I>, Vol. 40, pp. 35-48, January 1997.
+
+</LI>
+
+
+
+<LI>
+
+I. Foster, C. Kesselman, and S. Tuecke. 
+
+<A HREF="References/Nexus_JPDC96.ps">The Nexus Approach to Integrating Multithreading and Communication</A>. 
+
+<I>Journal of Parallel and Distributed Computing</I>, 37:70-82, August 1996.
+
+</LI>
+
+
+
+<LI>
+
+B. Falsafi and D. A. Wood. 
+
+Scheduling Communication on an SMP Node Parallel Machine. 
+
+In <I>Proceedings of the 3rd International Symposium on High-Performance Computer Architecture</I>, pp. 128-38, San Antonio, Texas, February 1997.
+
+</LI>
+
+
+
+<LI>
+
+Richard B. Gillett. 
+
+Memory Channel Network for PCI. 
+
+<I>IEEE Micro</I>, February, 1996.
+
+</LI>
+
+
+
+<LI>
+
+R. B. Gillett and R. Kaufmann. 
+
+Using the Memory Channel Network. 
+
+<I>IEEE Micro</I>, 17(1):19-25, February 1997.
+
+</LI>
+
+
+
+<LI>
+
+W. W. Gropp and E. L. Lusk. 
+
+A Taxonomy of Programming Models for Symmetric Multiprocessors and SMP clusters. 
+
+In <I>Proceedings of Programming Models for Massively Parallel Computers 1995</I>, pp. 2-7, Berlin, Germany, October 1995.
+
+</LI>
+
+
+
+<LI>
+
+J. Heinlein, K. Gharachorloo, S. Dresser, and A. Gupta. 
+
+Integration of Message Passing and Shared Memory in the Stanford FLASH Multiprocessor. 
+
+In <I>Proceedings of the 6th International Conference on Architectural Support for Programming Languages and Operating Systems</I>, pp. 38-50, San Jose, California, November 1994.
+
+</LI>
+
+
+
+<LI>
+
+R. Martin, A. Vahdat, D. Culler, T. Anderson. 
+
+Effects of Communication Latency, Overhead, and Bandwidth in a Cluster Architecture. 
+
+<I>International Symposium on Computer Architecture</I>, Denver, CO, June 1997.
+
+</LI>
+
+
+
+<LI>
+
+R. Milner. 
+
+Communication and Concurrency. 
+
+Prentice-Hall International, 1989.
+
+</LI>
+
+
+
+<LI>
+
+C.A.R. Hoare. 
+
+Communicating Sequential Processes. 
+
+<I>Communications of the ACM</I>, 21(8):666-676, August 1978.
+
+</LI>
+
+
+
+<LI>
+
+C.A.R. Hoare. 
+
+Communication Sequential Processes. 
+
+Prentice-Hall International, 1985.
+
+</LI>
+
+
+
+<LI>
+
+A.W. Roscoe. 
+
+The Theory and Practice of Concurrency. 
+
+Prentice-Hall International, 1997.
+
+</LI>
+
+
+
+<LI>
+
+M. Hennessy. 
+
+Algebraic Theory of Processes. 
+
+MIT Press Series in the Foundations of Computing, MIT Press, 1988.
+
+</LI>
+
+
+
+<LI>
+
+J. A. Bergstra and J. W. Klop. 
+
+Algebra of Communicating Processes with Abstraction. 
+
+<I>Journal of Theoretical Computer Science</I>, 37:77-121, 1985.
+
+</LI>
+
+
+
+<LI>
+
+I. Lee, P. Br'emond-Gr'egoire, and R. Gerber. 
+
+<A HREF="References/PA_IEEE94.ps">A Process Algebraic Approach to the Specification and Analysis of Resource-Bound Real-Time Systems</A>. 
+
+In <I>Proceedings of the IEEE</I>, pages 158--171, Jan 1994.
+
+</LI>
+
+
+
+<LI>
+
+K. Havelund and N. Shankar. 
+
+<A HREF="References/PVS_ModelCheck.ps">Experiments in theorem proving and model checking for protocol verification</A>. 
+
+In <I>M.C. Gaudel and J. Woodcock, editors, Third International Symposium of Formal Methods Europe (FME'96)</I>, LNCS 1051, pp. 662-681, Springer-Verlag, 1996.
+
+</LI>
+
+
+
+<LI>
+
+Gerard J. Holzmann. 
+
+The Model Checker Spin. 
+
+<I>IEEE Transactions on Software Engineering</I>, Vol. 23, No. 5, May 1997.
+
+</LI>
+
+
+
+<LI>
+
+Gerard J. Holzmann. 
+
+<A HREF="References/Spin_Book.zip">Design and Validation of Computer Protocols</A>. 
+
+Prentice-Hall International, 1991.
+
+</LI>
+
+
+
+<LI>
+
+R. Gerth, D. Peled, M. Y. Vardi, and P. Wolper. 
+
+Simple on-the-fly automatic verification of linear temporal logic. 
+
+In <I>Proc. 15th Work. Protocol Specification, Testing, and Verification</I>, Warsaw, North-Holland, June 1995.
+
+</LI>
+
+
+
+<LI>
+
+Steve Schneider. 
+
+Verifying authentication protocols with CSP. 
+
+In <I>Computer Security Foundations Workshop (14)</I>, pages 3--17.
+
+</LI>
+
+
+
+<LI>
+
+David Culler, Richard Karp, David Patterson, Abhijit Sahay, Klaus E.Schauser, Eunice Santos, Ramesh Subramonian and Thorsten von Eicken. 
+
+LogP: Towards a Realistic Model of Parallel Compution. 
+
+In <I>Proceedings of the 4th Symposium on Principles and Practice of Parallel Programming</I>, San Diego, California, May 1993.
+
+</LI>
+
+
+
+<LI>
+
+G. Iannello, M. Lauria, and S. Mercolino. 
+
+LogP Performance Characterization of Fast Messages atop Myrinet. 
+
+In <I>Proceedings of the Sixth Euromicro Workshop on Parallel and Distributed Processing</I>, pp. 395-401, Madrid, Spain, January 1998.
+
+</LI>
+
+
+
+<LI>
+
+A. Alexandrov, M. Ionescu, K. E. Schauser, and C. Scheiman. 
+
+LogGP: Incorporating Long Messages into the LogP Model--One Step Closer towards a Realistic Model for Parallel Computation. 
+
+In <I>Proceedings of the 7th Symposium on Parallel Algorithms and Architectures</I>, pp. 95-105, Santa Barbara, California, July 1995.
+
+</LI>
+
+
+
+<LI>
+
+Albert Alexandrov, Mihai F. Ionescu, Klaus E. Schauser, and Chris Scheiman. 
+
+LogGP: Incorporating Long Messages into the LogP Model for Parallel Computation. 
+
+<I>Journal of Parallel and Distributed Computing 44</I>, pp. 71-79, 1997.
+
+</LI>
+
+
+
+<LI>
+
+D.E.Culler, L.T.Liu, R.P. Martin, and C.O. Yoshikawa. 
+
+Assessing Fast Network Interfaces. 
+
+<I>IEEE Micro</I>, 16(1):35-43, February 1996.
+
+</LI>
+
+
+
+<LI>
+
+L.T.Liu and D.E.Culler. 
+
+Evaluation of the Intel Paragon on Active Message Communication. 
+
+In <I>Proceedings of the Intel Supercomputer Users Group Conference</I>, June 1995.
+
+</LI>
+
+
+
+<LI>
+
+Bailey, D. et al. 
+
+The NAS Parallel Benchmarks. 
+
+RNR Technical Report, RNR-94-007, March, 1994.
+
+</LI>
+
+
+
+<LI>
+
+Franck Cappello and Daniel Etiemble. 
+
+MPI versus MPI+OpenMP on the IBM SP for the NAS Benchmarks. 
+
+In <I>Proc. of SC2000</I>, 2000.
+
+</LI>
+
+
+
+<LI>
+
+Jenwei Hsieh, Tau Leng, Victor Mashayekhi and Reza Rooholamini. 
+
+<A HREF="References/p294_SC2000.pdf">Architectural Performance Evaluation of GigaNet and Myrinet Interconnects on Clusters of Small-Scale SMP Servers</A>. 
+
+In <I>Proc. of SC2000</I>, 2000.
+
+</LI>
+
+
+
+<LI>
+
+Frederick Wong, Richard P. Martin, Remzi H. Arpaci-Dusseau, David Wu, and David E. Culler. 
+
+Architectural Requirements and Scalability of the NAS Parallel Benchmarks. 
+
+In <I>Proc. of SC'99</I>, 1999.
+
+</LI>
+
+
+
+<LI>
+
+Steve Sistare, Rolf vandeVaart and Eugene Loh. 
+
+Optimization of MPI collectives on clusters of large-scale SMP's.
+
+In <I>Proc. of SC'99</I>, 1999.
+
+</LI>
+
+
+
+<LI>
+
+Glenn R. Luecke and Ying Li. 
+
+Performance Comparison of MPI. 
+
+<I>PGHPF/CRAFT and HPF Implementations of the Cholesky Factorization on the Cray T3E and IBM SP-2, The Journal of Performance Evaluation and Modelling for Computer Systems</I>, January 1998.
+
+</LI>
+
+
+
+<LI>
+
+Glenn R. Luecke and James J. 
+
+Comparing the Performance of MPI on the Cray T3E-900, the Cray Origin2000 And The IBM P2SC. 
+
+The <I>Journal of Performance Evaluation and Modelling for Computer Systems</I>, June 1998.
+
+</LI>
+
+
+
+<LI>
+
+Glenn R. Luecke, Bruno Raffin and James J. Coyle. 
+
+Comparing the Communication Performance and Scalability of a SGI Origin 2000, a Cluster of Origin 2000's and a Cray T3E-1200 using SHMEM and MPI Routines. 
+
+The <I>Journal of Performance Evaluation and Modelling for Computer Systems</I>, October 1999.
+
+</LI>
+
+
+
+<LI>
+
+Glenn R. Luecke, Bruno Raffin and James J. Coyle. 
+
+The Communication Performance and Scalability of a Linux and an NT Cluster of PCs, a SGI Origin 2000, an IBM SP and a Cray T3E-600. 
+
+The <I>Journal of Performance Evaluation and Modelling for Computer Systems</I>, March 2000.
+
+</LI>
+
+
+
+<LI>
+
+S. S. Lumetta, A. Krishnamurthy, and D. E. Culler. 
+
+Towards Modeling the Performance of a Fast Connected Components Algorithm on Parallel Machines. 
+
+In <I>Proceedings of Supercomputing 1995</I>, San Diego, California, December 1995.
+
+</LI>
+
+
+
+<LI>
+
+R. H. Saavedra. 
+
+Micro Benchmark Analysis of the KSR1. 
+
+In <I>Proceedings of Supercomputing 1993</I>, pp. 202-13, Portland, Oregon, November 1993.
+
+</LI>
+
+
+
+<LI>
+
+E. Speight and J. K. Bennett. 
+
+Using Multicast and Multithreading to Reduce Communication in Software DSM Systems. 
+
+In <I>Proceedings of the 4th International Symposium on High-Performance Computer Architecture</I>, pp. 312-22, Las Vegas, Nevada, February 1998.
+
+</LI>
+
+
+
+<LI>
+
+M. L. Scott and A. L. Cox. 
+
+An Empirical Study of Message-Passing Overhead. 
+
+In <I>Proceedings of the 7th International Conference on Distributed Computing Systems<I>, pp. 536-43, Berlin, West Germany, September 1987.
+
+</LI>
+
+</OL>
+

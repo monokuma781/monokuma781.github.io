@@ -1,0 +1,339 @@
+<html>
+<head>
+<title>在研项目</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../css/ncic.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0">
+<!-- #BeginLibraryItem "/Library/Untitled.lbi" --><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="547"><img src="../../image/top.jpg" width="547" height="123"></td><td background="../../image/top_1.jpg" align="right"><img src="../../image/top_2.jpg" width="131" height="123"></td></tr>
+</table><!-- #EndLibraryItem --> 
+<table width="720" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="164" align="center" valign="top"> 
+      <table width="163" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <table width="163" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="image/b1.jpg" width="17" height="18"><b><font size="3"> 
+            <font color="#336666"><a href="intro.htm">Introduction</a></font></font></b></td>
+        </tr>
+      </table>
+      <table width="163" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="image/b1.jpg" width="17" height="18"><font size="3"><b> 
+            <font color="#336666"><a href="index.htm#Download">Download</a></font></b></font></td>
+        </tr>
+        <tr> 
+          <td><img src="image/b1.jpg" width="17" height="18"><font size="3"><b> 
+            <font color="#336666"><a href="index.htm#Papers">Papers</a></font> 
+            </b></font></td>
+        </tr>
+        <tr> 
+          <td><img src="image/b1.jpg" width="17" height="18"><font size="3"><b><font color="#336666"> 
+            <a href="index.htm#Error Report">Error Report</a></font></b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"><a href="../dcfs/index.htm"><img src="image/back.jpg" width="57" height="23" border="0"></a></div>
+          </td>
+        </tr>
+      </table>
+      <br>
+    </td>
+    <td width="29">&nbsp;</td>
+    <td valign="top" align="right" width="507"> 
+      <table width="534" border="0" cellspacing="0" cellpadding="0" height="400">
+        <tr> 
+          <td align="right" height="70" valign="bottom" colspan="2">
+            <div align="left">
+              <p align="center"><font size="5"><b><font color="#FF6600" face="Times New Roman, Times, serif">The 
+                Dawning Cluster File System</font></b></font><font size="6" face="Times New Roman, Times, serif"> 
+                </font></p>
+              <p align="center"><b><font color="#FF6600" face="Times New Roman, Times, serif">—— 
+                a Cluster File System for Linux Clusters</font></b></p>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td align="right" colspan="2"><img src="../../image/line.gif" width="481" height="3"></td>
+        </tr>
+        <tr> 
+          <td height="10" colspan="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" align="right" colspan="2"> 
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+              is a cluster file system developed by NCIC (National Research Center 
+              for Intelligent Computing Systems, Institute of Computing Technology, 
+              Chinese Academy of Sciences) for Linux clusters, especially the 
+              Dawning 4000L Super-server. DCFS is a shared global file system 
+              with single file system image. Applications see a single name space 
+              from all cluster nodes. Files in DCFS can be accessed through standard 
+              system calls, such as <b>open, close, read, write</b>, etc, and 
+              can be manipulated by system commands such as ls, cp, mkdir, rmdir, 
+              tar, vi, etc. Applications using traditional UNIX file I/O can use 
+              DCFS files without modification and recompilation. <br>
+              </font></p>
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+              exploits a scalable architecture as shown in Figure 1. Metadata 
+              processing is divorced from file data processing in DCFS. They have 
+              different servers and different access path. Moreover, there can 
+              be multiple servers for both file data and metadata. Such architecture 
+              eliminates the performance bottleneck in single server systems.</font></p>
+            <p align="center"><br>
+              <img src="image/t1.jpg" width="433" height="332"><br>
+              <b><font size="2">Figure 1 The Architecture of DCFS</font></b></p>
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">File 
+              data are stored on multiple storage servers in a RAID 0 style of 
+              striping, and can be accessed concurrently. Metadata are stored 
+              on and maintained by multiple metadata servers. DCFS' metadata distribution 
+              policy enables the simultaneous metadata processing on multiple 
+              metadata servers. Both metadata and file data are stored in regular 
+              files of native file system (EXT2, EXT3, etc) on servers. <br>
+              </font></p>
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+              provides a set of management utilities. Their functions include 
+              DCFS system configuration, starting and stopping DCFS services, 
+              and mount and unmount DCFS file system. </font><font face="Times New Roman, Times, serif"><br>
+              </font></p>
+            <p align="left"><font size="3" face="Times New Roman, Times, serif"><b><font color="#FF6600">Features</font></b></font><font face="Times New Roman, Times, serif"><br>
+              </font></p>
+            <ul>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">Shared 
+                  global file system for Linux clusters with single file system 
+                  image <br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">Standard 
+                  interface: OS system calls and system commands<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">Parallel 
+                  data accesses on multiple storage servers<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">Parallel 
+                  metadata processing on multiple metadata servers<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">High 
+                  scalability<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">High 
+                  aggregate I/O bandwidth<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">High 
+                  metadata performance<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">Easy 
+                  management</font><font face="Times New Roman, Times, serif"><br>
+                  </font></div>
+              </li>
+            </ul>
+            <div align="left"> 
+              <p><font color="#FF6600" face="Times New Roman, Times, serif"><b><font size="3">System 
+                overview</font></b></font><font face="Times New Roman, Times, serif"><br>
+                </font></p>
+              <p><font size="2" face="Times New Roman, Times, serif">As shown 
+                in Figure 1, cluster nodes are classified into 4 types according 
+                to the roles they play in DCFS. <br>
+                </font></p>
+            </div>
+            <ul>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">Storage 
+                  servers: Nodes that store DCFS file data are called storage 
+                  servers. Usually these nodes have directly accessed, high-performance 
+                  RAIDs so that they have much high disk I/O bandwidth. File data 
+                  are stored on these storage servers in a RAID 0 style of striping. 
+                  <br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">Metadata 
+                  servers: DCFS metadata information are called metadata servers. 
+                  Metadata managed by metadata servers include the metadata of 
+                  files and directories（such as file size, owner, access mode, 
+                  access date, and other attributes）, file data layout information, 
+                  directory files and superblock。DCFS supports to create multiple 
+                  DCFS file systems, which are known as logical volumes in DCFS. 
+                  Each DCFS file system has its own metadata servers, and one 
+                  of which is called super-manager。The super-manager stores and 
+                  maintains he file system superblock, root directory and root 
+                  attributes, while each of the others stores and maintains a 
+                  subtree of the root directory. <br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">Client 
+                  nodes: Nodes that mount DCFS file system to use are called client 
+                  nodes. <br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">The 
+                  adm/cfg node: the node that runs the Administration Agent is 
+                  called the adm/cfg node. This node maintains the configuration 
+                  information and all logical volumes information. <br>
+                  </font></div>
+              </li>
+            </ul>
+            <div align="left"> 
+              <p><font size="2" face="Times New Roman, Times, serif">Compute nodes 
+                are used for CPU-intensive and communication-intensive computing, 
+                while storage nodes are used to service intensive disk accesses. 
+                Clusters now tend to have dedicated storage nodes. DCFS is developed 
+                with the same intension. In DCFS, server nodes including storage 
+                server nodes and metadata server nodes cannot be client nodes. 
+                However, a server node can be a storage server node, or a metadata 
+                server node, or both a storage server node and a metadata server 
+                node. A typical configuration for DCFS on a cluster system is 
+                that compute nodes are configured as client nodes, dedicated storage 
+                nodes are configured as storage server nodes, metadata servers 
+                are configured on some secure nodes and the adm/cfg node is configured 
+                on the console node. <br>
+                </font> </p>
+              <p><font size="3" face="Times New Roman, Times, serif"><b><font color="#FF6600">DCFS 
+                Components</font></b></font><font face="Times New Roman, Times, serif"><br>
+                </font></p>
+              <p><font size="2" face="Times New Roman, Times, serif">There are 
+                six major components to the DCFS system: <br>
+                </font></p>
+            </div>
+            <ul>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif"><b>mgr</b>: 
+                  It is a user level daemon running on each metadata server.<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif"><b>ios</b>: 
+                  It is a user level daemon running on each storage server.<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif"><b>clerk</b>: 
+                  It is a user level daemon running on each client node.<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif"><b>broker</b>: 
+                  It is a kernel module to be inserted on each client node.<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif"><b>cnd</b> 
+                  and <b>scnd</b>: They are user level daemons. <b>cnd</b> runs 
+                  on the adm/cfg node, while <b>scnd</b> runs on the backup adm/cfg 
+                  node for high availability considerations.<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif"><b>dcfs_adm</b> 
+                  and <b>dcfs_cfg</b>: They are administration utilities for DCFS 
+                  management.<br>
+                  </font></div>
+              </li>
+            </ul>
+            <div align="left"> 
+              <p><font size="2" face="Times New Roman, Times, serif">As shown 
+                in Figure 2, <b>broker</b> is a kernel module that implements 
+                the VFS interface. This implementation enables applications using 
+                system calls interface to access DCFS files. So application programs 
+                based on traditional UNIX I/O can use DCFS files without modification 
+                or recompilation. </font><font face="Times New Roman, Times, serif"><br>
+                </font></p>
+              <p><font face="Times New Roman, Times, serif"><img src="image/t2.jpg" width="565" height="260"> 
+                </font></p>
+              <p><font size="2" face="Times New Roman, Times, serif">Current version 
+                of DCFS is implemented and tested on Linux-2.4.18-3smp。If you 
+                need to run DCFS on kernels other than Linux-2.4.18-3smp, <b>broker</b> 
+                codes need some adjustments. <br>
+                </font> </p>
+              <p><font size="3" face="Times New Roman, Times, serif"><b><font color="#FF6600">Installation 
+                and Running</font></b></font></p>
+              <p><font size="2" face="Times New Roman, Times, serif">Please refer 
+                to DCFS User's Guide for how to install and run DCFS.</font><font face="Times New Roman, Times, serif"><br>
+                </font></p>
+              <p><font size="3" color="#FF6600" face="Times New Roman, Times, serif"><b>Performance</b></font><font face="Times New Roman, Times, serif"><br>
+                </font></p>
+              <p><font size="2" face="Times New Roman, Times, serif">The performance 
+                results of DCFS on 32 compute nodes of the Dawning4000-L machine 
+                are given below. The machine consists of 322 nodes, with 2 login 
+                nodes, 256 compute nodes and 64 database nodes. Each compute node 
+                is a Dawning Tiankuo(R) R220XP server running Linux 2.4.18-3smp, 
+                with 2 2.4-GHz Intel(R) Xeon(TM) Processors, 2-Gbyte memory and 
+                3 73-Gbyte SCSI disks. DCFS used the Gigabit Ethernet on which 
+                the TCP/IP communication bandwidth is about 106.2MB/sec (measured 
+                by <b>netperf</b> for 16KB messages). The disks are Seagate Ultra320 
+                with model number ST373307LC (with 8MB data buffer and 2.99 msec 
+                average latency). Both sequential read and write bandwidth of 
+                the disks are about 60MB/sec (measured by <b>iozone</b> on EXT2). 
+                <br>
+                </font></p>
+              <p><font size="2" face="Times New Roman, Times, serif">The aggregate 
+                I/O bandwidth is shown in Figure 3 and Table 1. All read/write 
+                data can be fit in storage servers' cache. Total read/write size 
+                was 256MB × number of storage servers. For 4 <b>ios</b> es and 
+                8 <b>ios</b> es, these tests did not reach the peak bandwidth, 
+                limited by the total number of clients available (22). </font></p>
+              <p><font face="Times New Roman, Times, serif"><img src="image/t3.jpg" width="636" height="239"></font></p>
+            </div>
+            <p align="center"><font face="Times New Roman, Times, serif"><br>
+              <img src="image/t4.jpg" width="555" height="237"> </font></p>
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">Metadata 
+              performance is shown in Figure 4 and Table 2. Each client node ran 
+              a test processes that create or remove 5000 files. Total number 
+              of client nodes is 22. For 4<b> mgr</b> s and 8 <b>mgr</b> s, these 
+              tests did not reach the peak rate, limited by the total number of 
+              clients available (22). </font></p>
+            <p align="center"><font face="Times New Roman, Times, serif"><img src="image/t5.jpg" width="609" height="261"></font></p>
+            <p align="left"><font face="Times New Roman, Times, serif"><b>　　　　</b><img src="image/t6.jpg" width="555" height="238"></font></p>
+            </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="164" align="center" valign="top">&nbsp;</td>
+    <td width="29">&nbsp;</td>
+    <td valign="top" align="right" width="507">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td bgcolor="#999999" height="1"><img src="../../image/dot00.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td align="center" height="64"> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Copyright 
+        for NCIC All Rights Reserved</font> </p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

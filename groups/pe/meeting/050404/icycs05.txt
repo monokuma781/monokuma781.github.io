@@ -1,0 +1,236 @@
+Call for Papers for
+The 8th International Conference for Young Computer Scientists
+ 
+Beijing University of Technology
+Beijing, China
+September 20-22, 2005
+http://icycs05.bjut.edu.cn
+ 
+The emergence of new technologies, such as wireless and sensor networks, GRID computing, ubiquitous and self-organized Internet, ad hoc networks, etc., in recent years 
+is exerting an incredible influence on our society and is changing the way in which people work and live. Information Technology has become a main focus and the 
+mainstream of research and development in the academic community as well as the driving force for the development of new industrial and consumer products. 
+Building on the success of past conferences, the 8th International Conference for Young Computer Scientists (ICYCS'05), one of the ICYCS conference series 
+sponsored by the China Computer Federation, will be held in Beijing, China, September 20-22, 2005.
+ 
+The theme of ICYCS'05 is: Convergence of computing technologies in the new era. Following the tradition and success of previous ICYCS conferences in the series which 
+were held in Harbin, Beijing, Nanjing, Hangzhou, Xi'an, etc., ICYCS'05 will emphasize on the emerging new technologies as well as on the interdisciplinary efforts in the 
+broad field of computer science and technology. The conference will provide an open forum for researchers from academic, industrial and related fields to exchange 
+different views and share the latest achievements and experiences in the research and development in the broad areas of computer science and technology. 
+ICYCS'05 invites the submission of original papers addressing the broad areas of computer science and technology. Papers describing recent advances in emerging 
+technologies are especially welcome. Areas of interest include, but are not limited to:
+ 
+Computer and Software Systems
+ 
+- Advanced computer architecture and chip design
+- Distributed and parallel processing
+- High-performance computing
+- Fault-tolerance techniques
+- Parallel compiler and cluster computing
+- Theory of computer software
+- Intelligent software engineering
+- Database, data warehouse and data mining
+- Computer storage techniques and systems
+- Embedded operation systems
+- Software engineering and requirement engineering
+- Software methodology and engineering techniques
+- Software reuse
+- Object-oriented programming
+- Middleware techniques
+- Autonomic computing
+ 
+Computer Networks and Security
+ 
+- Network architectures
+- Network, transport, and application-layer protocols
+- Routing, switching, and addressing
+- Flow and congestion control
+- Multicasting
+- Network middleware
+- Policy-based networking
+- Wearable computing and networking
+- Network architectures, protocols, or service algorithms
+- Security in hybrid (e.g., wireline/wireless) networks
+- Network management and traffic engineering
+- Analysis and design of network architectures and algorithms
+- Network security, vulnerability, and defense
+- Peer-to-peer, overlay, and content distribution networks
+- Grid Computing
+- Networking issues for Web, multimedia, and gaming applications
+- Scheduling and resource management
+- Operating system and other host support for networking
+- Experimental and measurement results from operational networks
+- Network fault-tolerance and reliability, debugging, and troubleshooting
+- Tools and techniques for network measurement and simulation
+- Fundamental insights into network and traffic characteristics
+- Quality of service
+- Network pricing and billing
+- Next generation networks
+- Network I/O and storage area networks
+- Novel network services and applications
+- Optical and photonics networks
+ 
+Wireless Internet
+ 
+- Wireless, mobile, ad-hoc, and sensor networks
+- Access technologies
+- Broadband on demand wireless Internet
+- Connectivity for wired unserved areas
+- Standards (IEEE 802.11, 802.15, 802.16, etc.)
+- Adaptive architectures
+- Cross-layering
+- Seamless internetworking
+- Handoff and mobility management
+- Location mechanism and services
+- Mobile Internet
+- Energy management
+- Service network architectures
+- Wireless protocol stacks
+- Experiments and trials
+- Context aware applications
+- Security, authentication and privacy
+- Pricing and billing
+- Wireless Internet security
+- Theoretical foundations
+- Performance evaluation
+- Analysis and simulation models
+ 
+Intelligent information processing
+ 
+- Theory and method of artificial intelligence
+- Pattern recognition
+- Multi-modal perception, intelligent interface and virtual reality
+- Natural language processing and machine translation
+- Multimedia compression, transmission and retrieval
+- Human-computer interactions
+- Neural networks and fuzzy logic
+- Distributed artificial intelligence and multi-agent systems
+- Computer graphics
+- Semantic Web and XML
+ Robotics
+ 
+Applications
+ 
+- Distance education and information processing techniques
+- E-commerce and its applications
+- E-government and its applications
+- Computer integrated manufacturing systems
+- Computer-aided software engineering
+- ERP, SCM/CRM
+- Digital library, digital home and digital city
+- Engineering databases
+- Network-based information systems
+- Biology information processing
+- Biometrics recognition
+ 
+Paper Submission:
+ 
+- The language of the conference is English. Therefore, every paper submitted to
+the conference must be written in English to be reviewed, accepted for
+presentation at the conference and included in the conference proceedings.
+ 
+- The first author of all submissions must be 45 years old or younger.
+ 
+- All submissions should report original work, must not have been published
+previously and are not currently under review by another conference. Each
+submission must include the paper title, the authors' names, affiliations, post
+addresses, telephone and fax numbers and email addresses. Each paper should also
+include 3-5 keywords and an abstract of 100-150 words. Submissions may be in the
+form of a full paper of no longer than 10 pages or of a short paper of no longer
+than 5 pages.
+ 
+- All submissions must be prepared in the PDF or Microsoft Word formats and
+submitted to the conference for reviewed through e-mail: icycs05@bjut.edu.cn
+ 
+- All the papers accepted and presented at the conference will be included in the
+conference proceedings and published.
+ 
+- At least one of the authors of each accepted paper must register and present the
+paper at the conference for the paper to be included in the conference
+proceedings.
+ 
+Important Dates:
+ 
+Paper due:                    April 30, 2005
+Notification of acceptance:   June 30, 2005
+Camera-ready paper due:       July 31, 2005
+Conference:                   September 20-22, 2005
+ 
+Contact Information:
+ 
+Prof. He, Jingsha
+ICYCS'05 Program Co-chair
+School of Software Engineering
+Beijing University of Technology
+Beijing 100022, China
+E-mail: icycs05@bjut.edu.cn
+ 
+Conference Committees:
+ 
+General Chair: Hou, Yibin, Beijing University of Technology, China
+Vice General Chair: Zhang, Xiaodong, College of William & Mary, USA
+ 
+Steering Committee (in alphabetical order):
+ 
+Chen, Huowang   National University of Defense Technology, China
+Gu, Guanqun     Southeast University, China
+Li, Deyi        Tsinghua University, China
+Li, Guojie      Chinese Academy of Science, China
+Li, Wei         Beijing University of Aeronautics and Astronautics, China
+Liu, Ruqian     Chinese Academy of Science, China
+Pan, Yunhe      Zhejiang University, China
+Shi, Zhongzhi   China Computer Federation, China
+Sun, Jiaguang   Tsinghua University, China
+Tang, Zesheng   China Computer Federation, China
+Wang, Chengwei  Chinese Academy of Engineering, China
+Yang, Fuqing    Peking University, China
+ 
+Program Committee:
+ 
+Co-Chair: He, Jingsha   Beijing University of Technology, China
+Co-Chair: Gao, Jerry    San Jose State University, USA
+ 
+Members (in alphabetical order):
+ 
+Bemelmans, Theo         University of Technology Eindhoven, The Netherlands
+Du, Xiaoyong            Renmin University of China, China
+Van, Genuchten Michiel  University of Technology Eindhoven, The Netherlands
+Han, Zhen               Beijing Jiaotong University, China
+Hu Ruimin               Wuhan University, China
+Huang, Tao              Chinese Academy of Science, China
+Huang, Zhangqin         Beijing University of Technology, China
+Jin, Zhi                Chinese Academy of Science, China
+Li, Jintao              Chinese Academy of Science, China
+Liang, Yao              Virginia Tech, USA
+Magnaghi, Antonio       Fujitsu Laboratories of America, USA
+Mei, Hong               Peking University, China
+Vogel, Doug             City University of Hong Kong, Hong Kong, China
+Van de Walle            Bartel Tilburg University, The Netherlands
+Wang, Pu                Beijing University of Technology, China
+Wu, Zhaohui             Zhejiang University, China
+Zhaohui                 Zhejiang University, China
+Yao , Jason             National Taiwan University, Taiwan, China
+Yin, Baocai             Beijing University of Technology, China
+Zhang, Changshui        Tsinghua University, China
+Zhang, Li               Beijing University of Aeronautics and Astronautics, China
+ 
+Organizing Committee:
+ 
+Chair: Xiao, Chuangbai   Beijing University of Technology, China
+ 
+Members (in alphabetical order):
+ 
+Li, Yujian      Beijing University of Technology, China
+Liu, Hongzheng  Beijing University of Technology, China
+Mao, Guojun     Beijing University of Technology, China
+Zhang, Jianbiao Beijing University of Technology, China
+ 
+Secretaries (in alphabetical order):
+ 
+Dong, Xiaomei   Beijing University of Technology, China
+Duan, Lijuan    Beijing University of Technology, China
+ 
+Hosted by: China Computer Federation
+In cooperation with: National Natural Science Foundation of China and Beijing
+Municipal Science & Technology Commission
+Organized by: Beijing University of Technology
+ 

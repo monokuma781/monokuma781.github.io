@@ -1,0 +1,31 @@
+The International Conference on GRID Networking and Services
+(ICGNS 2005) will take place in San Jose, Silicon Valley, California,
+September 25-30, 2005 jointly with the International Conference on
+Networking and Services (ICNS 2005).
+
+Submissions could be regular papers, industrial positions, panels and
+tutorials.
+
+The submission deadlines are:
+
+Submissions                             May 1, 2005
+Submissions for tutorial/panel          May 15, 2005
+Notification of acceptance              May 30, 2005
+Camera-ready manuscript                 June 20, 2005
+Conferences                             September 25-30, 2005
+
+Details on the conferences and submission instructions:
+http://www.iaria.org/conferences/ICGNS05.html
+(turn around the displayed logos to visit the sites of all co-located 
+conferences)
+
+Looking forward for your contributions,
+
+On behalf of the Chairs and the Organizing Committees:
+Mazin S Yousif, mazin.s.yousif@intel.com
+Bruno Schulze, schulze@lncc.br
+Cosimo Anglano, cosimo.anglano@unipmn.it
+Gigi Karmous-Edwards, gkarmous@mcnc.org
+Alex Galis, a.galis@ee.ucl.ac.uk
+Petre Dini, pdini@cisco.com
+

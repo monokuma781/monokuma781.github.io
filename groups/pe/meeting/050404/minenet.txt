@@ -1,0 +1,103 @@
+ ******************************************************************
+ *                                                                *
+ * SIGCOMM 2005 Workshop on Mining Network Data (MineNet-05)      *
+ *                                                                * 
+ * (to be held with SIGCOMM 2005, Aug 20-26, Philadelphia, USA)   *
+ *                                                                *
+ * http://www.acm.org/sigs/sigcomm/sigcomm2005/cfp-minenet.html   *
+ ******************************************************************
+
+Today's IP networks are extensively instrumented for collecting a wealth
+of information including traffic traces (e.g., packet or flow level
+traces), control (e.g., router forwarding tables, BGP and OSPF updates),
+and management (e.g., alarms, SNMP traps) data. The real challenge is to
+process and analyze this vast amount of primarily unstructured
+information and extract structures, relationships, and "higher level
+knowledge" embedded in it and use it to aid network management and
+operations. The goal of this one day workshop is to explore new
+directions in network data collection, storage, and analysis techniques,
+and their application to network monitoring, management, and
+remediation. The workshop will provide a venue for researchers and
+practitioners from different backgrounds, including networking, data
+mining, machine learning, and statistics, to get together and
+collaboratively approach this problem from their respective vantage
+points.
+
+We are soliciting original/position papers on topics (including, but not
+limited to) listed below.
+
+   - Collection, storage & access infrastructure: platform
+     instrumentation (e.g. multi-modal, multi-resolution sensors),
+     collection techniques (e.g. event sampling, filtering,
+     aggregation, etc.), storage and access (e.g. retention policy,
+     indexing techniques etc.).
+
+   - Network data analytics techniques & tools: network stream mining,
+     network graph mining, micro-clustering, temporal and statistical
+     correlation, causality tracking, machine learning.
+
+  -   Applications to network operations & management: network problem
+     determination, network reliability and performance, root-cause
+     analysis, security, emerging phenomenon detection (e.g. DDoS,
+     virus/worm, spam etc.), traffic classification.
+
+Of particular interest are (i) new solution techniques as well as
+applications of existing techniques from data mining, machine learning
+and statistics to IP network problems, (ii) experiences with the use of
+such techniques for IP networks, and (iii) open networking problems and
+challenges that would benefit from the use of such techniques. Selected
+papers will be forward-looking, with impact and implications for both
+operational networks and ongoing or future research.  
+
+Submission Instructions
+-----------------------
+
+Papers should be at most 6 pages long, in standard ACM format
+(single-spaced, double column, at least 10pt font). Accepted papers will
+appear in the workshop proceedings. Authors of accepted papers are
+expected to present their work at the workshop. Detailed submission
+guidelines will be available soon at
+http://www.acm.org/sigs/sigcomm/sigcomm2005/cfp-minenet.html.
+
+
+Important Dates 
+---------------
+
+Submission Deadline:  Wed, April 6, 2005, 9.00 PM EST
+
+Notification Deadline: May 10, 2005 
+Camera Ready Deadline: May 30, 2005
+Workshop Date: Aug 26, 2005
+
+
+
+Workshop Organizing Chairs
+--------------------------
+
+Subhabrata Sen, AT&T Research
+Chuanyi Ji, Georgia Tech                        
+Debanjan Saha, IBM Research    
+Joe McCloskey, Dept. of Defense
+
+
+Technical Program Committee
+----------------------------
+
+Constantinos Dovrolis, Georgia Tech.
+Chuanyi Ji, Georgia Tech. 
+Nick Koudas, Univ. of Toronto
+Vipin Kumar, Univ. of Minnesota
+Joe McCloskey, Dept. of Defense  
+Robert Novak, Univ. of Wisconsin-Madison
+Rajeev Rastogi,  Lucent Bell Labs
+John Reumann, IBM Research 
+Jennifer Rexford, Princeton Univ.
+Mathew Roughan,  Univ. of Adelaide
+Debanjan Saha, IBM Research        
+Subhabrata Sen, AT&T Research  
+William Szewczyk, Dept. of Defense
+Walter Willinger, AT&T Research
+Zhi-Li Zhang, Univ. of Minnesota
+
+
+ 

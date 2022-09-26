@@ -1,0 +1,37 @@
+<!--Copyright 2002  Karna Saleh  All Rights Reserved.-->
+
+<!--READ THIS:-->
+
+<!--Don't change the alignment of these directory it will alter the design of the flash file for some designs-->
+<!--Don't change:  &yourcompany, &Button1, &Button1over and all the code that have "&" prefix, FLASH WILL READ THESE CODES-->
+<!--MOST OF THESE BUTTONS WAS DESIGNED ONLY FOR INTERNAL LINKS INSIDE THE FLASH MOVIE-->
+<!--Change the size, color, and the name of your directories and sub directories-->
+
+<!-------------------------------------------------DO NOT REMOVE ABOVE THIS LINE --------------------------->
+
+
+<!-------------START EDITING BELOW THIS LINE PLEASE REFER TO ReadMe FILE-------------->
+
+&yourcompany=<P ALIGN="RIGHT"><FONT FACE="Times" SIZE="26" COLOR="#A6C7D1"><A HREF="" target="_top"><B>智能中心ASL小组--唐 欢</B></A></FONT>
+&Button1=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#A6C7D1"><B>个人简介</B></FONT>
+&Button1over=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FF3300"><B>个人简介</B></FONT>
+&Button1click=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FFCC00"><B>个人简介</B></FONT>
+
+&Button2=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#A6C7D1"><B>主要经历</B></FONT>
+&Button2over=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FF3300"><B>主要经历</B></FONT>
+&Button2click=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FFCC00"><B>主要经历</B></FONT>
+
+&Button3=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#A6C7D1"><B>学习过程</B></FONT>
+&Button3over=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FF3300"><B>学习过程</B></FONT>
+&Button3click=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FFCC00"><B>学习过程</B></FONT>
+
+&Button4=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#A6C7D1"><B>学习总结</B></FONT>
+&Button4over=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FF3300"><B>学习总结</B></FONT>
+&Button4click=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FFCC00"><B>学习总结</B></FONT>
+
+&Button5=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#A6C7D1"><B>个人收藏</B></FONT>
+&Button5over=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FF3300"><B>个人收藏</B></FONT>
+&Button5click=<P ALIGN="RIGHT"><FONT SIZE="11" COLOR="#FFCC00"><B>个人收藏</B></FONT>
+
+<!----------------------------------------------------------END HERE ------------------------------------------------->
+

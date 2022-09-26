@@ -1,0 +1,32 @@
+<b>Schema of the database</b>:
+
+<ul><li>Paper (id, title, authors, emailContact, abstract, topic, 
+   status, isUploaded, format, fileSize, submission_date)
+  <li>Author (id_paper, position, last_name, first_name, affiliation)
+
+<li>PCMember (email, firstName, lastName, affiliation, idAdmin)
+
+<li>Review (idPaper, email,  overall, 
+   reviewerExpertise, summary, details, comments, isValid,
+	submission_date, last_revision_date)
+
+<li>ResearchTopic (id, label)
+
+<li>SelectedTopic (email, idTopic)
+
+<li>ReviewMark (idPaper, email, criteria, mark)
+
+<li>RateLabel(id, label)
+
+<li>Rating (idPaper, email, rate, significance)
+
+
+<li>Criteria (id, label, weight)
+
+<li>PaperStatus (id, label, mailTemplate, cameraReadyRequired)
+
+<li>Message (idMessage,  idParent, idPaper,
+                    emailReviewer,
+                    message,
+                    date)
+</ul>

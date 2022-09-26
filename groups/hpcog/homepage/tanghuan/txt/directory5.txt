@@ -1,0 +1,12 @@
+<!--Copyright 2002  Karna Saleh  All Rights Reserved. This website prototype designed  by Karna Saleh
+	5sec INTERACTIVE Website - http://www.5sec.com   -----   Email - webmaster@5sec.com.-->
+<!-------------------- PLEASE DO NOT REMOVE THE INFORMATION  ABOVE THIS LINE --------------------------->
+
+<!---------------------------------------------------START EDITING BELOW THIS LINE --------------------------->
+
+
+&text=<FONT face="ariali" SIZE="20" COLOR="#000000"><B>个人收藏</B></FONT>
+<FONT SIZE="13" COLOR="#6666FF">
+<li><A HREF="gallery/index.html" target="_blank">个人相册</A></li>
+<li>自拍杂耍视频</li>		<FONT SIZE="12"><A HREF="vedio/ff1.swf" target="_blank">杂耍视频-01</A></FONT><br>		<FONT SIZE="12"><A HREF="vedio/ff2.swf" target="_blank">杂耍视频-02</A></FONT>
+</font>

@@ -1,0 +1,2 @@
+@pcmember{the reviewer @lastName{.}, @firstName{.} has reviewed the flowing papers:
+	@paper{@title{.}}}

@@ -1,0 +1,17 @@
+
+<FONT COLOR="#FF3300"><A HREF="http://www.macromedia.com/software/flash/" target="_parent">FLASH</A></FONT>
+<FONT FACE="Arial" SIZE="13" COLOR="#FF3300"><B>WHAT YOU CANNOT DO WITH OUR FREE TEMPLATES</B></FONT>
+<FONT COLOR="#FF3300"><a href="mailto:webmaster@5sec.com"><B> webmaster@5sec.com</B></A></FONT>
+<B>"Directory1"</B>
+<FONT COLOR="#FF3399">color</FONT>
+<FONT SIZE="10" >size</FONT>
+<U>Underline</U>
+<I>Italic</I>
+
+<P ALIGN="LEFT">
+------------------------------------------------------------------------
+COLOR="#6666FF" ÑªÇà
+COLOR="#FF3399" ÌÒºì
+COLOR="#00CCFF" Ç³À¶
+COLOR="#FF3300" éÙºì
+COLOR="#0066FF" Á¬½ÓÀ¶É«

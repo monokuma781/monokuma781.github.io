@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<script LANGUAGE="JavaScript" TYPE="text/javascript">
+var vn="Microsoft Internet Explorer";
+var some;
+if(navigator.appName!=vn)
+some=1900;
+else
+some=0;
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+{
+this[0] = m0;
+this[1] = m1;
+this[2] = m2;
+this[3] = m3;
+this[4] = m4;
+this[5] = m5;
+this[6] = m6;
+this[7] = m7;
+this[8] = m8;
+this[9] = m9;
+this[10] = m10;
+this[11] = m11;
+}
+function calendar()
+{
+var monthNames = "JanFebMarAprMayJunJulAugSepOctNovDec";
+var today = new Date();
+var thisDay;
+var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+year = today.getYear();
+thisDay = today.getDate();
+if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) monthDays[1] = 29;
+nDays = monthDays[today.getMonth()];
+firstDay = today;
+firstDay.setDate(1); // works fine for most systems
+testMe = firstDay.getDate();
+if (testMe == 2) firstDay.setDate(0);
+startDay = firstDay.getDay();
+document.write('<table border="0" cellspacing="0" cellpadding="0" align="CENTER" bgcolor="#FFFFFF"><TR><TD><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">');
+document.write('<TR><th colspan="7" bgcolor="#FFFFFF">');
+var dayNames = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+var monthNames = new Array("1","2","3","4","5","6","7","8","9","10","11","12");
+var now = new Date();
+document.write("<font style=font-size:9pt;Color:#0000FF>" , "AD" , " " , now.getYear() + some , "-" , " " , monthNames[now.getMonth()] , "-" , now.getDate() , " " , dayNames[now.getDay()] , "</FONT>");
+document.writeln('</TH></TR><TR><TH BGCOLOR="#FFFFFF"><font style="font-size:9;Color:#0000FF">Sun</FONT></TH>');
+document.writeln('<th bgcolor="#FFFFFF"><font style="font-size:9;Color:#0000FF">Mon</FONT></TH>');
+document.writeln('<TH BGCOLOR="#FFFFFF"><font style="font-size:9;Color:#0000FF">Tue</FONT></TH>');
+document.writeln('<TH BGCOLOR="#FFFFFF"><font style="font-size:9;Color:#0000FF">Wed</FONT></TH>');
+document.writeln('<TH BGCOLOR="#FFFFFF"><font style="font-size:9;Color:#0000FF">Thu</FONT></TH>');
+document.writeln('<TH BGCOLOR="#FFFFFF"><font style="font-size:9;Color:#0000FF">Fri</FONT></TH>');
+document.writeln('<TH BGCOLOR="#FFFFFF"><font style="font-size:9;Color:#0000FF">Sat</FONT></TH>');
+document.writeln("</TR><TR>");
+column = 0;
+for (i=0; i<startDay; i++)
+{
+document.writeln("\n<TD><FONT style=font-size:9> </FONT></TD>");
+column++;
+}
+for (i=1; i<=nDays; i++)
+{
+if (i == thisDay)
+{
+document.writeln('</TD><td align="CENTER" bgcolor="#0000FF"><FONT style=font-size:9pt;Color:#FFFFFF><B>')
+}
+else
+{
+document.writeln('</TD><TD BGCOLOR="#FFFFFF" ALIGN="CENTER"><FONT style=font-size:9;font-family:Arial;font-weight:bold;Color:#0000FF>');
+}
+document.writeln(i);
+if (i == thisDay) document.writeln("</FONT></TD>")
+column++;
+if (column == 7)
+{
+document.writeln("<TR>"); 
+column = 0;
+}
+}
+document.writeln('<TR><td colspan="7" align="CENTER" valign="TOP" bgcolor="#FFFFFF"><form name="clock" onSubmit="0"><FONT style=font-size:9pt;Color:#0000FF>NOW TIME:<br></FONT><INPUT TYPE="Text" NAME="face" ALIGN="TOP"></TD></TR></TABLE></TD></TR></TABLE></FORM>');
+}
+var timerID = null;
+var timerRunning = false;
+function stopclock ()
+{
+if(timerRunning)
+clearTimeout(timerID);
+timerRunning = false;
+}
+function showtime()
+{
+var now = new Date()
+var hours = now.getHours()
+var minutes = now.getMinutes()
+var seconds = now.getSeconds()
+var timeValue = ""
+if(hours>=1 && hours <4)
+{timeValue += ("")}
+if(hours>=4 && hours<6)
+{timeValue += ("")}
+if(hours>=6 && hours<9)
+{timeValue += ("")}
+if(hours>=9 && hours<12)
+{timeValue += ("")}
+if(hours>=12 && hours<13)
+{timeValue += ("")}
+if(hours>=13 && hours<18)
+{timeValue += ("")}
+if(hours>=18 && hours <19)
+{timeValue += ("")}
+if(hours>=19 && hours <24)
+{timeValue += ("")}
+if(hours<1)
+{timeValue += ("")}
+timeValue += ((hours > 12) ? hours - 12 : hours)
+timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+document.clock.face.value = timeValue
+timerID = setTimeout("showtime()",1000)
+timerRunning = true
+}
+function startclock ()
+{
+stopclock();
+showtime();
+}
+</script>
+<style type="text/css">
+<!--
+.style2 {
+	color: #0000FF;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<TITLE>wangking</TITLE>
+<STYLE type=text/css>
+H1 {
+	FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, SunSans-Regular, sans-serif
+}
+H2 {
+	FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, SunSans-Regular, sans-serif
+}
+H3 {
+	FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, SunSans-Regular, sans-serif
+}
+H4 {
+	FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, SunSans-Regular, sans-serif
+}
+H5 {
+	FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, SunSans-Regular, sans-serif
+}
+H6 {
+	FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, SunSans-Regular, sans-serif
+}
+.style5 {color: #FFFFFF}
+.style7 {
+	color: #0000FF;
+	font-style: italic;
+	font-size: xx-large;
+	font-weight: bold;
+}
+.style8 {color: #0000FF}
+.style9 {font-size: 9px}
+.style10 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style11 {
+	font-size: 10px;
+	color: #FF0000;
+}
+a:visited {
+	color: #0000FF;
+}
+</STYLE>
+<LINK href="/favicon.ico" type=image/ico rel=icon><LINK href="/favicon.ico" 
+rel="shortcut icon">
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="Play MAME on your TV, Arcade Monitor or Fixed Frequency Monitor" 
+name=description>
+<META 
+content="MAME, MESS, arcade cabinets, retro games, TV, tv's, arcade monitors, arcade controls, play mame on tv, coin op, games, top cabinets, advance MAME, Advance, AdvanceMAME, retrogaming, classic games, classic arcades" 
+name=keywords>
+<META content="Andrea Mazzoleni" name=author>
+<META http-equiv=Pragma content=no-cache>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY onLoad="startclock(); timerONE=window.setTimeout" bgColor=#ffffff><!-- TABLE START -->
+<TABLE width=750 align="center" cellPadding=5 cellSpacing=2>
+  <TBODY>
+  <TR vAlign=top>
+    <TD width=135 height="546" ><!-- BAR BEGIN -->
+      <table width="39" border="0" cellspacing="0" bordercolor="#0000FF">
+        <tr>
+          <td bgcolor="#0000FF"><span class="style2 style5"><FONT face=arial>&#39318;&#39029;</FONT></span></td>
+        </tr>
+      </table>
+      <p><FONT face=arial size=2> <a href="./grjj.htm">&#20010;&#20154;&#31616;&#20171;</a><BR>
+          <a href="./wanba.htm">&#23398;&#20064;&#32463;&#21382;</a><BR>
+		            <a href="./kxhx.htm">&#30446;&#21069;&#30740;&#31350;</a><BR>
+        <a href="mailto:guitarman@eyou.com">&#21644;&#25105;&#32852;&#31995;</a></FONT></p>
+      <p>        
+        <script LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+calendar();
+//--></script>
+      </p>
+      <table width="41">
+        <tr>
+          <td width="40" bgcolor="#0000FF"><span class="style2 style5"><font face="arial">&#38142;&#21543;</font></span></td>
+        </tr>
+      </table>      <p><FONT face=arial size=2><span class="style8">
+          <A 
+      href="http://www.sina.com.cn">&#26032;&#28010;</A> <A 
+      href="http://www.sohu.com/">&#25628;&#29392;</A> <A 
+      href="http://www.yahoo.com.cn/">&#38597;&#34382;</A> </span></FONT></p>
+      <p><FONT face=arial size=2><A 
+      href="http://advancemame.sourceforge.net/download.html">NCIC</A> <A 
+      href="http://advancemame.sourceforge.net/snapshot.html">ICT</A><BR>
+          <A href="http://www.google.com.cn">Google</A> <A href="http://www.baidu.com">&#30334;&#28193;</A><BR>
+          <A href="http://bingle.pku.edu.cn/">&#22825;&#32593;&#25628;&#32034;</A> <A href="http://www.sogua.com/index.asp">Souga</A><BR>
+            <A href="http://www.mips.com/">MIPS&#20844;&#21496;</A><BR>
+            <A href="http://www.linux.org/">LINUX-ORG</A><BR>
+			            <A href="http://www.nba.com/">NBA</A><BR>
+            <A href="http://www.sfw-cd.com/sfw/index.asp">&#31185;&#24187;&#19990;&#30028;</A><BR>
+
+            <A href="http://www.sourceforge.net/">SOURCE-FORGE</A></FONT></p>
+      <p><span class="style11">CopyRight&#9678;2004&#65293;WangKing</span>          
+        <!-- BAR END -->
+      </p></TD>
+    <TD bgcolor="#FFFFFF"><!-- DATA START -->
+      <P align=center class="style7">WJW</P>
+      <P align=center class="style7 style9">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;. </P>
+      <TABLE width="570" height="433">
+        <TBODY>
+        <TR>
+          <TD height="427" colspan="2" vAlign=top> <div align="center" class="style10">stop crying your heart out </div>
+            <p align="center">hold up <br>
+  hold on <br>
+  don't be scared <br>
+  you'll never change what's been and gone <br>
+  may your smile <br>
+  shine on <br>
+  don't be scared <br>
+  your destiny may keep you warm <br>
+  cos all of the stars <br>
+  are fading away <br>
+  just try not to worry <br>
+  you'll see them some day <br>
+  take what you need <br>
+  and be on your way <br>
+  and stop crying your heart out <br>
+  get up <br>
+  come on <br>
+  why're you scared?<br>
+  you'll never change <br>
+  what's been and gone <BR>
+  </p>            </TD>
+          <TD width="252"><div align="center">
+            <p>take what you need <br>
+    and be on your way <br>
+    and stop crying your heart out <br>
+    we're all of us stars <br>
+    we're fading away <br>
+    just try not to worry <br>
+    you'll see us some day <br>
+    just take what you need <br>
+    and be on your way <br>
+    and stop crying your heart out <br>
+    stop crying your heart out <br>
+    stop crying your heart out </p>
+            <p><img src="./pic/jsj.jpg" width="160" height="174" align="middle"></p>
+          </div></TD>
+        </TR>
+        </TBODY></TABLE>      </TD>
+  </TR>
+</TBODY></TABLE><!-- TABLE END --></BODY></HTML>

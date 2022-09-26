@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>在研项目</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../../css/ncic.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0">
+<!-- #BeginLibraryItem "/Library/Untitled.lbi" --><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="547"><img src="../../image/top.jpg" width="547" height="123"></td><td background="../../image/top_1.jpg" align="right"><img src="../../image/top_2.jpg" width="131" height="123"></td></tr>
+</table><!-- #EndLibraryItem --> 
+<table width="720" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="164" align="center" valign="top"> 
+      <table width="163" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <table width="163" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="image/b1.jpg" width="17" height="18"><b><font size="3"> 
+            <font color="#336666"><a href="../dcfs/intro.htm">Introduction</a></font></font></b></td>
+        </tr>
+      </table>
+      <table width="163" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="image/b1.jpg" width="17" height="18"><font size="3"><b> 
+            <font color="#336666"><a href="#Download">Download</a></font></b></font></td>
+        </tr>
+        <tr> 
+          <td><img src="image/b1.jpg" width="17" height="18"><font size="3"><b> 
+            <font color="#336666"><a href="#Papers">Papers</a></font> </b></font></td>
+        </tr>
+        <tr> 
+          <td><img src="image/b1.jpg" width="17" height="18"><font size="3"><b> 
+            <font color="#336666"><a href="#Error Report">Error Report</a></font> </b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <br>
+    </td>
+    <td width="29">&nbsp;</td>
+    <td valign="top" align="right" width="507"> 
+      <table width="534" border="0" cellspacing="0" cellpadding="0" height="400">
+        <tr> 
+          <td align="right" height="70" valign="bottom" colspan="2">
+            <div align="left">
+              <p align="center"><font size="5"><b><font color="#FF6600" face="Times New Roman, Times, serif">The 
+                Dawning Cluster File System</font></b></font><font size="6" face="Times New Roman, Times, serif"> 
+                </font></p>
+              <p align="center"><b><font color="#FF6600" face="Times New Roman, Times, serif">—— 
+                a Cluster File System for Linux Clusters</font></b></p>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td align="right" colspan="2"><img src="../../image/line.gif" width="481" height="3"></td>
+        </tr>
+        <tr> 
+          <td height="10" colspan="2">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td valign="top" align="right" colspan="2"> 
+            <p align="left"><font color="#FF9900"><b><font size="3" color="#FF6600" face="Times New Roman, Times, serif">Overview</font></b></font><font face="Times New Roman, Times, serif"><br>
+              </font></p>
+            <div align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+              is a cluster file system developed by NCIC (National Research Center 
+              for Intelligent Computing Systems, Institute of Computing Technology, 
+              Chinese Academy of Sciences) for Linux clusters, especially the 
+              Dawning 4000L Super-server.<br>
+              </font></div>
+            <ul>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+                  is a global file system shared by all cluster nodes. Applications 
+                  see a single name space from all nodes. <br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+                  provides standard interface for users. Files in DCFS can be 
+                  accessed through OS system calls and can be manipulated by system 
+                  commands such as ls, cp, tar, vi, etc. Applications based on 
+                  traditional UNIX file I/O can use DCFS files without recompilation. 
+                  <br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+                  exploits a scalable architecture. It is able to run on large 
+                  clusters. Metadata processing is divorced from file data processing 
+                  in DCFS. They have different servers and different access path. 
+                  Moreover,there can be multiple servers for both file data and 
+                  metadata. <br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">File 
+                  data are stored on multiple storage servers in a RAID 0 style 
+                  of striping. And metadata are stored on and maintained by multiple 
+                  metadata servers. Both metadata and file data are stored in 
+                  regular files of native file system (EXT2) on servers.<br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+                  is able to provide both high aggregate I/O bandwidth and high 
+                  metadata performance. <br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+                  exploits a flexible communication mechanism, which enables it 
+                  to use high performance communication protocols such as BCL, 
+                  VIA, etc, besides TCP and UDP. <br>
+                  </font></div>
+              </li>
+              <li> 
+                <div align="left"><font size="2" face="Times New Roman, Times, serif">DCFS 
+                  provides a set of management utilities. Their functions include 
+                  DCFS system configuration, starting and stopping DCFS services, 
+                  and mount and unmount DCFS file system.</font></div>
+              </li>
+            </ul>
+            <div align="center"><font face="Times New Roman, Times, serif"><img src="image/t1.jpg" width="433" height="332"><br>
+              </font></div>
+            <p align="left">&nbsp;</p>
+            <p align="left"><font size="3" face="Times New Roman, Times, serif"><b><font color="#FF6600"><a name="Download">Download</a></font></b></font><font face="Times New Roman, Times, serif"><br>
+              </font></p>
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">For 
+              DCFS v1.0 Software (Source Code or Executables), please contact 
+              <a href="mailto:dcfs@ncic.ac.cn">dcfs@ncic.ac.cn</a>.<br>
+              DCFS v1.0 User's Guide (<a href="userguide.pdf">pdf</a>, 304KB)<br>
+              DCFS v1.0 Software Copyright Information (<a href="copyright.pdf">pdf</a>, 
+              4KB)<br>
+              </font></p>
+            <p align="left"><font size="3" face="Times New Roman, Times, serif"><b><font color="#FF6600"><a name="Papers">Papers</a></font></b></font><font face="Times New Roman, Times, serif"><br>
+              </font></p>
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">Jin 
+              Xiong, Sining Wu, Dan Meng, Ninghui Sun, Guojie Li, <b>Design and 
+              Performance of the Dawning Cluster File System</b>, 2003 IEEE International 
+              Conference on Cluster Computing (Cluster2003), Dec.1-4, 2003, Hong 
+              Kong (<font color="#FF3300"><a href="dcfs-cluster2003.pdf">pdf</a></font>, 
+              766KB)</font></p>
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">Rongfeng 
+              Tang, Dan Meng, Sining Wu, <b>Optimized Implementation of Extendible 
+              Hashing To Support Large File System Directory</b>, 2003 IEEE International 
+              Conference on Cluster Computing (Cluster2003), Dec.1-4, 2003, Hong 
+              Kong (<a href="exthash_cluster2003.pdf">pdf</a>, 33KB)<br>
+              </font></p>
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">Jin 
+              He, Jin Xiong, Sining Wu, Yi Lu, Dan Men, <b>DCFS: File Service 
+              in Commodity Cluster Dawning4000</b>, The 4th International Parallel 
+              and Distributed Computing, Applications and Technologies, August 
+              27-29, 2003, Cheng Du, P.R.China (<a href="dcfs_pdcat03.pdf">pdf</a>, 
+              376KB)</font></p>
+            <p align="left"><font color="#FF6600" size="3" face="Times New Roman, Times, serif"><b><a name="Error Report">Error 
+              Report</a></b></font><font face="Times New Roman, Times, serif"><br>
+              </font></p>
+            <p align="left"><font size="2" face="Times New Roman, Times, serif">To 
+              submit bugs and corrections, please email to dcfs@ncic.ac.cn. </font><font face="Times New Roman, Times, serif"><br>
+              </font> </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="164" align="center" valign="top">&nbsp;</td>
+    <td width="29">&nbsp;</td>
+    <td valign="top" align="right" width="507">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td bgcolor="#999999" height="1"><img src="../../image/dot00.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td align="center" height="64"> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Copyright 
+        for NCIC All Rights Reserved</font> </p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

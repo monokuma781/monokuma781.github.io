@@ -1,0 +1,31 @@
+计算机系统性能评测与分析
+ 
+
+计算机系统性能评测与分析是计算机科学的一个重要分支。为了获得计算机系统在执行某类操作的性能，人们构造了各种评测程序，但是缺乏整体的，从操作系统开始，直至最终应用性能的综合多层次性能评测系统。
+
+
+本文在综述已有评测程序的基础上，将系统性能评测分为操作系统、计算性能和应用三个层次。对每个层次构造了相应的评测程序，突破了以往仅评测一个层次的局限。正是因为三个层次的联合考虑，使本文的评测程序不仅关心得到的结果，同时关心产生瓶颈的原因，不仅可服务于普通用户，同时还可服务于计算机生产厂商，这是与以往评测程序最大的不同。
+
+
+本文首先介绍了在lmbench（操作系统核心性能评测程序包）的基础上修改而成的lmbench+。它修改了lmbench的很多缺陷，增加了总结和分析模块，给出了简明的结果，使操作系统评测从专业人士走向了普通用户。然后文中构造了全新的计算性能评测程序CalBench，包含评测定点运算和浮点运算两个模块。接下来介绍了AppBench的构造。其中的Email服务器评测程序DawnEmail2000的评测方案与实现是在国内国际都没有同类软件的情况下首先完成的。在AppBench中，文中联合了三个层次，得到了一些评测Web和Email服务的经验公式，通过这些公式能对评测得到的结果作出解释，并能方便地找到系统的瓶颈。
+
+关键词：
+性能评测与分析，操作系统，计算性能，Web服务，Email服务
+
+Performance Evaluation and Analysis of Computer Systems
+LIU Li-Li (Computer Component and Architecture)
+Directed by: FAN Jian-Ping PH.D
+
+
+The performance evaluation and analysis is one of the most important branches of computer sciences. In order to obtain the performance of a computer system, a lot of benchmarks were constructed. But there are no such a system which can evaluate the performance of operating system, calculate ability and applications. 
+
+
+This paper first summarizes the existed benchmarks, based on that, it divides an evaluation system into three layers, which are operating system, calculate ability and applications. Benchmarks for every layer were constructed. It breaks the limit that benchmark can only evaluate the performance of one specify layer. It is the union of the three layer that the benchmarks constructed in this paper can not only evaluate the performance but also can hit the reasons of bottlenecks. So it will be useful to customers and computer manufactures. That is the biggest difference from the existed benchmarks.
+
+
+In this paper, based on lmbench which is a package evaluating the performance of operating system kernel, lmbench+ is constructed. It modifies many defects of lmbench, and two modules of summary and analysis are added. Lmbench+ can give simple and clear results, so it can be used by experts and beginners. After that a new benchmark package which evaluates the calculate ability called Calbench is constructed. It includes two modules, Calbench-Fixed Point and Calbench-Float Point. Followed that, AppBench which evaluates the application layer is introduced. In AppBench, the module evaluates the performance of Email Server named as DawnEmail2000 is first proposed by the author, and there is no congener software all over the world. In Appbench, the three layers are united, some formulae were obtained, from which, the bottlenecks of system can be found easily.
+
+
+Keywords: Performance evaluation and analysis, benchmark, operating system, calculate ability Web Service, Email Service
+
+ 

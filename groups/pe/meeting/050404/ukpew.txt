@@ -1,0 +1,61 @@
+21st Annual UK Performance Engineering Workshop 
+July 14-15 2005
+University of Newcastle-upon-Tyne
+http://www.staff.ncl.ac.uk/nigel.thomas/UKPEW2005/
+
+SCOPE of WORKSHOP
+UKPEW is the leading UK forum for the presentation of all aspects of
+performance modelling and analysis of computer and telecommunication
+systems. Original papers are invited on all relevant topics but papers
+on or related to the subjects listed below are particularly welcome. 
+- Stochastic modelling of computer systems and networks. 
+- Tools for all aspects of performance engineering from workload
+  characterisation to operational analysis. 
+- Modelling paradigms including, but not limited to: Stochastic Process
+  Algebras,
+- Stochastic Petri Nets and Queueing Theory. 
+- Solution and simplification techniques for large Markov processes. 
+- Formal notations for performance modelling. 
+- Modelling and analysis of reliability and performance guarantees. 
+- Performance-oriented design methods. 
+- Novel techniques in computer system simulation. 
+- Case studies and industrial reports. 
+- Experience and evaluation of existing tools and techniques. 
+
+This workshop is the primary event at which the UK performance community
+can get together to present and discuss their work. Whilst primarily
+aimed at UK based performance engineers, we also welcome contributions
+from researchers working in other countries and those whose interest in
+performance is derived from experience in other fields. It provides an
+ideal opportunity for academics, industrialists and PhD students to
+relate experience and to present both finished work and work in
+progress. The event has been organised to sustain the atmosphere of
+informality that previous UKPEW's have fostered. As well as sessions for
+presenting the papers submitted, it will also be possible to organise a
+session of short presentations of work in progress. 
+
+
+INFORMATION for AUTHORS
+Papers will be accepted on the basis of an extended abstract (3-6 pages)
+or (ideally) a draft paper (8-12 pages) which should be submitted to
+nigel.thomas@ncl.ac.uk no later than 20th May 2005. Electronic
+submission is preferred. Notification of acceptance will be given by 3rd
+June 2005 together with instructions for the preparation of camera-ready
+copy. 
+
+
+IMPORTANT DATES
+Deadline for extended abstracts/draft papers: 20th May 2005 
+Notification of acceptance: 3rd June 2005
+Camera-ready copy (hard) deadline: 27th June 2005
+
+
+All enquiries should be directed to nigel.thomas@ncl.ac.uk 
+
+Delegates for UKPEW may also wish to attend the Second International
+Workshop on Practical Applications of Stochastic Modelling (PASM'05)
+which will be held at the University of Newcastle upon Tyne on the
+following Monday (18th July 2005).
+
+
+ 

@@ -1,0 +1,5 @@
+<ol>
+@paper{
+<li>the paper entitled @title{.} was reviewed and his authors are: 
+    @author{ @first_name{.}, @last_name{.}}
+}</ol>

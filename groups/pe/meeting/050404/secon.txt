@@ -1,0 +1,122 @@
+                  *** IEEE SECON 2005 ***
+   Second Annual IEEE Communications Society Conference on
+        Sensor and Ad Hoc Communications and Networks
+
+                Santa Clara, California, USA
+                   September 26-29, 2005
+         Paper Submission Deadline: April 6, 2005
+               http://www.ieee-secon.org/2005
+
+************************************************************
+Building on the success of last year's inaugural conference,
+this new IEEE Communications Society conference will provide
+a  forum to  exchange ideas,  techniques,  and applications,
+discuss   best   practices,   raise  awareness   and   share
+experiences   among  researchers,   practitioners,  standard
+developers and policy  makers in the field of  sensor and ad
+hoc networks and systems.   The conference will be organized
+to provide  for a degree  of collegiality and  continuity in
+the  discussions of  the various  topics  among participants
+from the industrial, governmental and academic sectors.
+
+Original technical  papers that address  the communications,
+networking, systems  and algorithmic  aspects of ad  hoc and
+sensor networks,  as well  as those that  describe practical
+deployment and implementation experiences, are solicited for
+presentation  at  the  conference  and  publication  in  the
+conference    proceedings.     Papers    presenting    novel
+contributions   in  such   disciplines   as  communications,
+networking protocols and architectures, algorithms, embedded
+systems,  middleware and  information management,  and novel
+applications are solicited.
+
+PAPERS:   Full   papers   describing  original,   previously
+unpublished  research work, experimental  efforts, practical
+experiences, and  industrial and commercial  developments in
+sensor and ad hoc  communications and networks.  Papers with
+a deep focus  on a specific discipline or  stimulated by the
+synergistic   interaction   of   diverse   disciplines   are
+encouraged.
+
+
+Particular topics of interest include, but are not limited to:
+
+    * New architectures, protocols and access control to
+      support communication, localization, time
+      synchronization, routing and data dissemination in
+      heterogeneous, large-scale distributed, ad hoc
+      networks and sensor networks
+
+    * Novel algorithms and theories for management,
+      supervisory control and monitoring of distributed ad
+      hoc networks, and techniques for the interpretation
+      and use of sensor data in decision-making processes
+
+    * Modeling and performance evaluation of large-scale
+      distributed and ad hoc sensor networks, practical
+      implementations, and real-work experiences
+
+    * Theories and models on fundamental information and
+      communication aspects of wireless ad hoc and sensor
+      networks
+
+    * Mechanisms for authenticated, secure communication and
+      data dissemination in sensor and ad hoc networks
+
+    * Integration of sensors into engineered systems,
+      including novel techniques for sensor renewable power
+      sources, mechanisms for on-sensor self-calibration and
+      self-testing and efficient schemes to maximize
+      accuracy and minimize false alarms
+
+    * Chip-based systems incorporating multiple sensors,
+      computation, actuation, and wireless interfaces
+
+    * Software platforms, middleware and tools for ad hoc
+      and sensor network applications development,
+      deployment and management
+
+    * Mesh networking, mobile ad hoc peer-to-peer multipoint
+      communications, applications and experiences
+
+TUTORIALS and PANELS: Proposals  for tutorials and panels on
+current topics in the field  of ad hoc and sensor networking
+and  applications  are  solicited.  Panels  related  to  the
+commercial application and development of sensors and ad hoc
+networks are especially encouraged.
+
+DEMOS and EXPO:  Demonstrations that showcases the practical
+implementations, industrial and commercial developments, and
+new  applications  for  ad   hoc  and  sensor  networks  are
+solicited.
+
+SUBMISSION  INSTRUCTIONS:  All  paper  submissions  will  be
+handled  electronically  through  the EDAS  system.  Details
+regarding the  paper format and the  submission process will
+be posted at the conference web site.
+
+IMPORTANT DATES:
+                April 6, 2005  Paper submission deadline
+                May 1, 2005    Tutorial/Panel/Demo proposals deadline
+                June 13, 2005  Notifications
+                July 8, 2005   Camera-ready due date
+
+
+TPC Co-Chairs:
+Elizabeth Belding-Royer  ebelding@cs.ucsb.edu
+Marwan Krunz             krunz@ece.arizona.edu
+Thyaga Nandagopal        thyaga@lucent.com
+
+General Chair:
+J.J. Garcia-Luna-Aceves  jj@soe.ucsc.edu
+
+
+--
+Stefano Basagni, Ph.D.      Assistant Professor of Computer Engineering
+Dept. of Electrical and Computer Engineering   312 Dana Research Center
+Northeastern University            360 Huntington Ave. Boston, MA 02115
+Tel. 617 373 3061, Fax 617 373 8970         E-mail: basagni@ece.neu.edu
+***               http://www.ece.neu.edu/faculty/basagni/           ***
+
+
+ 

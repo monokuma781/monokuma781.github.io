@@ -1,0 +1,29 @@
+
+- On n'a pas besoin de ParseFile, il faudrait
+    simplement appeler une méthode executeFile ()
+
+- Il faudrait aussi une méthode execute() à
+  laquelle on passe une chaîne de caractères contenant
+   la requête DocQL
+
+- Supprimer le message suivant
+  Notice: Undefined variable: tabs in C:\Program Files\xampp\htdocs\myreview\docql\QTreeNode.php on line 496
+
+- il faut harmoniser le nommage des méthodes: on fait comme en Java,
+   les mots sont collés, une majuscule au début de chaque mot,
+   sauf le premier.
+   Harmoniser aussi le nommage des variables: tout en minscules,
+    les mots séparés par des '_'
+
+    Exemple: executeFile($nom_fichier)
+
+- Il faudrait pouvoir adopter une écriture simplifiée pour afficher
+  les attributs: @title au lieu de @title{.}
+
+- Il faut absolument associer une petite documentation en anglais,
+  expliquant comment utiliser la classe et gérer les exceptions.
+
+- Il faut pouvoir gérer les input HTTP, comme on a dit
+
+- Option pour indiquer les séparateurs utilisés
+

@@ -1,0 +1,924 @@
+<?php
+
+/**
+ *
+ *
+ * @version $Id$
+ * @copyright 2005
+ */
+  require_once('Rule.php');
+  require_once('Schema_Base.php');
+  require_once('BD.php');
+  Class QTreeNode
+  {
+  	var $rule;
+	var $sons=array();
+	var $nb_sons;
+	var $contexte=array();
+	var $bd;
+	var $schema;
+	var $extra;
+
+    function QTreeNode()
+  {
+  	$this->nb_sons=0;
+  }
+/************************************SETTERS**************************************************/
+    function Set_Schema($sc)
+  {
+  	$this->schema=$sc;
+  }
+    function Set_Sons_Schema($sc)
+  {
+  	for($i=0;$i<count($this->sons);$i++)
+	{
+		$this->sons[$i]->set_schema($sc);
+	}
+  }
+
+    function Set_Body($b)
+  {
+  	$r=$this->GetRule();
+  	$r->SetBody($b);
+  }
+
+  function SetContexte()
+{
+	if ($this->rule!=null) {
+
+		$req=$this->dissociate_path($this->rule->GetPath());
+		$result=$this->Execute_Query($req);
+		$nb_lignes=mysql_num_rows($result);
+		for($i=0;$i<=$nb_lignes;$i++)
+		{
+			$this->contexte[$i]= $this->bd->ligneSuivante($result);
+		}
+
+	//, MSQL_ASSOC);
+		return $req;
+	}
+}
+/************************************GETTERS**************************************************/
+
+  function GetSons(){
+	return $this->sons;
+
+}
+  function GetResult()
+{
+	print_r(get_object_vars($this));
+}
+  function GetRule()
+{
+	return $this->rule;
+}
+  function GetNbSons()
+{
+	return $this->nb_sons;
+}
+  function GetContexte()
+{
+	return $this->contexte;
+}
+
+function Get_Type($p)
+	{
+		$pos=strrpos($p,".");
+		if ($pos==0)
+		   $type=$p;
+		else
+			$type=substr($p,$pos+1,strlen($p)-$pos-1);
+		return $type;
+	}
+
+function Get_Table($p)
+	{
+		$pos=strpos($p,".");
+		if($pos!=false)
+		{
+			$t="";
+			while($pos!=0 )
+			{
+				$t[]=substr($p,0,$pos);
+				$p=substr($p,$pos+1,strlen($p)-$pos-1);
+				$pos=strpos($p,".");
+			}
+			$end=$this->Get_Type($p);
+			if($this->is_table($end))
+				$t[]=$end;
+
+		}
+		else
+			$t[]=$p;
+		return $t;
+	}
+	function GetExtra(){
+		return $this->extra;
+
+	}
+/****************************************DELETION********************************************************/
+  function Delete_Blank($chaine)
+{
+
+	$i=0;
+	$chaine_res="";
+	$x=false;
+	while($i<strlen($chaine))
+	{
+		if($chaine[$i]!=" " )
+			{
+			$chaine_res=$chaine_res.$chaine[$i];}
+			$i++;
+
+	}
+	return $chaine_res;
+}
+function Delete_Son($num){
+ 	 unset($this->sons [$num]) ;
+ 	 $this->nb_sons--;
+
+ }
+
+ function Delete_Acc($chaine){
+	$chaine_res=" ";
+	for($i=0;$i<strlen($chaine);$i++)
+	{
+		if ($chaine[$i]!="}")
+			$chaine_res=$chaine_res.$chaine[$i];
+	}
+	return $chaine_res;
+}
+
+function Delete_Double_Blank($chaine){
+	$i=0;
+	$patterns="";
+	$chaine_res=" ";
+	while($i<strlen($chaine))
+	{
+		$pattern=$this->test_pattern($chaine,$i);
+		if($pattern !=false)
+			$patterns=$patterns.$pattern;
+		else
+		{
+
+			$nb=substr_count($patterns," ");
+			if($nb>1)
+					$patterns=$this->delete_blank($patterns);
+
+			$chaine_res=$chaine_res.$patterns;//." ";
+			$chaine_res=$chaine_res.$chaine[$i];
+			if($i!=(strlen($chaine)-1))
+				$chaine_res=$chaine_res.$chaine[$i+1];//$chaine_res.
+			$patterns="";
+		}
+
+
+	//	$chaine_res=$chaine_res.$patterns;
+		$i=$i+2;
+	}
+	return $chaine_res;
+
+}
+/********************************************************CONNECTION TO DATABASE******************************************/
+    function Connect($base)
+  {
+  	$this->bd=$base;
+	for($i=0;$i<count($this->sons);$i++)
+	{
+		$this->sons[$i]->connect($base);
+	}
+  }
+
+/**********************************************************INSERTION******************************************************/
+    function Insert_Rule($r)
+  {
+  	$this->rule=$r;
+  }
+    function Insert_QTReeNode($Q)
+  {
+  	$this->sons[]=$Q;
+	$this->nb_sons++;
+	return $this->nb_sons-1;
+
+  }
+/*********************************************************************************************************/
+  function Execute_Query($req)
+	{
+		$result=$this->bd->execRequete($req);
+		/*if (!$result) {
+	  		 die('Query execution problem: ' . msql_error());
+		}*/
+		return $result;
+	}
+/***********************Constitution de la requete select * from path *************************/
+  function Dissociate_Path($t) //this function treat string like name_table[predicat]
+									// and transform it in the request :"select * from name_table where predicat
+{
+	$pos1=strpos($t,"[");
+	$pos2=strpos($t,"]");
+	if($pos1!=false)
+	{
+		$tab=substr($t,0,$pos1);
+		$pred=substr($t,$pos1+1,$pos2-$pos1-1);
+		$req="select * from ".$tab." where ".$pred;
+	}
+	else
+		$req="select * from ".$t;
+	return $req;
+}
+  function Get_Nb_Rows_Result($t)
+{
+	$pos1=strpos($t,"[");
+	$pos2=strpos($t,"]");
+	if($pos1!=false)
+	{
+		$tab=substr($t,0,$pos1);
+		$pred=substr($t,$pos1+1,$pos2-$pos1-1);
+		$req="select count(*) from ".$tab." where ".$pred;
+	}
+	else
+		$req="select count(*) from ".$t;
+	$result=$this->Execute_Query($req);
+	return $result;
+}
+//this finction set the contexte by executong the request: "select * from path"
+
+
+  function Nb_Arobas($requete)
+{
+	$chaine=$requete;
+	$nb=substr_count($requete,"@" );
+	return $nb;
+}
+
+  function Sons($chaine)
+{
+	$i=0;
+	$nb_acco=0;
+	$rule="";
+//	$tab[]=array();
+	$begin=false;
+	$length=strlen($chaine);
+
+	while($i<strlen($chaine))
+	{
+	//	$rule=$rule. " ".$chaine[$i];
+		$rule=$rule.$chaine[$i];
+		if($chaine[$i]=="{")
+		{
+			$nb_acco++;
+			$begin=true;
+		}
+		else
+		{
+			if($chaine[$i]=="}")
+				$nb_acco --;
+		}
+
+		if($nb_acco==0 and $begin==true)
+		{
+			$tab[]=$rule;
+			$rule="";
+			$begin=false;
+		}
+		$i++;
+	}
+	$tab=$this->organise_array($tab);
+	return $tab;
+}
+// join rule elements with default element in the array in the same element, and delete the blank element of the array
+  function Organise_Array($tab)
+{
+	$i=1;
+	$c="";
+	$nb=count($tab);
+	while($i<$nb)//count($tab))
+	{
+		$pos_arobas=strpos($tab[$i],"@");
+		if($pos_arobas==false)
+		{
+			$c=$tab[$i-1];
+			$d=$tab[$i];
+			$tab[$i-1]=$c.$d;
+			$j=$i;
+			while($j<count($tab)-1)
+			{
+				$tab[$j]=$tab[$j+1];
+				$j++;
+			}
+			array_pop($tab);
+		}
+		$i++;
+	}
+	return $tab; // while
+}
+  function Parse_QTreeNode($chaine,$Q)
+{
+	$sons_array=$this->sons($chaine);
+	$nbsons=count($sons_array);
+	if($nbsons==1)
+	{
+		$r=new rule();
+		$r->parse($chaine);
+		$Q->insert_rule($r);
+		$chaine=$r->GetBody();
+		if($this->nb_arobas($chaine)>=1)
+		{
+			$Qfils=new QTreeNode();
+			$Q->parse_QTreeNode($chaine,$Qfils);
+			if($Qfils->GetRule()!=null)// and $Qfils->GetNbSons()!=null)
+				$Q->insert_QTReeNode($Qfils);
+		}
+	}
+	else
+	{
+
+		for($i=0;$i<$nbsons;$i++)
+		{
+			$Qfils=new QtreeNode();
+			//$Q->parse_QTreeNode($sons_array[$i],$Qfils );
+			//$Q->insert_QTReeNode($Qfils);
+			$this->parse_QTreeNode($sons_array[$i],$Qfils );
+			$this->insert_QTReeNode($Qfils);
+
+		}
+
+	}
+}
+function SetExtra($chaine){
+	$pos=strrpos($chaine,"}");
+	$extra=substr($chaine,$pos+1,strlen($chaine)-$pos-1);
+	$this->extra=$extra;
+}
+ function Arrange_Key_Array(){
+ 	$sonnns=$this->sons;
+ 	$i=0;
+ 	$keys=array_keys($this->sons);
+ 	 for($j=0;$j<=count($this->sons)-1;$j++)
+ 		{
+ 			$key=$keys[$j];
+		 	$s[$i]=$this->sons[$key];
+ 			$i++;
+ 		}
+ 		//unset($this->sons[$this->sons]);
+ 		$this->sons=$s;
+ //	 unset($this->sons [count($this->sons)-1]) ;
+ //	 ksort($this->sons);
+	$sonnns=$this->sons;
+ 	 $i=1;
+ }
+
+
+
+function Test_Pattern($chaine,$i){
+if($chaine[$i]!=" " and $chaine[$i+1]==" ")
+	$res=$chaine[$i]." ";
+else
+	$res=false;
+return $res;
+}
+
+
+function Do_Eval_Body(){
+	$i=0;
+	while($i<$this->nb_sons)
+	{
+		$this->sons[$i]->do_eval_body();
+		$i++;
+	}
+	$this->eval_body();
+}
+
+
+ function Eval_Body()
+{
+	$r=$this->rule;
+	$b="";
+	if($r!=null)
+	{
+		$body=$this->rule->GetBody();
+		if($body==".")
+			$body="#Evalself";
+
+		$i=0;
+		$b=$body;
+		while($i<$this->nb_sons)//count($tab))
+		{
+
+			$Q=$this->sons[$i];
+			$r=$Q->GetRule();
+			if ($r!=null)
+			{
+				$path=$r->GetPath();
+				$body=$r->GetBody();
+				if ($body=="#Evalself")
+					$len=3;
+				else
+					$len=$this->GetRule()->GetLenghtBody()+2; // les deux accolades { . }
+				$path1=$this->delete_blank($path);
+				$pos=strpos($b,"@".$path1);
+				$x=($pos!=false);
+				while($pos>=0)
+				{
+
+					$pos_acc=$pos+strlen($path1)+1;//strpos($b,"{");
+					$p=substr($b,$pos+1,$pos_acc-$pos-1);
+
+					$p1=$this->delete_blank($p);
+					if($p1==$path1 )
+					{
+						$b=substr($b,0,$pos)."#Eval".$i.substr($b,$pos+1+strlen($p)+$len,strlen($b)-strlen($p)-$len-$pos);
+						$pos=-1;
+					}
+					else
+						$pos=strpos($b,"@");
+						if($pos==false)
+							$pos=-1;
+				}
+			}
+			else
+			{
+
+				$b=$b.$Q->eval_body();
+			}
+			$i++;
+
+		}
+
+
+	$this->rule->SetBody($b);
+	}
+	return $b;
+}
+
+ /*function Join($Tables)
+	{
+		$nb_tab=count($Tables);
+		$nb_join=0;
+		for($i=0;$i<=$nb_tab;$i++)
+		{
+
+		}
+		return $res;
+	}
+*/
+
+function element_exist($tab,$e){
+	$res=false;
+	for($i=0;$i<count($tab);$i++)
+	{
+		if ($tab[$i]==$e) {
+			$res=true;
+		}
+	}
+	return $res;
+
+}
+
+function Instantiate($Tables,$c,$type,$schema)
+{
+  //	$req=$this->dissociate_path($this->rule->GetPath());
+  $req="select * from ";
+  $pos=strpos($type,"[");
+  if($pos!=false)
+    {
+      $type=substr($type,0,$pos);
+    }
+  $Tables[]=$type;
+  $tab_ref=null;
+  for($i=0;$i<count($Tables);$i++)
+    {
+      for($j=$i+1;$j<count($Tables);$j++)
+	{	
+	  // Ajout PR pour éviter un warning
+	  //	  if (!isSet($tabs)) $tabs = array();
+
+	  $reference=$schema->associations($tabs);
+	  if($reference==" where ")
+	    {
+	      $tab_ref=$schema->Get_reference($Tables[$i],$Tables[$j]);
+	      if($tab_ref==null)
+		$tab_ref=$schema->Get_reference($Tables[$j],$Tables[$i]);
+	    }
+	}
+    }
+  if($tab_ref!=null)
+    {
+      for($l=0;$l<count($tab_ref);$l++)
+	{	$x=$this->element_exist($Tables,$tab_ref[$l]);
+	  if($x==false)
+	    $Tables[]=$tab_ref[$l];
+	}
+    }
+  for($i=0;$i<count($Tables);$i++)
+    {
+      $n_T=$Tables[$i];
+      $req=$req.$n_T;
+      if($i<count($Tables)-1)
+	$req=$req.",";
+    }
+  
+  $assoc=$schema->associations($Tables);
+  $req=$req." where ";
+  if($assoc!="")
+    {
+      $req=$req.$assoc." and ";
+      
+		$tab=$schema->Get_table($type);
+		//we take a set of primary keys and their number from the object $tab
+
+		$nbPK=$tab->GetNbPKeys();
+		if($nbPK==null)
+			throw new Exception("Number of keys of the table ".$type." is not precised in the xml file!! ");
+		$PKeys=$tab->GetPrimarykey();
+		if($PKeys==null)
+			throw new Exception(" Primary keys of the table ".$type." is not precised in the xml file ");
+	    for($j=0;$j<$nbPK;$j++)
+			{
+				$PrimaryKey=$PKeys[$j];
+		//		echo( "the primary key is ".$PrimaryKey."<br />");
+				$valeur=$c[$PrimaryKey];
+					if($valeur!=null)
+
+						$req=$req.$type.".".$PrimaryKey."='".$valeur."'";
+					else
+						{
+							throw new Exception("Can't found the value of the primary key of the table".$type." !!! ");
+							$contexte1=null;
+							return $contexte1;
+						}
+			}
+
+
+
+	//	echo "la requete est:",$req;
+		try{
+		$result=$this->Execute_Query($req);
+		}
+		catch(Exception $e){
+			echo $e->getMessage();
+		}
+		if($result==null)
+			throw new Exception("Problems while executing the query,$req,!!!!");
+		$nb_lignes=mysql_num_rows($result);
+		$contexte1=array();
+		/*$nb=count($contexte);
+		for($i=0;$i<=$nb;$i++)
+		{
+			array_pop($contexte);
+		}*/
+		for($i=0;$i<$nb_lignes;$i++)
+		{
+			$contexte1[]= $this->bd->ligneSuivante($result);
+		}
+	//	$contexte=array_splice($contexte, -count($contexte), $contexte1);
+
+		}
+		else{
+
+			$contexte1=null;
+			throw new Exception ("Error occured, no association between tables, verify the syntax of the query!!!!");
+
+		}
+return $contexte1;
+	}
+
+
+	  function Substitute_Contexte($con)
+	{
+		$nb_nodes=count($this->contexte);
+		for($i=0;$i<=$nb_nodes;$i++)
+		{
+			array_pop($this->contexte);
+		}
+		for($i=0;$i<count($con);$i++)
+		{
+			$this->contexte[]=$con[$i];
+		}
+
+	}
+function is_attribut($p){
+	$pos=0;
+	$pos=strrpos($p,".");
+		if ($pos==0)
+		   $res=true;
+		else
+			$res=false;
+		return $res;
+
+}
+function is_table($p){
+
+	$sch=$this->schema;
+	$tab=$sch->Get_table($p);
+	if($tab==null)
+		return false;
+	else
+		return true;
+}
+	  function Evaluation()
+	{
+
+		$nb_sons=count($this->sons)-1;
+		$nb_rows=count($this->contexte)-1;
+		$contexte=$this->contexte;
+		$j=0;
+		$b_final="";
+		foreach ($this->contexte as $c)
+		{
+			$i=0;
+			if ($this->GetRule()!=null)
+			{
+				$r=$this->GetRule();
+				$b=$r->GetBody();
+			}
+			else
+				$b="";
+		//	$b_new="";
+			foreach ($this->sons as $Q)
+			{
+
+				$b_new="";
+				$r=$this->GetRule();
+				$t=$this->Get_Type($r->GetPath());
+
+
+				//$this->rule->SetBody($Q->Evaluate($c,$t));
+				$res_eval=$Q->Evaluate($c,$t,$this,$this->schema);
+				if($res_eval!=null)
+				{
+					$b_new=$b_new." ".$res_eval;
+
+					//substitue les evali dans le body de $Q
+
+					$pos=strpos($b,"#Eval".$i);
+					$lenght_eval=strlen("#Eval".$i);
+					if($pos!=null or $pos==0)
+					{
+						$long=strlen($b)-$pos-$lenght_eval;
+						$b=substr($b,0,$pos).$b_new.substr($b,$pos+$lenght_eval,$long);//." ".substr($b,$pos+$lenght_eval,$long);
+					}
+
+					if($i==$nb_sons)
+						break 1;
+					$i++;
+
+				}
+				else
+				$b=null;
+			}
+			if($b!=null)
+				$b_final=$b_final." ".$b;
+			if($j==$nb_rows-1)
+				break 1;
+			$j++;
+			}
+
+			if($this->rule!=null)
+				$this->set_Body($b_final);
+
+	}
+
+function Evaluate($c,$Type,$parent,$schema)
+	{
+	if($c==null)
+		$body_new="";
+	else
+	{
+		$path=$this->delete_blank($this->rule->GetPath());
+		$body=$this->rule->GetBody();
+		$t=$this->Get_Type($path);
+		$x=isset($c[$t]);
+		if($x)
+			{
+				//substituer l'evalself par le path.
+				$res=$c[$t];
+				$pos=strpos($body,"#Evalself");
+				$long=strlen($body)-$pos-8;
+				//$body_new=substr($body,0,$pos-1).$res.substr($body,$pos+8,$long);
+				$body_new=$res;
+			}
+		else
+			{
+				$contexte1=array();
+				$body_new="";
+				$b_new="";
+				$tables=$this->Get_Table($path);
+				$Type=$this->delete_blank($Type);
+				$tab=$schema->Get_table($t);
+
+				$att=$this->is_attribut($path);
+
+				if($tab==null and $att)
+				{echo" Data $t not found in the database, be sure the atribute or the relation is well written!!\n";
+				$body_new ="/blank/";
+				}
+	    			else{
+				$contexte1=$this->instantiate($tables,$c,$Type,$schema);
+				if($contexte1!=null)
+				{
+					$parent->substitute_contexte($contexte1);
+					$contexte=$parent->GetContexte();
+					$j=0;
+					if($this->nb_sons==0)
+					{
+					  $k=0;
+					  $nb_nodes=count($contexte)-1;
+						foreach($contexte as $con)  //boucle sur les noeuds
+						{
+							$r=$this->GetRule();
+							$eval=$this->Evaluate($con,$r->GetPath(),$parent,$schema );
+							$body_new=$body_new." ".$eval;		//concatener les fils ++
+							$k++;
+							if($k==$nb_nodes)
+								break 1;
+						}
+
+					}
+					else
+					{       $r=$this->GetRule();
+						$body=$r->GetBody();
+						$body_new=$body;
+						while($j<$this->nb_sons) //Boucle sur les fils
+						{
+
+							$T_fils=$r->GetPath();
+							$k=0;
+							$nb_nodes=count($contexte)-1;
+							$b_new="";
+							foreach($contexte as $con)  //boucle sur les noeuds
+							{
+								$eval=$this->sons[$j]->Evaluate($con,$T_fils,$this,$schema );
+								$b_new=$b_new." ".$eval;		//concatener les fils++
+								$k++;
+								if($k==$nb_nodes)
+									break 1;
+							}
+							//substituer l'evalj par le nouveau body.
+							$e="#Eval".$j;
+							$lenght_eval=strlen("#Eval".$j);
+							$r=$this->GetRule();
+
+							$pos=strpos($body_new,$e);
+							$long=strlen($body_new)-$pos-$lenght_eval;
+							if($pos!=0)
+								$body_new=substr($body_new,0,$pos-1).$b_new.substr($body_new,$pos+$lenght_eval,$long); //substituer evalj par eval
+							else
+								$body_new=$b_new.substr($body,$lenght_eval,$long); //substituer evalj par eval
+				//			$this->set_Body($body_new);
+							$j++;
+
+						}
+					}
+				}
+				else
+					$body_new=null;
+				}
+		}
+	}
+	return $body_new;
+	}
+
+/************************************************REWRITING FUNCTIONS *************************************************************/
+
+public function Check_Redundant_Node_Sibling($Q){
+	$sons=$Q->GetSons();
+	$nb_sons=$Q->GetNbSons();
+	$nodes=null;
+	foreach($sons as $Qfils)
+	{
+		$paths[]=$Qfils->GetRule()->GetFirstNode();
+	}
+
+	for($i=0;$i<count($paths);$i++)
+	{
+		$node=$paths[$i];
+		unset($nums) ;
+		$nums[]=$i;
+			for($j=$i+1;$j<count($paths);$j++)
+			{
+				if($paths[$j]==$node)
+					$nums[]=$j;
+			}
+		if(count($nums)>1) // there is one element at least
+			$nodes[$node]=$nums;
+	}
+
+	return $nodes;
+}//fonction verify the existance of sibling nodes witch have the same path
+
+public function Num_Eval_Body($b,$old_num_sons,$nums_deleted,$new_num){
+	for($j=0;$j<=$old_num_sons;$j++)
+	{
+		$found=false;
+		for($l=0;$l<count($nums_deleted);$l++)
+		{
+			if($j==$nums_deleted[$l])
+				$found=true;
+		}
+		if($found==false)
+			$tab_old[]=$j;
+	}
+	for($k=0;$k<=$new_num;$k++)
+	{
+		$tab_new[]=$k;
+	}
+	for($i=0;$i<=$new_num;$i++)
+	{
+		$pos=strpos($b,"#Eval".$tab_old[$i])+strlen("#Eval");
+		$b=substr($b,0,$pos).$tab_new[$i].substr($b,$pos+strlen($tab_old[$i])+1,strlen($b)-$pos+strlen($tab_old[$i])+1);
+	}
+	return $b;
+}
+
+public function Arrange_Body_After_Rewriting($b,$nums,$new_num,$old_num_sons){
+	$b_new=$b;
+	for($i=1;$i<count($nums);$i++)
+	{
+		$pos=strpos($b,"#Eval".$nums[$i]);
+		$b_new=substr($b_new, 0, $pos).substr($b_new,$pos+strlen("#Eval".$nums[$i]),strlen($b_new)-$pos-1);
+	}
+	$pos=strpos($b_new,"#Eval".$nums[0]);
+
+	$b_new=substr($b_new,0,$pos+strlen("#Eval")).$old_num_sons.substr($b_new,$pos+strlen("#Eval".$new_num),strlen($b_new)-$pos-5);
+	$b_new=$this->Num_Eval_Body($b_new,$old_num_sons,$nums,$new_num);
+	return $b_new;
+}
+
+//this function arrange the numerotation of the "EVAL i" in the body of the qtreenode
+public function Rewriting_Redudant_Sibling($Q){
+$nodes=$this->check_redundant_node_sibling($Q);
+if($nodes!=null)
+{
+	$paths=array_keys($nodes);
+	$i=0;
+
+	foreach($nodes as $Node)
+	{
+		$path=$paths[$i];
+		$Qnew=new QTreeNode();
+
+		$sons=$Q->GetSons();
+		$old_num_sons=$Q->GetNbSons();
+		$bod="";
+		for($j=0;$j<count($Node);$j++)
+		{
+			$bod=$bod."  "."#Eval".$j;
+			$num_son=$Node[$j];
+			$Qfils=$sons[$num_son];
+			$Qfils->GetRule()->DeleteFirstNode();
+			$Qnew->insert_QTReeNode($Qfils);
+			$Q->delete_son($num_son);
+			$b=$Q->GetRule()->GetBody();
+
+
+		}
+		$r=new Rule();
+		$r->SetBody($bod);
+		$r->SetPath($path);
+	//	$r->SetParent($Q);
+		$Qnew->insert_rule($r);
+		$Q->arrange_key_array();
+		$new_num=$Q->GetNbSons();
+		$b_new=$Q->Arrange_Body_After_Rewriting($b,$Node,$new_num,$old_num_sons );
+		$Q->set_Body($b_new);
+		$Q->insert_QTReeNode($Qnew);
+		$i++;
+	}
+}
+}
+
+function Display($Q,$n){
+$path=$Q->GetRule()->GetPath();
+$body=$Q->GetRule()->GetBody();
+$nb=$Q->GetNbSons();
+
+print("the path is:$path");
+echo "\n";
+//print("the body is:$body");
+//echo "\n";
+if($nb==0)
+{
+	print("the node $n haven't sons");
+	echo "\n";
+}
+else
+{
+	print("the node $n have $nb sons wich are:");
+	echo "\n";
+	$x="";
+	$sons=$Q->GetSons();
+
+	for($i=0;$i<$Q->nb_sons;$i++)
+	{
+		$x=$x."*";
+		print("$x");
+		echo "\n";
+		$Qson=$sons[$i];
+		$Q->Display($Qson,$i);
+
+	}
+}
+}
+}
+?>

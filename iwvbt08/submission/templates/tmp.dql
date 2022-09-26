@@ -1,0 +1,57 @@
+@db{
+<h3>Papers in the current selection <a href="#"
+onClick="ShowWindow('Admin.php?action={PDF_SELECT_PAPERS_WITHOUT_REVIEWS}');">
+             Print the selected papers  </A></h3>
+
+
+<table border=3>
+<tr class='header'>
+  <th><font color=white>Title, authors, password</font></th>
+  <th><font color=white>Reviewers</font></th>
+  <th colSpan=4><font color=white>Actions</font></th>
+</tr>
+
+@paper{
+<tr class='{CSS_CLASS}'>
+<a name="@id{.}"></a>
+<td><b>{PAPER_ID}</b> - @title{.}, 
+          @authors.author{@first_name @last_name,}
+         {PAPER_PASSWORD}
+	   <a href="#@id{.}"
+onClick="ShowWindow('ShowInfos.php?idPaper=@id{.}&idSession={SESSION_ID}&noReview=1&noForum=1');">
+                 (infos)</A>
+</td>
+
+<td>
+
+  @review{
+     @pcmember{@first_name @last_name} 
+
+    <a href='#' 
+ onClick="ConfirmAction('Remove assignment of reviewer @email{.}\n from paper {PAPER_ID}?', 
+           'Admin.php?action=2&remove={MEMBER_EMAIL}&idPaper=@id{.}')">
+      (Remove)
+    </a>
+    <br>
+}
+
+</td>
+
+<td>{DOWNLOAD}</td>
+ <td><a href='#' 
+           onClick="ConfirmAction('Remove paper {PAPER_ID}\n and its reviews', 
+           'Admin.php?action=2&idPaper={PAPER_ID}&instr=remove')">
+      Remove
+    </a>
+  </td>
+<td>
+<a href="AssignReviewers.php?idPaper={PAPER_ID}">Assign</a></td>
+<td><a href="mailto:{PAPER_EMAIL_CONTACT}">Mail authors</a></td>
+</tr>
+
+}
+
+</table>
+
+<a href='Admin.php'>Back to the admin menu</a>
+}

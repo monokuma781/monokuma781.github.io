@@ -1,0 +1,197 @@
+th {
+	color : #000000;
+	font-size : 11px;
+	font-family : Tahoma,Verdana,Arial;
+}
+input {
+	color : #000000;
+	font-size : 11px;
+	font-family : Tahoma,Verdana,Arial;
+	font-weight: bold;
+}
+.px {
+	padding-top : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	padding-right : 0px;
+	margin-top : 2px;
+	margin-bottom : 0px;
+	margin-left : 0px;
+	margin-right : 0px;
+}
+.px5 {
+	padding-top : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+	padding-right : 0px;
+	margin-top : 5px;
+	margin-bottom : 0px;
+	margin-left : 0px;
+	margin-right : 0px;
+}
+.t01 {
+	color : #000000;
+	margin-top : 5px;
+	padding-bottom : 10px;
+	margin-bottom : 0px;
+	margin-left : 40px;
+	margin-right : 30px;
+	font-size : 12px;
+	font-family : Tahoma,Verdana,Arial;
+}
+.t01 a {
+	color : #EF6D00;
+}
+.t01 a:hover {
+	color : #C25A02;
+}
+.list {
+	color : #FFFFFF;
+	margin-top : 3px;
+	padding-bottom : 3px;
+	margin-bottom : 0px;
+	margin-left : 10px;
+	margin-right : 10px;
+	font-size : 11px;
+	font-family : Tahoma,Verdana,Arial;
+	font-weight: bold;
+}
+.right {
+	color : #000000;
+	margin-top : 5px;
+	padding-bottom : 10px;
+	margin-bottom : 0px;
+	margin-left : 10px;
+	margin-right : 60px;
+	font-size : 11px;
+	font-family : Tahoma,Verdana,Arial;
+	font-weight: bold;
+}
+.right a, .list a {
+	color : #000000;
+}
+.right a:hover {
+	color : #AAAAAA;
+}
+.left {
+	color : #000000;
+	margin-top : 10px;
+	padding-bottom : 5px;
+	margin-bottom : 0px;
+	margin-left : 25px;
+	margin-right : 10px;
+	font-size : 11px;
+	font-family : Tahoma,Verdana,Arial;
+	font-weight: bold;
+}
+.left b {
+	color : #FFFFFF;
+}
+.left a {
+	color : #FF6600;
+}
+.left a:hover {
+	color : #FF0000;
+}
+p {
+	color : #000000;
+	margin-top : 5px;
+	padding-bottom : 10px;
+	margin-bottom : 0px;
+	margin-left : 10px;
+	margin-right : 10px;
+	font-size : 14px;
+	font-family : Tahoma, Verdana, Arial;
+}
+p a {
+	color : #000000;
+	font-weight: bold;
+}
+p a:hover {
+	color : #294A7B;
+}
+.menu01 {
+	color : #000000;
+	margin-top : 0px;
+	padding-bottom : 0px;
+	margin-bottom : 0px;
+	margin-left : 12px;
+	margin-right : 0px;
+	font-size : 12px;
+	font-weight: bold;
+}
+.menu01 a {
+	color : #000000;
+	text-decoration: none;
+}
+.menu01 a:hover {
+	color : #555555;
+}
+.menu02 {
+	color : #0000FF;
+	margin-top : 0px;
+	padding-bottom : 0px;
+	margin-bottom : 0px;
+	margin-left : 25px;
+	margin-right : 0px;
+	font-size : 12px;
+	font-weight: bold;
+}
+.menu02 a {
+	color : #000000;
+	text-decoration: none;
+}
+.menu02 a:hover {
+	color : #555555;
+}
+.color_menu_red {
+	color: #ff3300;
+}
+.color_menu_mauve {
+	color: #663366;
+}
+.font_yellow {
+	font-size:12px;
+	color: #FFFF00;
+}
+.font_yellow a {
+	font-size:12px;
+	color: #FFFF00;
+}
+.font_yellow a:hover {
+	color: #FFFF00;
+}
+.font_blue {
+	font-size:12px;
+	color: #0033CC;
+}
+.title01 {
+	font-size: 22px;
+	line-height: 30px;
+	color: #000000;
+}
+.copyrt {
+	font-size: 12px;
+	color: #666666;
+}
+.p12 {
+	margin-top : px;
+	padding-bottom : 0px;
+	margin-bottom : 5px;
+	margin-left : 5px;
+	margin-right : 5px;
+	font-size : 12px;
+}.inlink {
+	vertical-align: super;
+}
+.indent {
+	font-size: 12px;
+	margin-left: 50px;
+	margin-right:40px;
+	text-indent:-25px;
+}
+.indent01 {
+	font-size: 12px;
+	margin-left: 70px;
+	margin-right:30px;
+}

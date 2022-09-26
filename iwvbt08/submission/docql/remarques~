@@ -1,0 +1,6 @@
+
+- On n'a pas besoin de ParseFile, il faudrait
+    simplement appeler une méthode executeFile ()
+- Il faudrait aussi une méthode execute() à
+  laquelle on passe une chaîne de caractères contenant
+   la requête DocQL

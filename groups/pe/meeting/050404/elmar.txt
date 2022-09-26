@@ -1,0 +1,181 @@
+47th International Symposium ELMAR-2005
+focused on Multimedia Systems and Applications
+
+08-10 June 2005
+Zadar, Croatia
+
+http://www.vcl.fer.hr/elmar/2005/
+
+Submission deadline: February 11, 2005
+
+
+CALL FOR PAPERS
+
+
+The 47th International Symposium ELMAR-2005 focused on Multimedia
+Communications and Services will be held in the beautiful old town
+Zadar on the Croatian Adriatic coast. While the scientific program
+is expected to create stimulating professional interaction, the
+crystal clear Adriatic Sea, warm June atmosphere and wealth of
+historic monuments promise a pleasant and memorable stay. The aim
+of the symposium is to promote the interface of researchers involved
+in the development, design and application of methods and techniques
+within the framework of multimedia systems and technologies, multimedia
+applications, image and video processing, digital video broadcasting
+(DVB), navigation systems, marine electronics, etc. The scientific
+program includes keynote lectures by eminent international experts
+and contributed papers. Papers accepted by two independent reviewers
+will be published in symposium proceedings available at the symposium
+and abstracted in the INSPEC and IEEExplore database (IEEE Conference
+Publication Program). ELMAR-2005 symposium is sponsored by the Croatian
+Society Electronics in Marine (ELMAR), technically co-sponsored by
+IEEE Signal Processing Society, IEEE Region 8 and IEEE Croatia Section,
+and in coopearation with EURASIP (European Association for Signal,
+Speech and Image Processing).
+
+
+TOPICS
+
+MULTIMEDIA
+
+* Multimedia Systems and Technologies
+* Multimedia Applications
+* Image and Video Processing
+* Digital Video Broadcasting (DVB)
+* Mobile Technologies and Services
+* Wireless Communications
+* Speech and Audio Processing
+* Face Recognition and Analysis
+* Electronic Media
+
+ELECTRONICS IN MARINE
+
+* Navigation Systems
+* Ship Electronic Systems
+* Power Electronics and Automation
+* Radiocommunications
+* Antennas and Propagation
+* Sound and Vibration
+* Remote Sensing / Monitoring
+* Meteorology
+* Sea Ecology
+
+
+SUBMISSION
+
+"Instructions for Authors" are available on:
+http://www.vcl.fer.hr/elmar/2005/
+
+Authors are invited to submit their papers in electronic form
+by February 11, 2005. Please send the electronically version
+in PDF format by e-mail to: elmar@fer.hr
+
+
+PLENARY TALKS
+
+Prof. Fernando Pereira, PORTUGAL:
+MPEG-21 standard: defining an open multimedia framework
+
+Prof. Luis Torres, SPAIN:
+Face recognition: The problems, the challenges and the proposals
+
+
+SCHEDULE OF IMPORTANT DATES
+
+Deadline for submission of full papers: February 11, 2005
+Notification of acceptance mailed out by: March 11, 2005
+Deadline for submission of camera-ready papers: March 25, 2005
+Preliminary program available on the web-site by: April 01, 2005
+Registration deadline: April 22, 2005
+
+
+Mini-exhibition facilities will be available for companies wishing
+to display their products, services, hardware & software and literature
+relating to the symposium topics. The companies wishing to participate
+in the exhibition are kindly requested to contact Asst.Prof. Mislav
+Grgic by e-mail: elmar@fer.hr
+
+
+ORGANIZING SPONSOR
+
+Croatian Society Electronics in Marine - ELMAR
+
+
+TECHNICAL CO-SPONSORS
+
+IEEE Signal Processing Society
+IEEE Region 8
+IEEE Croatia Section
+
+
+IN COOPERATION WITH
+
+EURASIP
+
+
+GENERAL CO-CHAIRS
+
+Ive Mustac
+Tankerska plovidba, Zadar, Croatia
+
+Branka Zovko-Cihlar
+University of Zagreb, Croatia
+
+
+PROGRAM CHAIR
+
+Mislav Grgic
+University of Zagreb, Croatia
+
+
+INTERNATIONAL PROGRAM COMMITTEE
+
+Juraj Bartolic, Croatia
+David Broughton, United Kingdom
+Pavel Cukrov, Croatia
+Zarko Cucej, Slovenia
+Marek Domanski, Poland
+Kalman Fazekas, Hungary
+Janusz Filipiak, Poland
+Renato Filjar, Croatia
+Borko Furht, USA
+Joze Furlan, Slovenia
+Mislav Grgic, Croatia
+Sonja Grgic, Croatia
+B. Hofmann-Wellenhof, Austria
+Tomislav Kos, Croatia
+Andy Kucar, Canada
+Boris Kviz, Croatia
+Rastislav Lukac, Canada
+Gabor Matay, Hungary
+Borivoj Modlic, Croatia
+Pavol Podhradsky, Slovak Republic
+K. R. Rao, USA
+Marian S. Stachowicz, USA
+Christel Stakkestad, Sweden
+Rajko Svecko, Slovenia
+Csaba Szabo, Hungary
+Jan Turan, Slovakia
+Frantisek Vejrazka, Czech Republic
+Nick Ward, United Kingdom
+Krzysztof Wayda, Poland
+Branka Zovko-Cihlar, Croatia
+
+
+CONTACT INFORMATION
+
+Asst.Prof. Mislav Grgic
+ELMAR-2005
+FER, Unska 3 / XII
+HR-10000 Zagreb
+CROATIA
+
+Telephone: + 385 1 6129 851
+Fax: + 385 1 6129 717
+E-mail: elmar@fer.hr
+
+Please visit ELMAR-2005 web-site:
+http://www.vcl.fer.hr/elmar/2005/
+
+
+ 

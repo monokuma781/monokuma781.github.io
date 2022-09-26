@@ -1,0 +1,33 @@
+Note the fact that a reviewer submitted his preferences
+
+Prevent access to Review.php once the review phase is closed.
+
+Add a 'safe mode' option, and allow the removal of papers when not
+   in safe mode.
+
+New functions:  - authors rebuttal and evaluation of reviewers  
+                - make the Paypal access optional.
+
+
+When using the "Status of Papers" page to see whether a paper has been assigned to a
+reviewer I can easily see whether a paper has been assigned or not. What is not so
+easy to see is whether an email has been sent to the assigned reviewer. Only when
+the reviewer has rewieved the paper the table entry with "Avg. marks" shows that the
+paper has been reviewed and therefore an email has been sent to the reviewer
+previciously. But if the reviewer not yet has sent in his evaluation then I can not
+tell whether the reviewer has been notified at that moment. Since I don't want to
+notifiy reviewers more than once I need to keep a seperate list of which reviewers
+has been notified once assigned to certain papers.
+ 
+Is it possible to have an extra column in the table of listed papers which indicate
+whether a reviewer has been sent an email or not, when being assigned to a paper but
+not yet has sent in his review? Or we can - as in the page for reviewers "Your
+Papers" when a reviewer sends in a review the action "Submit my review for this
+paper" in red changes to "Update my review" in green - make the "Mail reviewers"
+change to something else and in a different color. 
+ 
+
+Med venlig hilsen
+
+Frede Aakmann Tøgersen
+

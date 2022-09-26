@@ -1,0 +1,197 @@
+    The 2005 World Congress in Applied Computing
+         (composed of 14 Joint Conferences)
+          June 20-23, 2005, Las Vegas, USA
+                        &
+     The 2005 International Multiconference in
+     Computer Science and Computer Engineering
+        (composed of 16 Joint Conferences)
+         June 27-30, 2005, Las Vegas, USA
+
+Dear Colleagues:
+
+The world's largest gathering of researchers in computer
+science, computer engineering and applied computing will be
+held in June 2005.  You are invited to submit a paper to
+one of the 30 research conferences listed below.
+
+The 2005 World Congress in Applied Computing is composed
+of the following 14 conferences (all will be held
+simultaneously, same location and dates June 20-23, 2005,
+Las Vegas, USA):
+
+1.  The 2005 International Conference on Grid Computing
+    and Applications (GCA'05)
+
+2.  The 2005 International Conference on e-Business,
+    Enterprise Information Systems, e-Government, and
+    Outsourcing (EEE'05)
+
+3.  The 2005 International Conference on Biometric
+    Authentication (BIOAU'05)
+
+4.  The 2005 International Conference on Computers for
+    People with Special Needs (CPSN'05)
+
+5.  The 2005 International Conference on Data Mining
+    (DMIN'05)
+
+6.  The 2005 International Conference on Human-Computer
+    Interaction (HCI'05)
+
+7.  The 2005 International Conference on Computer Vision
+    (VISION'05)
+
+8.  The 2005 International Conference on Scientific
+    Computing (CSC'05)
+
+9.  The 2005 International Conference on Information and
+    Knowledge Engineering (IKE'05)
+
+10. The 2005 International Conference on Security and
+    Management (SAM'05)
+
+11. The 2005 International Conference on Mathematics and
+    Engineering Techniques in Medicine and Biological
+    Sciences (METMBS'05)
+
+12. The 2005 International Conference on Algorithmic
+    Mathematics and Computer Science (AMCS'05)
+
+13. The 2005 International Conference on Data Fusion -
+    From Multi-Source Data to Information (FUS'05)
+
+14. The 2005 International Conference on Frontiers in
+    Education: Computer Science and Computer Engineering
+    (FECS'05)
+
+The 2005 International Multiconference in Computer Science
+and Computer Engineering is composed of the following
+16 conferences (all will be held simultaneously, same
+location and dates: June 27-30, 2005, Las Vegas, USA):
+
+1.  The 2005 International Conference on Parallel and
+    Distributed Processing Techniques and Applications
+    (PDPTA'05)
+
+2.  The 2005 International Conference on Artificial
+    Intelligence (ICAI)
+
+3.  The 2005 International Conference on Software
+    Engineering Research and Practice (SERP'05)
+
+4.  The 2005 International Conference on Internet
+    Computing (ICOMP'05)
+
+5.  The 2005 International Conference on Computer Design
+    (CDES'05)
+
+6.  The 2005 International Conference on Wireless
+    Networks (ICWN'05)
+
+7.  The 2005 International Conference on Modeling,
+    Simulation and Visualization Methods (MSV'05)
+
+8.  The 2005 International Conference on Foundations
+    of Computer Science (FCS'05)
+
+9.  The 2005 International Conference on Imaging Science,
+    Systems, and Technology: Computer Graphics (CISST'05)
+
+10. The 2005 International Symposium on Web Services and
+    Applications (ISWS'05)
+
+11. The 2005 International Conference on Pervasive
+    Systems and Computing (PSC'05)
+
+12. The 2005 International Conference on Machine Learning;
+    Models, Technologies and Applications (MLMTA'05)
+
+13. The 2005 International Conference on Communications
+    in Computing (CIC'05)
+
+14. The 2005 International Conference on Engineering of
+    Reconfigurable Systems and Algorithms (ERSA'05)
+
+15. The 2005 International Conference on Programming
+    Languages and Compilers (PLC'05)
+
+16. The 2005 International Conference on Embedded Systems
+    and Applications (ESA'05)
+
+A link to each conference's URL can be found at
+http://www.world-academy-of-science.org
+
+GENERAL CHAIR AND COORDINATOR:
+
+   H. R. Arabnia, PhD
+   The University of Georgia
+   Department of Computer Science
+   415 Graduate Studies Research Center
+   Athens, Georgia 30602-7404, U.S.A.
+
+   Tel: (706) 542-3480
+   Fax: (706) 542-2966
+   E-mail: hra@cs.uga.edu
+
+
+SUBMISSION OF PAPERS:
+
+   Please regard this as General Guidelines.
+   Prospective authors are invited to submit their
+   full papers (about 5 to 12 pages - single space, font size
+   of 10 to 12) to H. R. Arabnia by Feb. 16, 2005. E-mail
+   submissions in MS document or PDF formats are preferable
+   (Fax or postal submissions are also acceptable.)
+   The chair may be forwarding the papers to respective
+   conference chairs/committees/Task Forces.
+
+   The length of the Camera-Ready papers (if accepted) will
+   be limited to 7 (IEEE style) double-column pages.  Papers must
+   not have been previously published or currently submitted for
+   publication elsewhere.  The first page of the paper
+   should include: title of the paper, name, affiliation,
+   postal address, E-mail address, telephone number, &
+   Fax number for each author.  The first page should also
+   include the name of the author who will be presenting
+   the paper (if accepted) and a maximum of 5 keywords.
+   Also, the name of the conference that the paper is being
+   submitted to must be mentioned on the first page.
+
+   Papers will be evaluated and fully refereed for originality,
+   significance, clarity, and soundness.  Each paper will be
+   refereed by two researchers in the topical area.
+   The revised papers will be reviewed by one person.
+
+MEMBERS OF PROGRAM & ORGANIZING COMMITTEES:
+
+   The Program Committee includes members of chapters
+   of World Academy of Science (chapters: supercomputing;
+   scientific computing; artificial intelligence; imaging
+   science; databases; simulation; software engineering;
+   embedded systems; internet and web technologies;
+   communications; computer security; and bioinformatics.)
+   The Program Committee for individual conferences is
+   currently being formed.  Those interested in joining
+   the Program Committee should email H. R. Arabnia
+   (hra@cs.uga.edu) the following information:
+   Name, affiliation and position, complete mailing address,
+   email address, tel/fax numbers, a short biography
+   together with research interests and the name of the
+   conference offering to help with.
+
+
+IMPORTANT DATES:
+
+   Feb.  16, 2005:    Submission of papers
+   March 21, 2005:    Notification of acceptance
+   April 20, 2005:    Camera-Ready papers & Prereg. due
+   June 20-23, 2005:  The 2005 World Congress in Applied
+                      Computing (WCAC'05) - 14 Joint
+                      Conferences.
+   June 27-30, 2005:  The 2005 International MultiConference
+                      in Computer Science and Computer
+                      Engineering (IMCSE'05) - 16 Joint
+                      Conferences.
+
+
+ 

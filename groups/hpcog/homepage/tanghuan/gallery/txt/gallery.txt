@@ -1,0 +1,235 @@
+<!--------------------------------EDIT YOUR GALLERYBACKGROUND COLOR/IMAGE------------------->
+&bkgrn_gallery=0x888989&bordercolor_gallery=0x888989&alpha_gallery=100&xposition_gallery=0&yposition_gallery=0&width_gallery=780&height_gallery=550&img_gallery=images/gallery.jpg&
+
+<!---------------------------------------------------------------  TITLE OF YOUR GALLERY ------------------------------------------------------------------------>
+&pagetitle=<P ALIGN="LEFT"><FONT SIZE="30" COLOR="#FF3300"><B><i>Gallery of </i><FONT SIZE="18"COLOR="#FFFFFF">Tang huan</FONT></B></FONT>
+&morepicture=<P ALIGN="LEFT"><FONT SIZE="11" COLOR="#FFCC00"><B><i>scroll for more pictures, there are plenty down there</i></B></FONT>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 1 DESCRIPTION----------------------------------------->
+&picture1=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>高中生活</i></B></FONT>
+<P ALIGN="LEFT">
+时间：1998年冬天(高中三年级)
+地点：新疆石河子市第一中学的操场上
+描述：皑皑白雪,蓝色天空,这是我的家乡,我要从这起飞。
+</p>
+&picture1button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/01-19980101.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!--------------------------------------------------------------------------- END HERE ------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 2 DESCRIPTION----------------------------------------->
+&picture2=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>迎新晚会</i></B></FONT>
+<P ALIGN="LEFT">
+时间：1999年9月(大学一年级)迎新生晚会
+地点：无锡轻工大学（后改名江南大学）
+描述：第一次走出新疆，见到外面的精彩世界。
+</p>
+&picture2button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/02-19990900.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 5 DESCRIPTION----------------------------------------->
+&picture5=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>倒立</i></B></FONT>
+<P ALIGN="LEFT">
+时间：1999年10月(大学一年级)
+地点：上海川沙
+描述：第一次见到大海，兴奋无比。
+</p>
+&picture5button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/05-19991001.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 6 DESCRIPTION----------------------------------------->
+&picture6=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>ACM大赛</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2002年11月(大学四年级)
+地点：西安交通大学
+描述：第27届ACM国际大学生程序设计竞赛。
+</p>
+&picture6button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/06-20021129.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 3 DESCRIPTION----------------------------------------->
+&picture3=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>我读研究生了</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2003年9月(研究生一年级)拔河比赛
+地点：中科院研究生院玉泉校区
+描述：大学光阴稍纵即逝，转眼来到北京。
+</p>
+&picture3button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/03-20030900.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 4 DESCRIPTION----------------------------------------->
+&picture4=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>有志青年</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年元旦(研究生一年级)元旦聚餐
+地点：中科院研究生院玉泉校区
+描述：在离家4000公里远的地方，结识了一帮好兄弟。
+</p>
+&picture4button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/04-20040101.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 7 DESCRIPTION----------------------------------------->
+&picture7=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>反思</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年冬天(研究生一年级)
+地点：中科院研究生院玉泉校区 宿舍里
+描述：面对充满希望的人生路，我该如何走下去....
+</p>
+&picture7button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/07-20040102.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 8 DESCRIPTION----------------------------------------->
+&picture8=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>李洁来京</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年6月(研究生一年级)
+地点：八达岭长城
+描述：嘿嘿，五年未见的同学来了北京！
+</p>
+&picture8button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/08-20040612.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 9 DESCRIPTION----------------------------------------->
+&picture9=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>团结的小组</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年7月(研究生一年级)
+地点：中科院计算所智能中心4000A机房
+描述：一滴水，只有放进大海里才会用不干涸....
+</p>
+&picture9button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/09-20040716.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 10 DESCRIPTION----------------------------------------->
+&picture10=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>收获的欣喜</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年7月(研究生一年级)
+地点：中科院计算所智能中心4000A机房
+描述：这里也有我的努力，怎能让人不觉自豪
+</p>
+&picture10button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/10-20040716.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 11 DESCRIPTION----------------------------------------->
+&picture11=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>快乐的日子</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年7月(研究生一年级)
+地点：大运村清真烤肉店(老板也是石河子人)
+描述：研究生活并非日日单调，有朋友就有快乐！
+</p>
+&picture11button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/11-20040717.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 12 DESCRIPTION----------------------------------------->
+&picture12=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>水乡周庄</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年8月(研究生一年级假期)
+地点：江南水乡--周庄
+描述：喜得假期，云游一番。
+</p>
+&picture12button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/12-20040818.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 13 DESCRIPTION----------------------------------------->
+&picture13=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>我的办公室</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年8月(研究生二年级)
+地点：智能中心先进系统实验室
+描述：假期结束，回来继续忙碌。
+</p>
+&picture13button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/13-20040827.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 14 DESCRIPTION----------------------------------------->
+&picture14=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>卧佛寺瀑布</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年9月(研究生二年级)
+地点：北京香山卧佛寺
+描述：远离喧闹城市，回归宁静自然。
+</p>
+&picture14button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/14-20040902.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 15 DESCRIPTION----------------------------------------->
+&picture15=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>龙芯开发者大会</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年9月(研究生二年级)
+地点：中科院文献情报中心
+描述：广泛交流，四处学习。
+</p>
+&picture15button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/15-20040905.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 16 DESCRIPTION----------------------------------------->
+&picture16=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>星巴克咖啡厅</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年11月(研究生二年级)
+地点：家乐福星巴克咖啡
+描述：安逸。
+</p>
+&picture16button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/16-20041128.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 17 DESCRIPTION----------------------------------------->
+&picture17=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>小美女Kristy</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2004年7月
+地点：黄山凤凰源
+描述：小美女Kristy。
+</p>
+&picture17button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/17-kristy01.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 18 DESCRIPTION----------------------------------------->
+&picture18=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>这是我妹妹</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2003年11月
+地点：家里
+描述：要对看楼婆婆说：“这是我妹妹”。
+</p>
+&picture18button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/18-kristy02.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 19 DESCRIPTION----------------------------------------->
+&picture19=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>2005春节度假</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2005年1月
+地点：京郊度假村
+描述：劳作了一年了，也住进度假村里休息休息。
+</p>
+&picture19button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/19-20050122.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+
+<!--------------------------------------------------- START HERE TO EDIT PICTURE 20 DESCRIPTION----------------------------------------->
+&picture20=<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="12" COLOR="#CCCCCC"><P ALIGN="CENTER"><FONT SIZE="14" COLOR="#FFCC00"><B><i>两个小丑</i></B></FONT>
+<P ALIGN="LEFT">
+时间：2005年1月
+地点：寝室
+描述：和兄弟合力表演 :) 猴年在欢笑声中结束
+</p>
+&picture20button=<P ALIGN="LEFT"><FONT COLOR="#FF6600" SIZE="12"><A HREF="images/20_20050128.jpg" target="_blank"><B>观看原图</B></A></FONT>
+<!---------------------------------------------------------------------------- END HERE -------------------------------------------------------------------->
+
+
+
+
+<!--------- Please donot remove  --------------->
+&design=Copyright_5sec INTERACTIVE&
+<!-------------------------------------------------------------->
+

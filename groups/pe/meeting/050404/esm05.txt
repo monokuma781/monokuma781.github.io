@@ -1,0 +1,187 @@
+The 2005 High Performance Computing & Simulation (HPC&S)Conference
+ 
+                                               In Conjunction With The 19th 
+                               EUROPEAN SIMULATION MULTICONFERENCE (ESM 2005)
+ 
+                                             Riga, Latvia June 1 - 4, 2005
+ 
+
+                                  (Submission Deadline: February 17, 2005)
+ 
+
+Invitation:
+You are cordially invited to participate in and attend the 2005 High Performance Computing & Simulation track to
+be held in Riga, Latvia, June 1-4, 2005 in conjunction with the 19th European Simulation Multi conference (ESM 2005).
+ The track is to address, explore and exchange information on the state-of-the-art in high performance and large
+ scale computing systems, their modeling and simulation, design and use, and their impact.  Participation
+ is extended to researchers, designers, educators and interested parties in all related disciplines and specialties.
+ 
+Purpose:
+The track will include invited presentations from experts from academia, industry, and government as well as
+contributed paper presentations describing original work on the current state of research in HPC & Simulation
+technologies and systems and related issues.
+ 
+Topics include (but are not limited to):
+  Parallel and Distributed Architectures and Systems
+  Efficient Modeling and Simulation Algorithms and Techniques for High-performance and Large Scale Computing Platforms
+  Methods and Techniques for Parallel Computation (e.g., Partitioning, Mapping and Scheduling, Routing,
+   Resource Management, Communications, Synchronization, Load Balancing and Sharing, .)
+  Performance of Parallel and Distributed Computing Systems (experimental and comparative studies, performance models,
+   benchmarking, instrumentation and monitoring, visualization, .)
+  High Level Architecture (HLA), InfiniBand Architecture (IBA), and Related Standards (time management, model
+   semantics, implementation issues, .)
+  High Performance Computing Networks (LAN, MAN, WAN, SAN, .)
+  Network-centric and High Performance Protocols
+  Parallelization of Simulation (numerical and computational methods, Quasi-Monte-Carlo simulation, .)
+  Web-based Distributed Simulation (distributed modeling via the Web, Java based, Federated, and so on)
+  Pervasive and Ubiquitous Computing (wireless, mobile, wearable, invisible, .)
+  Innovative High Performance Computing (Autonomic, Affective, Quantum, Autonomous, .)
+  Human-centric High Performance Computing
+  Soft Computing (Neural, Fuzzy, Genetic, etc.)
+  Context-aware, Power-aware, Multimedia, Stream, and Application-specific Computing
+  High Performance and Large Scale Collaborative and Virtual Environments and Enterprises
+  System Integration for High Performance
+  Large Scale Systems for Computational Sciences (Biological, Chemical, Physical, Bioinformatics, Environmental, etc.)
+  Cluster, Multicluster, and Grid Computing (Message Passing, Distributed Shared Memory, Grid Data Exchange and Storage,
+Grid Resource Management, Grid Informatics, etc.)
+  Middleware and System Services, Support and Tools
+  Data Mining and Warehousing for HPC
+  Languages, Compilers and Operating Systems for High Performance Computing
+  Libraries and Programming Environments
+  High Performance Network Processors and Sensor Networks
+  Peer-to-Peer High Performance Computing
+  High Performance Mobile and Wireless Computing and Networking
+  High Performance Reconfigurable Computing and Embedded Systems and SoCs
+  Real-Time High Performance Computing
+  Security, Authentication, Encryption, and Information Assurance for HPC Systems
+  Fault-Tolerant and High Availability High Performance Computing
+  Applications of HPC Systems and Simulation (Computer Systems, 
+Manufacturing, Production and Industrial Systems, etc.)
+ 
+Conference Chair:
+Helen Karatza, Aristotle University of Thessaloniki, Greece
+ 
+Program Chair:
+--------------
+Waleed W. Smari, University of Dayton, USA
+ 
+International Program Committee:
+---------------------------------
+Hamid Abachi, Monash University, Australia
+Ishfaq Ahmad, University of Texas at Arlington, USA
+Saleh R. Al-Araji, Etisalat College of Engineering, United Arab Emirates
+Samir S. Al-Khayatt, Sheffield Hallam University, UK
+Reda A. Ammar, University of Connecticut, USA
+David Bader, University of New Mexico, USA
+Rupak Biswas, NASA Ames Research Center, USA
+Arndt Bode, Technical University of Munich, Germany
+Laszlo Boeszoermenyi, Klagenfurt University, Austria
+Edson Norberto Ceceres, Federal University of Mato Grosso do Sul, Brazil
+Mario Cannataro, University of Catanzaro, Italy
+Yinong Chen, Arizona State University, USA
+Michel Dayde, Institute of Research in Computer Science of Toulouse 
+(IRIT)-ENSEEIHT, France
+Hassan B. Diab, American University of Beirut, Lebanon
+Marios Dikaiakos, University of Cyprus, Cyprus
+Robert ElsAsser, University of Paderborn, Germany
+Paola Flocchini, University of Ottawa, Canada
+Bertil Folliot, University of Pierre and Marie Curie, Paris VI, France
+Giancarlo Fortino, University of Calabria, Italy
+Frank Golatowski, University of Rostock, Germany
+Patricia Gonzelez Gemez, University of Coruna, Spain
+Ratan Guha, University of Central Florida, USA
+Kenneth A. Hawick, Massey University - Albany, New Zealand
+Bruce Hendrickson, Sandia National Laboratories, USA
+Gongzhu Hu, Central Michigan University, USA
+Ju-Wook Jang, Sogang University, Korea
+Hai Jin, University of Southern California, USA
+Daniel S. Katz, Jet Propulsion Laboratory NASA, USA
+Ashfaq Khokhar, University of Illinois at Chicago, USA
+Harald Kosch, Klagenfurt University, Austria
+Dieter A. Kranzlmueller, Johannes Kepler University Linz, Austria
+Wolfgang Kreutzer, University of Canterbury, New Zealand
+Keqin Li, State University of New York at New Paltz, USA
+Nouredine Melab, LIFL - CNRS UMR 8022 - UniversitA de Lille I, France
+Philippe Mussi, INRIA Sophia-Antipolis Research Unit, France
+M. Ould-Khaoua, University of Glasgow, UK
+Oznur Ozkasap, Koc University, Istanbul, Turkey
+Marcin Paprzycki, Oklahoma State University, USA
+Dana Petcu, Western University of Timisoara, Romania
+Viktor K. Prasanna, University of Southern California, USA
+Andrew Rau-Chaplin, Dalhousie University, Canada
+Christophe Rosenberger, LVR - ENSI de Bourges, France
+Frode Eika Sandnes, Oslo University College, Norway
+Andre Schiper, Swiss Federal Institute of Technology - EPFL, Switzerland
+Stanislav G. Sedukhin, University of Aizu, Japan
+Edwin H-M. Sha, University of Texas at Dallas, USA
+Cyrus Shahabi, University of Southern California, USA
+Timothy K. Shih, Tamkang University, Taiwan
+Charalabos Skianis, National Centre for Scientific Research Demokritos, 
+Greece
+Leonel Sousa, Superior Institute of Technology (IST), Portugal
+Przemyslaw Stpiczynski, Maria Curie-Sklodowska University, Poland
+Domenico Talia, DEIS, Universita' della Calabria, Italy
+Gary Tan Soon Huat, National University of Singapore, Singapore
+David Taniar, Monash University, Australia
+Georgios K. Theodoropoulos, University of Birmingham, UK
+Petia Todorova, Fraunhofer Institute FOKUS, Germany
+Christian Toinard, ENSI de Bourges, France
+Andreas Uhl, Salzburg University, Austria
+Bharadwaj Veeravalli, National University of Singapore, Singapore
+Lucian N. Vintan, Lucian Blaga University of Sibiu, Romania
+Laurence T. Yang, St. Francis Xavier University, Canada
+S. Q. Zheng, University of Texas at Dallas, USA
+Junaid A. Zubairi, SUNY at Fredonia, USA
+ 
+Submission of Papers:
+---------------------
+Papers reporting original and unpublished research results on above and 
+related HPC topics are solicited.
+Please submit an electronic copy of your full manuscript (not to exceed 15 
+double-spaced pages including figures,
+tables, and references).  Please clearly indicate the corresponding author. 
+Include up to 6 keywords from the above list
+and an abstract of no more than 300 words.  Papers must be submitted - in 
+.pdf (preferred) or word.doc format via web
+at the following conference website: 
+http://www.engr.udayton.edu/faculty/wsmari/hpc05.  More detailed submission 
+procedures
+will be available on this website.  If accepted, the final camera-ready 
+manuscript will follow the ESM format, which will
+be made available to all authors.
+ 
+Consistent with standard practice, each submitted paper will receive a 
+minimum of three reviews.  Papers will be selected
+based on their originality, timeliness, significance, relevance, and clarity 
+of presentation.  Initial selection will
+be based on full papers.  Submission implies the willingness of at least one 
+of the authors to register and present the paper,
+if accepted.  All accepted papers in the track are expected to be presented 
+and will be included in the conference proceedings.
+ 
+If you have any questions about paper submission, please contact track 
+Program Chair:  Waleed W. Smari, Dept. of Electrical
+and Computer Engineering, University of Dayton, 300 College Park, Dayton, OH 
+45469-0226, USA, Voice: (937) 229-2795,
+Fax: (937) 229-4529, Email: Waleed.Smari@notes.udayton.edu.
+ 
+For information about the HPC track in general, please contact the track 
+General Chair: Helen Karatza, Aristotle
+University of Thessaloniki, Greece, karatza@csd.auth.gr.
+ 
+Important Dates:
+---------------- 
+Full Paper Submission Deadline --------------------------------- February 17, 2005
+Notification of Acceptance ------------------------------------- March 18, 2005
+Registration & Camera-Ready Manuscripts Due -------------------  April 18, 2005
+ 
+
+For further information or questions about the track, please consult the 
+track web site at
+URL: http://www.engr.udayton.edu/faculty/wsmari/hpc05.
+For information about ESM 2005, consult the ESM'05 web site at
+URL:  http://www.scs-europe.net/conf/esm2005/index.html
+or contact ESM'05 General Chair: Yuri Merkuryev at merkur@itl.rtu.lv.
+
+
+ 

@@ -1,0 +1,13 @@
+<!--Copyright 2002  Karna Saleh  All Rights Reserved. This website prototype designed  by Karna Saleh
+    5sec INTERACTIVE Website - http://www.5sec.com   -----   Email - webmaster@5sec.com.-->
+<!-------------------- PLEASE DO NOT REMOVE THE INFORMATION  ABOVE THIS LINE --------------------------->
+
+<!---------------------------------------------------START EDITING BELOW THIS LINE --------------------------->
+
+
+&text=<FONT face="ariali" SIZE="20" COLOR="#000000"><B>学习总结</B></FONT>
+<FONT SIZE="13" COLOR="#0066FF"><A HREF="downloads/20030328-LinuxBIOS-tanghuan.pdf" target="_blank"> 2003-03-28__LinuxBIOS简介</A>
+<A HREF="downloads/20030515-thesis-tanghuan.pdf" target="_blank">2003-05-15__机群环境下文件系统监控的探索</A>
+<A HREF="downloads/20040416-fs-tanghuan.pdf" target="_blank">2004-04-16__Linux源码分析系列--文件系统</A>
+<A HREF="downloads/20040928-python-tanghuan.pdf" target="_blank">2004-09-28__Python语言简介</A>
+<A HREF="downloads/20050628-PGqualification-tanghuan.pdf" target="_blank">2005-06-28__申请转博资格报告</A>

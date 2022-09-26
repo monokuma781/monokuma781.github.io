@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2006-04-05T11:58:55.198262Z"
+   url="svn+ssh://rigaux@scm.gforge.inria.fr/svn/myreview/stats/jpgraph"
+   last-author="rigaux"
+   kind="dir"
+   uuid="4b11e6c2-9710-0410-b016-de940d598f8c"
+   revision="1"/>
+<entry
+   committed-rev="1"
+   name="jpgraph.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="fca74ebc0d5fcd009f3665d10ec386d5"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_log.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="d759bb8fd7c9bfdc9d668350beb476fd"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_stock.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="cb8f59523b476a56a7cb17da5c7dd5b5"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_imgtrans.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="bcb55dddc8ef0af70c7e4db25684aaaf"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_iconplot.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="84eab677aa09336c1085d6cad948ea2c"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_line.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="19dde38469c130ef5f0ba481dee7b6f7"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpg-config.inc"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="428bb88b83a67fb7dc3cd80397d22585"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_flags.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="cc7bce511ec2901f926d91409abf5c13"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_gradient.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="aa5e40de2a8f26fb38a785b9bc6f1d9e"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_plotband.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="684d1edf551644b026dfc42588ee3222"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_bar.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="c30570b5ec592a9e3651de3674ec16ec"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_pie3d.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="2d1377350b82f5ead4ff626a4a5382d3"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_scatter.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="5dda28063f960b3033f6ca097f377a65"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_regstat.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="ae0e3c6af409081d554dc53c03b66d4e"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_plotmark.inc"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="10b3e5ffe56926e80033727bdf4b2e44"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+<entry
+   committed-rev="1"
+   name="jpgraph_pie.php"
+   text-time="2006-04-08T12:17:34.000000Z"
+   committed-date="2006-04-05T11:58:55.198262Z"
+   checksum="924ce0207e49b724af1fdb86df7110b5"
+   last-author="rigaux"
+   kind="file"
+   prop-time="2006-04-08T12:17:34.000000Z"/>
+</wc-entries>

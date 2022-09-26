@@ -1,0 +1,504 @@
+#
+#   Script for creating the database
+#
+
+#
+# Papers
+#
+
+CREATE TABLE Paper  (id INTEGER AUTO_INCREMENT NOT NULL,
+                    title VARCHAR(255) NOT NULL,
+                    authors VARCHAR(255) NOT NULL,
+                    emailContact  VARCHAR (60) NOT NULL,
+                    abstract      TEXT NOT NULL,
+	            topic INTEGER,
+                    status INTEGER,
+                    isUploaded CHAR(1) DEFAULT 'N',
+                    format   VARCHAR(10) DEFAULT 'pdf',
+                    fileSize INTEGER,
+                    submission_date INT,
+                    assignmentWeight INTEGER,
+	            inCurrentSelection CHAR(1) DEFAULT 'Y' NOT NULL,
+		    CR INTEGER NOT NULL,
+                    id_conf_session INT, 
+                    position_in_session INT, 
+                    PRIMARY KEY (id));
+
+#
+# Authors of papers
+#
+	
+CREATE TABLE Author (id_paper INTEGER NOT NULL,
+	        	position INTEGER NOT NULL,
+                         last_name VARCHAR (30) NOT NULL ,
+	                 first_name VARCHAR (30) NOT NULL,
+        	        affiliation VARCHAR(100) NOT NULL,
+	                PRIMARY KEY (id_paper, position),
+                        FOREIGN KEY (id_paper) REFERENCES Paper(id));
+	               
+#
+# Question for papers
+#
+
+CREATE TABLE PaperQuestion (id INTEGER NOT NULL AUTO_INCREMENT,
+		            question   VARCHAR(255) NOT NULL, 
+                         PRIMARY KEY (id));
+
+CREATE TABLE PQChoice (id_choice  INTEGER NOT NULL AUTO_INCREMENT,
+                       choice VARCHAR(40) NOT NULL,
+			id_question INTEGER NOT NULL,
+                      position INT,
+                         PRIMARY KEY (id_choice),
+                        FOREIGN KEY (id_question)
+                               REFERENCES PaperQuestion(id));
+
+CREATE TABLE PaperAnswer (id_paper INTEGER NOT NULL,
+                           id_question INTEGER NOT NULL,
+                           id_answer INTEGER, 
+                      PRIMARY KEY (id_paper, id_question),
+                      FOREIGN KEY (id_answer) REFERENCES PQChoice(id_choice));
+
+#
+# One question, for illustration (may be useful anyway)
+#
+
+INSERT INTO PaperQuestion (id, question) 
+ VALUES (1, 'Does one of the authors belong to the PC?');
+INSERT INTO PQChoice (choice, id_question) VALUES ('No', 1);
+INSERT INTO PQChoice (choice, id_question) VALUES ('Yes', 1);
+
+#
+# Members of the PC and other MyReview users
+#
+
+CREATE TABLE PCMember (email VARCHAR (60) NOT NULL, 
+                         lastName VARCHAR (30) NOT NULL ,
+                         firstName VARCHAR (30) NOT NULL,
+                         affiliation VARCHAR(100) NOT NULL,
+                         roles    VARCHAR(10) DEFAULT 'R' NOT NULL,
+                         PRIMARY KEY (email));
+
+# Add a first admin
+INSERT INTO PCMember (email, lastName, firstName, affiliation, roles)
+           VALUES ("myreview@lri.fr", "Rigaux", "Philippe", "LRI", "A,C");
+           
+#
+# Codes: Paper status, research topics, criterias, 
+#
+
+CREATE TABLE PaperStatus (id INTEGER NOT NULL AUTO_INCREMENT,
+	                  label   VARCHAR(30) NOT NULL, 
+	                  mailTemplate   VARCHAR(40) NOT NULL, 
+			  cameraReadyRequired CHAR(1) NOT NULL, 
+		       PRIMARY KEY (id)
+                     );
+INSERT INTO PaperStatus (label, mailTemplate, cameraReadyRequired)
+            VALUES ("Reject", "MailReject.tpl", "N");
+INSERT INTO PaperStatus (label, mailTemplate, cameraReadyRequired)
+            VALUES ("Accept", "MailAccept.tpl", "Y");
+
+CREATE TABLE ResearchTopic (id INTEGER NOT NULL AUTO_INCREMENT,
+	               label   VARCHAR(100) NOT NULL, 
+		       PRIMARY KEY (id)
+                     );
+
+CREATE TABLE Criteria (id INTEGER NOT NULL AUTO_INCREMENT,
+	               label   VARCHAR(30) NOT NULL, 
+	               explanations TEXT,
+                       weight INTEGER NOT NULL DEFAULT 0,
+		       PRIMARY KEY (id)
+                     );
+
+INSERT INTO Criteria(label, weight) VALUES ("Originality",0);
+INSERT INTO Criteria(label, weight) VALUES ("Quality", 0);
+INSERT INTO Criteria(label, weight) VALUES ("Relevance", 0);
+INSERT INTO Criteria(label, weight) VALUES ("Presentation", 0);
+INSERT INTO Criteria(label, weight) VALUES ("Recommendation", 1);
+
+CREATE TABLE RateLabel (id INTEGER NOT NULL,
+	               label   VARCHAR(30) NOT NULL, 
+		       PRIMARY KEY (id)
+                     );
+INSERT INTO RateLabel(id, label) VALUES (0, 'No!!');
+INSERT INTO RateLabel(id, label) VALUES (1, 'Better not');
+INSERT INTO RateLabel(id, label) VALUES (2, 'Why not');
+INSERT INTO RateLabel(id, label) VALUES (3, 'Interested');
+INSERT INTO RateLabel(id, label) VALUES (4, 'Eager');
+
+#
+# Reviews
+#
+
+CREATE TABLE Review (idPaper INTEGER NOT NULL,
+	               email        VARCHAR(60) NOT NULL, 
+                       overall FLOAT,
+                       reviewerExpertise INTEGER,
+                       summary TEXT,
+                       details TEXT,
+                       comments TEXT,
+                       fname_ext_reviewer VARCHAR(60), /* External reviewer */
+                       lname_ext_reviewer VARCHAR(60), /* last name */
+                       submission_date INT, /* for SGBD compatibility */
+                       last_revision_date INT, /* Idem */
+                       PRIMARY KEY (idPaper,email),
+                       FOREIGN KEY (idPaper) REFERENCES Paper(id),
+                       FOREIGN KEY (email) REFERENCES PCMember(email)
+                     );
+
+CREATE TABLE ReviewMark (idPaper INTEGER NOT NULL,
+	                 email        VARCHAR(60) NOT NULL, 
+                         idCriteria  INTEGER NOT NULL,
+                         mark INTEGER NOT NULL,
+                         PRIMARY KEY (idPaper, email, idCriteria),
+                         FOREIGN KEY (idPaper, email) REFERENCES Review(idPaper,email),
+                         FOREIGN KEY (idCriteria) REFERENCES Criteria(id));
+
+#
+# Question for reviews
+#
+
+CREATE TABLE ReviewQuestion (id INTEGER NOT NULL AUTO_INCREMENT,
+		            question   VARCHAR(255) NOT NULL, 
+                            public  CHAR(1) NOT NULL DEFAULT 'Y',
+                         PRIMARY KEY (id));
+
+CREATE TABLE RQChoice (id_choice  INTEGER NOT NULL AUTO_INCREMENT,
+                       choice VARCHAR(40) NOT NULL,
+			id_question INTEGER NOT NULL,
+                      position INT,
+                         PRIMARY KEY (id_choice),
+                        FOREIGN KEY (id_question)
+                               REFERENCES ReviewQuestion(id));
+
+CREATE TABLE ReviewAnswer (id_paper INTEGER NOT NULL,
+			   email VARCHAR(60) NOT NULL,
+                           id_question INTEGER NOT NULL,
+                           id_answer INTEGER, 
+                      PRIMARY KEY (id_paper, email, id_question),
+                      FOREIGN KEY (id_answer) REFERENCES RQChoice(id_choice));
+
+#
+# One question, for illustration (may be useful anyway)
+#
+
+INSERT INTO ReviewQuestion (id, question, public) 
+ VALUES (1, 'Candidate for the best paper award?', 'Y');
+INSERT INTO RQChoice (choice, id_question) VALUES ('No', 1);
+INSERT INTO RQChoice (choice, id_question) VALUES ('Yes', 1);
+
+#
+#
+# Rating 
+#
+
+CREATE TABLE Rating (idPaper INTEGER NOT NULL,
+	               email        VARCHAR(60) NOT NULL, 
+                       rate  FLOAT,
+                       significance FLOAT DEFAULT 0,
+                       PRIMARY KEY (idPaper,email),
+                       FOREIGN KEY (idPaper) REFERENCES Paper(id),
+                       FOREIGN KEY (email) REFERENCES PCMember(email)
+                     );
+
+#
+# RatingBox
+#
+
+CREATE TABLE RatingBox (idPaper INTEGER NOT NULL,
+	               email        VARCHAR(60) NOT NULL, 
+                       PRIMARY KEY (idPaper,email),
+                       FOREIGN KEY (idPaper) REFERENCES Paper(id),
+                       FOREIGN KEY (email) REFERENCES PCMember(email)
+                     );
+
+#
+# Assignment proposal
+#
+
+CREATE TABLE Assignment (idPaper INTEGER NOT NULL,
+	               email        VARCHAR(60) NOT NULL,
+                       weight       FLOAT NOT NULL,
+                       PRIMARY KEY (idPaper,email),
+                       FOREIGN KEY (idPaper) REFERENCES Paper(id),
+                       FOREIGN KEY (email) REFERENCES PCMember(email)
+                     );
+
+#
+# Correlation between PC members (no longer used)
+#
+
+CREATE TABLE Correlation (email1        VARCHAR(60) NOT NULL, 
+                         email2        VARCHAR(60) NOT NULL, 
+                         correlation  FLOAT,
+                         nbCoRated INTEGER,
+                       PRIMARY KEY (email1,email2),
+                       FOREIGN KEY (email1) REFERENCES PCMember(email),
+                       FOREIGN KEY (email2) REFERENCES PCMember(email)
+                     );
+
+#
+# Research topics selected by PC members
+#
+
+CREATE TABLE SelectedTopic (email        VARCHAR(60) NOT NULL, 
+                         idTopic INTEGER NOT NULL, 
+                       PRIMARY KEY (email,idTopic),
+                       FOREIGN KEY (email) REFERENCES PCMember(email),
+                       FOREIGN KEY (idTopic) REFERENCES ResearchTopic(id)
+                     );
+
+#
+# Papers secondary topics
+#
+
+CREATE TABLE PaperTopic (id_paper  INTEGER NOT NULL, 
+                         id_topic INTEGER NOT NULL, 
+                       PRIMARY KEY (id_paper,id_topic),
+                       FOREIGN KEY (id_paper) REFERENCES Paper(id),
+                       FOREIGN KEY (id_topic) REFERENCES ResearchTopic(id)
+                     );
+
+#
+# Conference slots
+#
+
+CREATE TABLE Slot	 (id INT NOT NULL AUTO_INCREMENT,
+        	          slot_date DATE NOT NULL,
+		          begin TIME, 
+                         end TIME, 
+                       PRIMARY KEY (id)
+                    );
+
+#
+# Conference sessions
+#
+
+CREATE TABLE ConfSession (id INT NOT NULL AUTO_INCREMENT,
+                         id_slot INT NOT NULL,
+                         name VARCHAR(100) NOT NULL,
+                        room VARCHAR(100),
+                         comment VARCHAR(100),
+                         chair VARCHAR(100),
+                       PRIMARY KEY (id),
+		       FOREIGN KEY (id_slot) REFERENCES Slot(id)
+                    );
+
+#
+# Configuration table: all the parameters that affect
+# the behavior of the site
+#
+
+CREATE TABLE Config (confAcronym VARCHAR(20) NOT NULL,
+			confName VARCHAR(100) NOT NULL,
+			confURL VARCHAR(100) NOT NULL,
+                        confMail VARCHAR(60) NOT NULL,
+                        chairMail VARCHAR(60) NOT NULL,
+                        currency VARCHAR(20) NOT NULL DEFAULT 'Eur',
+                        paypal_account VARCHAR(90) NOT NULL,
+	                two_phases_submission CHAR(1) NOT NULL,
+	                blind_review CHAR(1) NOT NULL,
+	                extended_submission_form CHAR(1) NOT NULL,
+	                multi_topics CHAR(1) NOT NULL,
+                        submissionDeadline DATE NOT NULL,
+                        reviewDeadline DATE NOT NULL,
+			cameraReadyDeadline DATE NOT NULL,
+                        isAbstractSubmissionOpen CHAR(1) NOT NULL,
+                        isSubmissionOpen CHAR(1) NOT NULL,
+                        discussion_mode INT NOT NULL,
+                        ballot_mode INT NOT NULL,
+			isCameraReadyOpen CHAR(1) NOT NULL,
+			passwordGenerator VARCHAR(10) NOT NULL,
+		        uploadDir     VARCHAR (30) DEFAULT 'FILES',
+		        fileTypes   VARCHAR (80) DEFAULT 'pdf',
+                       nbReviewersPerItem INTEGER NOT NULL,
+                       sizeOfBallot INTEGER NOT NULL,
+                        /* The following indicates whether a copy
+                               of mail must be sent to the conf mngt */
+			mailOnAbstract CHAR(1) NOT NULL,
+			mailOnUpload CHAR(1) NOT NULL,
+			mailOnReview CHAR(1) NOT NULL,
+                     /* The following attr. define the current 
+                       selection criteria for the paper status summary table */
+                     papersWithStatus char(3) NOT NULL,
+                     papersWithFilter char(1) NOT NULL,
+                     papersWithRate   decimal (5,2) NOT NULL,
+                     papersWithReviewer varchar(60) NOT NULL,
+                     papersWithConflict char(1) NOT NULL, /* A, Y, N */
+                     papersWithMissingReview char(1) NOT NULL, /* Y, N, A*/
+                     papersWithTopic int NOT NULL,
+                     papersWithTitle VARCHAR(30) NOT NULL,
+                     papersWithAuthor VARCHAR(30) NOT NULL,
+                     papersUploaded char(1) NOT NULL, /* A, Y, N */
+                     papersQuestions VARCHAR(255) NOT NULL,
+                     reviewsQuestions VARCHAR(255) NOT NULL,
+                                 /* Encoding of questions/answers */
+			/* Selection criterias for papers.reviewers
+				 during assignment */
+                     selectedPaperTopic   INTEGER NOT NULL,
+                     selectedReviewerTopic   INTEGER NOT NULL,
+                     installInfo   VARCHAR(255) NOT NULL,
+                     installationDate   DATE NOT NULL,
+                     use_megaupload  CHAR(1) DEFAULT 'N',
+                     show_selection_form CHAR(1) DEFAULT 'Y',
+	             date_format VARCHAR(10) DEFAULT 'F, d, Y',
+                       PRIMARY KEY (confAcronym)
+                     );
+
+# Always insert one and only one line !!!
+
+INSERT INTO Config Values ('MyReview''06' /* conf acronym */,
+			'MyReview conf. management system',
+                        'http://myreview.lri.fr/demo/',
+			   'myreview@lri.fr' /* Conf mail */,
+			   'myreview@lri.fr' /* Chair */,
+                           'Eur' /* Currency */,
+                           'myreview@lri.fr' /* Paypal account */,
+	                   'Y', /* Two phases submission */
+	                   'N', /* Blind review */
+	                   'Y', /* Extended submission form */
+	                   'Y', /* Multi-topics */
+                            NOW() /* Submission deadline */,
+                            NOW() /* Review deadline */,
+		            NOW() /* CR deadline */,
+                            'Y' /* Abstract submission is open */,
+                            'Y' /* Submission is open */,
+                            1 /* Discussion is closed by default */,
+                            2 /* Ballot mode = general by default */,
+			    'N' /* Camera Ready phase is not yet open */,
+ 			   'pwd' /* Simple password generator */,
+ 			   'FILES' /* Default dir. for uploaded files */,
+ 			   'pdf' /* Default: accept only PDF files */,
+                           '3' /* RevPerPaper*/,
+                      '999',  /* Size of ballots */    
+                          'Y', 'Y', 'N',
+			 '0' /* Status of selected papers*/, 
+			'0'  /* Position wrt the rate below*/, 
+			'0'  /* rate of reference  */,
+                        'All' /* All reviewers */,
+                        'A' /* With or without conflict */,
+                        'A' /* With or without missing review */,
+                        0 /* Any topic */,
+                        'Any' /* Any title */,
+                        'Any' /* Any author */,
+                        'A' /* Uploaded or not */,
+                        '' /* Encoding of paper questions /answers */,
+                        '' /* Encoding of review questions /answers */,
+	                0, 0 /* No selected topic */,
+                       'Manual install', NOW(),
+		      'N' /* Do not use mega upload */,
+                      'Y' /* Initially, show the selection form */,
+                     'F, d, Y' /* Default date format */
+	);
+
+# PDF Style table.
+CREATE TABLE PDFStyle ( colorT CHAR(1)  NOT NULL /* Color of titles */,
+                        colorST CHAR(1) NOT NULL /* Color of subtitles */,
+                        colorTxt  CHAR(1) NOT NULL /* Color of texts */,
+                        underT CHAR(1) NOT NULL  /* Titles underline */,
+                        underST CHAR(1)  NOT NULL /* Subtitles underline */,
+                        italicT CHAR(1)  NOT NULL /* Titles in italic */,
+                        italicST CHAR(1) NOT NULL /* Subtitles in italic */,
+                        italicTxt CHAR(1)  NOT NULL /* Texts in italic */,
+                        policeT int  NOT NULL  /* Font of titles */,
+                        policeST int NOT NULL /* Font of subtitles */,
+                        policeTxt int NOT NULL /* Font of texts */,
+                        pageBreak CHAR(1)  NOT NULL /* Page break */,
+                        leftMargin int  NOT NULL /* Left margin */,
+                        rightMargin int   NOT NULL /* Right margin */) ;
+
+# There should be only one row in this table
+
+INSERT INTO PDFStyle VALUES ('N','N','N','N','N','N',
+                                       'N','N',18,14,12,'Y',20,20);
+
+#
+# Session management
+#
+
+CREATE TABLE Session (idSession     VARCHAR (40) NOT NULL,
+	               email        VARCHAR(60) NOT NULL, 
+	               tempsLimite   DECIMAL (10,0) NOT NULL,
+			roles    VARCHAR(10) NOT NULL,
+                       PRIMARY KEY (idSession),
+                       FOREIGN KEY (email) REFERENCES PCMember(email)
+                     );
+
+
+#
+# Messages (discussion on papers)
+#
+
+CREATE TABLE Message (idMessage INT AUTO_INCREMENT NOT NULL,
+                    idParent INT DEFAULT 0,
+	            idPaper INT NOT NULL,
+                    emailReviewer  VARCHAR (60) NOT NULL,
+                    message TEXT NOT NULL,
+                    date DATETIME,
+                    PRIMARY KEY (idMessage),
+                    FOREIGN KEY (idParent) REFERENCES Message(idMessage),
+                    FOREIGN KEY (idPaper) REFERENCES Paper(id),
+                    FOREIGN KEY (emailReviewer) REFERENCES PCMember(email));
+
+#
+# Persons (attendees)
+#
+
+CREATE TABLE Person (id INTEGER  AUTO_INCREMENT NOT NULL,
+                      title VARCHAR(20) NOT NULL,
+			last_name VARCHAR (60) NOT NULL ,
+                        first_name VARCHAR (60) NOT NULL,
+                        position  VARCHAR(50) NOT NULL,
+	               affiliation VARCHAR(100) NOT NULL,
+                        email VARCHAR (60) NOT NULL, 
+                        phone VARCHAR (20) NOT NULL,
+                        fax     VARCHAR (20) NOT NULL,
+                        address TEXT NOT NULL,
+                        city VARCHAR(50) NOT NULL,
+                        country VARCHAR(50) NOT NULL,
+                        zip_code VARCHAR(20) NOT NULL,
+                       requirements TEXT,
+                       payment_mode INT DEFAULT 1,
+                 payment_received CHAR(1) DEFAULT 'N',
+                        PRIMARY KEY (id)
+                        );
+#
+# Question for registration
+#
+
+CREATE TABLE PaymentMode (id INTEGER NOT NULL AUTO_INCREMENT,
+		          mode   VARCHAR(255) NOT NULL, 
+                         PRIMARY KEY (id));
+INSERT INTO PaymentMode (id, mode) VALUES ("1", "PayPal");
+
+CREATE TABLE RegQuestion (id INTEGER NOT NULL AUTO_INCREMENT,
+                          question   VARCHAR(255) NOT NULL, 
+                         PRIMARY KEY (id));
+
+CREATE TABLE RegChoice (id_choice  INTEGER NOT NULL AUTO_INCREMENT,
+                    choice VARCHAR(80) NOT NULL,
+   	             id_question INTEGER NOT NULL,
+                      position INT,
+                       cost DECIMAL(12,2),
+                        PRIMARY KEY (id_choice),
+                        FOREIGN KEY (id_question)
+                        REFERENCES RegQuestion(id));
+
+# Just an example
+INSERT INTO RegQuestion (id, question) VALUES (1, 'Conference registration');
+INSERT INTO RegChoice (id_choice, choice, id_question, position, cost) 
+VALUES (1, 'Member fee', 1, 1, 100.00);
+INSERT INTO RegChoice (id_choice, choice, id_question, position, cost) 
+VALUES (2, 'Non member fee', 1, 2, 120.00);
+INSERT INTO RegChoice (id_choice, choice, id_question, position, cost) 
+VALUES (3, 'Student fee', 1, 3, 80.00);
+
+# Choice from attendess
+
+CREATE TABLE PersonChoice (id_person INT NOT NULL,
+                           id_question INT NOT NULL,
+                           id_choice INT NOT NULL,
+                PRIMARY KEY (id_person, id_question),
+                FOREIGN KEY (id_person) REFERENCES Person(id),
+                FOREIGN KEY (id_question) REFERENCES RegQuestion(id),
+                FOREIGN KEY (id_choice) REFERENCES RegChoice(id_choice));
+ 

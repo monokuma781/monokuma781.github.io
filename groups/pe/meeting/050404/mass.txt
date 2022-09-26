@@ -1,0 +1,66 @@
+   **** MASS 2005 ****
+The 2nd IEEE International Conference on Mobile Ad-hoc and Sensor Systems
+
+November 7-10, 2005  -  Washington, DC, USA
+www.mass05.wpi.edu
+===========================================
+
+Important Dates:
+- Paper Submission:  April 22, 2005
+- Workshops Proposal Submission: April 30, 2005
+- Acceptance Notification:  July 22, 2005
+- Final Submission:  August 26, 2005
+
+Prospective authors are invited to submit manuscripts on topics
+including but not limited to:
+- MAC protocols for ad-hoc and sensor networks (801.11, Bluetooth, etc)
+- Routing protocols (unicast, multicast, broadcast, geocast, etc)
+- Power-aware and energy-efficient design
+- Directional and smart antennas for ad-hoc networks
+- QoS, security, and fault-tolerant issues
+- Location and mobility management
+- Topology construction and coverage maintenance
+- Distributed Algorithms
+- Data gathering, fusion, and dissemination
+- Operating system and middleware support
+- Complexity analysis of algorithms
+- Analytical, mobility, and validation models
+- Applications of ad-hoc and sensor networks
+
+Papers must not exceed 10 single-spaced and two-column pages
+using at least 10 point size type on 8.5 x 11 inches pages.
+See detailed submission instructions at www.mass05.wpi.edu
+
+Proposals for Workshops are solicited. The selection
+criteria include the expertise and experience of the workshop
+coordinators and relevance to the central themes of the conference.
+Proposals of at most 4 pages, including 1-page biographical sketch,
+should be submitted to the Workshops Chair, Ivan Stojmenovic
+(ivan@site.uottawa.ca), by April 30, 2005.
+
+===========================================
+GENERAL CHAIR
+  Kaveh Pahlavan, Worcester Polytechnic Institute, USA
+
+TECHNICAL PROGRAM CO-CHAIRS
+  Ryuji Kohno, Yokohama National University, Japan
+  Mukesh Singhal, University of Kentucky, USA
+  Ramjee Prasad, Aalborg University, Denmark
+
+TECHNICAL PROGRAM VICE CHAIRS
+  Ian Oppermann (Applications), Univ. of Oulu, Finland
+  Abbas Jamalipour (Network and Higher Layers), Univ. of Sydney, Australia
+  Shigang Chen (Reliability and Security Issues), Univ. of Florida, USA
+  Guohong Cao (Algorithms and Topology), Pennsylvania State Univ., USA
+  Arup Acharya (MAC and Lower Layers), IBM TJ Watson Research Center, USA
+
+WORKSHOP CHAIR
+  Ivan Stojmenovic, University of Ottawa, Canada
+
+STEERING COMMITTEE
+  Dharma P. Agrawal (CHAIR), University of Cincinnati, USA
+  Tomas La Porte, Pennsylvania State University, USA
+  Nign Tzeng, University of Louisiana, USA
+  Jie Wu, Florida Atlantic University, USA
+
+ 

@@ -1,0 +1,88 @@
+**** Author : Philippe Rigaux, rigaux [at] lri.fr
+**** 
+**** This is the MyReview system for web-based management
+**** of conferences. MyReview is distributed under the GPL licence,
+**** and you can use and modify it
+**** at will. I will appreciate if you give me some feedback, though.
+**** 
+**** The systems runs under PHP/MySQL and a web server like Apache.
+**** It has been tested under Linux and Windows. Note that MySQL
+**** can easily be replaced by any other DBMS: there is a BD.class.php
+**** class that encapsulates all the DB functionalities
+**** 
+
+QUICK INSTALL
+-------------
+   All the files should be located in a directory accessible to
+   the web server. In the following I assume that the directory is
+   /apache/htdocs/myreview, and that the URL to access the system  
+   is http://localhost/myreview 
+
+   First you need to create a MySQL DB as well as a user to access the DB.
+   The script CreateDB.sql provides the commands. 
+
+   mysql> source CreateDB.sql
+
+    You can change the DB or user name. Now, check that 
+       - DBInfo.php must be writable by the web server
+       - the FILES, templates and tmpPdf subdirectories must be  
+             executable AND writable. 
+
+    Access to the script
+             http://localhost/myreview/Setup.php
+    with a web browser: the automatic installation script will be launched.
+    Just fill the fields and submit the form.
+
+   If you prefer the manual install, you should report
+   the DB and MySQL user infos in the DBInfo.php file which
+   contains the necessary information to access the database 
+   for PHP scripts. You must also, in a manual install.
+   create the schema of the database:
+
+     mysql> source Schema.sql
+ 
+   If you changed the name of the DB, replace 'USE Review' at
+   the beginning of the script with 'USE my_db_name'.
+   
+                         --------------
+
+   OK: it is installed (simple enough?). 
+   You should now be able to access and use the system. If you chose
+  the manual install, you can connect as an admin
+   using the login myreview@lri.fr/08b271. 
+   See the doc.pdf for details.
+   
+GETTING STARTED
+===============
+
+ The initial configuration is presented in a form, accessible
+ from the administration interface. You should modify the values
+ according to your own choices. 
+
+ VERY IMPORTANT: 
+
+    1/ on a production site you must modify the 
+       default value of 'passwordGenerator' parameter ('pwd')
+        which is used for generating
+        passwords (this is done with the automatic install). 
+        When you submit the new value, your own
+        password is modified, and displayed at the top of the form.
+
+           YOU MUST NOTE AND REMEMBER THIS NEW PASSWORD.
+
+        If you ever forget an administrator password, you
+        can use the following script to recover it.
+
+	<?php
+	require_once ("Util.php");
+
+	$user = "myreview@lri.fr";
+	$db = new BD (NAME, PASS, BASE, SERVER);
+	$config = GetConfig($db);
+	echo "The password of <b>$user</b> is <b>"
+	      . PWDMember($user, $config['passwordGenerator']) . "</b>";
+	?>
+
+   2/ The FILES subdirectory MUST be accessible in write mode
+       to the web server (uploaded papers are stored there)
+

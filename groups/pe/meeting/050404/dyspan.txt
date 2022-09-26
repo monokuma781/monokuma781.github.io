@@ -1,0 +1,234 @@
+First IEEE International Symposium on
+New Frontiers in Dynamic Spectrum Access Networks
+
+Nov 8 - Nov 11, 2005
+
+Renaissance Harborplace Hotel
+Baltimore Harbor, Maryland, USA
+
+WEB:
+	http://www.ieee-dyspan.org
+
+SPONSORS:
+	IEEE Communications Society (IEEE COMSOC)
+
+
+VISION:
+
+The IEEE DySPAN 2005 will be a new, first-of-its-kind IEEE symposium
+on "Dynamic Spectrum Access" (DSA) networks.  Current technology
+trends indicate that high performance, low-power signal processing,
+reconfigurable RF front ends, wide-band spectrum sensing and real-time
+spectrum allocation and acquisition will enable a new paradigm of DSA
+Networks.  In addition, the spectrum policy community (both
+international and domestic) has clearly recognized the potential of
+this technology and is addressing its impact on 21st Century spectrum
+management by adopting flexible, market-based policies and rules for
+  unlicensed devices and licensed radio systems. This is therefore an
+opportune time to have a single, premier forum that brings together a
+broad range of representatives, researchers, practitioners and policy
+makers from industry, academia, and government from around the globe
+who are engaged in cutting edge explorations in technology, policies
+and legal aspects of emerging DSA networks.
+
+-----------------------
+SUBMISSION INSTRUCTIONS
+-----------------------
+
+DySPAN 2005 is soliciting following types of contributions that will
+be published in a paper proceedings published by IEEE and made
+available to conference registrants.
+
+  FULL PAPERS: Full Papers in technology and policy domain must present
+	  original, previously unpublished, complete works. Papers in
+	  technology track presenting research experiences from
+	  realistic systems are welcome. The extended abstracts that
+	  are accepted need to be expanded to full papers under the
+	  guidance of program committee members.
+
+POSITION PAPERS: These papers must be innovative and forward-looking
+	  and must offer new insights that show promise of pointing
+	  out future research directions.
+
+In addition to these, DySPAN2005 may include a few invited papers from
+leading members of technology and policy community.
+
+Following page limits will be followed.
+
+       Technology Track:
+       ----------------
+	 Maximum 6 pages excluding figures, tables, and reference for
+          Extended Abstract
+
+          Maximum 10 page for final paper, including figures, tables,
+	 and references
+
+       Policy track:
+       -------------
+	  Maximum 20 pages excluding figures, tables, and reference
+           for Extended Abstract
+
+           Maximum 30 pages including figures, tables, references for
+	  the final papers
+
+       Position papers:
+       ----------------
+       		Maximum 10 pages for Technology track including
+       		figures, tables, references
+
+       		Maximum 20 pages for Policy track including figures,
+       		tables, references
+
+We recommend to format manuscripts according to the IEEE double-column
+standard format. Extended abstracts should use Times Roman 11pt (or
+greater) font. The final published manuscript will use Times Roman
+10pt font. Authors should use only standard fonts, i.e., Times Roman,
+Courier, Symbol, and Helvetica, or equivalent. Formatting guidelines
+and template support for popular word processing packages (MS-WORD,
+LaTeX) will be available on http://www.ieee-dyspan.org.
+--------------------------------------------------------------------
+
+TUTORIALS
+Please contact as follows:
+
+    Technology Track Tutorials
+	   Prof. Dirk Grunwald (grunwald@colorado.edu )
+	   Dr. John Chapin (jchapin@vanu.com)
+
+    Policy Track Tutorials
+    	  Jerry Faulhaber (faulhaber@law.upenn.edu)
+	  Kevin Werbach (kevin@werbach.com)
+
+--------------------------------------------------------------------
+IMPORTANT DATES
+           Extended Abstract Submission Deadline: June 22, 2005
+           Panel and Tutorial Proposals: June 30, 2005
+           Acceptance Notification: July 15, 2005
+           Final version of papers due to DySPAN committees: Aug 30, 2005
+           Final Photo camera Ready Versions to IEEE: Sept 15, 2005
+--------------------------------------------------------------------
+
+TOPICS AREAS
+
+Areas of interest include, but are not limited to
+
+TECHNOLOGY FOCUS
+
+      Spectrum measurements, models
+      Enabling Technologies such as:
+        -  Reconfigurable Radio Platforms
+        -  Software Defined and Cognitive Radios
+        -  Dynamic Network Architectures, Protocols
+      Spectrum Access Management Techniques
+      Wide-band spectrum sensing
+      Multi-Band & Adaptive RF
+      Experimental Prototypes and Results
+      Accreditation, Trust, & Security Mechanisms
+      Infrastructure-Less and Coordinated DSA
+      Applications of DSA (e.g. public safety, cellular
+		  access networks)
+      System Models
+      Protocols for Spectrum Agile Communications
+      Characterizing Radio Environments
+      Interference Metrics and Measurements
+      Transition Mechanisms
+
+
+POLICY, LAW & ECONOMICS FOCUS
+
+      International Experience
+      Spectrum Secondary Markets:
+	      - State-of-the-art and Trends
+      Private Commons
+      New Business Models and Pricing Access to  Spectrum
+      Dynamic Spectrum Markets
+          - Regional Spectrum Markets and Brokering
+      Defining and Enforcing Rights and Responsibilities
+	      of Spectrum Licensees
+      Defining and Enforcing Spectrum Easements
+      Spectrum etiquettes for unlicensed bands
+      Regulation of Software  Lessons Learned
+      The Role for Government and Industry
+	 - Standard Setting in Spectrum
+      Regulations for Cognitive Radio
+      International Implications of Dynamic Spectrum  Access
+      State and Local Networks
+      Transition Mechanisms
+
+---------------------------------------------------------------
+GENERAL CHAIR
+	Paul Kolodzy, Kolodzy Consulting
+
+Technical Program Committee Chairs
+	Dale Hatfield, University of Colorado
+	Preston Marshall, DARPA
+
+Policy Program Committee Chairs
+        Peter Tenhula, FCC
+        Phil Weiser, University of Colorado
+
+--------------------
+Committee Membership
+--------------------
+Technical Program Committee
+----------------------------
+        Marshall, Preston (DARPA)
+        Hatfield, Dale (University  of Colorado)
+
+        Brodersen, Bob (UC Berkeley)
+        Buddhikot, Milind (Lucent/Bell Labs)
+        Chapin, John (Vanu)
+        Evans, Joe (NSF)
+        Farber, Dave (Carnegie Mellon University)
+        Glossner, John (Sandbridge)
+        Grunwald, Dirk (University of Colorado)
+        Johndral, Friedrich (Univ of Karlsruhe,Germany)
+        Knapp, Julie (FCC)
+        Kim, Chang-Joo (ETRI, Korea)
+        Kontson, Kalle (Alion)
+        Lapin, Greg (ARRL)
+        Mahonen, Petri (RWTH Aachen, Germany)
+        Marcus, Mike (ENST, France)
+        McHenry, Mark (Shared Spectrum Corp)
+        Mitola, Joe (DARPA)
+        Nebbia, Karl (NTIA)
+        Raychaudhuri, Dipankar (Rutgers University)
+        Roberson, Dennis (Illinois Institute of  Technology)
+        Sizer, Todd (Lucent/Bell Labs)
+        Steffes, Paul (Georgia Institute of Technology)
+        Stewart, Will  (FREng, UK)
+        Sward, Doug (Industry Canada)
+        Valenzuela, Reinaldo (Lucent/Bell Labs)
+        Vincent, Wilbur (Naval Postgraduate School)
+        Zander, Jens (KTH, Sweden)
+
+------------------------
+Policy Program Committee
+------------------------
+	Tenhula, Peter (FCC)
+	Weiser, Phil (University of Colorado)
+	
+	Benjamin, Stu (Duke)
+	Brenner, Dean (Qualcomm)
+	Brown, Mary (Cisco)
+	Cave, Martin (Warwick Business School - UK)
+	DeVries, Pierre (Microsoft)
+	Faulhaber, Gerry (Univ of Penn)
+	Fitzgerald, Ari (Hogan & Hartson)
+	Gattuso, Joe (NTIA)
+	Goodman, Ellen (Rutgers)
+	Jesuale, Nancy (NetCityEngineering)
+	Luther, Geoff (ACA  Australia)
+	Miller, Brian  (MED  New Zealand)
+	Pitsch, Peter (Intel)
+	Rath, Charla (Verizon Wireless)
+	Rosston, Greg (Stanford)
+	Shelanski, Howard (UC Berkeley)
+	Sicker, Doug (University of Colorado)
+	Speta, Jim (Northwestern University)
+	Sugrue, Tom (T-Mobile)
+	Victory, Nancy (Wiley, Rein & Fielding)
+	Webb, William (OFCOM, UK)
+	Webbink, Doug (Independent)
+	Werbach, Kevin (Univ of Penn)
+	Wildman, Steve (Univ of Michigan)

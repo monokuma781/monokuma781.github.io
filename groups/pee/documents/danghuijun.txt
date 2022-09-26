@@ -1,0 +1,31 @@
+数据库性能评测与分析
+ 
+
+随着现代计算机科学技术的发展和人类信息量的增大，数据库已逐步成为计算机信息系统和计算机应用系统的基础和核心，而数据库性能的重要性也越来越引起人们的关注，由此人们研究了很多优化数据库性能的方法，也提出了很多评测和分析数据库性能的方法。
+
+
+联机事务处理（OLTP, On-line Transaction Processing）是现在数据库系统中的一大应用。OLTP用短小和中等复杂程度的查询语句，读取或修改整个数据库中一个非常小的部分，其数据的访问方式是小的随机磁盘访问。在应用中，由于大量并发用户的存在，对多道程序的要求较高，因此绝大部分商业应用都属于这一类。课题研究的主要内容便是如何提高和优化数据库的OLTP性能。
+在系统性能评价方面，目前存在着两个标准的基准程序系列，即TPC（Transaction Processing Performance Council）和SPEC（Standard Performance Evaluation Corporation）。TPC系列基准是现在流行的商业基准组，主要服务器和数据库企业都派代表加入了这一组织。SPEC则强调开发实际应用基准程序，以求更准确地反映实际工作负载。课题研究的主要工作是基于TPCC（Transaction Processing Performance Council @ C）的评测方法，分析和优化ORACLE数据库的OLTP性能。
+
+
+曙光3000超级服务器是国产超级服务器的代表。作者在曙光3000上实现了TPCC 基准程序，测试了数据库的OLTP性能，在性能优化方面进行了许多尝试，并给出了曙光机一个服务结点优化前后的TPCC 性能数值。在评测的过程中，本文提出了一种适合机群环境下数据库性能评测并提高其OLTP性能的从上而下的优化方法，并对此方法中涉及的参数给出了建议数值和评判标准。本测试也说明了曙光3000一个服务结点可以满足现有中小型商业应用，为曙光3000 超级服务器进入国内商业领域提供了性能数值上的依据。
+
+
+Evaluation and Analysis of Database Performance
+
+
+With the development of computer science and technology and the increasing amount of mankind's information, database has become the basis and core of computer information system and application system gradually. And more and more attention has been given to performance of database. So people have developed many methods to optimize the performance of database, at the same time many testing and analyzing methods come into being. 
+
+
+Nowadays, one of the greatest database systems uses is On-line Transaction Processing. OLTP has many features, such as the complexity of its query sentence is usually lower, each time only very small section is read or modified, and the approach of accessing data is small and random disk access. Because there are much more concurrent user, it requires high level multi-program. Most of commercial applications belong to this type. 
+
+
+The main objective of this paper is research how to improve and optimize the performance of OLTP applications. At the aspect of performance evaluation, there are two of standard benchmark series. They are TPC (Transaction Processing Performance Council) and SPEC (Standard Performance Evaluation Corporation). TPC is a popular commercial benchmark group and most all of main server and database enterprises has joined this organization. SPEC emphasizes on developing actual application benchmark and expressing actual workload. This paper analyzes and optimizes OLTP performance in virtue of TPCC benchmark and oracle database.
+
+
+Dawning3000 Cluster is the representative of cluster system in our country. We implemented the TPCC program on this platform and monitored the performance of its nodes, and do many studies in database tuning, and presented the TPMC value in tuning before and after. During the period of testing, we presented a TPCC evaluation method and a from-up-to-down optimizing method, which are suitable to using in Cluster environment. 
+
+
+The paper also presented the reference value of the parameters and evaluating standards. The test also proved that one node of Dawning3000 can content requirements of the medium-sized or small enterprise, which gave actual support for applying these servers in such trade fields.
+
+ 

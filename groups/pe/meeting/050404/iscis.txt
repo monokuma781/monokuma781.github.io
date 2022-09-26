@@ -1,0 +1,183 @@
+   The 20th International Symposium on Computer and Information Sciences
+ 				 (ISCIS'05)
+
+ 		20th Anniversary Conference of the ISCIS Series
+   Celebrating the 60th Birthday of the Founder of ISCIS, Prof. Erol Gelenbe
+
+ 			     October 26-28, 2005
+ 			      Istanbul, Turkey
+
+ 				Organized by
+ 		     Department of Computer Engineering
+ 		    Bogazici University, Istanbul, Turkey
+
+ 		Web site: http://iscis05.cmpe.boun.edu.tr/
+----------------------------------------------------------------------
+We kindly invite you to submit papers for the twentieth of the ISCIS
+series of conferences that bring together computer scientists and
+engineers from around the world. This year?¡¯s conference will be held
+in Istanbul. Topics of interest include, but are not limited to:
+
+Computational Intelligence
+Computer Architecture
+Computer Graphics
+Computer Networks
+Databases
+Information Retrieval
+Internet and Multimedia
+Operating Systems
+Parallel and Distributed Computing
+Performance Evaluation
+Programming Languages and Algorithms
+Security and Cryptography
+Software Engineering
+Theory of Computing
+
+This year we especially welcome papers in the areas of e-commerce
+(including web services and service-oriented computing, auctions,
+reputation and recommender systems, personalization and privacy,
+mobile commerce), multi-agent systems (including agent coordination
+and cooperation, agent communication, agent networks, agents and
+complex systems, trust and reputation, agents on the web, multi-agent
+simulation and modeling, industrial agent applications), satellite
+networks (including architectures, simulation and modeling, on-board
+processing and switching, internet services over satellite, advances
+in coding, modulation schemes, satellite security), and sensor
+networks (including deployment, localization, synchronization, link
+characteristics, MAC protocols and routing, capacity and lifetime
+optimization, security). There will be invited talks and tutorials
+given by leading researchers in these fields.
+
+--------------------------------
+PAPER SUBMISSION AND PUBLICATION
+--------------------------------
+Authors are invited to submit manuscripts written in
+English. Submitted papers should address original work not published
+elsewhere. All submissions will be refereed by experts in the field
+based on originality, significance, quality, and clarity. The
+proceedings of the Conference is planned to be published by
+Springer-Verlag in the prestigious Lecture Notes in Computer Science
+series.
+
+Manuscripts should be submitted using the on-line submission
+system. This will be available soon via the conference web site.
+
+------------------------
+BEST STUDENT PAPER AWARD
+------------------------
+
+The purpose of this award is to recognize excellence in a conference
+contribution whose primary author is a student. The award will be
+presented to the winner at the time of the conference.
+
+---------------
+IMPORTANT DATES
+---------------
+Submission of full papers: April 15, 2005
+Notification of acceptance: June 15, 2005
+Camera-Ready copies: July 15, 2005
+
+--------------
+HONORARY CHAIR
+--------------
+Erol Gelenbe (Imperial College, UK)
+
+--------------------
+ORGANIZING COMMITTEE
+--------------------
+Fatih Alagoz (Bogazici University, Turkey)
+Tunga Gungor (Bogazici University, Turkey)
+Fikret Gurgen (Bogazici University, Turkey)
+Can Ozturan (Bogazici University, Turkey)
+Tuna Tugcu (Bogazici University, Turkey)
+PInar Yolum (Bogazici University, Turkey)
+
+-----------------
+PROGRAM COMMITTEE
+-----------------
+Bulent Abali (IBM T.J. Watson Research Center, USA)
+Mohammed Abdel-Hafez (United Arab Emirates University, UAE)
+Sibel Adali (Rensselaer Polytechnic Institute, USA)
+Lale Akarun (Bogazici University, Turkey)
+Levent Akin (Bogazici University, Turkey)
+Sahin Albayrak (Technical University of Berlin, Germany)
+Reda Alhajj (University of Calgary, Canada)
+Ethem Alpaydin (Bogazici University, Turkey)
+Amina Alrustamani (Sama Communication Company, UAE)
+I. Budak Arpinar (University of Georgia, USA)
+Cevdet Aykanat (Bilkent University, Turkey)
+Jianjun Bai (National University of Defense Technology, China)
+Fevzi Belli (Universitat Paderborn, Germany)
+Ufuk Caglayan (Bogazici University, Turkey)
+Mariacarla Calzarossa (Universita di Pavia, Italy)
+K. Selcuk Candan (Arizona State University, USA)
+Erdal Cayirci (Istanbul Technical University, Turkey)
+Ugur Cetintemel (Brown University, USA)
+Gabriel Ciobanu (Alexandru Ioan Cuza University, Romania)
+Andrea D'Ambrogio (Universita di Roma "Tor Vergata", Italy)
+Tugrul Dayar (Bilkent University, Turkey)
+Oguz Dikenelli (Ege University, Turkey)
+Iain Duff (CCLRC Rutherford Appleton Laboratory, UK)
+Eylem Ekici (Ohio State University, USA)
+Marc Emmelman (Technical University of Berlin, Germany)
+Cem Ersoy (Bogazici University, Turkey)
+Barry G. Evans (University of Surrey, UK)
+Jean-Michel Fourneau (Universite de Versailles, France)
+Laura Galluccio (University of Catania, Italy)
+Attila Gursoy (Koc University, Turkey)
+Michael Hadjitheodosiou (University of Maryland, USA)
+Jane Hillston (University of Edinburgh, UK)
+Carlos Juiz (Universitat de les Illes Balears, Spain)
+Manolya Kavakli (Macquarie University, Australia)
+Cetin Kaya Koc (Istanbul Commerce University, Turkey)
+Ibrahim Korpeoglu (Bilkent University, Turkey)
+Ulas Kozat (DoCoMo Communications Laboratories, USA)
+Albert Levi (Sabanci University, Turkey)
+Giacomo Morabito (University of Catania, Italy)
+Kemal Oflazer (Sabanci University, Turkey)
+Bulent Orencik (Istanbul Technical University, Turkey)
+Mehmet Orgun (Macquarie University, Australia)
+Fusun Ozguner (Ohio State University, USA)
+Gultekin Ozsoyoglu (Case Western Reserve University, USA)
+Tamer Ozsu (University of Waterloo, Canada)
+Yusuf Pisan (University of Technology Sydney, Australia)
+Faruk Polat (Middle East Technical University, Turkey)
+Ramon Puigjaner (Universitat de les Illes Balears, Spain)
+Cem Say (Bogazici University, Turkey)
+Martijn Schut (Vrije Universiteit Amsterdam, Netherlands)
+Nahid Shahmehri (Link??pings Universitet, Sweden)
+Balaram Sinharoy (IBM, USA)
+Boleslaw Szymansky (Rensselaer Polytechnic Institute, USA)
+Abdullah Uz Tansel (City University of New York, USA)
+Petia Todorova (Fraunhofer Institute Fokus, Germany)
+Borahan Tumer (Marmara University, Turkey)
+Alper Ungor (University of Florida, USA)
+Alessandro Vanelli-Coralli (University of Bologna, Italy)
+Branimir R. Vojcic (George Washington University, USA)
+Kainam Tom Wong (University of Waterloo, Canada)
+Adnan Yazici (Middle East Technical University, Turkey)
+Bulent Yener (Rensselaer Polytechnic Institute, USA)
+
+--------------------------
+LOCAL ORGANIZING COMMITTEE
+--------------------------
+Ilker S. Demirkol (Bogazici University, Turkey)
+Arzucan Ozgur (Bogazici University, Turkey)
+Fatma Canan Pembe (Bogazici University, Turkey)
+Albert Ali Salah (Bogazici University, Turkey)
+Burak Turhan (Bogazici University, Turkey)
+
+-----------------
+CONTACT INFO
+-----------------
+ISCIS'05
+Bogazici University
+Department of Computer Engineering
+Bebek, 34342 Istanbul
+TURKEY
+
+E-mail: iscis05@cmpe.boun.edu.tr
+Fax: +90 212 2872461
+
+
+ 

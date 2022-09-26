@@ -1,0 +1,66 @@
+
+
+===== 1st Workshop on Hot Topics in System Dependability =====
+
+June 30, 2005, Yokohama, Japan
+http://hotdep.stanford.edu/
+
+Submission deadline: March 1, 2005
+
+Dear Colleague:
+
+You are invited to submit a 5-page position paper to the First
+Workshop on Hot Topics in System Dependability (HotDep), which aims to
+identify cutting-edge research ideas in dependable systems.  This
+year, the workshop will be held jointly with DSN, the main conference
+on fault-tolerant computing and networks.
+
+HotDep will focus on critical components of the infrastructures
+touching our everyday lives: operating systems, networking, security,
+wide-area and enterprise-scale distributed systems, mobile computing,
+compilers, and language design.  We seek participation and
+contributions from both academic researchers and industry
+practitioners, to achieve a mix of long-range research vision and
+technology ideas anchored in immediate reality.
+
+We encourage submissions of papers that describe a novel approach to
+an old problem, debunk an entrenched perspective on dependability,
+articulate a brand new perspective on existing problems in
+dependability, or describe a new problem (and possible solution) that
+should be addressed by the dependable systems research community.  We
+favor papers that are likely to generate healthy debate at the
+workshop.  All accepted papers will be available online prior to the
+workshop and will be published in the supplement to the DSN
+proceedings.
+
+Possible topics include, but are not limited to:
+
+* automated failure management
+* techniques for better detection, diagnosis, or recovery from failures
+* forensic tools for administrators and programmers
+* techniques and metrics for quantifying dependability (e.g., security)
+* tools/concepts/techniques for optimizing tradeoffs among availability, 
+  performance, correctness, and security
+* novel uses of technologies not originally intended for dependability
+
+We are all looking forward to your submissions.
+
+Program Co-Chairs
+  George Candea (Stanford)
+  David Oppenheimer (UC Berkeley)
+
+Program Committee
+  Lorenzo Alvisi (UT Austin)
+  Christian Cachin (IBM Research)
+  Valerie Issarny (INRIA)
+  Ravishankar Iyer (UIUC)
+  Kimberly Keeton (HP Labs)
+  Keith Marzullo (UCSD)
+  Priya Narasimhan (CMU)
+  David Patterson (UC Berkeley)
+  Martin Rinard (MIT)
+  Daniel Siewiorek (CMU)
+  Amin Vahdat (UCSD)
+  Werner Vogels (Amazon.com)
+
+

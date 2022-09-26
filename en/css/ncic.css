@@ -1,0 +1,25 @@
+.ncic {  font-family: "宋体"; font-size: 9pt}
+table {  font-family: "宋体"; font-size: 9pt; white-space: normal; line-height: 20.5px; color: #333333}
+a:visited {  font-family: "宋体"; font-size: 9pt; color: #003399; text-decoration: none}
+a:link {  font-family: "宋体"; font-size: 9pt; color: #666666; text-decoration: none}
+a:hover {  font-family: "宋体"; font-size: 9pt; color: #003399; text-decoration: underline}
+a:active {  font-family: "宋体"; font-size: 9pt; color: #003366; text-decoration: none}
+.padding01 {  padding-top: 2px}
+.title {  font-family: "宋体"; font-size: 14px; font-weight: bolder; color: #000000; text-decoration: none; padding-left: 15px}
+.padding02 {  padding-top: 8px; padding-left: 8px; padding-right: 8px}
+a.link01:link {  color: #9D74CC; text-decoration: none}
+a.link01:visited {  color: #9D74CC; text-decoration: none}
+a.link01:hover {  color: #000000; text-decoration: none}
+a.link02:link {  color: #245CF2; text-decoration: none}
+a.link02:visited {  color: #245cf2; text-decoration: none}
+a.link02:hover {  color: #000000; text-decoration: none}
+a.link03:link {  color: #336600; text-decoration: none}
+a.link03:visited {  color: #336600; text-decoration: none}
+a.link03:hover {  color: #FF6600; text-decoration: none}
+a.link04:link {  color: #FF6600; text-decoration: none}
+a.link04:visited {  color: #FF6600; text-decoration: none}
+a.link04:hover {  color: #FF0000; text-decoration: none}
+a.link05:link { color: #003399; text-decoration: none }
+a.link05:visited { color: #003399; text-decoration: none }
+a.link05:hover { color: #FF6600; text-decoration: none }
+.td01 {  color: #FFFFFF; text-decoration: none; background-color: #A6AFD2}

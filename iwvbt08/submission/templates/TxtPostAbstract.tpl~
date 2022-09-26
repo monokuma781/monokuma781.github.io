@@ -1,0 +1,22 @@
+The following information on your paper: 
+<ol>
+ <li>Title: {PAPER_TITLE}
+ <li>Authors: {PAPER_AUTHORS}
+ <li>Abstract: {PAPER_ABSTRACT}
+  <li>Main topic: {PAPER_TOPIC}
+</ol>
+have been successfully
+stored in the system. A mail has been
+sent to <i>{PAPER_EMAIL_CONTACT}</i> to
+confirm this submission.
+<p>
+You must upload your paper before {CONF_SUBMISSION_DEADLINE}.
+Please note the following
+informations which must be used to upload
+the file or update your paper's description.
+
+<ol>
+  <li><b>Paper id:</b> {LOGIN}</li>
+  <li><b>Password:</b> {PASSWORD}</li>
+</ol>
+

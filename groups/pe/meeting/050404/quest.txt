@@ -1,0 +1,157 @@
+QEST'05 - www.qest.org
+2nd International Conference on Quantitative Evaluation of SysTems
+Torino, Italy, September 19-22, 2005
+
+OVERVIEW
+The International Conference on Quantitative Evaluation of SysTems is
+a major forum for contributions on evaluation and verification of
+computer and communication systems, through measurements and
+stochastic models, possibly incorporating non-deterministic behaviour.
+It combines three events: the International Conference on Modeling
+Techniques and Tools for Computer Performance Evaluation (TOOLS), the
+International Workshop on Petri Nets and Performance Models (PNPM),
+and the Joint International Workshop on Process Algebras and
+Performance Modeling and Probabilistic Methods In Verification
+(PAPM-ProbMIV), that have discovered an increasing convergence in
+their interests and in their communities of researchers. The 1st QEST
+conference was held at the University of Twente in 2004. The 2nd QEST
+conference will be held in Torino, the city that hosted the first
+PNPM workshop twenty years ago. Torino has also hosted TOOLS in 1991
+and PAPM in 1996.
+
+SCOPE & TOPICS
+Quantitative properties of interest include, but are not limited to,
+performance, dependability (e.g., reliability, availability), safety,
+security, survivability, correctness, timeliness, and efficiency.
+Topics of interest cover the areas of modelling formalisms and
+methodologies, measurements, analytical and numerical evaluation,
+simulation and verification, and theory of probabilistic systems, as
+well as case studies showing the role of quantitative evaluation in
+the design of systems and applications including computer
+architecture, distributed and fault tolerant systems, communication
+systems, embedded systems, web-based systems, and safety-critical
+systems. Moreover tools for supporting the practical application of
+research results in all the above areas are of special interest for
+QEST and therefore tool papers are sought. Example topics of interest
+include:       
+
+stochastic and timed Petri nets;
+stochastic and timed process algebras;
+stochastic and timed automata;
+queueing networks;
+Markov chains;
+non-Markovian models and algorithms;
+numerical and analytical solution techniques;
+efficient simulation techniques;
+formal specification techniques;
+quantitative extensions of UML;
+measurements and benchmarking;
+schedulability analysis;
+verification of stochastic and probabilistic systems;
+concurrency theory for probabilistic systems;
+analysis of randomized algorithms;
+model-checking algorithms;
+optimization techniques;
+probabilistic decision-making and planning;
+hybrid and hierarchical modelling and evaluation techniques;
+
+SUBMISSIONS
+We invite authors to submit papers with original material related to
+the topics of the conference, written in English, and formatted in the
+IEEE double column format. The length of the paper should not exceed
+10 pages. Additional material for the aid of the reviewers
+(e.g. proofs, definitions) can be presented in a clearly marked
+appendix. Instructions for electronic submission will be given on the
+conference home-page. Papers must be unpublished and must not be
+submitted for publication elsewhere. Accepted papers must be presented
+at the conference by one of the authors. The proceedings will be
+published by IEEE. All papers will be thoroughly reviewed by at least
+3 referees on the basis of their originality and their scientific and
+practical contribution to the state of the art. An award for best
+paper will be presented at the conference.
+
+TOOLS SESSION
+A special session will be arranged to present and demonstrate tools
+relevant to any topic covered by the conference. Accepted tool
+descriptions will appear in the conference proceedings (2 pages,
+IEEE format).
+
+WORK-IN-PROGRESS SESSION
+A special session will be arranged to present preliminary work.
+Authors are invited to submit short papers (2 pages, IEEE format).
+
+
+IMPORTANT DATES
+  Paper submission: March 28, 2005
+  Tool presentation submission: April 25, 2005
+  Work-in-progress submission: April 25, 2005
+  Notification of acceptance: May 30, 2005
+
+
+GENERAL CHAIR
+  Gianfranco Balbo
+  Universita di Torino, Italy
+
+PROGRAM CO-CHAIRS
+  Christel Baier
+  Universitaet Bonn, Germany
+
+  Giovanni Chiola
+  Universita  di Genova, Italy
+
+  Evgenia Smirni
+  College of William & Mary
+  Williamsburg, VA, USA
+
+PUBLICITY CHAIR
+  Jeremy Sproston
+  Universita di Torino, Italy
+  qest05-publicity@di.unito.it
+
+PROGRAM COMMITTEE
+  Marco Ajmone Marsan (Politecnico di Torino, Italy)
+  Christel Baier      (co-chair, Universitaet Bonn, Germany)
+  Daniele Beauqieur   (Universite Paris 12, France)
+  Mario Bravetti      (Universita di Bologna, Italy)
+  Peter Buchholz      (Universitaet Dortmund, Germany)
+  Gianfranco Ciardo   (University of California at Riverside
+  Javier Campos       (University of Zaragoza, Spain)
+  Giovanni Chiola     (co-chair, Universita di Genova)
+  Gianfranco Ciardo   (University of California at Riverside, USA)
+  Lucy Cherkasova     (Hewlett-Packard Labs, USA)
+  Pedro D'Argenio     (Universidad Nacional de Cordoba, Argentina)
+  Josee Desharnais    (Universite Laval, Quebec, Canada)
+  Edmundo de Souza e Silva (Federal University of Rio de Janeiro, Brazil)
+  Susanna Donatelli   (Universita degli Studi di Torino, Italy)
+  Claude Dutheillet   (Universite Paris 6, France)
+  Giuliana Franceschinis (Universita Piemonte Orientale, Italy)
+  Reinhard German     (Universitaet Erlangen-Nuernberg, Germany)
+  Stephen Gilmore     (University of Edinburgh, UK)
+  Serge Haddad        (Universite Paris-Dauphine, France)
+  Boudewijn Haverkort (Universiteit Twente, The Netherlands)
+  Holger Hermanns     (Universitaet Saarbruecken, Germany)
+  Ravi K. Iyer        (University of Illinois at Urbana-Champaign, USA)
+  Bengt Jonsson       (University of Uppsala, Sweden)
+  Joost Pieter Katoen (RWTH Aachen, Germany)
+  Peter Kemper        (Universitaet Dortmund, Germany)
+  John C.S. Lui       (The Chinese University of Hong-Kong)
+  Daniel Menasce      (George Mason University, USA)
+  Andrew Miner        (Iowa State University, USA)
+  Carroll Morgan      (University of New South Wales, Australia)
+  Gethin Norman       (University of Birmingham, UK)
+  Alma Riska          (Seagate Research, USA)
+  Emilia Rosti        (Universita degli Studi di Milano, Italy)
+  Gerardo Rubino      (INRIA, Rennes, France)
+  Bill Sanders        (University of Illinois at Urbana-Champaign, USA)
+  Matteo Sereno       (Universita di Torino, Italy)
+  Roberto Segala      (Universita di Verona, Italy)
+  Evgenia Smirni (co-chair, College of William & Mary, Williamsburg, VA, 
+USA)
+  Mark Squillante     (IBM T. J. Watson Research Center, USA)
+  Eugene Stark        (SUNY at Stony Brook, New York, USA)
+  Miklos Telek        (Technical University of Budapest, Hungary)
+  Kishor Trivedi      (Duke University, USA)
+  Murray Woodside     (Carleton University, Ottawa, Canada)
+
+
+ 

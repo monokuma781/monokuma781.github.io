@@ -1,0 +1,14 @@
+<h1>Program Committee</h1>
+
+<table border='2'>
+<tr>
+ <th>Email</th>
+ <th>Name</th>
+</tr>
+@pcmember{
+<tr>
+ <td><a href='mailto:@email{.}'>@email{.}</a></td>
+ <td>@firstName{.} @lastName{.}</td>
+</tr>
+}
+</table>

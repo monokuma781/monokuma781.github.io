@@ -1,0 +1,64 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #415263; SCROLLBAR-HIGHLIGHT-COLOR: #303C48; SCROLLBAR-SHADOW-COLOR: #303C48; SCROLLBAR-3DLIGHT-COLOR: #303C48; SCROLLBAR-ARROW-COLOR: #536A82; SCROLLBAR-TRACK-COLOR: #303C48; SCROLLBAR-DARKSHADOW-COLOR: #303C48
+}
+.base { color: #FFFFFF;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none}
+.base_italic { color: #FFCC00;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none}
+.bold1 { color: #FF3300;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none; font-weight: bold}
+.bold2 { color: #FF9900;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none; font-weight: bold}
+.bold_link { color: #FF6600;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; text-decoration: none; font-weight: bold}
+a.bold_link:hover {color: #989BAF;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; text-decoration: none}
+.bkgrn_tl {BACKGROUND-POSITION: left top;BACKGROUND-IMAGE:  url(bkgrn_tl.jpg);BACKGROUND-REPEAT: no-repeat;}
+.bkgrn_tr {BACKGROUND-POSITION: left top;BACKGROUND-IMAGE:  url(bkgrn_tr.jpg);BACKGROUND-REPEAT: no-repeat;}
+.bkgrn_tm {BACKGROUND-IMAGE:  url(bkgrn_tm.jpg);BACKGROUND-REPEAT: repeat-x;}
+.bkgrn_ml {BACKGROUND-IMAGE:  url(bkgrn_ml.jpg);BACKGROUND-REPEAT: repeat-y;}
+.bkgrn_mr {BACKGROUND-IMAGE:  url(bkgrn_mr.jpg);BACKGROUND-REPEAT: repeat-y;}
+.bkgrn_mm {BACKGROUND-IMAGE:  url(bkgrn_mm.jpg);BACKGROUND-REPEAT: repeat;}
+.bkgrn_bl {BACKGROUND-POSITION: left top;BACKGROUND-IMAGE:  url(bkgrn_bl.jpg);BACKGROUND-REPEAT: no-repeat;}
+.bkgrn_br {BACKGROUND-POSITION: left top;BACKGROUND-IMAGE:  url(bkgrn_br.jpg);BACKGROUND-REPEAT: no-repeat;}
+.bkgrn_bm {BACKGROUND-IMAGE:  url(bkgrn_bm.jpg);BACKGROUND-REPEAT: repeat-x;}
+.bkgrn_0 {BACKGROUND-COLOR: #27313B;background-position: left top;}
+.bkgrnver {
+	BACKGROUND-POSITION: left top; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE:  url(div_verL.gif); BACKGROUND-REPEAT: repeat-y; }
+.bkgrnhor {
+	BACKGROUND-POSITION: left top; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE:  url(div_horL.gif); BACKGROUND-REPEAT: repeat-x; }
+.bkgrndiv_h {
+	BACKGROUND-POSITION: left top; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE:  url(div_h.gif); BACKGROUND-REPEAT: repeat-x; }
+.input {  background-color: #EEEEEE; border: 1px #BBBEDE solid; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; font-style: normal; font-weight: normal; color: #222222; text-decoration: none; border-color: #CCCCCC #CCCCCC #CCCCCC solid}
+.submit {  background-color: #626374; border: 1px solid #626374; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none}
+.credit {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	color: #AAAAAA;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: right;
+}
+a.credit:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	color: #CCCCCC;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: right;
+}
+
+.footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	color: #CCCCCC;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: center;
+}
+a.footer:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: center;
+}

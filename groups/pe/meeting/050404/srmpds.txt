@@ -1,0 +1,46 @@
+         Workshop on Scheduling and Resource Management for Parallel and
+                         Distributed Systems (SRMPDS '05)
+         To be held in conjunction with Intl Conference on Parallel and
+         Distributed Processing Techniques and Applications (PDPTA '05)
+                 Las Vegas, Nevada, USA, June 27 - 30, 2005
+
+SCOPE:
+The goal of this workshop is to bring together researchers and
+practitioners working in the areas of resource scheduling and resource
+management to exchange and share their experiences, new ideas, and 
+latest research results on all aspects of scheduling and resource
+management in parallel and distributed systems.
+
+ADDITIONAL INFORMATION:
+www.mcs.anl.gov/~kettimut/srmpds or send email to srmpds@mcs.anl.gov
+
+TOPICS OF INTEREST:
+Topics of interest for the workshop include, but are not limited to:
+Resource allocation and management
+Advance resource reservation and scheduling
+Load sharing and Load balancing techniques
+Network resource allocation
+Fault-tolerant resource management approaches
+Data access and management
+Scheduling on heterogeneous nodes
+Time slicing, gang, or co-scheduling
+Fairness, priorities, and accounting Issues
+Performance implications of scheduling strategies
+Performance metrics to compare scheduling schemes
+
+PROCEEDINGS:
+The proceedings of this workshop will be published together with the
+proceedings of other PDPTA '05 workshops by the CSREA Press.
+
+PAPER SUBMISSIONS:
+Authors are requested to submit papers (in PDF format) not exceeding 7
+single-spaced pages, including abstract, five key words, contact address,
+figures, and references. E-mail your manuscripts to: srmpds@mcs.anl.gov
+
+IMPORTANT DATES:
+Submissions Due:      February 16th, 2005
+Review Decisions:     March 21st, 2005
+Final Manuscript Due: April 20th, 2005
+
+
+ 

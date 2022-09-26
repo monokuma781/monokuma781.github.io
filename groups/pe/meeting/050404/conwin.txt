@@ -1,0 +1,106 @@
+**********************************************************************
+********                     ConWiN 2005                      ********
+******                                                          ******
+****                First International Workshop on               ****
+**          Convergence of Heterogeneous Wireless Networks          **
+*                                                                    *
+*                 July 10, 2005 in Budapest, Hungary                 *
+*                   in Conjunction with WICON 2005                   *
+*                                                                    *
+*                       http://www.ConWiN.org                        *
+*                                                                    *
+*                          CALL FOR PAPERS                           *
+**********************************************************************
+
+Scope of ConWiN 2005:
+=====================
+
+The advances  in the wireless communication technologies  have enabled
+the  realization of wide range of heterogeneous wireless networks from
+wireless  local area networks (WLANs),  several generations (2G/3G) of
+wireless  cellular  networks  to  mobile  ad hoc networks (MANET)  and
+wireless  sensor  networks  (WSN).  This  technological  evolution  is
+further inspiring researchers to envision the next generation wireless
+networking architectures and even the space Internet.
+
+Next Generation Wireless Internet (NGWI)  will  be  the convergence of
+these heterogeneous wireless networks and the next generation Internet
+to provide  mobile users with a wide range of high  resource demanding
+services  such  as  high speed reliable data  and real-time multimedia
+delivery. While the  unique characteristics  of each of these wireless
+networks pose diverse  set of challenges,  their integration  severely
+expands the set of open research problems for seamless, efficient, and
+reliable  communication.  Therefore, there exists an urgent need for a
+significant research effort  to focus on  solving these new challenges
+posed  by  the integration  and  the  convergence  of  these  wireless
+heterogeneous networks.
+
+The objective of ConWiN 2005 is to  provide  a research platform where
+researchers  bring their  contributions  to light  by presenting their
+technical papers  on  the  issues  regarding  the  integration and the
+convergence  of  heterogeneous  wireless networks. Papers solicited in
+ConWiN 2005  spans a wide range  of  areas  of  interest including but
+not limited to:
+
+- Physical layer issues for  the convergence of heterogeneous wireless
+  communication technologies
+
+- Novel  and  adaptive  communication  protocols  at all layers, i.e.,
+  MAC layer problems, routing,  reliable and multimedia transport, for
+  integration of diverse wireless systems  such as WLANs, 3G, and WSNs
+
+- Novel and practical  communication architectures for the convergence
+  of heterogeneous wireless networks
+
+- Efficient mobility/handoff management protocols for seamless roaming
+  within the converged communication architecture
+
+- Killer  applications/services  for the convergence  towards the NGWI
+
+- Security,  authentication,  and  billing solutions for the converged
+  architecture
+
+Important Dates:
+================
+
+Submission deadline        :             February 25, 2005
+Notification of acceptance :                   May 1, 2005
+Camera-ready version       :                  May 15, 2005
+Workshop Date              :                 July 10, 2005
+
+Submission Details:
+===================
+
+The workshop will only accept for review original papers that have not
+been  previously  published  and  are  not  currently  under review by
+another conference or journal.
+
+Prospective authors are invited to  submit full papers of no more than
+12 pages of IEEE double column format. Manuscript submission should be
+done  electronically  via  e-mail  by  sending  a  pdf version  of the
+manuscript to conwin@eee.metu.edu.tr
+
+Papers of particular merit will also be published in Computer Networks
+Journal (Elsevier).
+
+Organization Committee :
+=======================
+
+ Workshop Chair:
+ --------------
+ Ozgur Baris Akan,   Middle East Technical University, TURKEY
+
+ TPC Co-Chairs:
+ --------------
+ Eylem Ekici,        Ohio State University, USA
+ Wenye Wang,         North Carolina State University, USA
+
+ Publicity Chair:
+ ----------------
+ Jiang (Linda) Xie,  University of North Carolina at Charlotte, USA
+
+
+For more information about the workshop, see http://www.conwin.org/
+
+
+ 

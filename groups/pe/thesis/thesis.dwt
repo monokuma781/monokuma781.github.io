@@ -1,0 +1,251 @@
+<!-- use ncic.css from url=http://www.ncic.ac.cn -->
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Language" content="zh-cn">
+<!-- #BeginEditable "doctitle" -->
+<title>论文摘要模板</title>
+<!-- #EndEditable -->
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<LINK href="../images/ncic.css" type=text/css rel=stylesheet>
+</HEAD>
+<BODY leftMargin=0 topMargin=0>
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+	  <td>
+		<table border="0" width="100%" cellspacing="0" cellpadding="2">
+		  <tr>
+			<td rowspan="2">
+			<img border="0" src="../images/topbar.gif" width="624" height="108"></td>
+			<td><a href="http://www.ncic.ac.cn">
+			    <img border="0" src="../images/ncic.gif" width="118" height="78" align="right"></a></td>
+		  </tr>
+		  <tr>
+			<td><p align="right"><b><a href="../../pee"><font color="#3366CC">English</font></a></b>
+			    <img border="0" src="../images/blank.gif" width="5" height="5"></td>
+		  </tr>
+		</table>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+		<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+		  <tr>
+			<td width="10">
+			<img border="0" src="../images/service_bar_head.gif" width="10" height="22"></td>
+			<td class="padding01" width="100%" background="../images/service_bar_bg01.gif">
+			<font color="#444444">历史成果 &gt;&gt; 研究生培养 &gt;&gt; 论文摘要</font></td>
+			<td width="10">
+			<img height="22" src="../images/service_bar_end.gif" width="10"></td>
+		  </tr>
+		</table>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="150" align="center" valign="top">
+              <table border="0" width="141">
+				<tr>
+			      <td height="7"></td>
+		        </tr>
+		        <tr>
+			      <td background="../images/topnav1m.gif"><b>
+					<a href="../index.htm"><font color="#0080FF">首页</font></a></b></td>
+		        </tr>
+		        <tr>
+			    <td background="../images/topnav1m.gif"><b>
+				<a href="../projects.htm"><font color="#0080FF">在研项目</font></a></b></td>
+		        </tr>
+		        <tr>
+			    <td background="../images/topnav1m.gif"><b>
+				<a href="../history.htm"><font color="#0080FF">历史成果</font></a></b></td>
+		        </tr>
+		        <tr>
+			      <td height="144">
+			      <ul>
+				  <li><a href="../history.htm#完成项目"><font color="#2C77F3">完成项目</font></a></li>
+				  <li><a href="../history.htm#开放源码"><font color="#2C77F3">开放源码</font></a></li>
+				  <li><a href="../history.htm#文章、专利"><font color="#2C77F3">文章、专利、软件登记</font></a></li>
+				  <li><a href="../history.htm#研究生培养"><font color="#2C77F3">研究生培养</font></a></li>
+				  <li><a href="../history.htm#产业辐射"><font color="#2C77F3">产业辐射</font></a></li>
+			      </ul>
+			      </td>
+		        </tr>
+		        <tr>
+			      <td background="../images/topnav1m.gif"><b>
+					<a href="../library.htm"><font color="#0080FF">资料库</font></a></b></td>
+		        </tr>
+		        <tr>
+			      <td background="../images/topnav1m.gif"><b>
+					<a href="../tfield.htm"><font color="#0080FF">评测园地</font></a></b></td>
+		        </tr>
+		        <tr>
+			      <td width="150">
+			      <ul>
+				  <li><a href="../tfield.htm#近期会议"><font color="#2C77F3">近期会议</font></a></li>
+				  <li><a href="../tfield.htm#同行和组织"><font color="#2C77F3">同行和组织</font></a></li>
+				  <li><a href="../tfield.htm#专题、公司"><font color="#2C77F3">专题、公司</font></a></li>
+				  <li><a href="../tfield.htm#经典文章"><font color="#2C77F3">经典文章</font></a></li>
+				  <li><a href="../tfield.htm#网上资源库"><font color="#2C77F3">网上资源库</font></a></li>
+				  <li><a href="../tfield.htm#媒体评测实验室"><font color="#2C77F3">媒体评测实验室</font></a></li>
+			      </ul>
+			      </td>
+		        </tr>
+		        <tr>
+			      <td background="../images/topnav1m.gif"><b>
+					<a href="../team.htm"><font color="#0080FF">集体风貌</font></a></b></td>
+		        </tr>
+		        <tr>
+			      <td>
+			      <ul>
+				  <li><a href="../team.htm#组员风采"><font color="#2C77F3">组员风采</font></a></li>
+				  <li><a href="../team.htm#活动集锦"><font color="#2C77F3">活动集锦</font></a></li>
+				  <li><a href="../team.htm#谈天说地"><font color="#2C77F3">谈天说地</font></a></li>
+			      </ul>
+			      </td>
+		        </tr>
+		        <tr>
+			      <td height="15"></td>
+		        </tr>
+		      </table>
+			</td>
+			<td width="8" align="center" valign="top">　</td>
+			<td align="center" valign="top">
+              <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><TBODY><TR><TD height=20></TD></TR></TBODY></TABLE>
+              <TABLE cellSpacing=0 cellPadding=0 width=482 border=0>
+                <TBODY>
+                  <TR>
+                    <TD width=11>
+					<IMG height=6 src="../images/service_cor01.gif" width=11></TD>
+                    <TD background=../images/service_tbg.gif>
+					<IMG height=6 src="../images/service_tbg.gif" width=7></TD>
+                    <TD width=10>
+					<IMG height=6 src="../images/service_cor02.gif" width=10></TD>
+                  </TR></TBODY></TABLE>
+			<table cellSpacing="0" cellPadding="0" width="482" border="0">
+				<tr>
+					<td width="1" bgColor="#3D73A6">
+					<img height="1" src="../index.files/spacer.gif" width="1"></td>
+					<td align="middle">
+					<!-- #BeginEditable "detail" -->　<table cellSpacing="1" cellPadding="4" width="440" border="0">
+						<tr bgColor="#dcebfc">
+							<td align="middle" colSpan="3">2001年硕士论文摘要</td>
+						</tr>
+						<tr bgColor="#edf7fe">
+							<td align="middle" width="50">
+							<div align="left">
+								学　生</div>
+							</td>
+							<td align="middle" width="50">
+							<div align="left">
+								导　师</div>
+							</td>
+							<td>论文题目</td>
+						</tr>
+						<tr bgColor="#edf7fe">
+							<td align="middle">
+							<div align="left">
+								席　静</div>
+							</td>
+							<td align="middle">
+							<div align="left">
+								徐志伟</div>
+							</td>
+							<td>Web服务器的性能评测及优化</td>
+						</tr>
+						<tr align="middle" bgColor="#edf7fe">
+							<td colSpan="3">&nbsp;<br>
+							<b>Web服务器的性能评测及优化</b></td>
+						</tr>
+						<tr align="middle" bgColor="#f5fbfe">
+							<td colSpan="3">
+							<div align="left">
+								<br>
+								计算机系统性能评测与分析一直是计算机科学的一个重要分支。随着Internet 
+								的迅猛发展，人们对Web 服务器的访问日益频繁，从而对Web 服务器的性能也提出越来越高的要求。<br>
+　<p>本文首先阐述了服务器和服务器性能的概念，然后从Web 服务器性能的几个关键问题入手，从应用负载、服务器软件和服务器硬件三个层面上详细讨论了如何解决这些关键问题。最后从服务器软件内部的优化、服务器软件配置、应用性能的优化、如何配置硬件服务器和将单机Web服务器的性能优化扩展至多机等方面，在曙光2000 
+								和曙光3000 超级服务器上实现了我们前面提出的解决方法，并取得了令人满意的效果。对于单机Web 
+								服务器，我们的优化使得SPECweb99 同时连接数从最初的0 提高到997，并把单机Web 
+								服务器的性能优化成功扩展至机群。应用我们提出的方法不仅很大程度上提高了Web 
+								服务器的性能，而且节省了大量的测试时间。<br>
+　</p>
+								<p>关键词：<br>
+								SPECweb99，同时连接数, 动态请求<br>
+　</p>
+								<p align="center">Performance Evaluation and 
+								Optimization of<br>
+								Web Servers<br>
+								Jing Xi (Computer Architecture)<br>
+								Directed by Prof. Zhiwei Xu<br>
+　</p>
+								<p>The performance evaluation and analysis is 
+								one of the most important branches of computer 
+								sciences. With the great development of 
+								Internet, people make more and more access to 
+								Web servers. Its inevitable result is to make 
+								higher requirement of the performance of Web 
+								servers.<br>
+　</p>
+								<p>This paper first gives the definitions of 
+								server and the performance of server. Then it 
+								talks about the key issues of Web server 
+								performance and how to solve these key issues 
+								from the views of workload, server software and 
+								server hardware. At last, we applied our method 
+								to Dawning-2000 and Dawning-3000 from many 
+								aspects such as optimization of server software, 
+								server software configuration, application 
+								performance optimization, how to configure 
+								hardware server and how to extend the 
+								performance optimization of a single Web server 
+								to cluster. And we have gotten satisfying 
+								result. For single Web server, our optimization 
+								improves SPECweb99 simultaneous connection from 
+								the initial 0 to 997. </p>
+								<p>And we extend the single Web server 
+								performance optimization to cluster 
+								successfully. Using our method not only improves 
+								the performance most but also saves much testing 
+								time.<br>
+　</p>
+								<p>Keywords: SPECweb99 Simultaneous Connection 
+								Dynamic request<br>
+　</div>
+							</td>
+						</tr>
+					</table>
+					<br>
+　<!-- #EndEditable --></td>
+					<td width="1" bgColor="#3D73A6">
+					<img height="1" src="../index.files/spacer.gif" width="1"></td>
+				</tr>
+			</table>
+             <TABLE cellSpacing=0 cellPadding=0 width=482 border=0>
+               <TBODY>
+                 <TR>
+                   <TD width=11>
+					<IMG height=6 src="../images/service_cor03.gif" width=12></TD>
+                   <TD background=../images/service_bbg.gif>
+					<IMG height=6 src="../images/service_bbg.gif" width=7></TD>
+                   <TD width=10>
+					<IMG height=6 src="../images/service_cor04.gif" width=10></TD></TR></TBODY></TABLE>
+		     <table height="25" cellSpacing="0" cellPadding="0" width="100%" border="0">
+			   <td align="center" height="45"></td>
+			 </table>
+      	   </td></tr></table></td></tr>
+  <tr>
+  <TD bgColor=#0000A0 height=1>
+	<IMG height=1 src="../images/dot00.gif" width=1></TD>
+  </tr>
+  <tr>
+	<td align="center">本网站版权归国家智能计算机研究开发中心所有<FONT face="Verdana, Arial, Helvetica, sans-serif" size=1>&nbsp;&nbsp;&nbsp; 
+			Copyright for NCIC All Rights Reserved</FONT> 
+    <br>
+	本站引用了其他网站的部分会议信息，在网页的源码中均有注释。如果您认为本站侵犯了您的版权，请及时与我们联系。<BR>Email: <a href="mailto:webmaster_pe@ncic.ac.cn"><font color="#333333">webmaster_pe@ncic.ac.cn</font></a><font color="#333333">&nbsp;&nbsp;
+	</font>&nbsp;更新时间：<!--webbot bot="Timestamp" S-Type="REGENERATED" S-Format="%Y年%m月%d日 %H:%M" startspan -->2005年03月11日 14:06<!--webbot bot="Timestamp" i-checksum="7858" endspan --></td>
+  </tr>
+</table>
+</BODY>
+
+</HTML>

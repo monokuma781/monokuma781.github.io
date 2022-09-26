@@ -1,0 +1,49 @@
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: xx-large;
+	font-weight: bold;
+	color: #000000;
+}
+.style2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: x-large;
+	font-weight: bold;
+	color: #000000;
+}
+.Title_my {
+	font-family: "Times New Roman", Times, serif;
+	font-size: xx-large;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+.style3 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+	font-weight: bold;
+	color: #000000;
+	text-transform: none;
+}
+.style4 {
+	font-size: large;
+	font-weight: bold;
+}
+.newtitle {
+	font-family: "Times New Roman", Times, serif;
+	font-size: x-large;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #000000;
+}
+.style5 {font-size: large}
+.style6 {font-family: "Times New Roman", Times, serif; font-size: large; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: capitalize; color: #000000; }
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+}

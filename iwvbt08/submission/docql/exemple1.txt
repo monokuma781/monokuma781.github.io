@@ -1,0 +1,12 @@
+@paper[id=1]{
+	This paper,entitled <FONT SIZE=2 COLOR="blue" FACE="arial">  <b> @title{.} </b></FONT>, writen by<FONT SIZE=2 COLOR="blue" FACE="arial">  <b>@author.first_name{.} @author.last_name{.}</b></FONT>, has been evaluated as  follows:
+<ol>
+ @review{
+	<li> reviewer: email:<FONT SIZE=2 COLOR="blue" FACE="arial">  <b> @email{.}</b> </FONT>
+	<li> Marks: @reviewmark{ 
+		<FONT SIZE=2 COLOR="blue" FACE="arial"> <b> @mark{.} </b></FONT>
+	 	}
+	}	
+</ol>
+}
+

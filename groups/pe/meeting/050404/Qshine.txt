@@ -1,0 +1,209 @@
+-----------------------------------------------------------------------------
+                    Call for Papers - QShine 2005
+-----------------------------------------------------------------------------
+        The Second International Conference on Quality of Service in
+                   Heterogeneous Wired/Wireless Networks
+                August 22 - 24, 2005, Orlando Florida USA
+
+                         Sponsored by (pending approval) 
+              IEEE COMSOC (TCCC and TCPC) and ACM SigMobile and SigComm
+                          Bell Mobility, Ericsson
+
+                   Submission Deadline: March 15, 2005
+
+                      
+-----------------------------------------------------------------------------
+                        http://www.qshine.org/
+-----------------------------------------------------------------------------
+
+SCOPE 
+----- 
+
+Recent technological developments in broadband high-speed networks,
+peer-to-peer networks, wireless and mobile networks, and grid
+computing have led to new challenging problems, such as providing
+QoS support to the emerging multimedia applications across both wired
+and wireless networks. This conference will focus on all aspects of
+QoS support for heterogeneous wired and wireless networks with the theme
+on cross-layer design. It will serve as a forum for researchers from both
+electrical engineering and computer science to present latest research
+results on QoS issues for both wired and wireless networks, with the
+hope that electrical engineers and computer scientists will work
+together to develop viable cross-layer design methodologies. The
+conference will feature prominent invited speakers as well as papers by
+top researchers in the field.
+
+Papers addressing QoS support, ranging from the link layer to the
+application layer, over wired and wireless networks are
+solicited. Authors are encouraged to submit theoretical and/or
+practical results of significance. The scope of the conference
+includes, but is not limited to:
+
+* QoS in WLAN, WPAN, WMAN and WiMAX (IEEE 802.11/15/16/20)
+* QoS in wireless sensor and ad-hoc networks
+* QoS in cellular and satellite networks
+* QoS support across heterogeneous wired and wireless subnetworks
+* MAC protocols with QoS support
+* Scheduling, resource management, queue management, and admission control
+* QoS in mobile environment, handoff
+* QoS routing and mobile IP
+* Traffic engineering and shaping
+* MPLS and GMPLS
+* Restoration and survivability
+* Transport protocols for end-to-end QoS support
+* Cross-layer error control and delay control
+* Cross-layer optimization for energy, network lifetime, and capacity
+* Topology control for QoS support in wireless networks
+* Wireless multimedia applications/services
+* QoS support with multi-mode radio
+* Middleware for QoS support
+* Security aspects of QoS systems
+* QoS pricing and billing 
+* Variable and adaptive QoS 
+* QoS modeling and measurement 
+* QoS and differentiated services architectures, protocols, and systems
+* QoS specification, metrics, and analysis
+* QoS in peer-to-peer, grid, and overlay networks
+
+Accepted papers will be published in the conference
+proceedings. Papers of particular merit will be selected for
+consideration of a fast track publication in a special issue 
+for ACM/Kluwer Wireless Networks (WINET) (approved) and 
+a special section in IEEE Transactions on Vehicular Technology 
+(pending approval). 
+
+PAPER SUBMISSION GUIDELINES
+---------------------------
+
+Papers should not exceed 20 pages, must be unpublished and must not be
+submitted for publication elsewhere. All papers should be submitted 
+electronically to EDAS system at
+http://edas.info/Conferences.cgi in Postscript or Adobe PDF format. 
+Electronic submission instructions will be available at
+http://www.qshine.org/2005/submission.html.
+
+IMPORTANT DATES
+---------------
+
+Submission Deadline:            March 15, 2005
+Notification of Acceptance:     May 15, 2005  
+Camera-ready Manuscripts Due:   June 15, 2005
+Conference Dates:               August 22-24, 2005
+
+
+ORGANIZING COMMITTEE
+--------------------
+
+General Chair:  
+
+   Dr. Yuguang "Michael" Fang, University of Florida, USA
+   fang@ece.ufl.edu
+
+Vice Chair:
+
+   Dr. Hisashi Kobayashi, Princeton University, USA
+   hisashi@princeton.edu
+
+                        
+Technical Program Chair:
+    
+   Dr. Xuemin (Sherman) Shen, University of Waterloo, Canada
+   xshen@bbcr.uwaterloo.ca
+
+
+Steering Committee:
+   
+   Dr. Imrich Chlamtac, President, CreateNet Research Consortium, Chair 
+   Dr. Michael Fang, University of Florida, USA, Co-Chair 
+   Dr. Hisashi Kobayashi, Princeton University, USA
+   Dr. Ariel Orda, Technionil
+   Dr. Xuemin (Sherman) Shen, University of Waterloo, Canada
+
+Publications Chair:
+
+    Dr. Xiuzhen Cheng, George Washington University, USA
+
+Publicity Chair:
+
+    Dr. Jelena Misic, University of Manitoba, Canada
+    jmisic@cs.umanitoba.ca
+ 
+    Dr. Mihaela Cardei, Florida Atlantic University, USA 
+    mihaela@cse.fau.edu
+
+Poster Chair:
+
+    Dr. Jianping Pan, NTT MCL, USA
+    jpan@nttmcl.com
+   
+Local Arrangement Chairs:
+
+    Dr. Damla Turgut, University of Central Florida, USA, Chair 
+    turgut@cs.ucf.edu
+
+    Dr. Lei Wei, University of Central Florida, USA, Co-Chair
+    lei@ee.ucf.edu
+
+Website/Information Chair:
+
+    Mr. Hongqiang Zhai, University of Florida, USA
+    zhai@ecel.ufl.edu
+
+********************************************************
+QShine 2005 TPC committee 
+
+Chair: Dr. Xuemin (Sherman) Shen, Univercity of Waterloo, Canada     
+
+Sudhir Aggarwal, Florida State University
+Giuseppe Bianchi, University of Roma Tor Vergata, Italy
+Gregor V. Bochmann, University of Ottawa, Canada
+Luciano Bononi, University of Bologna, Italy
+Andrew T. Campbell, Columbia
+Guohong Cao, Penn State University
+Lin Cai, University of Waterloo, Canada
+Xiuzhen Cheng, George Washington University
+Sunghyun Choi, National Seoul University
+Sajal K. Das, University of Texas at Arlington
+Ehab Elmallah, University of Alberta, Canada
+Guangbin Fan, University of Mississippi
+Alois Ferscha, University of Linz, Austria
+Mohsen Guizani, Western Michigan University
+Zhu Han, University of Maryland at College Park
+Hossam Hassanein, Queens University, Canada
+Hussein Mouftah , University of Ottawa, Canada
+Hisashi Kobayashi, Princeton University
+Tho Le-Ngoc, McGill University, Canada
+Baochun Li, University of Toronto
+Geoffrey Li, George Tech
+Wei Li, University of Toledo
+Lavy Libman, Nicta
+Yibei Ling, Telcordia
+Jiangchuan Liu, Simon Fraser University
+Mingyan Liu, University Michigan at Ann Arbor
+Songwu Lu, UCLA
+King-Shan Lui, Hong Kong University
+Brian Mark, George Mason University
+Jelena Misic, University of Manitoba, Canada
+Klara Nahrstedt, UUIC
+Mirela Notare Barddal, University of Brazil
+Stephan Olariu, Old Dominion University
+Mohamed Ould-Khaoua,  University of Glasgow, UK
+Kihong Park, Purdue University
+Chunming Qiao, SUNY at Buffalo
+Aladdin O.M. Saleh, Bell Mobility, Canada
+Anthony Soong, Ericsson, USA 
+Nikoletseas E. Sotiris,  Computer Technology Institute, Greece
+Alex Sprintson, Caltech
+Violet Syrotiuk, Arizona State University
+Kun Tan, Microsoft Research Asia
+Terence D. Todd, McMaster University, Canada
+Dapeng Wu, University of Florida
+Hongyi Wu, University of Louisiana at Lafayette
+Jie Wu, Florida Atlantic University
+Geoffrey Xie, Naval Post Graduate School
+Qian Zhang, Microsoft Asia Research, China
+Weihua Zhuang, University of Waterloo, Canada
+Albert Zomaya, University of Sydney, Australia
+
+
+ 

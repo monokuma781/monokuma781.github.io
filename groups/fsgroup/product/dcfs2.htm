@@ -1,0 +1,646 @@
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" type="text/css" href="../css/ncic.css">
+<title>DCFS2机群文件系统</title>
+</head>
+
+<body topmargin="0">
+
+<div align="center">
+  <table border="0" cellpadding="0" cellspacing="0" width="255">
+    <tr>
+      <td width="570" height="96" valign="middle" align="right" colspan="2">
+        <h1 align="left"><img border="0" src="../images/common/top-left.gif" width="563" height="98"></h1>
+      </td>
+      <td width="158" height="96">
+        <p align="right"><img border="0" src="../images/common/top-right.gif" width="149" height="100"></p>
+      </td>
+    </tr>
+  <center>
+      <tr>
+      <td width="711" height="11" valign="middle" align="right" colspan="3">
+        <div align="center">
+          <table border="0" cellpadding="0" cellspacing="0" width="736">
+            <tr >
+              <td width="734" bgcolor="#00468C" >
+                <p align="center"><font color="#FFFFFF"><a class="link06" href="../index.htm">首页</a>  
+                | <a class="link06" href="../subject/field.htm">研究方向</a>   
+                | <a href="current.htm" class="link06">在研项目</a>   
+                | <a href="../subject/article.htm" class="link06">学术论文</a>   
+                | <a class="link06" href="../subject/releate.htm">相关研究机构</a>   
+                | <a class="link06" href="../subject/meetings.htm">相关会议</a>   
+                | <a class="link06" href="../subject/magazines.htm">相关期刊</a>   
+                |&nbsp; <a href="../webpage/scene.htm" class="link06">小组风貌</a>   
+                | <a class="link06" href="../webpage/communication.htm">联系我们</a></font></td>                                     
+            </tr>
+            <tr>
+              <td width="734" height="10"></td>
+            </tr>
+          </table>
+        </div>
+        </td>
+      </tr>
+    <tr>
+      <td width="144" height="1" valign="top">
+        <div align="center">
+          <table border="0" cellpadding="0" cellspacing="0" width="147">
+            <tr>
+              <td width="145" background="../images/common/bg_heading01.gif" align="center" height="22">
+                <p align="center"><font color="#00468C"><a href="../webpage/group.htm" class="link05">小组简介</a></font></td>
+            </tr>
+            <tr>
+              <td width="145" align="center" height="5"></td>
+            </tr>
+            <tr>
+              <td width="145" background="../images/common/bg_heading01.gif" align="center" height="22"><font color="#00468C"><a href="../webpage/member.htm" class="link05">成员介绍</a></font></td>
+            </tr>
+            <tr>
+              <td width="145" align="center" height="5"></td>
+            </tr>
+            <tr>
+              <td width="145" background="../images/common/bg_heading01.gif" align="center" height="22"><font color="#00468C"><a href="dcfs2.htm" class="link05">科研成果</a></font></td>
+            </tr>
+            <tr>
+              <td width="145" align="center" height="5"></td>
+            </tr>
+            <tr>
+              <td width="145" background="../images/common/bg_heading01.gif" align="center" height="22"><font color="#00468C"><a href="../webpage/subject.htm" class="link05">学科建设</a></font></td>
+            </tr>
+            <tr>
+              <td width="145" align="center" height="5"></td>
+            </tr>
+            <tr>
+              <td width="145" background="../images/common/bg_heading01.gif" align="center" height="22"><font color="#00468C"><a href="../webpage/info.htm" class="link05">动态资讯</a></font></td>
+            </tr>
+            <tr>
+              <td width="145" align="center" height="5"></td>
+            </tr>
+            <tr>
+              <td width="145" background="../images/common/bg_heading01.gif" align="center" height="22"><font color="#00468C"><a href="http://www.ncic.ac.cn" class="link05">返回NCIC</a></font></td>
+            </tr>
+          </table>
+        </div>
+      </td>
+      <td width="584" height="1" valign="top" align="center" colspan="2">
+            </center>
+        <table border="0" cellPadding="0" cellSpacing="0" width="480">
+          <tbody>
+            <tr>
+              <td height="18" width="11"><img src="../images/common/profile_bar_start.gif" width="11" height="22"></td>
+              <td background="../images/common/profile_bar_bg.gif" height="18" width="100"><font color="#006600">DCFS2文件系统</font></td>
+              <td height="18" width="7"><img src="../images/common/profile_bar_splite.gif" width="7" height="22"></td>
+              <td align="right" background="../images/common/profile_bar_bg01.gif" height="18">
+                <table border="0" cellPadding="0" cellSpacing="0" width="160">
+                  <tbody>
+                    <tr>
+                      <td align="middle" width="20">&nbsp;</td>
+                      <td class="padding01" width="70">&nbsp;</td>
+                      <td align="middle" width="20">&nbsp;</td>
+                      <td class="padding01">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td height="18" width="10"><img src="../images/common/profile_bar_end.gif" width="10" height="22"></td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="0" cellPadding="0" cellSpacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td height="5"><img src="../images/common/spacer.gif" width="1" height="1"></td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="0" cellPadding="0" cellSpacing="0" width="480">
+          <tbody>
+            <tr>
+              <td width="11"><img src="../images/common/profile_cor01.gif" width="11" height="6"></td>
+              <td background="../images/common/profile_tbg.gif"><img src="../images/common/profile_tbg.gif" width="7" height="6"></td>
+              <td width="10"><img src="../images/common/profile_cor02.gif" width="10" height="6"></td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="0" cellPadding="0" cellSpacing="0" width="480">
+          <tbody>
+            <tr>
+              <td bgColor="#689152" width="1"><img src="../images/common/spacer.gif" width="1" height="1"></td>
+              <td>
+                <table border="0" cellPadding="2" cellSpacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div align="center">
+                          <center>
+                          <table border="0" cellpadding="0" cellspacing="0" width="453">
+                            <tr>
+                              <td width="449" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <h1 align="center"><span lang="EN-US"><font size="4" face="宋体">DCFS2</font></span><font size="4" face="宋体"><span style="mso-ascii-font-family: Arial">项目简介</span></font></h1>
+                                <p class="MsoNormal"><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;     
+                                随着应用对数据存储的需求的急剧增长，</span><span lang="EN-US">SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">和</span><span lang="EN-US">IP     
+                                SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">存储系统得到越来越广泛的应用，而且越来越多的机群系统也采用</span><span lang="EN-US">SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">或</span><span lang="EN-US">IP SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:    
+&quot;Times New Roman&quot;">来构建共享存储。</span><span lang="EN-US">SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">和</span><span lang="EN-US">IP SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:    
+&quot;Times New Roman&quot;">的最重要的特性是存储共享，即同一存储域网内的所有的节点可以直接访问该网中的存储设备。传统的机群文件系统都是基于存储服务器的，即机群节点必须通过存储服务器节点才能访问共享存储，因此，不能利用节点到存储设备的直接数据通路。正是在这样的技术背景下，萌发</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">机群文件系统，它的思想是</span><span lang="EN-US">IP     
+                                SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">具有极好的扩展性，</span><span lang="EN-US">IP     
+                                SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">适合作为机群所有节点的共享存储；</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">文件系统能够利用</span><span lang="EN-US">SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">或</span><span lang="EN-US">IP SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:    
+&quot;Times New Roman&quot;">提供从节点到存储设备的直接数据通路，为机群上的应用提供全局共享的、高性能的、可扩展的、可靠的文件系统。</span></p>
+                                <h1><font size="4"><span lang="EN-US">1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:黑体;mso-ascii-font-family:Arial">设计目标</span></font></h1>
+                                <p class="MsoNormalIndent"><span lang="EN-US">DCFS2</span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">的设计目标包括：</span></p>
+                                <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 21.0pt"><span lang="EN-US">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span>DCFS2</span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">是一个通用的全局共享的文件系统。这包括以下三个方面：第一，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">是多个节点共享的文件系统，能够同时从各个节点上来访问</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">；第二，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">具有统一的名字空间，各个节点上看到的文件系统结构完全一致；第三，各个节点通过</span><span lang="EN-US">OS</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">系统调用接口和系统命令来访问</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">文件系统，采用与访问本地文件系统一样的机制来访问</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">，基于本地文件系统的应用无需重新编译链接。</span></p>
+                                <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 21.0pt"><span lang="EN-US">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">支持大规模的机群系统。</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">能够<span style="mso-bidi-font-weight:bold">支持的最大节点数为</span></span><span lang="EN-US" style="mso-bidi-font-weight:bold">1,000</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-weight:bold">个，最大</span><span lang="EN-US" style="mso-bidi-font-weight:bold">IP</span><span style="font-family:宋体;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-weight:bold">存储设备数为</span><span lang="EN-US" style="mso-bidi-font-weight:
+bold">256</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-bidi-font-weight:bold">个，最多</span><span lang="EN-US" style="mso-bidi-font-weight:bold">256</span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-weight:bold">个元数据服务器。</span></p>
+                                <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 21.0pt"><span lang="EN-US">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">支持大文件系统。</span><span lang="EN-US" style="mso-bidi-font-weight:bold">DCFS2</span><span style="font-family:宋体;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-weight:bold">从以下几个方面来支持大文件系统：第一，高效地支持</span><span lang="EN-US" style="mso-bidi-font-weight:bold">64</span><span style="font-family:宋体;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-weight:bold">位文件，即支持最大文件长度为</span><span lang="EN-US" style="mso-bidi-font-weight:bold">2<sup>63</sup></span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-weight:bold">字节；第二，高效地支持大目录，即支持一个目录下有百万到千万量级的目录项数（文件、子目录、链接、符号链接等）；第三，支持大容量文件系统，</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">即支持的最大<span style="mso-bidi-font-weight:bold">存储总容量为</span></span><span lang="EN-US" style="mso-bidi-font-weight:bold">PB</span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-weight:bold">级，文件系统</span><span lang="EN-US" style="mso-bidi-font-weight:
+bold">inode</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-bidi-font-weight:bold">总数在</span><span lang="EN-US" style="mso-bidi-font-weight:bold">10<sup>6</sup></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;;mso-bidi-font-weight:bold">——</span><span lang="EN-US" style="mso-bidi-font-weight:bold">10<sup>9</sup></span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-weight:bold">量级；第四，支持文件系统的动态扩展，包括在线扩充文件系统容量，在线增加</span><span lang="EN-US" style="mso-bidi-font-weight:bold">IP</span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-font-weight:bold">存储设备，在线增加元数据服务器，在线增加客户节点。</span></p>
+                                <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 21.0pt"><span lang="EN-US">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">面向带宽密集型应用，主要是需要很高并行</span><span lang="EN-US">I/O</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">带宽的科学计算应用。这要求</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">能够提供很高的聚合</span><span lang="EN-US">I/O</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">带宽。</span></p>
+                                <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 21.0pt"><span lang="EN-US">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">面向元数据密集型应用，主要是多用户多任务环境，能够支持</span><span lang="EN-US">1000</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">个以上的系统用户，</span><span lang="EN-US">1000</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">个以上用户任务的同时运行；及</span><span lang="EN-US">Internet</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">应用（如</span><span lang="EN-US">Web server,     
+                                Mail server</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:    
+&quot;Times New Roman&quot;">等）。这要求</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">具有很高的元数据处理能力。</span></p>
+                                <p class="MsoNormal" style="margin-left:21.0pt;text-indent:-21.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 21.0pt"><span lang="EN-US">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">具有可靠性，在客户端失效、单个元数据服务器的情况下，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">文件系统能够恢复到近期的一个元数据一致的状态，使得</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">文件系统仍然是一个可用的文件系统。</span></p>
+                                <p class="MsoNormalIndent"><span lang="EN-US">&nbsp;<o:p>
+                                </o:p>    
+                                </span></p>
+                                <h1><font size="4"><span lang="EN-US">2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:黑体;mso-ascii-font-family:Arial">总体结构</span></font></h1>
+                                <p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0;
+mso-char-indent-size:10.5pt"><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">将文件数据与文件系统元数据分开进行处理，元数据和文件数据有各自的通路。</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">采用多个元数据服务器来存储和处理元数据，包括文件的属性、文件块的物理位置和目录内容。多元数据结构避免单一元数据服务器成为性能瓶颈和单一故障点，有利于系统规模的扩展和元数据性能的提高。文件数据则存储在可由客户端直接访问的多个</span><span lang="EN-US">IP</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">存储设备中，充分利用多个</span><span lang="EN-US">IP</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">存储设备的存储容量和</span><span lang="EN-US">I/O</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">带宽。此外，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">有一个空间管理服务器来管理所有</span><span lang="EN-US">IP</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">存储设备的空间，有一个配置及状态代理来维护</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">的配置信息和各个服务器的运行状态信息。</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">的总体结构如</span><span style="mso-field-code:
+&quot;REF 图2 \\h&quot;" lang="EN-US"><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">图</span>1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B020000000800000003000000FE5632000000</w:data>
+</xml><![endif]-->
+                                </span><span style="font-family:宋体;mso-ascii-font-family:    
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">所示。</span></p>
+                                <p class="MsoNormal" align="center" style="text-align:center"><a name="OLE_LINK1"><span lang="EN-US"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1027" type="#_x0000_t75" style='width:279.75pt;
+ height:250.5pt' o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/02/clip_image001.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+                                <img src="../images/dcfs2/dcfs2.2.gif" v:shapes="_x0000_i1027" width="373" height="334"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1157293081">
+ </o:OLEObject>
+</xml><![endif]-->
+                                </span></a></p>
+                                <p class="MsoNormal" align="center" style="text-align:center;layout-grid-mode:char"><a name="图2"><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">图</span><span style="mso-field-code:&quot;SEQ fig \\* MERGEFORMAT&quot;" lang="EN-US">1</span></a><span lang="EN-US"> 
+                                DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">的结构：基于</span><span lang="EN-US">IP</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">存储设备，非对称式</span></p>
+                                <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">&nbsp;<o:p>
+                                </o:p>    
+                                </span></p>
+                                <p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0;
+mso-char-indent-size:10.5pt"><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">机群系统一般都有多套互连网络，元数据处理与数据处理分离的策略可以更好地利用机群中的多套网络。文件数据的传输量一般较大，需要高的传输带宽，可以采用</span><span lang="EN-US">Myrinet</span><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">或</span><span lang="EN-US">SCI</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">这样的高性能网络来传输文件数据；元数据的转输量一般较小，但需要低的传输延迟，一般采用</span><span lang="EN-US">GE</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">。运行于机群上的应用程序一般需要用</span><span lang="EN-US">Myrinet</span><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">或</span><span lang="EN-US">SCI</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">等高性能网络进行通信，为了不影响应用的通信，最好文件传输使用专门的存储网络。当然元数据通路、文件数据通路及应用通信通路也可以合用一个网络，这由具体的应用环境决定。</span></p>
+                                <p class="MsoNormal" style="text-indent:21.75pt"><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">软件的主体由三部分构成：客户端文件系统、元数据服务器（</span><span lang="EN-US">mgr</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">）及空间管理服务器</span><span lang="EN-US">(lsm)</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">。此外，还包含配置及状态代理</span><span lang="EN-US">(csa)</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">和一个图形化界面的管理工具</span><span lang="EN-US">(dcfs_adm)</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">。</span></p>
+                                <h1><font size="4"><span lang="EN-US">3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:黑体;mso-ascii-font-family:Arial">主要技术特色</span></font></h1>
+                                <p class="MsoNormalIndent" style="margin-left:40.85pt;text-indent:-19.85pt;
+mso-list:l1 level1 lfo3;tab-stops:list 40.85pt"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Wingdings 2&quot;;
+color:#CC0000">ò<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">基于多个共享块设备（包括</span><span lang="EN-US">SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">或</span><span lang="EN-US">IP SAN</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:    
+&quot;Times New Roman&quot;">等共享块设备），</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">具有直接数据通路，使得共享存储的</span><span lang="EN-US">I/O</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">带宽得以充分利用，具有很高的聚合</span><span lang="EN-US">I/O<span style="mso-tab-count:1">&nbsp;     
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">带宽，可扩展性好；</span></p>
+                                <p class="MsoNormalIndent" style="margin-left:40.85pt;text-indent:-19.85pt;
+mso-list:l1 level1 lfo3;tab-stops:list 40.85pt"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Wingdings 2&quot;;
+color:#CC0000">ò<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">协作式多元数据服务器，使元服务的存储和访问负载都分散在多个相互协作的元数据服务器上，具有很强的元数据处理能力，可扩展性好。</span></p>
+                                <p class="MsoNormalIndent" style="margin-left:40.85pt;text-indent:-19.85pt;
+mso-list:l1 level1 lfo3;tab-stops:list 40.85pt"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Wingdings 2&quot;;
+color:#CC0000">ò<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">支持大规模机群系统，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">采用多存储多元数据服务器的结构，可扩展性好，在实现技术上采用面向</span><span lang="EN-US">1000</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">个节点规模的机群。</span></p>
+                                <p class="MsoNormalIndent" style="margin-left:40.85pt;text-indent:-19.85pt;
+mso-list:l1 level1 lfo3;tab-stops:list 40.85pt"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Wingdings 2&quot;;
+color:#CC0000">ò<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">采用了特殊的技术，高效支持</span><span lang="EN-US">PB</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">级的大容量文件系统，高效支持千万个以上的文件</span><span lang="EN-US">/</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">目录对象，高效支持大目录（百万个目录项以上），高效支持大文件</span></p>
+                                <p class="MsoNormalIndent" style="margin-left:40.85pt;text-indent:-19.85pt;
+mso-list:l1 level1 lfo3;tab-stops:list 40.85pt"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Wingdings 2&quot;;
+color:#CC0000">ò<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">提供</span><span lang="EN-US">3</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">种级别的可用性，能够保证文件系统的一致性，</span><span lang="EN-US"><br>
+                                level 0</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;    
+mso-hansi-font-family:&quot;Times New Roman&quot;">，不保证元数据一致性，若有客户端或元数据服务器失效，则文件系统一致性会被破坏；这种方式下，有最高的性能；</span><span lang="EN-US"><br>
+                                level 1</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;    
+mso-hansi-font-family:&quot;Times New Roman&quot;">，保证元数据一致性，在客户端和元数据服务器失效的情况下，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">文件系统可以快速恢复，但不保证恢复出失效发生前所有已完成的操作结果；</span><span lang="EN-US"><br>
+                                level 2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;    
+mso-hansi-font-family:&quot;Times New Roman&quot;">，保证元数据一致性，在客户端和元数据服务器失效的情况下，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">文件系统可以快速恢复，并保证恢复出失效发生前所有已完成的操作结果；但性能会受较大的影响。</span></p>
+                                <p class="MsoNormalIndent" style="margin-left:40.85pt;text-indent:-19.85pt;
+mso-list:l1 level1 lfo3;tab-stops:list 40.85pt"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Wingdings 2&quot;;
+color:#CC0000">ò<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">支持文件系统的动态扩展，目前已支持动态增加</span><span lang="EN-US">/</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">减少客户端，下一步将支持动态增加存储和元数据服务器。</span></p>
+                                <p class="MsoNormalIndent" style="margin-left:40.85pt;text-indent:-19.85pt;
+mso-list:l1 level1 lfo3;tab-stops:list 40.85pt"><span lang="EN-US" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Wingdings 2&quot;;
+color:#CC0000">ò<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span></span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">面向</span><span lang="EN-US">64</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">位</span><span lang="EN-US">Linux</span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">平台，同时也可以用于</span><span lang="EN-US">32</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">位</span><span lang="EN-US">Linux</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">平台。</span></p>
+                                <h1><font size="4"><span lang="EN-US">4.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:黑体;mso-ascii-font-family:Arial">关键技术</span></font></h1>
+                                <h3><font size="3"><span lang="EN-US">4.1.1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:黑体;mso-ascii-font-family:Arial">协作式多元数据服务器</span></font></h3>
+                                <p class="MsoNormalIndent"><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">&nbsp;&nbsp;     
+                                多元数据服务器结构使得</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">文件系统有很强的元数据处理能力，而且使得</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">文件系统具有良好的扩展性。协作式的多元数据服务器使得元数据分布可以是动态的，而不象其它有的文件系统那样是静态的，从而更加灵活。协作式的多元数据服务器结构下，有的元数据操作需要多个元数据服务器相互协作才能完成，增加了复杂性。但</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">通过采用基于根目录下第一级子树的元数据分布策略，将这种分布式的元数据操作控制在极小的范围。文件系统目录树结构中需要分布式操作的点（称为奇异点）主要是根，其它奇异点的产生是由于有跨元数据服务器的</span><span lang="EN-US">symlink</span><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">、</span><span lang="EN-US">rename</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">等操作。因此，这样的奇异点在整个文件系统中是非常少的。因此，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">中大量的元数据操作都不是分布式的，从而使得</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">有很高的元数据处理性能。</span></p>
+                                <h3><font size="3"><span lang="EN-US">4.1.2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span>bitmap</span><span style="font-family:
+黑体;mso-ascii-font-family:Arial">与</span><span lang="EN-US">extent</span><span style="font-family:黑体;mso-ascii-font-family:Arial">链表相结合的大空间的组织和管理</span></font></h3>
+                                <p class="MsoNormalIndent"><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;     
+                                空间管理涉及的操作主要是窨空间的分配和回收。</span><span lang="EN-US">extent</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">策略将空闲块集中组织起来，在空间的分配时有较高的效率。但是当使用到一定程度，空闲空间比较分散时，回收操作会涉及到</span><span lang="EN-US">extent</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">的搜索和合并过程，因此效率并不太高。而且，在这种情况下需要大量的存储空间用于存放空间信息。</span><span lang="EN-US">Bitmap</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">策略由一个二进制位来确定某一个块的使用情况，在大多数情况下具有较低的空间信息的存储开销。虽然它在分配数据块的过程中由于需要线性的逐位搜索而开销较大，但在回收数据块时，只需简单的二进制操作，因此具有较高的效率。</span></p>
+                                <p class="MsoNormalIndent" style="mso-char-indent-count:2.0;mso-char-indent-size:
+10.5pt"><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">为了高效地组织和管理</span><span lang="EN-US">Petabyte</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">级别的空间，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">首先将整个逻辑空间分成多个不重叠的段（</span><span lang="EN-US">segment</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">），多个分配或回收操作可以在不同的段上同时进行，提高了空间分配和回收操作的并发度。</span></p>
+                                <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">采用</span><span lang="EN-US">bitmap</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">与</span><span lang="EN-US">extent</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">相结合的空间管理策略，空间信息以</span><span lang="EN-US">Bitmap</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">的形式存放在存储设备中，每次读入部分的</span><span lang="EN-US">Bitmap</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">，在内存中建立起空闲空间的</span><span lang="EN-US">extent</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">链表，分配时以</span><span lang="EN-US">extent</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">的形式高效进行，而回收过程则将回收块直接记录在对应的</span><span lang="EN-US">Bitmap</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">中。</span></p>
+                                <h3><font size="3"><span lang="EN-US">4.1.3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:黑体;mso-ascii-font-family:Arial">采用改进的</span><span lang="EN-US">Extendible     
+                                Hashing</span><span style="font-family:黑体;mso-ascii-font-family:
+Arial">算法来支持大目录支持技术：</span><span lang="EN-US">LMEH</span></font></h3>
+                                <p class="MsoNormalIndent"><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;     
+                                在</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">中，采用</span><span lang="EN-US">MLEH</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">机制来组织和管理目录文件。</span><span lang="EN-US">MLEH</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">是一种改进的</span><span lang="EN-US">Extendible     
+                                Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">机制，它采用两个本地文件系统中的文件存放一个</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">的目录，一个是索引文件用于存放</span><span lang="EN-US">Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">表，它由索引结构（</span><span lang="EN-US">Index     
+                                Structure</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">）构成，并按顺序编号，其序号就是对应的</span><span lang="EN-US">Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">值；另一个是目录项文件，存放对应目录的目录项，目录项文件由固定大小的目录项块组成，同一个目录项块中的目录项具有相同的</span><span lang="EN-US">Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">值。每一个索引结构中记录对应</span><span lang="EN-US">Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">值的目录项所在的目录项块的地址。初始时，</span><span lang="EN-US">Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">值中只有少数几位是有效的，根据其有效位，就可以判断出目录项所在目录项块。当某一个块放满进行分裂时，只需初始化新增的索引结构并从目录项文件的末尾为其分配一个目录项块，而对应其它暂时没有被使用的</span><span lang="EN-US">Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">值的索引结构只在索引文件中留下一个空洞，这样处理的目的是避免像</span><span lang="EN-US">GFS</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">那样每次分裂时为初始化整个</span><span lang="EN-US">Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">表所带来的开销。并且在</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">的实现中，允许不同的目录项块对应不同位数的有效位，当放满后，一次性按照当前使用的最大有效数进行分裂，通过这种延迟分裂的策略，可以从总体上减少分裂的次数并节省存储空间。由于这种实现将“空洞”限制在索引文件中，而索引结构的大小比目录项块小很多，因此这种策略能够提高空间的利用率。同样，为了避免</span><span lang="EN-US">Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">函数不均匀所造成的</span><span lang="EN-US">hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">表急剧膨胀问题，目前采用控制最大</span><span lang="EN-US">Hash</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">值有效位数的方法，冲突的目录项块以链表的形式串连起来，这样在某些情况下会降低性能，但总体上讲仍远远优于线性组织策略，甚至高于</span><span lang="EN-US">B+</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">树策略。</span></p>
+                                <h3><font size="3"><span lang="EN-US">4.1.4.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:黑体;mso-ascii-font-family:Arial">基于分布式事务处理和两阶段提交协议的元数据日志和恢复技术</span></font></h3>
+                                <p class="MsoNormalIndent"><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;     
+                                对于</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">来说，它与其它文件系统的不同之外在于它有相互协作的多个元数据服务器，而且元数据是存储在各个元数据服务器的私有磁盘中。在</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">中，一个元数据操作（</span><span lang="EN-US">create</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">、</span><span lang="EN-US">remove</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">、</span><span lang="EN-US">mkdir</span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">、</span><span lang="EN-US">mdir</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">等），在某些情况下需要多个元数据服务器协作来完成，各个元数据服务器完成一个子操作。需要多个元数据服务器协作完成的元数据操作称为分布式元数据操作，而只需要一个元数据服务器就可以完成的元数据操作称为普通元数据操作。这种处理机制引入了两个问题，一个是涉及多个元数据服务器的操作，在处理过程中发现不能进行下去时，其它相关的服务器需要撤消已经完成的子操作（</span><span lang="EN-US">undo     
+                                or rallback</span><span style="font-family:宋体;mso-ascii-font-family:    
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">），我们称之为元数据操作的可撤消性；另一个是当一个元数据服务器失效时，已经完成的元数据操作结果如果还在缓存中，还没有写回磁盘，这些结果的丢失可能造成元数据的不一致。例如，一个涉及多个元数据服务器的文件创建操作，先在服务器</span><span lang="EN-US">mgr1</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">上创建了文件，然后在服务器</span><span lang="EN-US">mgr2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">上增加了目录项。如果</span><span lang="EN-US">mgr1</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">在将结果写回磁盘之前失效，那么新创建的文件就有目录项而没有</span><span lang="EN-US">inode</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:
+&quot;Times New Roman&quot;">信息。普通的日志技术是不能保证在某个元数据服务器失效后恢复出的元数据与其它元数据服务器的元数据是一致的。</span></p>
+                                <p class="MsoNormalIndent"><span lang="EN-US">DCFS2</span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">的元数据处理协议保证了元数据操作的完整性（</span><span lang="EN-US">ACID</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">特性），即要么所涉及的元数据服务器都成功完成其子操作，要么所涉及的元数据服务器都不做（当至少有一个元数据服务器不能成功完成其子操作时）。</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">元数据处理协议中引入元数据锁（</span><span lang="EN-US">Metadata     
+                                Lock</span><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">，即</span><span lang="EN-US">MLock</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">）来使有依赖关系的元数据操作按顺序进行，即需要前一个操作结果的操作必须等待前一操作完成后方能开始。这样保证元数据操作的可撤消性。</span></p>
+                                <p class="MsoNormalIndent"><span lang="EN-US">DCFS2</span><span style="font-family:
+宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">的元数据协议借鉴了分布式事务处理中的两阶段提交协议的思想，借助元数据日志，使得</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">在故障后能够根据元数据日志恢复到一个一致状态，从而保证了</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">的可靠性。</span></p>
+                                <p class="MsoNormalIndent"><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">每个元数据服务器对元数据修改前都记录日志（</span><span lang="EN-US">write-ahead     
+                                log</span><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">），对于普通元数据操作，其日志先缓存在服务器的内存中，定时写回到磁盘上的日志文件中。对于分布式元数据操作，其日志必须同步写回磁盘。元数据服务器定时写回缓存中的元数据时，整理日志文件，抛弃已写回元数据的日志记录，回收日志文件的空间。</span></p>
+                                <p class="MsoNormalIndent"><span style="font-family:宋体;mso-ascii-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;">当一个元数据服务器失效后，</span><span lang="EN-US">DCFS2</span><span style="font-family:宋体;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;">的恢复协议首先需要重启失效的元数据服务器，它会自动进入恢复处理流程。在恢复处理流程中，重启的元数据服务器首先通知所有元数据服务器进入恢复处理流程，然后读日志文件，如果是普通元数据操作的日志，则进行恢复；若是分布式元数据操作的日志，则与相关的元数据服务器进行协商后，才能完成恢复。</span></p>
+                                <h1><font size="4"><span lang="EN-US">5.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span>DCFS2</span><span style="font-family:
+黑体;mso-ascii-font-family:Arial">性能评价</span></font></h1>
+                                <h2><font size="3"><span lang="EN-US">5.1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span>DCFS2</span><span style="font-family:
+黑体;mso-ascii-font-family:Arial">的扩展性</span></font></h2>
+                                <h3><font size="2"><span lang="EN-US">5.1.1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:黑体;mso-ascii-font-family:Arial">存储的扩展性</span></font></h3>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:431.25pt;height:208.5pt'
+ o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/02/clip_image003.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+                                <img src="../images/dcfs2/dcfs2.3.gif" v:shapes="_x0000_i1025" width="469" height="231"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Excel.Chart.8" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1157293082">
+ </o:OLEObject>
+</xml><![endif]-->
+                                </span></p>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:432.75pt;height:201pt'
+ o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/02/clip_image005.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+                                <img src="../images/dcfs2/dcfs2.4.gif" v:shapes="_x0000_i1026" width="470" height="226"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Excel.Chart.8" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1157293083">
+ </o:OLEObject>
+</xml><![endif]-->
+                                </span></p>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:300pt;height:180pt'>
+ <v:imagedata src="../images/dcfs2/dcfs2.5.gif"
+  o:title="dcfs2-read-large-all"/>
+</v:shape><![endif]-->
+                                <img src="../images/dcfs2/dcfs2.5.gif" v:shapes="_x0000_i1028" width="400" height="240"></span></p>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US">&nbsp;<o:p>
+                                </o:p>    
+                                </span></p>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:300pt;height:180pt'>
+ <v:imagedata src="../images/dcfs2/dcfs2.6.gif"
+  o:title="dcfs2-write-large-all"/>
+</v:shape><![endif]-->
+                                <img src="../images/dcfs2/dcfs2.6.gif" v:shapes="_x0000_i1029" width="400" height="240"></span></p>
+                                <h3><font size="2"><span lang="EN-US">5.1.2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                </span></span><span style="font-family:黑体;mso-ascii-font-family:Arial">元数据的扩展性</span></font></h3>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:300pt;height:180pt'>
+ <v:imagedata src="../images/dcfs2/dcfs2.7.gif"
+  o:title="dcfs2-create-0k"/>
+</v:shape><![endif]-->
+                                <img src="../images/dcfs2/dcfs2.7.gif" v:shapes="_x0000_i1030" width="400" height="240"></span></p>
+                                <p class="MsoNormal" style="text-indent:0cm"><span lang="EN-US">&nbsp;<o:p>
+                                </o:p>    
+                                </span></p>
+                                <p class="MsoNormal" style="text-indent:0cm"><span lang="EN-US">&nbsp;<o:p>
+                                </o:p>
+                                </span></p>
+                                <p class="MsoNormal" style="text-indent:0cm"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:300pt;height:180pt'>
+ <v:imagedata src="../images/dcfs2/dcfs2.8.gif"
+  o:title="dcfs2-removal-0k"/>
+</v:shape><![endif]-->
+                                <img src="../images/dcfs2/dcfs2.8.gif" v:shapes="_x0000_i1031" width="400" height="240"></span></p>
+                                <p class="MsoNormal" style="text-indent:0cm"><span lang="EN-US">&nbsp;<o:p>
+                                </o:p>
+                                </span></p>
+                                <h2><font size="3"><span lang="EN-US">5.2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                </span>DCFS2</span><span style="font-family:
+黑体;mso-ascii-font-family:Arial">与</span><span lang="EN-US">PVFS</span><span style="font-family:黑体;mso-ascii-font-family:Arial">、</span><span lang="EN-US">PVFS2</span><span style="font-family:黑体;mso-ascii-font-family:Arial">的性能对比</span></font></h2>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:415.5pt;height:242.25pt'
+ o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/02/clip_image011.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+                                <img src="../images/dcfs2/dcfs2.9.gif" v:shapes="_x0000_i1032" width="469" height="284"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Excel.Chart.8" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1157293084">
+ </o:OLEObject>
+</xml><![endif]-->
+                                </span></p>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US">&nbsp;<o:p>
+                                </o:p>    
+                                </span></p>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US">&nbsp;<o:p>
+                                </o:p>
+                                </span></p>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:416.25pt;height:243.75pt'
+ o:ole="">
+ <v:imagedata src="file:///C:/DOCUME~1/ADMINI~1/LOCALS~1/Temp/msoclip1/02/clip_image013.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+                                <img src="../images/dcfs2/dcfs2.10.gif" v:shapes="_x0000_i1033" width="468" height="289"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Excel.Chart.8" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1157293085">
+ </o:OLEObject>
+</xml><![endif]-->
+                                </span></p>
+                                <p class="MsoNormalIndent" style="text-indent:0cm"><span lang="EN-US">&nbsp;<o:p>
+                                </o:p>
+                                </span></p>
+                                <p>　</td>
+                            </tr>
+                          </table>
+                          </center>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td bgColor="#689152" width="1"><img src="../images/common/spacer.gif" width="1" height="1"></td>
+            </tr>
+          </tbody>
+        </table>
+        <table border="0" cellPadding="0" cellSpacing="0" width="480">
+          <tbody>
+            <tr>
+              <td width="11"><img src="../images/common/profile_cor03.gif" width="11" height="6"></td>
+              <td background="../images/common/profile_bbg.gif"><img src="../images/common/profile_bbg.gif" width="7" height="6"></td>
+              <td width="10"><img src="../images/common/profile_cor04.gif" width="10" height="6"></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <table border="0" cellPadding="0" cellSpacing="0" width="480">
+          <tbody>
+            <tr>
+              <td width="11"><img src="../images/common/profile_bar_start.gif" width="11" height="22"></td>
+              <td background="../images/common/profile_bar_bg01.gif" width="100">&nbsp;</td>
+              <td background="../images/common/profile_bar_bg01.gif" width="7">　</td>
+              <td align="right" background="../images/common/profile_bar_bg01.gif">
+                <table border="0" cellPadding="0" cellSpacing="0" width="160">
+                  <tbody>
+                    <tr>
+                      <td align="middle" width="20">&nbsp;</td>
+                      <td class="padding01" width="70">&nbsp;</td>
+                      <td align="middle" width="20"><img src="../images/common/profile_bar_previous.gif" width="13" height="22"></td>
+                      <td class="padding01"><a class="link03" href="project.htm">上一页</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td width="10"><img src="../images/common/profile_bar_end.gif" width="10" height="22"></td>
+            </tr>
+          </tbody>
+        </table>
+      <p>　
+      </td>
+    </tr>
+    <tr>
+      <td width="711" height="1" colspan="3">
+        <div align="center">
+          <center>
+          <table border="0" cellpadding="0" cellspacing="0" width="730">
+            <tr>
+              <td width="728" bgcolor="#00468C" height="1"><img border="0" src="../images/common/dot00.gif" width="1" height="1"></td>
+            </tr>
+            <tr>
+              <td width="728">
+                <p align="center"><font size="1">Copyright for NCIC All Rights                             
+                Reserved</font><br>
+                本网站版权归国家智能计算机研究开发中心所有</td>
+            </tr>
+          </table>
+          </center>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td width="144" height="20"></td>
+      <td width="426" height="20">
+        <p align="center"></td>
+      <td width="158" height="20"></td>
+    </tr>
+  </table>
+</div>

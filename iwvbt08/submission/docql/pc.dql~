@@ -1,0 +1,14 @@
+<h1>Program Committee</h1>
+
+
+<table>
+@pcmember{
+<li><b>Paper</b> @title{.}, @format{.}.<br/>
+   <b>Abstract</b>: @abstract{.}<p>
+
+   <h2>List of authors</h2>
+   <ul>
+    @author{<li> @first_name{.}, @last_name{.}, @affiliation{.}</li>}
+   </ul>
+}
+</table>
