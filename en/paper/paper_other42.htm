@@ -1,6 +1,6 @@
-<html>
+﻿<html>
 <head>
-<title>ѧ������</title>
+<title>学术论文</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="../css/ncic.css" type="text/css">
 </head>
@@ -79,47 +79,47 @@
             <br>
             <table width="440" border="0" cellspacing="1" cellpadding="4">
               <tr bgcolor="#DCEBFC"> 
-                <td colspan="3" align="center">2002�격ʿ����ժҪ</td>
+                <td colspan="3" align="center">2002年博士论文摘要</td>
               </tr>
               <tr bgcolor="#EDF7FE"> 
                 <td width="50" align="center"> 
-                  <div align="left">ѧ����</div>
+                  <div align="left">学　生</div>
                 </td>
                 <td width="50" align="center"> 
-                  <div align="left">����ʦ</div>
+                  <div align="left">导　师</div>
                 </td>
-                <td>������Ŀ</td>
+                <td>论文题目</td>
               </tr>
               <tr bgcolor="#EDF7FE"> 
                 <td align="center"> 
-                  <div align="left">�š���</div>
+                  <div align="left">张　驰</div>
                 </td>
                 <td align="center"> 
-                  <div align="left">�º谲</div>
+                  <div align="left">陈鸿安</div>
                 </td>
-                <td>����չ�ĵ�һϵͳӳ���Ⱥ�ļ�ϵͳ����ƺ�ʵ��</td>
+                <td>可扩展的单一系统映象机群文件系统的设计和实现</td>
               </tr>
               <tr bgcolor="#EDF7FE" align="center"> 
                 <td colspan="3"> 
                   <p><b>&nbsp;<br>
-                    ����չ�ĵ�һϵͳӳ���Ⱥ�ļ�ϵͳ����ƺ�ʵ��</b></p>
+                    可扩展的单一系统映象机群文件系统的设计和实现</b></p>
                 </td>
               </tr>
               <tr bgcolor="#F5FBFE" align="center"> 
                 <td colspan="3"> 
                   <div align="left"> 
                     <p><br>
-                      �����ܼ��㼼���͸����ܷ�����������һ����չ������������Ʒ���������ɻ�Ⱥ��ϵ�ṹ���ýṹǿ��ϵͳ�Ŀ���չ�ԡ���һϵͳӳ�󡢺����׹����ԣ��Լ��߿����ԡ����2000��һ�����͵��Ի�Ⱥ��ϵ�ṹ��Ƶĳ���������ϵͳ������Ϊ���2000��ƺ�ʵ���˿���չ�ĵ�һӳ���ļ�ϵͳ����COSMOS������������COSMOS����ơ�ʵ�ֺ����ܷ������������������е�һЩ�ؼ������⡣<br>
+                      高性能计算技术和高性能服务器技术的一个发展趋势是利用商品化部件构成机群体系结构。该结构强调系统的可扩展性、单一系统映象、好用易管理性，以及高可用性。曙光2000是一个典型的以机群体系结构设计的超级服务器系统。我们为曙光2000设计和实现了可扩展的单一映象文件系统──COSMOS。本文描述了COSMOS的设计、实现和性能分析，着重讨论了其中的一些关键性问题。<br>
                     </p>
-                    <p>COSMOS������һ����һӳ��ķֲ�ʽ�ļ�ϵͳ��֧�����ݵ�͸����ȡ�͹������ʡ���Ⱥ�и�������Ͽ�����COSMOSĿ¼�ṹ���ļ�����ȫ��һ�£�������UNIX���ļ��������塣���⣬�����ڲ��޸�AIX����ϵͳԴ���ǰ���£�ͨ��Vnode/VFS��������䣬ʵ��������ײ�ƽ̨���޷����ӣ���֤����UNIXӦ�ó������ȫ�����Ƽ��ݡ�<br>
+                    <p>COSMOS首先是一个单一映象的分布式文件系统，支持数据的透明存取和共享访问。机群中各个结点上看到的COSMOS目录结构和文件数据全局一致，并符合UNIX的文件共享语义。另外，我们在不修改AIX操作系统源码的前提下，通过Vnode/VFS层核心扩充，实现了与其底层平台的无缝连接，保证了与UNIX应用程序的完全二进制兼容。<br>
                     </p>
-                    <p>COSMOS�Ŀͻ���ʵ���˺���ʽ���������ϵͳ�����ܡ���������˻������Ƶ�дʹʧЧЭ����ά������һ���ԣ��������˫���ȵ�һ�����Ż�Э�������ٿ��������������⣬���Ƿֱ�Ϊinode��Ŀ¼�ͳ�����������Ż���һ����Э�飬��֤����Э�����㻺��һ���ԡ�<br>
+                    <p>COSMOS的客户端实现了合作式缓存以提高系统的性能。我们设计了基于令牌的写使失效协议来维护缓存一致性，并提出了双粒度的一致性优化协议来减少开销。除了数据外，我们分别为inode、目录和超级块设计了优化的一致性协议，并证明了协议满足缓存一致性。<br>
                     </p>
-                    <p>COSMOS����һ������չ�ķֲ�ʽϵͳ��������ϲ����޼��з�������Serverless�ṹ�������ݴ洢��Ԫ���ݹ��������ֲ�������ϵͳ�У���ʵ���˷����stripe�洢�������ϵͳ�Ĵ�������չ�ԡ� 
+                    <p>COSMOS还是一个可扩展的分布式系统，在设计上采用无集中服务器的Serverless结构，将数据存储和元数据管理工作分布到整个系统中，并实现了分组的stripe存储，提高了系统的带宽和扩展性。 
                       <br>
                     </p>
-                    <p>���Ա�����COSMOSϵͳ�������ۺ��������ã���NFS������������ƣ��Ҿ������õĿ���չ�ԣ������ϴﵽ�����Ŀ�ġ�ĿǰCOSMOS����Ӧ�������2000-II��Ⱥϵͳ�����˲�Ʒ�������Ŭ���⣬COSMOSҲΪ���ǶԷֲ�ʽ�ļ�ϵͳ�Ľ�һ���о��ṩ��һ�����õ�ƽ̨��</p>
-                    <p>�ؼ��ʣ���Ⱥ���ֲ�ʽ�ļ�ϵͳ, ��һϵͳӳ�󣬿���չ�ԣ��޼���ʽ���������洢���飬����ʽ����<br>
+                    <p>测试表明，COSMOS系统带宽和综合性能良好，与NFS相比有明显优势，且具有良好的可扩展性，基本上达到了设计目的。目前COSMOS即将应用于曙光2000-II机群系统。除了产品化方向的努力外，COSMOS也为我们对分布式文件系统的进一步研究提供了一个良好的平台。</p>
+                    <p>关键词：机群，分布式文件系统, 单一系统映象，可扩展性，无集中式服务器，存储分组，合作式缓存<br>
                     </p>
                     <p>A current trend in high performance computing and superservers 
                       is to build clusters with commodity components. Cluster 
@@ -168,7 +168,7 @@
                 <td>&nbsp;</td>
                 <td width="20" align="center">&nbsp;</td>
                 <td width="60">&nbsp;</td>
-                <td width="60" align="right"><a href="paper_other_2.htm">��һҳ</a></td>
+                <td width="60" align="right"><a href="paper_other_2.htm">上一页</a></td>
                 <td width="20" align="center"><img src="../image/next.gif" width="14" height="15"></td>
                 <td width="20">&nbsp;</td>
               </tr>
@@ -200,7 +200,7 @@
     <td align="center"> 
       <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Copyright 
         for NCIC All Rights Reserved</font> <br>
-        ����վ��Ȩ��������ܼ�����о�������������<br>
+        本网站版权归国家智能计算机研究开发中心所有<br>
       </p>
     </td>
   </tr>

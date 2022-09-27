@@ -1,6 +1,6 @@
-<html>
+﻿<html>
 <head>
-<title>ѧ������</title>
+<title>学术论文</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="../css/ncic.css" type="text/css">
 </head>
@@ -79,45 +79,45 @@
             <br>
             <table width="440" border="0" cellspacing="1" cellpadding="4">
               <tr bgcolor="#DCEBFC"> 
-                <td colspan="3" align="center">1999�격ʿ����ժҪ</td>
+                <td colspan="3" align="center">1999年博士论文摘要</td>
               </tr>
               <tr bgcolor="#EDF7FE"> 
                 <td width="50" align="center"> 
-                  <div align="left">ѧ����</div>
+                  <div align="left">学　生</div>
                 </td>
                 <td width="50" align="center"> 
-                  <div align="left">����ʦ</div>
+                  <div align="left">导　师</div>
                 </td>
-                <td>������Ŀ</td>
+                <td>论文题目</td>
               </tr>
               <tr bgcolor="#EDF7FE"> 
                 <td align="center"> 
-                  <div align="left">������</div>
+                  <div align="left">王建勇</div>
                 </td>
                 <td align="center"> 
-                  <div align="left">ף����</div>
+                  <div align="left">祝明发</div>
                 </td>
-                <td>����չ�ĵ�һӳ���ļ�ϵͳ</td>
+                <td>可扩展的单一映象文件系统</td>
               </tr>
               <tr bgcolor="#EDF7FE" align="center"> 
                 <td colspan="3"> 
                   <p><b>&nbsp;<br>
-                    ����չ�ĵ�һӳ���ļ�ϵͳ</b></p>
+                    可扩展的单一映象文件系统</b></p>
                 </td>
               </tr>
               <tr bgcolor="#F5FBFE" align="center"> 
                 <td colspan="3"> 
                   <div align="left"> 
                     <p><br>
-                      ��ͳ�ķֲ�ʽ�ļ�ϵͳ����Ϊ��Ⱥϵͳ�ṩ�ϸ�ĵ�һӳ���ܣ��������ڲ�����Ӧ���㼼���ķ�չ���ƣ��޷�����Ӧ�öԻ�Ⱥϵͳ��I/O���ܡ�����չ�ԺͿ����Ե�������ⳬ���������ǵ��͵Ļ�Ⱥϵͳ������Ϊ�����ƿ����˿���չ�ĵ�һӳ���ļ�ϵͳCOSMOS��������ԭ��ϵͳΪS2FS��������Ҫ������S2FS����ơ�ʵ�ּ����ۡ�<br>
+                      传统的分布式文件系统不能为机群系统提供严格的单一映象功能，而且由于不能适应计算技术的发展趋势，无法满足应用对机群系统的I/O性能、可扩展性和可用性的需求。曙光超级服务器是典型的机群系统，我们为其研制开发了可扩展的单一映象文件系统COSMOS，并称其原型系统为S2FS。本文主要描述了S2FS的设计、实现及评价。<br>
                     </p>
-                    <p>���ȣ�S2FS��һ��ȫ���ļ�ϵͳ����ͨ��ʵ��λ��͸���Ժ��ϸ��UNIX�ļ������������֤���ϸ�ĵ�һϵͳӳ�������ڲ��޸�AIX����ϵͳԴ���ǰ���£�ͨ��Vnode/VFS��������䣬ʵ��������ײ�ƽ̨���޷����ӣ���֤����UNIXӦ�ó������ȫ�����Ƽ��ݣ���֤�������ļ�ϵͳ������ʵ����һĿ���һ����Ч;����<br>
+                    <p>首先，S2FS是一个全局文件系统，它通过实现位置透明性和严格的UNIX文件共享语义而保证了严格的单一系统映象。我们在不修改AIX操作系统源码的前提下，通过Vnode/VFS层核心扩充，实现了与其底层平台的无缝连接，保证了与UNIX应用程序的完全二进制兼容，验证了虚拟文件系统机制是实现这一目标的一种有效途径。<br>
                     </p>
-                    <p>��Σ�Ϊ�����S2FSϵͳ�����ܺͿ���չ�ԣ����ĶԺ���ʽ����������о������ۡ��ڱ���ϵͳ������ǰ���£�����˻���Ŀ¼����Чʹ��Э�飬��֤���䱣֤�˻���һ���ԡ�Ϊ��һ�����ϵͳ���ܣ������˫���Ȼ���һ����Э�飬�ڴ˻��������������ʽ��������㷨��ͨ��ģ�ͷ���֤����ͬĿǰ���õ�N-Chance�㷨������˽�һ�������ܸĽ���<br>
+                    <p>其次，为了提高S2FS系统的性能和可扩展性，本文对合作式缓存进行了研究和评价。在避免系统死锁的前提下，设计了基于目录的无效使能协议，并证明其保证了缓存一致性。为进一步提高系统性能，提出了双粒度缓存一致性协议，在此基础上设计了启发式缓存管理算法，通过模型分析证明其同目前常用的N-Chance算法相比有了进一步的性能改进。<br>
                     </p>
-                    <p>���Ϊ�˱��ⵥһ������ƿ�����⣬����ΪS2FS�������ݴ洢��Ԫ���ݹ����ֿ��Ĳ��ԣ�ʵ���˷ֲ�ʽ�����ݴ洢��Ԫ���ݹ������ܡ�Ԫ���ݹ������������˴洢��ά��ϵͳԪ���ݣ����ļ������ڵ�ͳ����飩�⣬����¼�����ݻ���λ�ã���ά������ʽ�����һ���ԡ��ڴ洢������һ�ˣ�ʵ����������̴洢���鹦�ܼ�����RAID1ģ�ͣ��ײ�洢���ڿɿ���JFS���첽I/O���ܣ������I/O�����ʹ洢�Ŀ����ԡ�<br>
+                    <p>最后，为了避免单一服务器瓶颈问题，我们为S2FS采用数据存储与元数据管理分开的策略，实现了分布式的数据存储和元数据管理功能。元数据管理服务器除了存储及维护系统元数据（如文件索引节点和超级块）外，还记录了数据缓存位置，并维护合作式缓存的一致性。在存储服务器一端，实现了网络磁盘存储分组功能及软件RAID1模型，底层存储基于可靠的JFS和异步I/O功能，提高了I/O带宽和存储的可用性。<br>
                     </p>
-                    <p>��Ȼ�����ڱ�֤ϵͳ��һӳ��Ͷ����Ƽ����ԵĻ����ϣ����ʺ��ڻ�Ⱥ�ļ�ϵͳ�Ŀ���չ�Լ����������о���������Ӧ�ö�I/O������������ֹ���ģ�����I/O��ȡ�����Լ����㼼���ķ�չ����Ҳ�ڲ��Ϸ����仯����һ�ж�Ϊ����δ���������͵ķֲ�ʽ�ļ�ϵͳ����˸������ս��<br>
+                    <p>虽然本文在保证系统单一映象和二进制兼容性的基础上，对适合于机群文件系统的可扩展性技术进行了研究，但由于应用对I/O的需求是永无止境的，且其I/O存取特征以及计算技术的发展趋势也在不断发生变化，这一切都为我们未来研制新型的分布式文件系统提出了更大的挑战。<br>
                     </p>
                     <p>Traditional distributed file systems can't provide clusters 
                       with strict single-system image, and because of failing 
@@ -186,7 +186,7 @@
                 <td>&nbsp;</td>
                 <td width="20" align="center">&nbsp;</td>
                 <td width="60">&nbsp;</td>
-                <td width="60" align="right"><a href="paper_other_2.htm">��һҳ</a></td>
+                <td width="60" align="right"><a href="paper_other_2.htm">上一页</a></td>
                 <td width="20" align="center"><img src="../image/next.gif" width="14" height="15"></td>
                 <td width="20">&nbsp;</td>
               </tr>
@@ -218,7 +218,7 @@
     <td align="center"> 
       <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Copyright 
         for NCIC All Rights Reserved</font> <br>
-        ����վ��Ȩ��������ܼ�����о�������������<br>
+        本网站版权归国家智能计算机研究开发中心所有<br>
       </p>
     </td>
   </tr>

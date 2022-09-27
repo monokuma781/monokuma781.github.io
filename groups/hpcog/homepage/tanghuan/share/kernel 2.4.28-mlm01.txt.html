@@ -1,6 +1,6 @@
-<html>
+﻿<html>
 <head>
-<title>D:\-NetRam-\nrlog\�ں��޸���־-Kernel 2.4.28-mlm01.txt.html</title>
+<title>D:\-NetRam-\nrlog\内核修改日志-Kernel 2.4.28-mlm01.txt.html</title>
 <meta name="Generator" content="Vim/6.3">
 <meta http-equiv="content-type" content="text/html; charset=GBK">
 </head>
@@ -10,30 +10,30 @@
                              Kernel 2.4.28-mlm01
 
 ------------------------------------------------------------------------------
-[����]��
-      &lt;�����ڴ�ʹ����&gt; �������ռ侭����ʵӳ�����ռ�õ�ʵ�������ڴ�����
-      &lt;�ܿؽ���&gt; �κ�һ���ض���(�û�)���̣���Ϊ�Ĺ涨����Ϊ��ע����
-      &lt;�ڴ潻������ֵ&gt; �ܿض���������ڴ�ʹ�����Ĵ���ֵ����ʵ��ʹ��ֵ�ﵽ�ô���ֵʱ��������(�ں���mlmģ��)���ܿؽ��̵�ɨ�裬������һ����ҳ�档
-      &lt;Net Ram�豸&gt; �����ڴ��豸�������ڴ�Ŀǰ���豸����ʽ���֣��������������豸��
+[术语]：
+      &lt;物理内存使用量&gt; 进程虚存空间经过虚实映射后所占用的实际物理内存数。
+      &lt;受控进程&gt; 任何一个特定的(用户)进程，人为的规定其作为关注对象
+      &lt;内存交换触发值&gt; 受控对象的物理内存使用量的触发值，当实际使用值达到该触发值时，将引发(内核中mlm模块)对受控进程的扫描，并换出一定量页面。
+      &lt;Net Ram设备&gt; 网络内存设备，网络内存目前以设备的形式出现，将其用作交换设备。
 
 ------------------------------------------------------------------------------
-[Ŀ��]��
-      ϣ����ĳһ���ض����̵������ڴ�ʹ�������п��ƣ�����ʵ��ʹ�����ﵽ�ڴ潻������ֵʱ���շ��Ըý��̵Ļ�����������һ�����ڴ滻����
+[目标]：
+      希望对某一个特定进程的物理内存使用量进行控制，在其实际使用量达到内存交换触发值时，诱发对该进程的换出操作，将一部分内存换出。
 
 ------------------------------------------------------------------------------
-[��ϸ����]��
-      1. ��2.4.20nrtest03�汾�У��������ֻ������ԣ��ں�ԭ�еĻ���������Nram�������ԡ���ʵ���ϣ����ն�ֻ������ǰ�ߡ������У������ʵ��Nram�������ԣ��⽫�Ǳ��汾���ص㡣
-      2. ��2.4.20nrtest03�汾�У�һ���棬���ܿؽ��̽Ƕȿ������ܿؽ��̾���Nram��������ɨ��󣬲����Ĵ�����ҳ�����ֻ�ύ����Net Ram�豸�ϣ�
-      ��һ���棬��Net Ram�豸�Ƕȿ���ֻ���ܿؽ��̵�ҳ��Żỻ����Net Ram�豸�������У���ʱȡ������һ��һ�Ĺ�ϵ���ܿؽ��̽��������������ǻ��������
-      3. ��2.4.20nrtest03�汾��ͬ���������ֻ������ԣ��ܿؽ���ͬʱ������ɨ�貢������������������Ȼֻ��ʹ���ں�ԭ�еĻ��������ж��Ƿ񻻳���
+[详细解释]：
+      1. 在2.4.20nrtest03版本中，共有两种换出策略：内核原有的换出策略与Nram换出策略。但实现上，最终都只进行了前者。本版中，会具体实现Nram换出策略，这将是本版本的重点。
+      2. 在2.4.20nrtest03版本中，一方面，从受控进程角度看，当受控进程经由Nram换出策略扫描后，产生的待换出页面会且只会交换到Net Ram设备上；
+      另一方面，从Net Ram设备角度看，只有受控进程的页面才会换出到Net Ram设备。本版中，暂时取消这种一对一的关系，受控进程仅被换出，不考虑换出到哪里。
+      3. 与2.4.20nrtest03版本相同，对于两种换出策略，受控进程同时被两种扫描并换出。而其他进程仍然只会使用内核原有的换出策略判断是否换出。
 
 ------------------------------------------------------------------------------
-[ʵ�ּƻ�]��
-      1. ʵ��Nram��������
-      2. ���ܿؽ��������ڴ潻������ֵ����ȱҳ�жϴ��������ж��ڴ�ʹ�������м�飬���ﵽ����ֵʱ�㴥��������
+[实现计划]：
+      1. 实现Nram换出策略
+      2. 对受控进程设置内存交换触发值，在缺页中断处理函数中对内存使用量进行检查，当达到触发值时便触发交换。
 
 ------------------------------------------------------------------------------
-[�ں��޸ļ�¼]
+[内核修改纪录]
 &gt; Makefile
       VERSION = 2
       PATCHLEVEL = 4
@@ -44,13 +44,13 @@
 &gt; include/linux/sched.h
 
       [mm_struct]
-      ����unsigned long rss_triger;   ��¼��ǰ���̵��ڴ潻������ֵ����λͬmm.rss�����ã�������
+      添加unsigned long rss_triger;   记录当前进程的内存交换触发值。单位同mm.rss，采用？？？？
 
 
 &gt; mm/vmscan.c
       [swap_out_mm_Nram]
-      ����swap_out_mm_Nram()����Ϊ��mm_structɨ�軻������ڡ�
-      ���ܣ�
+      添加swap_out_mm_Nram()，作为对mm_struct扫描换出的入口。
+      功能：
 
             1. assume the goal we need to swap out
 
@@ -62,36 +62,36 @@
 
 
       [swap_out_pmd]
-      ͨ���жϴ������classzoneָ���Ƿ�ָ��NULL����������try_to_swap_out()����try_to_swap_out_Nram()��NULL����ú��ߡ�
+      通过判断传入参数classzone指针是否指向NULL来决定调用try_to_swap_out()还是try_to_swap_out_Nram()，NULL则调用后者。
 
 
       [try_to_swap_out_Nram]
-      ����try_to_swap_out_Nram()��ʵ�ֲ�ͬ�Ļ������ԣ��������Ļ���ҳ�档
+      添加try_to_swap_out_Nram()，实现不同的换出策略，力求更多的换出页面。
 
 
 
 &gt; mm/memory.c
       [handle_mm_fault]
-      �����swap_out_mm_Nram()�ĵ��ýӿڡ�
+      加入对swap_out_mm_Nram()的调用接口。
 
 
       [swapin_readahead] ********  liuli
-      �����Ƿ���swap_aheadʧ�������
+      看看是否有swap_ahead失败情况；
 
 
 
 &gt; kernel/sys.c
       [sys_setrsstriger]
-      ����sys_setrsstriger()ϵͳ���á�
+      添加sys_setrsstriger()系统调用。
       asmlinkage long sys_setrsstriger(int pid,int m_bytes)
 
 &gt; arch/i386/kernel/entry.S
-      ȷ��sys_setrsstriger()ϵͳ���ú�269
-      ϵͳ��������������include/linux/sys.h�ļ���NR_syscalls���塣ĿǰΪ270��,�������������Զ���269��ϵͳ���á�
+      确定sys_setrsstriger()系统调用号269
+      系统调用总数限制在include/linux/sys.h文件中NR_syscalls定义。目前为270个,所以我们最多可以定义269号系统调用。
 
 
 ------------------------------------------------------------------------------
-[��Ⱦ���ļ��б�]
+[感染的文件列表]
 
 Makefile
 include/linux/sched.h         [mm_struct]
@@ -101,48 +101,48 @@ kernel/sys.c                  [sys_setrsstriger]
 arch/i386/kernel/entry.S
 
 ------------------------------------------------------------------------------
-[�ں�ע��]
+[内核注释]
 
 &gt; int   swap_out(zone_t * classzone)
-      ����ɨ��mmlist��ÿ��mm_struct���������swap_out_mm()��
-      ���ɨ������nr_pages����1�����򷵻�0��
+      依次扫描mmlist上每个mm_struct，对其调用swap_out_mm()。
+      完成扫描任务nr_pages返回1，否则返回0。
 
-      ���������ʱ������ǰmm_struct��
-            1. ��ǰmm�Ѿ����ϴ�����ɨ��ʱɨ����ĩβ(TASK_SIZE)��
-            2. ��ǰmmΪinit����
-       ���������ʱ���ý�����
-            1. �ͷ�ҳ�����ﵽԤ���ͷ�ҳ����nr_pages(SWAP_CLUSTER_MAX=32)
-            2. ����mm_struct����ɨ������(mmlist_nr &lt;&lt; 1��ɨ��)
+      在以下情况时跳过当前mm_struct：
+            1. 当前mm已经在上次线形扫描时扫描至末尾(TASK_SIZE)；
+            2. 当前mm为init进程
+       在以下情况时调用结束：
+            1. 释放页面数达到预期释放页面数nr_pages(SWAP_CLUSTER_MAX=32)
+            2. 所有mm_struct都被扫描两遍(mmlist_nr &lt;&lt; 1次扫描)
 
-       ���Կ�����ÿ��ɨ��ǰ����Ŀ�꣺������������ҳ�棬�������ֵnr_pages���ڸú����в����ģ�Ŀǰ�Ĳ�����ʽ�ܼ򵥣�����SWAP_CLUSTER_MAX����(32)��
-       ��������Ҫ����һ�����̵��ڴ�ʹ����ʱ��Ӧ��ʹ��һ�����Ĺ�����ȷ��nr_pages���������Ӧ�ÿ��ǵ�ǰ�����ڴ�ʹ�����Ĵ���ֵ�Լ�ʵ���ڴ�ʹ����֮��Ĺ�ϵ�������ڴ�ʹ������������ֵԽ�࣬nr_pagesֵӦ��Խ���Ա㾡��Ļ����ڴ�ʹ��ѹ����
+       可以看出，每次扫描前订出目标：期望换出多少页面，这个期望值nr_pages是在该函数中产生的，目前的产生方式很简单，常量SWAP_CLUSTER_MAX定义(32)。
+       当我们需要控制一个进程的内存使用量时，应当使用一个灵活的规则来确定nr_pages。这个规则应该考虑当前进程内存使用量的触发值以及实际内存使用量之间的关系。随着内存使用量超出触发值越多，nr_pages值应该越大，以便尽快的缓解内存使用压力。
 
 
 
 &gt;&gt; int swap_out_mm(mm, int count, int * mmcounter,  classzone)
-      ����ĳһ������mm_struct���Լ��������ͷ�Ԥ��ֵcount��ɨ�豾mm�ռ䡣
-      ���ظ��º��Ԥ��ֵcount(��ͬ��swap_out()�����е�nr_pages)��
+      对于某一个具体mm_struct，以及给定的释放预期值count，扫描本mm空间。
+      返回更新后的预期值count(等同于swap_out()函数中的nr_pages)。
 
-      ��mm-&gt;swap_address��¼�ϴ�ɨ��λ�ã����ַ�ռ�ĩ�˷����ҵ������vma������ɨ���ɴ˿�ʼ�� ����mm_struct������vma�ֱ����swap_out_vma()��ֱ�����������ֹ��
-            1. ɨ�赽����̿ռ�β����
-            2. �����Ԥ���ͷ�����
+      由mm-&gt;swap_address记录上次扫描位置，向地址空间末端方向找到最近的vma，本次扫描由此开始， 对于mm_struct的所有vma分别调用swap_out_vma()。直到以下情况终止：
+            1. 扫描到达进程空间尾部；
+            2. 完成了预期释放任务；
 
 
 
 &gt;&gt;&gt;  swap_out_vma(mm, vma, address, count, classzone)
-      ����һ�������vma���õ�����ʼ��ַ��Ӧ��pgdir��vma�Ľ�β��ַ������Ϊ��������swap_out_pgd()��ɨ������vma��ַ���������pgd��
-      ע�����������һ�ζ�vma�Ƿ���VM_RESERVED��־�ļ�飻
+      对于一个具体的vma，得到其起始地址对应的pgdir和vma的结尾地址。依次为参数调用swap_out_pgd()，扫描整个vma地址区域的所有pgd。
+      注：这里进行了一次对vma是否含有VM_RESERVED标志的检查；
 
 
 
 &gt;&gt;&gt;&gt; swap_out_pgd(mm, vma, pgdir, address, end, count, classzone)
-      ����һ�������pgd������swap_out_pmd()��ɨ������pgd��ַ��Χ�ڵ�����pmd��
+      对于一个具体的pgd，调用swap_out_pmd()，扫描整个pgd地址范围内的所有pmd。
 
 
 
 &gt;&gt;&gt;&gt;&gt; swap_out_pmd(mm, vma, pmd, address, end, count, classzone)
-      ����һ�������pmd������try_to_swap_out()��ɨ������pmd��ַ��Χ�ڵ�����page��
-      ע�������������һ��reserve��־��飬Ŀ����page��
+      对于一个具体的pmd，调用try_to_swap_out()，扫描整个pmd地址范围内的所有page。
+      注：这里进行了又一次reserve标志检查，目标是page。
 
 
 
